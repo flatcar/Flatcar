@@ -1,2 +1,3 @@
 # flatcar
-Flatcar project repository for issue tracking, project documentation, etc.
+
+More information and dhe project roadmap will be published soon at this location. Stay tuned!
