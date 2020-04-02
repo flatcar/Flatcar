@@ -54,8 +54,8 @@ If an issue or PR you’d like to contribute to is already assigned to someone, 
 
 If you would like to start contributing to an issue or PR, please assign it to yourself. It is also often helpful to state your intent in a comment on the issue, as well as to announce a rough ETA of your contribution - this helps others to manage their expectations regarding traction and progress.
 
-For in-progress work have a look at our [development board](https://github.com/flatcar-linux/Flatcar/projects/1).
+For in-progress work have a look at our [development board](https://github.com/orgs/flatcar-linux/projects/3).
 
 ### Major Contributions
 
-Major new features are tracked on our [roadmap](https://github.com/flatcar-linux/Flatcar/projects/2).
+Major new features are tracked on our [roadmap](https://github.com/orgs/flatcar-linux/projects/2).
