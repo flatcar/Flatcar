@@ -54,13 +54,14 @@ If an issue or PR you’d like to contribute to is already assigned to someone, 
 
 If you would like to start contributing to an issue or PR, please assign it to yourself. It is also often helpful to state your intent in a comment on the issue, as well as to announce a rough ETA of your contribution - this helps others to manage their expectations regarding traction and progress.
 
+For in-progress work have a look at our [development board](https://github.com/orgs/flatcar-linux/projects/3).
+
 
 ### Major Contributions
 
-We will publish a roadmap discussing long-term goals of the project very soon - stay tuned!
+Major new features are tracked on our [roadmap](https://github.com/orgs/flatcar-linux/projects/2).
 
 
 ### Requesting new packages
 
 Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines, and please use the "New Package Request" issue type to [file your request](https://github.com/flatcar-linux/Flatcar/issues/new/choose).
-
