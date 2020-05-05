@@ -22,8 +22,6 @@ Flatcar Container Linux has a dedicated [documentation site](https://docs.flatca
     *   [Updating directly from CoreOS Container Linux](https://docs.flatcar-linux.org/os/update-from-container-linux/)
 
 
-Flatcar Container Linux would not be possible without the support of our [sponsors](#Sponsors).
-
 ## Release process
 
 Flatcar Container Linux follows an Alpha-Beta-Stable release process. New features and major version upgrades will enter the Alpha channel for initial testing, then transition to Beta, before landing in Stable.
@@ -62,31 +60,7 @@ If you would like to start contributing to an issue or PR, please assign it to y
 We will publish a roadmap discussing long-term goals of the project very soon - stay tuned!
 
 
-# Maintainers
+### Requesting new packages
 
-<img src="sponsors/kinvolk_400x400.jpg" width="100pt" alt="Kinvolk.io logo" title="Kinvolk.io logo" />
+Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines, and please use the "New Package Request" issue type to [file your request](https://github.com/flatcar-linux/Flatcar/issues/new/choose).
 
-Flatcar Container Linux is maintained by [Kinvolk.io](https://www.kinvolk.io/).
-
-
-# Sponsors
-## Development Sponsor
-Ongoing Flatcar Container Linux development is supported by our Development Sponsors.
-
-<img src="sponsors/gs-logo-on-dark.svg" width="450pt" alt="Giant Swarm logo" title="Giant Swarm logo">
-
-[Giant Swarm](https://www.giantswarm.io/)
-
-
-<img src="sponsors/cisco-logo.svg" width="150pt" alt="Cisco Systems logo" title="Cisco Systems logo">
-
-[Cisco Systems](https://www.cisco.com/)
-
-
-## Infrastructure Sponsors
-Infrastructure for continuous integration and for adding new features (like ARM support) is provided by our Infrastructure Sponsors.
-
-
-<img src="sponsors/logo-packet-equinix-main.png" width="200pt" alt="Packet logo" title="Packet logo">
-
-[Packet](https://www.packet.com/)
