@@ -56,6 +56,12 @@ If you would like to start contributing to an issue or PR, please assign it to y
 
 For in-progress work have a look at our [development board](https://github.com/orgs/flatcar-linux/projects/3).
 
+
 ### Major Contributions
 
 Major new features are tracked on our [roadmap](https://github.com/orgs/flatcar-linux/projects/2).
+
+
+### Requesting new packages
+
+Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines, and please use the "New Package Request" issue type to [file your request](https://github.com/flatcar-linux/Flatcar/issues/new/choose).
