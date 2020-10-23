@@ -38,6 +38,9 @@ There’s a fourth channel which is roughly based on Alpha, but otherwise unrela
 
 For general discussions around Flatcar Container Linux please join our forums (Google groups) for [users](https://groups.google.com/forum/#!forum/flatcar-linux-user) and for [developers](https://groups.google.com/forum/#!forum/flatcar-linux-dev). Please do not use the GitHub project for general discussions. For a quick chat with other users and developers try the `#flatcar` IRC channel on irc.freenode.net. 
 
+## Code of Conduct
+
+Please refer to the Kinvolk [Code of Conduct](https://github.com/kinvolk/contribution/blob/master/CODE_OF_CONDUCT.md).
 
 # Contributing to Flatcar Container Linux
 
@@ -45,6 +48,9 @@ We encourage community contributions to the Flatcar project! In order to make th
 
 First, please engage with the development team as early as possible. Let us know (by commenting on an existing issue, or creating a new issue, on GitHub) if you are thinking of making a contribution, so we can align on the best implementation approach and maximize the chances of it being successfully merged. Consider the project’s mission, and how your contribution furthers and is compatible with it.
 
+### Commit guidelines
+
+For the general guidelines on making PRs/commits easier to review, please checkout Kinvolk's [contribution guidelines on git](https://github.com/kinvolk/contribution/tree/master/topics/git.md).
 
 ### Minor Contributions
 
