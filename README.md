@@ -1,26 +1,21 @@
 # Flatcar Container Linux
 
-# Mission statement
+## Mission statement
 
 _Flatcar Container Linux is a fully open source, minimal-footprint, secure by default and always up-to-date Linux distribution for running containers at scale._
 
+## Releases
 
-# Releases
-
-See the [project website](https://www.flatcar-linux.org/) for information about [current releases](https://www.flatcar-linux.org/releases/). 
-
+See the [project website](https://www.flatcar-linux.org/) for information about [current releases](https://www.flatcar-linux.org/releases/).
 
 ## User Documentation
 
 Flatcar Container Linux has a dedicated [documentation site](https://docs.flatcar-linux.org/). Some helpful links:
 
-
-
-*   [Getting started](https://docs.flatcar-linux.org/#getting-started)
-*   [Working with clusters](https://docs.flatcar-linux.org/#working-with-clusters)
-*   [Migrating from CoreOS Container Linux](https://docs.flatcar-linux.org/os/migrate-from-container-linux/)
-    *   [Updating directly from CoreOS Container Linux](https://docs.flatcar-linux.org/os/update-from-container-linux/)
-
+* [Getting started](https://docs.flatcar-linux.org/#getting-started)
+* [Working with clusters](https://docs.flatcar-linux.org/#working-with-clusters)
+* [Migrating from CoreOS Container Linux](https://docs.flatcar-linux.org/os/migrate-from-container-linux/)
+  * [Updating directly from CoreOS Container Linux](https://docs.flatcar-linux.org/os/update-from-container-linux/)
 
 ## Release process
 
@@ -28,21 +23,19 @@ Flatcar Container Linux follows an Alpha-Beta-Stable release process. New featur
 
 Note that contrary to features, bug fixes for any release channel will be released to that respective channel directly, i.e. Alpha bug fixes will be included in the next Alpha, Beta fixes will directly go to Beta, and Stable fixes will be released with the next Stable.
 
-
 ### Edge
 
 There’s a fourth channel which is roughly based on Alpha, but otherwise unrelated to the other three - the Edge channel. Edge is meant for testing cutting-edge features, e.g. new BPF functionality in the Linux kernel, or new container runtimes. Edge features are for experimenting, there is no guarantee that Alpha will pick those up.
 
-
 ## General discussions on the project and its direction
 
-For general discussions around Flatcar Container Linux please join our forums (Google groups) for [users](https://groups.google.com/forum/#!forum/flatcar-linux-user) and for [developers](https://groups.google.com/forum/#!forum/flatcar-linux-dev). Please do not use the GitHub project for general discussions. For a quick chat with other users and developers try the `#flatcar` IRC channel on irc.freenode.net. 
+For general discussions around Flatcar Container Linux please join our forums (Google groups) for [users](https://groups.google.com/forum/#!forum/flatcar-linux-user) and for [developers](https://groups.google.com/forum/#!forum/flatcar-linux-dev). Please do not use the GitHub project for general discussions. For a quick chat with other users and developers try the `#flatcar` IRC channel on irc.freenode.net.
 
 ## Code of Conduct
 
 Please refer to the Kinvolk [Code of Conduct](https://github.com/kinvolk/contribution/blob/master/CODE_OF_CONDUCT.md).
 
-# Contributing to Flatcar Container Linux
+## Contributing to Flatcar Container Linux
 
 We encourage community contributions to the Flatcar project! In order to make the contribution process as smooth as possible, please follow the guidelines below.
 
@@ -62,11 +55,9 @@ If you would like to start contributing to an issue or PR, please assign it to y
 
 For in-progress work have a look at our [development board](https://github.com/orgs/flatcar-linux/projects/3).
 
-
 ### Major Contributions
 
 Major new features are tracked on our [roadmap](https://github.com/orgs/flatcar-linux/projects/2).
-
 
 ### Requesting new packages
 
