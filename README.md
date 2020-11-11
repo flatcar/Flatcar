@@ -8,6 +8,10 @@ _Flatcar Container Linux is a fully open source, minimal-footprint, secure by de
 
 See the [project website](https://www.flatcar-linux.org/) for information about [current releases](https://www.flatcar-linux.org/releases/).
 
+## Repositories
+
+Github repositories that comprise Flatcar Container Linux are on the [Kinvolk org and using the Flatcar topic](https://github.com/search?q=org%3Akinvolk+topic%3Aflatcar).
+
 ## User Documentation
 
 Flatcar Container Linux has a dedicated [documentation site](https://docs.flatcar-linux.org/). Some helpful links:
