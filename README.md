@@ -47,18 +47,16 @@ For the general guidelines on making PRs/commits easier to review, please checko
 
 ### Minor Contributions
 
-Short-term concerns and minor features are covered in the [issue tracker](https://github.com/flatcar-linux/Flatcar/issues/). When approaching the project please ensure you have searched through / reviewed existing issues and pull requests.
+Short-term concerns and minor features are covered in the [issue tracker](https://github.com/kinvolk/Flatcar/issues/). When approaching the project please ensure you have searched through / reviewed existing issues and pull requests.
 
 If an issue or PR you’d like to contribute to is already assigned to someone, please reach out to them to coordinate your work.
 
 If you would like to start contributing to an issue or PR, please assign it to yourself. It is also often helpful to state your intent in a comment on the issue, as well as to announce a rough ETA of your contribution - this helps others to manage their expectations regarding traction and progress.
 
-For in-progress work have a look at our [development board](https://github.com/orgs/flatcar-linux/projects/3).
-
 ### Major Contributions
 
-Major new features are tracked on our [roadmap](https://github.com/orgs/flatcar-linux/projects/2).
+Major new features are tracked on our [roadmap](https://github.com/orgs/kinvolk/projects/12).
 
 ### Requesting new packages
 
-Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines, and please use the "New Package Request" issue type to [file your request](https://github.com/flatcar-linux/Flatcar/issues/new/choose).
+Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines, and please use the "New Package Request" issue type to [file your request](https://github.com/kinvolk/Flatcar/issues/new/choose).
