@@ -27,10 +27,6 @@ Flatcar Container Linux follows an Alpha-Beta-Stable release process. New featur
 
 Note that contrary to features, bug fixes for any release channel will be released to that respective channel directly, i.e. Alpha bug fixes will be included in the next Alpha, Beta fixes will directly go to Beta, and Stable fixes will be released with the next Stable.
 
-### Edge
-
-There’s a fourth channel which is roughly based on Alpha, but otherwise unrelated to the other three - the Edge channel. Edge is meant for testing cutting-edge features, e.g. new BPF functionality in the Linux kernel, or new container runtimes. Edge features are for experimenting, there is no guarantee that Alpha will pick those up.
-
 ## General discussions on the project and its direction
 
 For general discussions around Flatcar Container Linux please join our forums (Google groups) for [users](https://groups.google.com/forum/#!forum/flatcar-linux-user) and for [developers](https://groups.google.com/forum/#!forum/flatcar-linux-dev). Please do not use the GitHub project for general discussions. For a quick chat with other users and developers try the `#flatcar` IRC channel on irc.freenode.net.
