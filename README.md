@@ -6,7 +6,7 @@ _Flatcar Container Linux is a fully open source, minimal-footprint, secure by de
 
 ## Releases
 
-See the [project website](https://www.flatcar-linux.org/) for information about [current releases](https://www.flatcar-linux.org/releases/).
+See the [project website](https://kinvolk.io/flatcar-container-linux/) for information about [current releases](https://kinvolk.io/flatcar-container-linux/releases/). 
 
 ## Repositories
 
@@ -14,12 +14,12 @@ Github repositories that comprise Flatcar Container Linux are on the [Kinvolk or
 
 ## User Documentation
 
-Flatcar Container Linux has a dedicated [documentation site](https://docs.flatcar-linux.org/). Some helpful links:
+Flatcar Container Linux has a dedicated [documentation site](https://kinvolk.io/docs/flatcar-container-linux/latest/). Some helpful links:
 
-* [Getting started](https://docs.flatcar-linux.org/#getting-started)
-* [Working with clusters](https://docs.flatcar-linux.org/#working-with-clusters)
-* [Migrating from CoreOS Container Linux](https://docs.flatcar-linux.org/os/migrate-from-container-linux/)
-  * [Updating directly from CoreOS Container Linux](https://docs.flatcar-linux.org/os/update-from-container-linux/)
+* [Getting started](https://kinvolk.io/docs/flatcar-container-linux/latest/installing/)
+* [Working with clusters](https://kinvolk.io/docs/flatcar-container-linux/latest/#creating-clusters)
+* [Migrating from CoreOS Container Linux](https://kinvolk.io/docs/flatcar-container-linux/latest/migrating-from-coreos/)
+  * [Updating directly from CoreOS Container Linux](https://kinvolk.io/docs/flatcar-container-linux/latest/migrating-from-coreos/update-from-container-linux/)
 
 ## Release process
 
