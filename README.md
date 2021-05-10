@@ -35,7 +35,7 @@ For quick questions or for just hanging out with the community please use
 If you are thinking of making a contribution, then please engage with the project as early as possible -- by commenting on an existing issue, or creating a new issue, on GitHub. Consider the project’s mission, and how your contribution furthers it.
 Making your intent visible early on can be a major factor for getting your work accepted.
 
-Join us in our monthly [community meetings](tree/main/community-meetings) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
+Join us in our monthly [community meetings](community-meetings) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
 Meeting agendas are published in advance. If you have a pressing issue of common interest you'd like discussed, please let us know on Matrix, or simply bring it to the next meeting's Q&A.
 For more sizeable agenda items please consider filing a PR to the agenda of the next meeting.
 
