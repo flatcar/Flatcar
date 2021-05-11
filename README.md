@@ -32,6 +32,10 @@ For quick questions or for just hanging out with the community please use
 * matrix (preferred): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 * IRC (bridged to matrix): #flatcar on freenode, e.g. [https://kiwiirc.com/nextclient/irc.freenode.net/#flatcar](https://kiwiirc.com/nextclient/irc.freenode.net/#flatcar)
 
+For general discussions please head to our groups / mailing lists:
+* Flatcar Users: https://groups.google.com/g/flatcar-linux-user
+* Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
+
 If you are thinking of making a contribution, then please engage with the project as early as possible -- by commenting on an existing issue, or creating a new issue, on GitHub. Consider the project’s mission, and how your contribution furthers it.
 Making your intent visible early on can be a major factor for getting your work accepted.
 
