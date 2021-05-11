@@ -9,8 +9,8 @@ Please propose ownership by filing a PR for this document.
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
-| EC2         |                                |   X   |      X      | @kinvolk/flatcar-maintainers | #107 | EC2 vendor tools not fully supported (e.g. SSM agent for run-command);  IAM 2.0 support missing |
-| Azure       |                                |   X   |      X      | @kinvolk/flatcar-maintainers |    | HyperV telemetry support missing; needs tracking issue |
+| EC2         |           Partial              |   X   |      X      | @kinvolk/flatcar-maintainers | [#107](https://github.com/kinvolk/Flatcar/issues/107) | EC2 vendor tools not fully supported (e.g. SSM agent for run-command);  IAM 2.0 support missing |
+| Azure       |           Partial              |   X   |      X      | @kinvolk/flatcar-maintainers |    | HyperV telemetry support missing; needs tracking issue |
 | GCE         |               X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
 | Digital Ocean (VMs) |       X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
 | Equinix Metal |             X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
