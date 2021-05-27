@@ -29,8 +29,7 @@ For instance, please use the "New Package Request" issue type to [file your requ
 ## Participate and contribute
 
 For quick questions or for just hanging out with the community please use
-* matrix (preferred): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
-* IRC (bridged to matrix): #flatcar on freenode, e.g. [https://kiwiirc.com/nextclient/irc.freenode.net/#flatcar](https://kiwiirc.com/nextclient/irc.freenode.net/#flatcar)
+* Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 
 For general discussions please head to our groups / mailing lists:
 * Flatcar Users: https://groups.google.com/g/flatcar-linux-user
