@@ -35,12 +35,11 @@ Please propose ownership by filing a PR for this document.
 | VirtualBox |                                 |   X   |             | [no owner] |                      |       |
 | Vagrant |                                    |   X   |             | [no owner] |                      | Isn't this plain qemu/kvm? |
 
-## Public cloud (k8s)
+## Managed Kubernetes
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
 | EKS         |                                |   X   |             | [no owner] |                      |       |
-| AKS Engine  |                                |   X   |             | [no owner] |                      | https://kinvolk.io/blog/2020/12/supercharging-aks-engine-with-flatcar-container-linux/ |
 | GiantSwarm  |                                |   X   |             | Provider |                        |       |
 
 ## Cluster API
@@ -55,10 +54,11 @@ Please propose ownership by filing a PR for this document.
 | CAPM3       |                                | [no owner] |        |                                   |       |
 | CAPG        |                                | [no owner] |        |                                   |       |
 
-## k8s Distros
+## Kubernetes Distros
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
+| AKS Engine  |                                |   X   |             | [no owner] |                      | https://kinvolk.io/blog/2020/12/supercharging-aks-engine-with-flatcar-container-linux/ |
 | Rancher (rke) |                              |   X   |             | [no owner] |                      |       |
 | Rancher (rke2) |                             |       |             | [no owner] |                      |       |
 | Lokomotive |                X                |   X   |      X      | @kinvolk/lokomotive-developers |  |       |
