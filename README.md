@@ -30,7 +30,7 @@ For instance, please use the "New Package Request" issue type to [file your requ
 
 For quick questions or for just hanging out with the community please use
 * Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
-* Our IRC channel (Libera.chat): #[flatcar](ircs://irc.libera.chat:6697/#flatcar)
+* A bridged IRC channel (Libera.chat): #[flatcar](ircs://irc.libera.chat:6697/#flatcar) channel is also available.
 
 For general discussions please head to our groups / mailing lists:
 * Flatcar Users: https://groups.google.com/g/flatcar-linux-user
