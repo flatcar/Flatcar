@@ -48,11 +48,15 @@ The guides aim to provide a solid base for working with the SDK to help you fili
 
 For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
 
+While short-term concerns are logged in our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues), long-term items are reflected on our [roadmap board](https://github.com/orgs/kinvolk/projects/16).
+
 ## Release process
 
 Flatcar Container Linux follows an Alpha-Beta-Stable release process. New features and major version upgrades will enter the Alpha channel for initial testing, then transition to Beta, before landing in Stable.
 
 Note that unlike features, bug fixes for any release channel will be released to that respective channel directly, i.e. Alpha bug fixes will be included in the next Alpha, Beta fixes will directly go to Beta, and Stable fixes will be released with the next Stable.
+
+We plan our releases in a 14-day cadence. The maintainer team holds fortnightly release meetings - both as recurring part of our monthly [community calls](tree/main/community-meetings/) as well as a separate meeting in-between the monthly community call cadence. Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/kinvolk/projects/15).
 
 ### LTS
 
