@@ -43,7 +43,7 @@ While short-term concerns are logged in our [issue tracker](https://github.com/f
 We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our community calls and release planning meeting series which interested folks can comfortably import into the calendar app of their choice.
 
 Join us in our monthly [community meetings](community-meetings) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
-Meeting agendas are published in advance - watch out for [open PRs on the communit-meetings/](https://github.com/flatcar-linux/Flatcar/pulls) folder. If you have a pressing issue of common interest you'd like discussed, please let us know on Matrix, or simply bring it to the next meeting's Q&A.
+Meeting agendas are published in advance - watch out for [open PRs on the community-meetings/](https://github.com/flatcar-linux/Flatcar/pulls) folder. If you have a pressing issue of common interest you'd like discussed, please let us know on Matrix, or simply bring it to the next meeting's Q&A.
 
 For more sizeable agenda items please consider speaking up on the PR of the agenda of the next meeting, or file a new PR if the upcoming meeting's agenda was already merged.
 
@@ -51,7 +51,7 @@ For more sizeable agenda items please consider speaking up on the PR of the agen
 * Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
   * Meeting ID: 843 3611 6610
   * Passcode: 444888
-* A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
+* A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 While release planning is a recurring part of each community call we also conduct separate release plannings - the Flatcar Alpha channel roughly has a 2-week release cadence, therefore one planning per month does not suffice.
 
@@ -70,7 +70,7 @@ For quick questions or for just hanging out with the community please use
 
 ### Discussions
 
-For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar-linux/Flatcar/discussions). Feel to open a new discussion if you don't find an existing one covering your topic.
+For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar-linux/Flatcar/discussions). Feel free to open a new discussion if you don't find an existing one covering your topic.
 
 ### Mailing lists
 
