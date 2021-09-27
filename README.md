@@ -28,20 +28,8 @@ For instance, please use the "New Package Request" issue type to [file your requ
 
 ## Participate and contribute
 
-For quick questions or for just hanging out with the community please use
-* Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
-* A bridged IRC channel (Libera.chat): #[flatcar](ircs://irc.libera.chat:6697/#flatcar) channel is also available.
-
-For general discussions please head to our groups / mailing lists:
-* Flatcar Users: https://groups.google.com/g/flatcar-linux-user
-* Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
-
 If you are thinking of making a contribution, then please engage with the project as early as possible -- by commenting on an existing issue, or creating a new issue, on GitHub. Consider the project’s mission, and how your contribution furthers it.
 Making your intent visible early on can be a major factor for getting your work accepted.
-
-Join us in our monthly [community meetings](community-meetings) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
-Meeting agendas are published in advance. If you have a pressing issue of common interest you'd like discussed, please let us know on Matrix, or simply bring it to the next meeting's Q&A.
-For more sizeable agenda items please consider filing a PR to the agenda of the next meeting.
 
 For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://docs.flatcar-linux.org/reference/developer-guides/); particularly the [customise images howto](https://docs.flatcar-linux.org/reference/developer-guides/sdk-modifying-flatcar/).
 The guides aim to provide a solid base for working with the SDK to help you filing successful PRs to the Flatcar project.
@@ -49,6 +37,46 @@ The guides aim to provide a solid base for working with the SDK to help you fili
 For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
 
 While short-term concerns are logged in our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues), long-term items are reflected on our [roadmap board](https://github.com/orgs/kinvolk/projects/16).
+
+### Monthly Community meeting and release planning
+
+We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our community calls and release planning meeting series which interested folks can comfortably import into the calendar app of their choice.
+
+Join us in our monthly [community meetings](community-meetings) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
+Meeting agendas are published in advance - watch out for [open PRs on the communit-meetings/](https://github.com/flatcar-linux/Flatcar/pulls) folder. If you have a pressing issue of common interest you'd like discussed, please let us know on Matrix, or simply bring it to the next meeting's Q&A.
+
+For more sizeable agenda items please consider speaking up on the PR of the agenda of the next meeting, or file a new PR if the upcoming meeting's agenda was already merged.
+
+**Community calls are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+* Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
+  * Meeting ID: 843 3611 6610
+  * Passcode: 444888
+* A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
+
+While release planning is a recurring part of each community call we also conduct separate release plannings - the Flatcar Alpha channel roughly has a 2-week release cadence, therefore one planning per month does not suffice.
+
+**Additional stand-alone release planning meetings commence every 4th Tuesday of a month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+* Zoom link: [https://us06web.zoom.us/j/82054240491](https://us06web.zoom.us/j/82054240491)
+  * Meeting ID: 820 5424 0491
+  * Passcode: 444888
+* A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
+
+
+### Chat
+
+For quick questions or for just hanging out with the community please use
+* Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
+* A bridged IRC channel (Libera.chat): #[flatcar](ircs://irc.libera.chat:6697/#flatcar) channel is also available.
+
+### Discussions
+
+For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar-linux/Flatcar/discussions). Feel to open a new discussion if you don't find an existing one covering your topic.
+
+### Mailing lists
+
+Though the use of Github Discussions is encouraged (see above), we also maintain groups / mailing lists for a more old-fashioned way of having a discussion. Please note that we might consider to discontinue these mailing lists at some point in the future.
+* Flatcar Users: https://groups.google.com/g/flatcar-linux-user
+* Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
 
 ## Release process
 
