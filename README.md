@@ -48,6 +48,8 @@ Meeting agendas are published in advance - watch out for [open PRs on the commun
 For more sizeable agenda items please consider speaking up on the PR of the agenda of the next meeting, or file a new PR if the upcoming meeting's agenda was already merged.
 
 **Community calls are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+
+**EXCEPT for the week of October 12th, 2021 - we'll meet one week later (October 19th) this time to make room for KubeCon**
 * Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
   * Meeting ID: 843 3611 6610
   * Passcode: 444888
