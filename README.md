@@ -36,7 +36,7 @@ The guides aim to provide a solid base for working with the SDK to help you fili
 
 For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
 
-While short-term concerns are logged in our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues), long-term items are reflected on our [roadmap board](https://github.com/orgs/kinvolk/projects/16).
+While short-term concerns are logged in our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues), long-term items are reflected on our [roadmap board](https://github.com/orgs/flatcar-linux/projects/2).
 
 ### Monthly Community meeting and release planning
 
