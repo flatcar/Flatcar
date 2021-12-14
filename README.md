@@ -48,6 +48,9 @@ Meeting agendas are published in advance - watch out for [open PRs on the commun
 For more sizeable agenda items please consider speaking up on the PR of the agenda of the next meeting, or file a new PR if the upcoming meeting's agenda was already merged.
 
 **Community calls are on the second Tuesday of every month at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
+
+**EXCEPT the call on Dec 14, 2021 - the call starts 30 minutes earlier than usual, at 5:00pm CET / 9:30pm IST / 4:00pm GMT / 11:00am EST / 8:00am PST***
+
 * Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
   * Meeting ID: 843 3611 6610
   * Passcode: 444888
