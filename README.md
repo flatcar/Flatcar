@@ -49,7 +49,7 @@ For more sizeable agenda items please consider speaking up on the PR of the agen
 
 **Community calls are on the second Tuesday of every month at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
 
-**EXCEPT the call on Dec 14, 2021 - the call starts 30 minutes earlier than usual, at 5:00pm CET / 9:30pm IST / 4:00pm GMT / 11:00am EST / 8:00am PST***
+**EXCEPT the December 2021 call - this call will happen on Friday Dec 17, 2021 at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
 
 * Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
   * Meeting ID: 843 3611 6610
