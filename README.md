@@ -48,9 +48,6 @@ Meeting agendas are published in advance - watch out for [open PRs on the commun
 For more sizeable agenda items please consider speaking up on the PR of the agenda of the next meeting, or file a new PR if the upcoming meeting's agenda was already merged.
 
 **Community calls are on the second Tuesday of every month at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
-
-**EXCEPT the December 2021 call - this call will happen on Friday Dec 17, 2021 at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
-
 * Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
   * Meeting ID: 843 3611 6610
   * Passcode: 444888
@@ -59,6 +56,9 @@ For more sizeable agenda items please consider speaking up on the PR of the agen
 While release planning is a recurring part of each community call we also conduct separate release plannings - the Flatcar Alpha channel roughly has a 2-week release cadence, therefore one planning per month does not suffice.
 
 **Additional stand-alone release planning meetings commence every 4th Tuesday of a month at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
+
+**No release planning in December - the maintainer team is enjoying their vacation. Se you all in January!**
+
 * Zoom link: [https://us06web.zoom.us/j/82054240491](https://us06web.zoom.us/j/82054240491)
   * Meeting ID: 820 5424 0491
   * Passcode: 444888
