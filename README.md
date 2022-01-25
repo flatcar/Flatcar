@@ -57,8 +57,6 @@ While release planning is a recurring part of each community call we also conduc
 
 **Additional stand-alone release planning meetings commence every 4th Tuesday of a month at 10pm IST / 5:30pm CET / 4:30pm GMT / 11:30am EDT / 8:30am PST**
 
-**No release planning in December - the maintainer team is enjoying their vacation. Se you all in January!**
-
 * Zoom link: [https://us06web.zoom.us/j/82054240491](https://us06web.zoom.us/j/82054240491)
   * Meeting ID: 820 5424 0491
   * Passcode: 444888
