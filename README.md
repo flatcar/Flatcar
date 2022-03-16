@@ -85,7 +85,7 @@ Flatcar Container Linux follows an Alpha-Beta-Stable release process. New featur
 
 Note that unlike features, bug fixes for any release channel will be released to that respective channel directly, i.e. Alpha bug fixes will be included in the next Alpha, Beta fixes will directly go to Beta, and Stable fixes will be released with the next Stable.
 
-We plan our releases in a 14-day cadence. The maintainer team holds fortnightly release meetings - both as recurring part of our monthly [community calls](tree/main/community-meetings/) as well as a separate meeting in-between the monthly community call cadence. Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/kinvolk/projects/15).
+We plan our releases in a 14-day cadence. The maintainer team holds fortnightly release meetings - both as recurring part of our monthly [community calls](tree/main/community-meetings/) as well as a separate meeting in-between the monthly community call cadence. Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/flatcar-linux/projects/7).
 
 ### LTS
 
