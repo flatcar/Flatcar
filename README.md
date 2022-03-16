@@ -24,7 +24,7 @@ Flatcar Container Linux has a dedicated [documentation site](https://docs.flatca
 ## Report bugs and request features
 
 Please file a respective [issue](issues) right here in the top-level github project.
-For instance, please use the "New Package Request" issue type to [file your request](https://github.com/kinvolk/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
+For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar-linux/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
 
 ## Participate and contribute
 
@@ -126,4 +126,4 @@ The Working Group are project administrators/maintainers and ultimately responsi
 
 The repositories are currently part of the Kinvolk org for historical reasons. Flatcar will move to its own github org soon.
 
-Meanwhile, github repositories that comprise Flatcar Container Linux can be found via the [Flatcar topic](https://github.com/search?q=org%3Akinvolk+topic%3Aflatcar).
+Meanwhile, github repositories that comprise Flatcar Container Linux can be found via the [organization](https://github.com/flatcar-linux) page.
