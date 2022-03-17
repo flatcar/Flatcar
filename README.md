@@ -36,7 +36,14 @@ The guides aim to provide a solid base for working with the SDK to help you fili
 
 For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
 
-While short-term concerns are logged in our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues), long-term items are reflected on our [roadmap board](https://github.com/orgs/flatcar-linux/projects/2).
+## Project status and roadmap - What's everybody working on, right now and in the future?
+
+1. short-term concerns (bugs and minor enhanceents) enter the project via our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues)
+2. our [tactical board](https://github.com/orgs/flatcar-linux/projects/7/views/1) reflects the issues and PRs the maintainers are currently engaged with
+3. items which are done will be assigned to an upcoming release on the [release board](https://github.com/orgs/flatcar-linux/projects/7/views/8)
+   in our release planning calls
+
+Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar-linux/projects/7/views/9).
 
 ### Monthly Community meeting and release planning
 
