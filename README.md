@@ -38,8 +38,8 @@ For the general guidelines on making PRs/commits easier to review, please check 
 
 ## Project status and roadmap - What's everybody working on, right now and in the future?
 
-1. short-term concerns (bugs and minor enhanceents) enter the project via our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues)
-2. our [tactical board](https://github.com/orgs/flatcar-linux/projects/7/views/1) reflects the issues and PRs the maintainers are currently engaged with
+1. short-term concerns (bugs and minor enhancements) enter the project via our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues)
+2. our [tactical board](https://github.com/orgs/flatcar-linux/projects/7/views/1) reflects the issues and PRs the maintainers and the contributors are currently engaged with
 3. items which are done will be assigned to an upcoming release on the [release board](https://github.com/orgs/flatcar-linux/projects/7/views/8)
    in our release planning calls
 
