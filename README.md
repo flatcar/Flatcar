@@ -21,6 +21,8 @@ Flatcar Container Linux has a dedicated [documentation site](https://docs.flatca
 
 **Does Flatcar run in my environment?** Consult the [interop-matrix](interop-matrix.md).
 
+**Does Flatcar have CIS Benchmarks?** Consult the [CIS reports](CIS/README.md).
+
 ## Report bugs and request features
 
 Please file a respective [issue](issues) right here in the top-level github project.
