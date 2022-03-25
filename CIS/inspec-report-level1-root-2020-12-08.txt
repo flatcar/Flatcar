@@ -1,0 +1,2415 @@
+
+Profile: CIS Distribution Independent Linux Benchmark Profile (cis-dil-benchmark)
+Version: 0.4.4
+Target:  ssh://root@localhost:2222
+
+  ×  cis-dil-benchmark-1.1.1.1: Ensure mounting of cramfs filesystems is disabled (1 failed)
+     ✔  Kernel Module cramfs is expected not to be loaded
+     ×  Kernel Module cramfs is expected to be disabled
+     expected `Kernel Module cramfs.disabled?` to be truthy, got false
+  ×  cis-dil-benchmark-1.1.1.2: Ensure mounting of freevxfs filesystems is disabled (1 failed)
+     ✔  Kernel Module freevxfs is expected not to be loaded
+     ×  Kernel Module freevxfs is expected to be disabled
+     expected `Kernel Module freevxfs.disabled?` to be truthy, got false
+  ×  cis-dil-benchmark-1.1.1.3: Ensure mounting of jffs2 filesystems is disabled (1 failed)
+     ✔  Kernel Module jffs2 is expected not to be loaded
+     ×  Kernel Module jffs2 is expected to be disabled
+     expected `Kernel Module jffs2.disabled?` to be truthy, got false
+  ×  cis-dil-benchmark-1.1.1.4: Ensure mounting of hfs filesystems is disabled (1 failed)
+     ✔  Kernel Module hfs is expected not to be loaded
+     ×  Kernel Module hfs is expected to be disabled
+     expected `Kernel Module hfs.disabled?` to be truthy, got false
+  ×  cis-dil-benchmark-1.1.1.5: Ensure mounting of hfsplus filesystems is disabled (1 failed)
+     ✔  Kernel Module hfsplus is expected not to be loaded
+     ×  Kernel Module hfsplus is expected to be disabled
+     expected `Kernel Module hfsplus.disabled?` to be truthy, got false
+  ×  cis-dil-benchmark-1.1.1.6: Ensure mounting of squashfs filesystems is disabled (1 failed)
+     ✔  Kernel Module squashfs is expected not to be loaded
+     ×  Kernel Module squashfs is expected to be disabled
+     expected `Kernel Module squashfs.disabled?` to be truthy, got false
+  ×  cis-dil-benchmark-1.1.1.7: Ensure mounting of udf filesystems is disabled (1 failed)
+     ✔  Kernel Module udf is expected not to be loaded
+     ×  Kernel Module udf is expected to be disabled
+     expected `Kernel Module udf.disabled?` to be truthy, got false
+  ↺  cis-dil-benchmark-1.1.1.8: Ensure mounting of FAT filesystems is disabled
+     ↺  Skipped control due to only_if condition.
+  ✔  cis-dil-benchmark-1.1.2: Ensure separate partition exists for /tmp
+     ✔  Mount /tmp is expected to be mounted
+  ✔  cis-dil-benchmark-1.1.3: Ensure nodev option set on /tmp partition
+     ✔  Mount /tmp options is expected to include "nodev"
+  ✔  cis-dil-benchmark-1.1.4: Ensure nosuid option set on /tmp partition
+     ✔  Mount /tmp options is expected to include "nosuid"
+  ×  cis-dil-benchmark-1.1.5: Ensure noexec option set on /tmp partition
+     ×  Mount /tmp options is expected to include "noexec"
+     expected ["rw", "nosuid", "nodev", "seclabel", "nr_inodes=409600"] to include "noexec"
+  ↺  cis-dil-benchmark-1.1.6: Ensure separate partition exists for /var
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.1.7: Ensure separate partition exists for /var/tmp
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.1.8: Ensure nodev option set on /var/tmp partition
+     ↺  Skipped control due to only_if condition: /var/tmp is mounted
+  ↺  cis-dil-benchmark-1.1.9: Ensure nosuid option set on /var/tmp partition
+     ↺  Skipped control due to only_if condition: /var/tmp is mounted
+  ↺  cis-dil-benchmark-1.1.10: Ensure noexec option set on /var/tmp partition
+     ↺  Skipped control due to only_if condition: /var/tmp is mounted
+  ↺  cis-dil-benchmark-1.1.11: Ensure separate partition exists for /var/log
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.1.12: Ensure separate partition exists for /var/log/audit
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.1.13: Ensure separate partition exists for /home
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.1.14: Ensure nodev option set on /home partition
+     ↺  Skipped control due to only_if condition: /home is mounted
+  ✔  cis-dil-benchmark-1.1.15: Ensure nodev option set on /dev/shm partition
+     ✔  Mount /dev/shm options is expected to include "nodev"
+  ✔  cis-dil-benchmark-1.1.16: Ensure nosuid option set on /dev/shm partitionrun
+     ✔  Mount /dev/shm options is expected to include "nosuid"
+  ×  cis-dil-benchmark-1.1.17: Ensure noexec option set on /dev/shm partition
+     ×  Mount /dev/shm options is expected to include "noexec"
+     expected ["rw", "nosuid", "nodev", "seclabel"] to include "noexec"
+  ↺  cis-dil-benchmark-1.1.18: Ensure nodev option set on removable media partitions
+     ↺  Not implemented
+  ↺  cis-dil-benchmark-1.1.19: Ensure nosuid option set on removable media partitions
+     ↺  Not implemented
+  ↺  cis-dil-benchmark-1.1.20: Ensure noexec option set on removable media partitions
+     ↺  Not implemented
+  ✔  cis-dil-benchmark-1.1.21: Ensure sticky bit is set on all world-writable directories
+     ✔  Command: `df --local -P | awk '{ if (NR!=1) print $6 }' | xargs -I '{}' find '{}' -xdev -type d ( -perm -0002 -a ! -perm -1000 )` stdout is expected to cmp == ""
+  ✔  cis-dil-benchmark-1.1.22: Disable Automounting
+     ✔  Service autofs is expected not to be enabled
+     ✔  Service autofs is expected not to be running
+     ✔  Service autofs is expected not to be enabled
+     ✔  Service autofs is expected not to be running
+  ×  cis-dil-benchmark-1.1.23: Disable USB Storage (1 failed)
+     ✔  Kernel Module usb_storage is expected not to be loaded
+     ×  Kernel Module usb_storage is expected to be disabled
+     expected `Kernel Module usb_storage.disabled?` to be truthy, got false
+  ↺  cis-dil-benchmark-1.2.1: Ensure package manager repositories are configured
+     ↺  Not implemented
+  ↺  cis-dil-benchmark-1.2.2: Ensure GPG keys are configured
+     ↺  Not implemented
+  ×  cis-dil-benchmark-1.3.1: Ensure AIDE is installed (2 failed)
+     ×  System Package aide is expected to be installed
+     expected that `System Package aide` is installed
+     ×  Command: `aide` is expected to exist
+     expected Command: `aide` to exist
+  ×  cis-dil-benchmark-1.3.2: Ensure filesystem integrity is regularly checked (4 failed)
+     ×  File /var/spool/cron/crontabs/root content is expected to match /aide (--check|-C)/
+     expected nil to match /aide (--check|-C)/
+     ×  File /var/spool/cron/root content is expected to match /aide (--check|-C)/
+     expected nil to match /aide (--check|-C)/
+     ×  File /etc/crontab content is expected to match /aide (--check|-C)/
+     expected nil to match /aide (--check|-C)/
+     ×  File /etc/cron.weekly/mdadm content is expected to match /aide (--check|-C)/
+     expected "#!/bin/sh\n# This requires that AUTOCHECK is true in /etc/default/mdadm\nif [ -x /usr/sbin/checkarray ] && [ $(date +\\%d) -le 7 ]; then\n\t/usr/sbin/checkarray --cron --all --idle --quiet\nfi\n" to match /aide (--check|-C)/
+     Diff:
+     @@ -1,5 +1,9 @@
+     -/aide (--check|-C)/
+     +#!/bin/sh
+     +# This requires that AUTOCHECK is true in /etc/default/mdadm
+     +if [ -x /usr/sbin/checkarray ] && [ $(date +\%d) -le 7 ]; then
+     +	/usr/sbin/checkarray --cron --all --idle --quiet
+     +fi
+
+  ×  cis-dil-benchmark-1.4.1: Ensure permissions on bootloader config are configured (22 failed)
+     ×  File /boot/grub/grub.conf is expected to exist
+     expected File /boot/grub/grub.conf to exist
+     ✔  File /boot/grub/grub.conf is expected not to be readable by group
+     ✔  File /boot/grub/grub.conf is expected not to be writable by group
+     ✔  File /boot/grub/grub.conf is expected not to be executable by group
+     ✔  File /boot/grub/grub.conf is expected not to be readable by other
+     ✔  File /boot/grub/grub.conf is expected not to be writable by other
+     ✔  File /boot/grub/grub.conf is expected not to be executable by other
+     ×  File /boot/grub/grub.conf gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/grub/grub.conf uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/grub/grub.cfg is expected to exist
+     expected File /boot/grub/grub.cfg to exist
+     ✔  File /boot/grub/grub.cfg is expected not to be readable by group
+     ✔  File /boot/grub/grub.cfg is expected not to be writable by group
+     ✔  File /boot/grub/grub.cfg is expected not to be executable by group
+     ✔  File /boot/grub/grub.cfg is expected not to be readable by other
+     ✔  File /boot/grub/grub.cfg is expected not to be writable by other
+     ✔  File /boot/grub/grub.cfg is expected not to be executable by other
+     ×  File /boot/grub/grub.cfg gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/grub/grub.cfg uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/grub/menu.lst is expected to exist
+     expected File /boot/grub/menu.lst to exist
+     ✔  File /boot/grub/menu.lst is expected not to be readable by group
+     ✔  File /boot/grub/menu.lst is expected not to be writable by group
+     ✔  File /boot/grub/menu.lst is expected not to be executable by group
+     ✔  File /boot/grub/menu.lst is expected not to be readable by other
+     ✔  File /boot/grub/menu.lst is expected not to be writable by other
+     ✔  File /boot/grub/menu.lst is expected not to be executable by other
+     ×  File /boot/grub/menu.lst gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/grub/menu.lst uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/boot/grub/grub.conf is expected to exist
+     expected File /boot/boot/grub/grub.conf to exist
+     ✔  File /boot/boot/grub/grub.conf is expected not to be readable by group
+     ✔  File /boot/boot/grub/grub.conf is expected not to be writable by group
+     ✔  File /boot/boot/grub/grub.conf is expected not to be executable by group
+     ✔  File /boot/boot/grub/grub.conf is expected not to be readable by other
+     ✔  File /boot/boot/grub/grub.conf is expected not to be writable by other
+     ✔  File /boot/boot/grub/grub.conf is expected not to be executable by other
+     ×  File /boot/boot/grub/grub.conf gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/boot/grub/grub.conf uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/boot/grub/grub.cfg is expected to exist
+     expected File /boot/boot/grub/grub.cfg to exist
+     ✔  File /boot/boot/grub/grub.cfg is expected not to be readable by group
+     ✔  File /boot/boot/grub/grub.cfg is expected not to be writable by group
+     ✔  File /boot/boot/grub/grub.cfg is expected not to be executable by group
+     ✔  File /boot/boot/grub/grub.cfg is expected not to be readable by other
+     ✔  File /boot/boot/grub/grub.cfg is expected not to be writable by other
+     ✔  File /boot/boot/grub/grub.cfg is expected not to be executable by other
+     ×  File /boot/boot/grub/grub.cfg gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/boot/grub/grub.cfg uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ✔  File /boot/boot/grub/menu.lst is expected to exist
+     ×  File /boot/boot/grub/menu.lst is expected not to be readable by group
+     expected File /boot/boot/grub/menu.lst not to be readable by group
+     ✔  File /boot/boot/grub/menu.lst is expected not to be writable by group
+     ×  File /boot/boot/grub/menu.lst is expected not to be executable by group
+     expected File /boot/boot/grub/menu.lst not to be executable by group
+     ×  File /boot/boot/grub/menu.lst is expected not to be readable by other
+     expected File /boot/boot/grub/menu.lst not to be readable by other
+     ✔  File /boot/boot/grub/menu.lst is expected not to be writable by other
+     ×  File /boot/boot/grub/menu.lst is expected not to be executable by other
+     expected File /boot/boot/grub/menu.lst not to be executable by other
+     ✔  File /boot/boot/grub/menu.lst gid is expected to cmp == 0
+     ✔  File /boot/boot/grub/menu.lst uid is expected to cmp == 0
+     ×  File /boot/grub2/grub.cfg is expected to exist
+     expected File /boot/grub2/grub.cfg to exist
+     ✔  File /boot/grub2/grub.cfg is expected not to be readable by group
+     ✔  File /boot/grub2/grub.cfg is expected not to be writable by group
+     ✔  File /boot/grub2/grub.cfg is expected not to be executable by group
+     ✔  File /boot/grub2/grub.cfg is expected not to be readable by other
+     ✔  File /boot/grub2/grub.cfg is expected not to be writable by other
+     ✔  File /boot/grub2/grub.cfg is expected not to be executable by other
+     ×  File /boot/grub2/grub.cfg gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /boot/grub2/grub.cfg uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-1.4.2: Ensure bootloader password is set (14 failed)
+     ×  File /boot/grub/grub.conf content is expected to match /^set superusers/
+     expected nil to match /^set superusers/
+     ×  File /boot/grub/grub.conf content is expected to match /^password/
+     expected nil to match /^password/
+     ×  File /boot/grub/grub.cfg content is expected to match /^set superusers/
+     expected nil to match /^set superusers/
+     ×  File /boot/grub/grub.cfg content is expected to match /^password/
+     expected nil to match /^password/
+     ×  File /boot/grub/menu.lst content is expected to match /^set superusers/
+     expected nil to match /^set superusers/
+     ×  File /boot/grub/menu.lst content is expected to match /^password/
+     expected nil to match /^password/
+     ×  File /boot/boot/grub/grub.conf content is expected to match /^set superusers/
+     expected nil to match /^set superusers/
+     ×  File /boot/boot/grub/grub.conf content is expected to match /^password/
+     expected nil to match /^password/
+     ×  File /boot/boot/grub/grub.cfg content is expected to match /^set superusers/
+     expected nil to match /^set superusers/
+     ×  File /boot/boot/grub/grub.cfg content is expected to match /^password/
+     expected nil to match /^password/
+     ×  File /boot/boot/grub/menu.lst content is expected to match /^set superusers/
+     expected "timeout 0\ntitle   CoreOS GRUB2\nroot    (hd0,0)\nkernel  /xen/pvboot-x86_64.elf\n" to match /^set superusers/
+     Diff:
+     @@ -1,4 +1,7 @@
+     -/^set superusers/
+     +timeout 0
+     +title   CoreOS GRUB2
+     +root    (hd0,0)
+     +kernel  /xen/pvboot-x86_64.elf
+
+     ×  File /boot/boot/grub/menu.lst content is expected to match /^password/
+     expected "timeout 0\ntitle   CoreOS GRUB2\nroot    (hd0,0)\nkernel  /xen/pvboot-x86_64.elf\n" to match /^password/
+     Diff:
+     @@ -1,4 +1,7 @@
+     -/^password/
+     +timeout 0
+     +title   CoreOS GRUB2
+     +root    (hd0,0)
+     +kernel  /xen/pvboot-x86_64.elf
+
+     ×  File /boot/grub2/grub.cfg content is expected to match /^set superusers/
+     expected nil to match /^set superusers/
+     ×  File /boot/grub2/grub.cfg content is expected to match /^password/
+     expected nil to match /^password/
+  ×  cis-dil-benchmark-1.4.3: Ensure authentication required for single user mode (3 failed)
+     ×  /etc/shadow with user == "root" passwords is expected not to include "*"
+     expected ["*"] not to include "*"
+     ✔  /etc/shadow with user == "root" passwords is expected not to include "!"
+     ×  File /etc/inittab content is expected to match /^~~:S:respawn:\/sbin\/sulogin/
+     expected nil to match /^~~:S:respawn:\/sbin\/sulogin/
+     ×  File /etc/sysconfig/init content is expected to match /^SINGLE=\/sbin\/sulogin$/
+     expected nil to match /^SINGLE=\/sbin\/sulogin$/
+  ↺  cis-dil-benchmark-1.4.4: Ensure interactive boot is not enabled
+     ↺  Not implemented
+  ×  cis-dil-benchmark-1.5.1: Ensure core dumps are restricted (2 failed)
+     ×  File /etc/security/limits.conf content is expected to match /^\s*\*\s+hard\s+core\s+0\s*(?:#.*)?$/
+     expected "# /etc/security/limits.conf\n#\n#Each line describes a limit for a user in the form:\n#\n#<domain>  ...          hard    nproc           0\n\#@student        -       maxlogins       4\n\n# End of file\n" to match /^\s*\*\s+hard\s+core\s+0\s*(?:#.*)?$/
+     Diff:
+     @@ -1,50 +1,99 @@
+     -/^\s*\*\s+hard\s+core\s+0\s*(?:#.*)?$/
+     +# /etc/security/limits.conf
+     +#
+     +#Each line describes a limit for a user in the form:
+     +#
+     +#<domain>        <type>  <item>  <value>
+     +#
+     +#Where:
+     +#<domain> can be:
+     +#        - a user name
+     +#        - a group name, with @group syntax
+     +#        - the wildcard *, for default entry
+     +#        - the wildcard %, can be also used with %group syntax,
+     +#                 for maxlogin limit
+     +#
+     +#<type> can have the two values:
+     +#        - "soft" for enforcing the soft limits
+     +#        - "hard" for enforcing hard limits
+     +#
+     +#<item> can be one of the following:
+     +#        - core - limits the core file size (KB)
+     +#        - data - max data size (KB)
+     +#        - fsize - maximum filesize (KB)
+     +#        - memlock - max locked-in-memory address space (KB)
+     +#        - nofile - max number of open file descriptors
+     +#        - rss - max resident set size (KB)
+     +#        - stack - max stack size (KB)
+     +#        - cpu - max CPU time (MIN)
+     +#        - nproc - max number of processes
+     +#        - as - address space limit (KB)
+     +#        - maxlogins - max number of logins for this user
+     +#        - maxsyslogins - max number of logins on the system
+     +#        - priority - the priority to run user process with
+     +#        - locks - max number of file locks the user can hold
+     +#        - sigpending - max number of pending signals
+     +#        - msgqueue - max memory used by POSIX message queues (bytes)
+     +#        - nice - max nice priority allowed to raise to values: [-20, 19]
+     +#        - rtprio - max realtime priority
+     +#
+     +#<domain>      <type>  <item>         <value>
+     +#
+     +
+     +#*               soft    core            0
+     +#*               hard    rss             10000
+     +#@student        hard    nproc           20
+     +#@faculty        soft    nproc           20
+     +#@faculty        hard    nproc           50
+     +#ftp             hard    nproc           0
+     +#@student        -       maxlogins       4
+     +
+     +# End of file
+
+     ×  Kernel Parameter fs.suid_dumpable value is expected to eq 0
+     
+     expected: 0
+          got: 2
+     
+     (compared using ==)
+
+  ✔  cis-dil-benchmark-1.5.2: Ensure XD/NX support is enabled
+     ✔  Command: `dmesg | grep NX` stdout is expected to match /NX \(Execute Disable\) protection: active/
+  ✔  cis-dil-benchmark-1.5.3: Ensure address space layout randomization (ASLR) is enabled
+     ✔  Kernel Parameter kernel.randomize_va_space value is expected to eq 2
+  ✔  cis-dil-benchmark-1.5.4: Ensure prelink is disabled
+     ✔  System Package prelink is expected not to be installed
+     ✔  Command: `prelink` is expected not to exist
+  ↺  cis-dil-benchmark-1.6.1.1: Ensure SELinux or AppArmor are installed
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.2.1: Ensure SELinux is not disabled in bootloader configuration
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.2.2: Ensure the SELinux state is enforcing
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.2.3: Ensure SELinux policy is configured
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.2.4: Ensure SETroubleshoot is not installed
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.2.5: Ensure the MCS Translation Service (mcstrans) is not installed
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.2.6: Ensure no unconfined daemons exist
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.3.1: Ensure AppArmor is not disabled in bootloader configuration
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.6.3.2: Ensure all AppArmor Profiles are enforcing
+     ↺  Skipped control due to only_if condition.
+  ✔  cis-dil-benchmark-1.7.1.1: Ensure message of the day is configured properly
+     ✔  Command: `grep -E -i '(\v|\r|\m|\s|$(grep '^ID=' /etc/os-release | cut -d= -f2 | sed -e 's/"//g'))' /etc/motd` stdout is expected to eq ""
+  ✔  cis-dil-benchmark-1.7.1.2: Ensure local login warning banner is configured properly
+     ✔  Command: `grep -E -i '(\v|\r|\m|\s|$(grep '^ID=' /etc/os-release | cut -d= -f2 | sed -e 's/"//g'))' /etc/issue` stdout is expected to eq ""
+  ✔  cis-dil-benchmark-1.7.1.3: Ensure remote login warning banner is configured properly
+     ✔  Command: `grep -E -i '(\v|\r|\m|\s|$(grep '^ID=' /etc/os-release | cut -d= -f2 | sed -e 's/"//g'))' /etc/issue.net` stdout is expected to eq ""
+  ✔  cis-dil-benchmark-1.7.1.4: Ensure permissions on /etc/motd are configured
+     ✔  File /etc/motd group is expected to eq "root"
+     ✔  File /etc/motd owner is expected to eq "root"
+     ✔  File /etc/motd mode is expected to cmp == "0644"
+  ✔  cis-dil-benchmark-1.7.1.5: Ensure permissions on /etc/issue are configured
+     ✔  File /etc/issue group is expected to eq "root"
+     ✔  File /etc/issue owner is expected to eq "root"
+     ✔  File /etc/issue mode is expected to cmp == "0644"
+  ×  cis-dil-benchmark-1.7.1.6: Ensure permissions on /etc/issue.net are configured (3 failed)
+     ×  File /etc/issue.net group is expected to eq "root"
+     
+     expected: "root"
+          got: nil
+     
+     (compared using ==)
+
+     ×  File /etc/issue.net owner is expected to eq "root"
+     
+     expected: "root"
+          got: nil
+     
+     (compared using ==)
+
+     ×  File /etc/issue.net mode is expected to cmp == "0644"
+     can't convert nil into Integer
+  ↺  cis-dil-benchmark-1.7.2: Ensure GDM login banner is configured
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-1.8: Ensure updates, patches, and additional security software are installed
+     ↺  Not implemented
+  ↺  cis-dil-benchmark-2.1.1: Ensure chargen services are not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.2: Ensure daytime services are not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.3: Ensure discard services are not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.4: Ensure echo services are not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.5: Ensure time services are not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.6: Ensure rsh server is not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.7: Ensure talk server is not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.8: Ensure telnet server is not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ↺  cis-dil-benchmark-2.1.9: Ensure tftp server is not enabled
+     ↺  Skipped control due to only_if condition: inetd/xinetd config exists
+  ✔  cis-dil-benchmark-2.1.10: Ensure xinetd is not enabled
+     ✔  Service xinetd is expected not to be enabled
+     ✔  Service xinetd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.1.1: Ensure time synchronization is in use
+     ✔  Command: `ntpd` is expected to exist
+  ×  cis-dil-benchmark-2.2.1.2: Ensure ntp is configured (4 failed)
+     ✔  ntp.conf server is expected not to eq nil
+     ✔  ["default nomodify nopeer noquery notrap limited kod", "127.0.0.1", "[::1]"] is expected to match /default\s+(\S+\s+)*kod(?:\s+|\s?")/
+     ✔  ["default nomodify nopeer noquery notrap limited kod", "127.0.0.1", "[::1]"] is expected to match /default\s+(\S+\s+)*nomodify(?:\s+|\s?")/
+     ✔  ["default nomodify nopeer noquery notrap limited kod", "127.0.0.1", "[::1]"] is expected to match /default\s+(\S+\s+)*notrap(?:\s+|\s?")/
+     ✔  ["default nomodify nopeer noquery notrap limited kod", "127.0.0.1", "[::1]"] is expected to match /default\s+(\S+\s+)*nopeer(?:\s+|\s?")/
+     ✔  ["default nomodify nopeer noquery notrap limited kod", "127.0.0.1", "[::1]"] is expected to match /default\s+(\S+\s+)*noquery(?:\s+|\s?")/
+     ×  File /etc/init.d/ntp content is expected to match /^RUNASUSER=ntp\s*(?:#.*)?$/
+     expected nil to match /^RUNASUSER=ntp\s*(?:#.*)?$/
+     ×  File /etc/init.d/ntpd content is expected to match /daemon\s+(\S+\s+)-u ntp:ntp(?:\s+|\s?")/
+     expected nil to match /daemon\s+(\S+\s+)-u ntp:ntp(?:\s+|\s?")/
+     ×  File /etc/sysconfig/ntpd content is expected to match /^OPTIONS="(?:.)?-u ntp:ntp\s*(?:.)?"\s*(?:#.*)?$/
+     expected nil to match /^OPTIONS="(?:.)?-u ntp:ntp\s*(?:.)?"\s*(?:#.*)?$/
+     ×  File /usr/lib/systemd/system/ntpd.service content is expected to match /^ExecStart=\/usr\/s?bin\/ntpd (?:.)?-u ntp:ntp\s*(?:.)?$/
+     expected "[Unit]\nDescription=Network Time Service\nAfter=ntpdate.service sntp.service\nConflicts=systemd-time...tp/ntp.drift -u ntp:ntp\nPrivateTmp=true\nRestart=always\n\n[Install]\nWantedBy=multi-user.target\n" to match /^ExecStart=\/usr\/s?bin\/ntpd (?:.)?-u ntp:ntp\s*(?:.)?$/
+     Diff:
+     @@ -1,12 +1,23 @@
+     -/^ExecStart=\/usr\/s?bin\/ntpd (?:.)?-u ntp:ntp\s*(?:.)?$/
+     +[Unit]
+     +Description=Network Time Service
+     +After=ntpdate.service sntp.service
+     +Conflicts=systemd-timesyncd.service
+     +
+     +[Service]
+     +ExecStart=/usr/sbin/ntpd -g -n -f /var/lib/ntp/ntp.drift -u ntp:ntp
+     +PrivateTmp=true
+     +Restart=always
+     +
+     +[Install]
+     +WantedBy=multi-user.target
+
+  ↺  cis-dil-benchmark-2.2.1.3: Ensure chrony is configured
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-2.2.1.4: Ensure systemd-timesyncd is configured
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-2.2.2: Ensure X Window System is not installed (2 skipped)
+     ↺  The packages resource is not yet supported on OS coreos
+     ↺  The packages resource is not yet supported on OS coreos
+  ✔  cis-dil-benchmark-2.2.3: Ensure Avahi Server is not enabled
+     ✔  Service avahi-daemon is expected not to be enabled
+     ✔  Service avahi-daemon is expected not to be running
+  ✔  cis-dil-benchmark-2.2.4: Ensure CUPS is not enabled
+     ✔  Service cups is expected not to be enabled
+     ✔  Service cups is expected not to be running
+  ✔  cis-dil-benchmark-2.2.5: Ensure DHCP Server is not enabled
+     ✔  Service isc-dhcp-server is expected not to be enabled
+     ✔  Service isc-dhcp-server is expected not to be running
+     ✔  Service isc-dhcp-server6 is expected not to be enabled
+     ✔  Service isc-dhcp-server6 is expected not to be running
+     ✔  Service dhcpd is expected not to be enabled
+     ✔  Service dhcpd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.6: Ensure LDAP server is not enabled
+     ✔  Service slapd is expected not to be enabled
+     ✔  Service slapd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.7: Ensure NFS and RPC are not enabled
+     ✔  Service nfs-kernel-server is expected not to be enabled
+     ✔  Service nfs-kernel-server is expected not to be running
+     ✔  Service nfs is expected not to be enabled
+     ✔  Service nfs is expected not to be running
+     ✔  Service rpcbind is expected not to be enabled
+     ✔  Service rpcbind is expected not to be running
+  ✔  cis-dil-benchmark-2.2.8: Ensure DNS Server is not enabled
+     ✔  Service named is expected not to be enabled
+     ✔  Service named is expected not to be running
+     ✔  Service bind is expected not to be enabled
+     ✔  Service bind is expected not to be running
+     ✔  Service bind9 is expected not to be enabled
+     ✔  Service bind9 is expected not to be running
+  ✔  cis-dil-benchmark-2.2.9: Ensure FTP Server is not enabled
+     ✔  Service vsftpd is expected not to be enabled
+     ✔  Service vsftpd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.10: Ensure HTTP server is not enabled
+     ✔  Service apache is expected not to be enabled
+     ✔  Service apache is expected not to be running
+     ✔  Service apache2 is expected not to be enabled
+     ✔  Service apache2 is expected not to be running
+     ✔  Service httpd is expected not to be enabled
+     ✔  Service httpd is expected not to be running
+     ✔  Service lighttpd is expected not to be enabled
+     ✔  Service lighttpd is expected not to be running
+     ✔  Service nginx is expected not to be enabled
+     ✔  Service nginx is expected not to be running
+  ✔  cis-dil-benchmark-2.2.11: Ensure IMAP and POP3 server is not enabled
+     ✔  Service dovecot is expected not to be enabled
+     ✔  Service dovecot is expected not to be running
+     ✔  Service courier-imap is expected not to be enabled
+     ✔  Service courier-imap is expected not to be running
+     ✔  Service cyrus-imap is expected not to be enabled
+     ✔  Service cyrus-imap is expected not to be running
+  ✔  cis-dil-benchmark-2.2.12: Ensure Samba is not enabled
+     ✔  Service samba is expected not to be enabled
+     ✔  Service samba is expected not to be running
+     ✔  Service smb is expected not to be enabled
+     ✔  Service smb is expected not to be running
+     ✔  Service smbd is expected not to be enabled
+     ✔  Service smbd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.13: Ensure HTTP Proxy Server is not enabled
+     ✔  Service squid is expected not to be enabled
+     ✔  Service squid is expected not to be running
+     ✔  Service squid3 is expected not to be enabled
+     ✔  Service squid3 is expected not to be running
+  ✔  cis-dil-benchmark-2.2.14: Ensure SNMP Server is not enabled
+     ✔  Service snmpd is expected not to be enabled
+     ✔  Service snmpd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.15: Ensure mail transfer agent is configured for local-only mode
+     ✔  Port 25 with address !~ /^(127\.0\.0\.1|::1)$/ entries is expected to be empty
+  ✔  cis-dil-benchmark-2.2.16: Ensure rsync service is not enabled
+     ✔  Service rsync is expected not to be enabled
+     ✔  Service rsync is expected not to be running
+     ✔  Service rsyncd is expected not to be enabled
+     ✔  Service rsyncd is expected not to be running
+  ✔  cis-dil-benchmark-2.2.17: Ensure NIS Server is not enabled
+     ✔  Service nis is expected not to be enabled
+     ✔  Service nis is expected not to be running
+     ✔  Service ypserv is expected not to be enabled
+     ✔  Service ypserv is expected not to be running
+  ↺  cis-dil-benchmark-2.3.1: Ensure NIS Client is not installed (2 skipped)
+     ↺  The `package` resource is not supported on your OS yet.
+     ↺  The `package` resource is not supported on your OS yet.
+  ↺  cis-dil-benchmark-2.3.2: Ensure rsh client is not installed (3 skipped)
+     ↺  The `package` resource is not supported on your OS yet.
+     ↺  The `package` resource is not supported on your OS yet.
+     ↺  The `package` resource is not supported on your OS yet.
+  ↺  cis-dil-benchmark-2.3.3: Ensure talk client is not installed
+     ↺  The `package` resource is not supported on your OS yet.
+  ↺  cis-dil-benchmark-2.3.4: Ensure telnet client is not installed
+     ↺  The `package` resource is not supported on your OS yet.
+  ↺  cis-dil-benchmark-2.3.5: Ensure LDAP client is not installed (3 skipped)
+     ↺  The `package` resource is not supported on your OS yet.
+     ↺  The `package` resource is not supported on your OS yet.
+     ↺  The `package` resource is not supported on your OS yet.
+  ×  cis-dil-benchmark-3.1.1: Ensure IP forwarding is disabled (1 failed)
+     ✔  Kernel Parameter net.ipv4.ip_forward value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.ip_forward value is expected to cmp == 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using `cmp` matcher)
+
+     ✔  Kernel Parameter net.ipv6.conf.all.forwarding value is expected not to be nil
+     ✔  Kernel Parameter net.ipv6.conf.all.forwarding value is expected to cmp == 0
+  ×  cis-dil-benchmark-3.1.2: Ensure packet redirect sending is disabled (2 failed)
+     ✔  Kernel Parameter net.ipv4.conf.all.send_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.all.send_redirects value is expected to cmp == 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using `cmp` matcher)
+
+     ✔  Kernel Parameter net.ipv4.conf.default.send_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.default.send_redirects value is expected to cmp == 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using `cmp` matcher)
+
+  ✔  cis-dil-benchmark-3.2.1: Ensure source routed packets are not accepted
+     ✔  Kernel Parameter net.ipv4.conf.all.accept_source_route value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.conf.all.accept_source_route value is expected to eq 0
+     ✔  Kernel Parameter net.ipv4.conf.default.accept_source_route value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.conf.default.accept_source_route value is expected to eq 0
+     ✔  Kernel Parameter net.ipv6.conf.all.accept_source_route value is expected not to be nil
+     ✔  Kernel Parameter net.ipv6.conf.all.accept_source_route value is expected to eq 0
+     ✔  Kernel Parameter net.ipv6.conf.default.accept_source_route value is expected not to be nil
+     ✔  Kernel Parameter net.ipv6.conf.default.accept_source_route value is expected to eq 0
+  ×  cis-dil-benchmark-3.2.2: Ensure ICMP redirects are not accepted (3 failed)
+     ✔  Kernel Parameter net.ipv4.conf.all.accept_redirects value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.conf.all.accept_redirects value is expected to eq 0
+     ✔  Kernel Parameter net.ipv4.conf.default.accept_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.default.accept_redirects value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+     ✔  Kernel Parameter net.ipv6.conf.all.accept_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv6.conf.all.accept_redirects value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+     ✔  Kernel Parameter net.ipv6.conf.default.accept_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv6.conf.default.accept_redirects value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-3.2.3: Ensure secure ICMP redirects are not accepted (2 failed)
+     ✔  Kernel Parameter net.ipv4.conf.all.secure_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.all.secure_redirects value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+     ✔  Kernel Parameter net.ipv4.conf.default.secure_redirects value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.default.secure_redirects value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-3.2.4: Ensure suspicious packets are logged (2 failed)
+     ✔  Kernel Parameter net.ipv4.conf.all.log_martians value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.all.log_martians value is expected to eq 1
+     
+     expected: 1
+          got: 0
+     
+     (compared using ==)
+
+     ✔  Kernel Parameter net.ipv4.conf.default.log_martians value is expected not to be nil
+     ×  Kernel Parameter net.ipv4.conf.default.log_martians value is expected to eq 1
+     
+     expected: 1
+          got: 0
+     
+     (compared using ==)
+
+  ✔  cis-dil-benchmark-3.2.5: Ensure broadcast ICMP requests are ignored
+     ✔  Kernel Parameter net.ipv4.icmp_echo_ignore_broadcasts value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.icmp_echo_ignore_broadcasts value is expected to eq 1
+  ✔  cis-dil-benchmark-3.2.6: Ensure bogus ICMP responses are ignored
+     ✔  Kernel Parameter net.ipv4.icmp_ignore_bogus_error_responses value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.icmp_ignore_bogus_error_responses value is expected to eq 1
+  ✔  cis-dil-benchmark-3.2.7: Ensure Reverse Path Filtering is enabled
+     ✔  Kernel Parameter net.ipv4.conf.all.rp_filter value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.conf.all.rp_filter value is expected to eq 1
+     ✔  Kernel Parameter net.ipv4.conf.default.rp_filter value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.conf.default.rp_filter value is expected to eq 1
+  ✔  cis-dil-benchmark-3.2.8: Ensure TCP SYN Cookies is enabled
+     ✔  Kernel Parameter net.ipv4.tcp_syncookies value is expected not to be nil
+     ✔  Kernel Parameter net.ipv4.tcp_syncookies value is expected to eq 1
+  ×  cis-dil-benchmark-3.2.9: Ensure IPv6 router advertisements are not accepted (2 failed)
+     ✔  Kernel Parameter net.ipv6.conf.all.accept_ra value is expected not to be nil
+     ×  Kernel Parameter net.ipv6.conf.all.accept_ra value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+     ✔  Kernel Parameter net.ipv6.conf.default.accept_ra value is expected not to be nil
+     ×  Kernel Parameter net.ipv6.conf.default.accept_ra value is expected to eq 0
+     
+     expected: 0
+          got: 1
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-3.3.1: Ensure TCP Wrappers is installed (2 failed)
+     ×  System Package tcpd is expected to be installed
+     expected that `System Package tcpd` is installed
+     ×  System Package tcp_wrappers is expected to be installed
+     expected that `System Package tcp_wrappers` is installed
+  ×  cis-dil-benchmark-3.3.2: Ensure /etc/hosts.allow is configured
+     ×  File /etc/hosts.allow is expected to exist
+     expected File /etc/hosts.allow to exist
+  ×  cis-dil-benchmark-3.3.3: Ensure /etc/hosts.deny is configured
+     ×  File /etc/hosts.deny content is expected to match /^ALL: ALL/
+     expected nil to match /^ALL: ALL/
+  ×  cis-dil-benchmark-3.3.4: Ensure permissions on /etc/hosts.allow are configured (5 failed)
+     ×  File /etc/hosts.allow is expected to exist
+     expected File /etc/hosts.allow to exist
+     ×  File /etc/hosts.allow is expected to be file
+     expected `File /etc/hosts.allow.file?` to be truthy, got false
+     ×  File /etc/hosts.allow owner is expected to cmp == "root"
+     
+     expected: root
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/hosts.allow group is expected to cmp == "root"
+     
+     expected: root
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/hosts.allow mode is expected to cmp == "0644"
+     can't convert nil into Integer
+  ×  cis-dil-benchmark-3.3.5: Ensure permissions on /etc/hosts.deny are configured (5 failed)
+     ×  File /etc/hosts.deny is expected to exist
+     expected File /etc/hosts.deny to exist
+     ×  File /etc/hosts.deny is expected to be file
+     expected `File /etc/hosts.deny.file?` to be truthy, got false
+     ×  File /etc/hosts.deny owner is expected to cmp == "root"
+     
+     expected: root
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/hosts.deny group is expected to cmp == "root"
+     
+     expected: root
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/hosts.deny mode is expected to cmp == "0644"
+     can't convert nil into Integer
+  ↺  cis-dil-benchmark-3.4.1: Ensure DCCP is disabled
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-3.4.2: Ensure SCTP is disabled
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-3.4.3: Ensure RDS is disabled
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-3.4.4: Ensure TIPC is disabled
+     ↺  Skipped control due to only_if condition.
+  ×  cis-dil-benchmark-3.5.1.1: Ensure IPv6 default deny firewall policy (3 failed)
+     ×  Ip6tables is expected to have rule "-P INPUT DROP"
+     expected Ip6tables to have rule "-P INPUT DROP"
+     ×  Ip6tables is expected to have rule "-P OUTPUT DROP"
+     expected Ip6tables to have rule "-P OUTPUT DROP"
+     ×  Ip6tables is expected to have rule "-P FORWARD DROP"
+     expected Ip6tables to have rule "-P FORWARD DROP"
+  ×  cis-dil-benchmark-3.5.1.2: Ensure IPv6 loopback traffic is configured (9 failed)
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-s ::1)(?=.*-j DROP)/
+     +"-P OUTPUT ACCEPT"
+
+  ×  cis-dil-benchmark-3.5.1.3: Ensure IPv6 outbound and established connections are configured (18 failed)
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+  ×  cis-dil-benchmark-3.5.1.4: Ensure IPv6 firewall rules exist for all open ports (2 failed)
+     ×  Firewall rule should exist for port 68 is expected to equal true
+     
+     expected true
+          got false
+
+     ×  Firewall rule should exist for port 22 is expected to equal true
+     
+     expected true
+          got false
+
+  ×  cis-dil-benchmark-3.5.2.1: Ensure default deny firewall policy (3 failed)
+     ×  Iptables is expected to have rule "-P INPUT DROP"
+     expected Iptables to have rule "-P INPUT DROP"
+     ×  Iptables is expected to have rule "-P OUTPUT DROP"
+     expected Iptables to have rule "-P OUTPUT DROP"
+     ×  Iptables is expected to have rule "-P FORWARD DROP"
+     expected Iptables to have rule "-P FORWARD DROP"
+  ×  cis-dil-benchmark-3.5.2.2: Ensure loopback traffic is configured (9 failed)
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-i lo)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-o lo)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-s 127\.0\.0\.0\/8)(?=.*-j DROP)/
+     +"-P OUTPUT ACCEPT"
+
+  ×  cis-dil-benchmark-3.5.2.3: Ensure outbound and established connections are configured (18 failed)
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p tcp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p tcp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p udp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p udp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A OUTPUT)(?=.*-p icmp)(?=.*-m state --state NEW,ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+     ×  -P INPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P INPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P INPUT ACCEPT"
+
+     ×  -P FORWARD ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P FORWARD ACCEPT" to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P FORWARD ACCEPT"
+
+     ×  -P OUTPUT ACCEPT is expected to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     expected "-P OUTPUT ACCEPT" to match /(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     Diff:
+     @@ -1 +1 @@
+     -/(?=.*-A INPUT)(?=.*-p icmp)(?=.*-m state --state ESTABLISHED)(?=.*-j ACCEPT)/
+     +"-P OUTPUT ACCEPT"
+
+  ×  cis-dil-benchmark-3.5.2.4: Ensure firewall rules exist for all open ports (2 failed)
+     ×  Firewall rule should exist for port 68 is expected to equal true
+     
+     expected true
+          got false
+
+     ×  Firewall rule should exist for port 22 is expected to equal true
+     
+     expected true
+          got false
+
+  ↺  cis-dil-benchmark-3.5.3: Ensure iptables is installed
+     ↺  The `package` resource is not supported on your OS yet.
+  ↺  cis-dil-benchmark-3.6: Ensure wireless interfaces are disabled
+     ↺  Not implemented
+  ↺  cis-dil-benchmark-3.7: Disable IPv6
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.1.1: Ensure audit log storage size is configured
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.1.2: Ensure system is disabled when audit logs are full
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.1.3: Ensure audit logs are not automatically deleted
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.2: Ensure auditd is installed
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.3: Ensure auditd service is enabled
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.4: Ensure auditing for processes that start prior to auditd is enabled
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.5: Ensure events that modify date and time information are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.6: Ensure events that modify user/group information are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.7: Ensure events that modify the system's network environment are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.8: Ensure events that modify the system's Mandatory Access Controls are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.9: Ensure login and logout events are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.10: Ensure session initiation information is collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.11: Ensure discretionary access control permission modification events are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.12: Ensure unsuccessful unauthorized file access attempts are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.13: Ensure use of privileged commands is collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.14: Ensure successful file system mounts are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.15: Ensure file deletion events by users are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.16: Ensure changes to system administration scope (sudoers) is collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.17: Ensure system administrator actions (sudolog) are collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.18: Ensure kernel module loading and unloading is collected
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.1.19: Ensure the audit configuration is immutable
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-4.2.1.1: Ensure rsyslog Service is insalled
+     ↺  The `package` resource is not supported on your OS yet.
+  ×  cis-dil-benchmark-4.2.1.2: Ensure rsyslog Service is enabled (2 failed)
+     ×  Service rsyslog is expected to be enabled
+     expected that `Service rsyslog` is enabled
+     ×  Service rsyslog is expected to be running
+     expected that `Service rsyslog` is running
+  ×  cis-dil-benchmark-4.2.1.3: Ensure logging is configured
+     ×  File /etc/rsyslog.conf is expected to exist
+     expected File /etc/rsyslog.conf to exist
+  ×  cis-dil-benchmark-4.2.1.4: Ensure rsyslog default file permissions configured
+     ×  File /etc/rsyslog.conf content is expected to match /^\$FileCreateMode\s+0[0-6][0-4]0/
+     expected nil to match /^\$FileCreateMode\s+0[0-6][0-4]0/
+  ×  cis-dil-benchmark-4.2.1.5: Ensure rsyslog is configured to send logs to a remote log host
+     ×  File /etc/rsyslog.conf content is expected to match /^\s*\*\.\*\s+@/
+     expected nil to match /^\s*\*\.\*\s+@/
+  ↺  cis-dil-benchmark-4.2.1.6: Ensure remote rsyslog messages are only accepted on designated log hosts.
+     ↺  Not implemented
+  ×  cis-dil-benchmark-4.2.2.1: Ensure journald is configured to send logs to rsyslog
+     ×  Parse Config File /etc/systemd/journald.conf Journal is expected to include {"ForwardToSyslog" => "yes"}
+     expected {} to include {"ForwardToSyslog" => "yes"}
+     Diff:
+     @@ -1,2 +1 @@
+     -"ForwardToSyslog" => "yes",
+
+  ×  cis-dil-benchmark-4.2.2.2: Ensure journald is configured to compress large log files
+     ×  Parse Config File /etc/systemd/journald.conf Journal is expected to include {"Compress" => "yes"}
+     expected {} to include {"Compress" => "yes"}
+     Diff:
+     @@ -1,2 +1 @@
+     -"Compress" => "yes",
+
+  ×  cis-dil-benchmark-4.2.2.3: Ensure journald is configured to write logfiles to persistent disk
+     ×  Parse Config File /etc/systemd/journald.conf Journal is expected to include {"Storage" => "persistent"}
+     expected {} to include {"Storage" => "persistent"}
+     Diff:
+     @@ -1,2 +1 @@
+     -"Storage" => "persistent",
+
+  ×  cis-dil-benchmark-4.2.3: Ensure permissions on all logfiles are configured (2 failed)
+     ✔  File /var/log/tallylog is expected not to be writable by group
+     ✔  File /var/log/tallylog is expected not to be executable by group
+     ✔  File /var/log/tallylog is expected not to be readable by other
+     ✔  File /var/log/tallylog is expected not to be writable by other
+     ✔  File /var/log/tallylog is expected not to be executable by other
+     ✔  File /var/log/faillog is expected not to be writable by group
+     ✔  File /var/log/faillog is expected not to be executable by group
+     ×  File /var/log/faillog is expected not to be readable by other
+     expected File /var/log/faillog not to be readable by other
+     ✔  File /var/log/faillog is expected not to be writable by other
+     ✔  File /var/log/faillog is expected not to be executable by other
+     ✔  File /var/log/journal/e6d76ebe5f4d487aa425a47165856433/system.journal is expected not to be writable by group
+     ✔  File /var/log/journal/e6d76ebe5f4d487aa425a47165856433/system.journal is expected not to be executable by group
+     ✔  File /var/log/journal/e6d76ebe5f4d487aa425a47165856433/system.journal is expected not to be readable by other
+     ✔  File /var/log/journal/e6d76ebe5f4d487aa425a47165856433/system.journal is expected not to be writable by other
+     ✔  File /var/log/journal/e6d76ebe5f4d487aa425a47165856433/system.journal is expected not to be executable by other
+     ×  File /var/log/btmp is expected not to be writable by group
+     expected File /var/log/btmp not to be writable by group
+     ✔  File /var/log/btmp is expected not to be executable by group
+     ✔  File /var/log/btmp is expected not to be readable by other
+     ✔  File /var/log/btmp is expected not to be writable by other
+     ✔  File /var/log/btmp is expected not to be executable by other
+     ✔  File /var/log/lastlog is expected not to be executable by group
+     ✔  File /var/log/lastlog is expected not to be writable by other
+     ✔  File /var/log/lastlog is expected not to be executable by other
+     ✔  File /var/log/wtmp is expected not to be executable by group
+     ✔  File /var/log/wtmp is expected not to be writable by other
+     ✔  File /var/log/wtmp is expected not to be executable by other
+  ↺  cis-dil-benchmark-4.3: Ensure logrotate is configured
+     ↺  Not implemented
+  ×  cis-dil-benchmark-5.1.1: Ensure cron daemon is enabled (4 failed)
+     ×  Service cron is expected to be enabled
+     expected that `Service cron` is enabled
+     ×  Service cron is expected to be running
+     expected that `Service cron` is running
+     ×  Service crond is expected to be enabled
+     expected that `Service crond` is enabled
+     ×  Service crond is expected to be running
+     expected that `Service crond` is running
+  ×  cis-dil-benchmark-5.1.2: Ensure permissions on /etc/crontab are configured (3 failed)
+     ×  File /etc/crontab is expected to exist
+     expected File /etc/crontab to exist
+     ✔  File /etc/crontab is expected not to be readable by group
+     ✔  File /etc/crontab is expected not to be writable by group
+     ✔  File /etc/crontab is expected not to be executable by group
+     ✔  File /etc/crontab is expected not to be readable by other
+     ✔  File /etc/crontab is expected not to be writable by other
+     ✔  File /etc/crontab is expected not to be executable by other
+     ×  File /etc/crontab uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/crontab gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.1.3: Ensure permissions on /etc/cron.hourly are configured (3 failed)
+     ×  File /etc/cron.hourly is expected to exist
+     expected File /etc/cron.hourly to exist
+     ✔  File /etc/cron.hourly is expected not to be readable by group
+     ✔  File /etc/cron.hourly is expected not to be writable by group
+     ✔  File /etc/cron.hourly is expected not to be executable by group
+     ✔  File /etc/cron.hourly is expected not to be readable by other
+     ✔  File /etc/cron.hourly is expected not to be writable by other
+     ✔  File /etc/cron.hourly is expected not to be executable by other
+     ×  File /etc/cron.hourly uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/cron.hourly gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.1.4: Ensure permissions on /etc/cron.daily are configured (3 failed)
+     ×  File /etc/cron.daily is expected to exist
+     expected File /etc/cron.daily to exist
+     ✔  File /etc/cron.daily is expected not to be readable by group
+     ✔  File /etc/cron.daily is expected not to be writable by group
+     ✔  File /etc/cron.daily is expected not to be executable by group
+     ✔  File /etc/cron.daily is expected not to be readable by other
+     ✔  File /etc/cron.daily is expected not to be writable by other
+     ✔  File /etc/cron.daily is expected not to be executable by other
+     ×  File /etc/cron.daily uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/cron.daily gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.1.5: Ensure permissions on /etc/cron.weekly are configured (4 failed)
+     ✔  File /etc/cron.weekly is expected to exist
+     ×  File /etc/cron.weekly is expected not to be readable by group
+     expected File /etc/cron.weekly not to be readable by group
+     ✔  File /etc/cron.weekly is expected not to be writable by group
+     ×  File /etc/cron.weekly is expected not to be executable by group
+     expected File /etc/cron.weekly not to be executable by group
+     ×  File /etc/cron.weekly is expected not to be readable by other
+     expected File /etc/cron.weekly not to be readable by other
+     ✔  File /etc/cron.weekly is expected not to be writable by other
+     ×  File /etc/cron.weekly is expected not to be executable by other
+     expected File /etc/cron.weekly not to be executable by other
+     ✔  File /etc/cron.weekly uid is expected to cmp == 0
+     ✔  File /etc/cron.weekly gid is expected to cmp == 0
+  ×  cis-dil-benchmark-5.1.6: Ensure permissions on /etc/cron.monthly are configured (3 failed)
+     ×  File /etc/cron.monthly is expected to exist
+     expected File /etc/cron.monthly to exist
+     ✔  File /etc/cron.monthly is expected not to be readable by group
+     ✔  File /etc/cron.monthly is expected not to be writable by group
+     ✔  File /etc/cron.monthly is expected not to be executable by group
+     ✔  File /etc/cron.monthly is expected not to be readable by other
+     ✔  File /etc/cron.monthly is expected not to be writable by other
+     ✔  File /etc/cron.monthly is expected not to be executable by other
+     ×  File /etc/cron.monthly uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/cron.monthly gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.1.7: Ensure permissions on /etc/cron.d are configured (3 failed)
+     ×  File /etc/cron.d is expected to exist
+     expected File /etc/cron.d to exist
+     ✔  File /etc/cron.d is expected not to be readable by group
+     ✔  File /etc/cron.d is expected not to be writable by group
+     ✔  File /etc/cron.d is expected not to be executable by group
+     ✔  File /etc/cron.d is expected not to be readable by other
+     ✔  File /etc/cron.d is expected not to be writable by other
+     ✔  File /etc/cron.d is expected not to be executable by other
+     ×  File /etc/cron.d uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/cron.d gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.1.8: Ensure at/cron is restricted to authorized users (6 failed)
+     ✔  File /etc/cron.deny is expected not to exist
+     ×  File /etc/cron.allow is expected to exist
+     expected File /etc/cron.allow to exist
+     ✔  File /etc/cron.allow is expected not to be readable by group
+     ✔  File /etc/cron.allow is expected not to be writable by group
+     ✔  File /etc/cron.allow is expected not to be executable by group
+     ✔  File /etc/cron.allow is expected not to be readable by other
+     ✔  File /etc/cron.allow is expected not to be writable by other
+     ✔  File /etc/cron.allow is expected not to be executable by other
+     ×  File /etc/cron.allow uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/cron.allow gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ✔  File /etc/at.deny is expected not to exist
+     ×  File /etc/at.allow is expected to exist
+     expected File /etc/at.allow to exist
+     ✔  File /etc/at.allow is expected not to be readable by group
+     ✔  File /etc/at.allow is expected not to be writable by group
+     ✔  File /etc/at.allow is expected not to be executable by group
+     ✔  File /etc/at.allow is expected not to be readable by other
+     ✔  File /etc/at.allow is expected not to be writable by other
+     ✔  File /etc/at.allow is expected not to be executable by other
+     ×  File /etc/at.allow uid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+     ×  File /etc/at.allow gid is expected to cmp == 0
+     
+     expected: 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ✔  cis-dil-benchmark-5.2.1: Ensure permissions on /etc/ssh/sshd_config are configured (Scored)
+     ✔  File /etc/ssh/sshd_config is expected to exist
+     ✔  File /etc/ssh/sshd_config is expected not to be readable by group
+     ✔  File /etc/ssh/sshd_config is expected not to be writable by group
+     ✔  File /etc/ssh/sshd_config is expected not to be executable by group
+     ✔  File /etc/ssh/sshd_config is expected not to be readable by other
+     ✔  File /etc/ssh/sshd_config is expected not to be writable by other
+     ✔  File /etc/ssh/sshd_config is expected not to be executable by other
+     ✔  File /etc/ssh/sshd_config uid is expected to cmp == 0
+     ✔  File /etc/ssh/sshd_config gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-5.2.2: Ensure permissions on SSH private host key files are configured (Scored)
+     ✔  File /etc/ssh/ssh_host_ed25519_key is expected not to be readable by group
+     ✔  File /etc/ssh/ssh_host_ed25519_key is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_ed25519_key is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_ed25519_key is expected not to be readable by other
+     ✔  File /etc/ssh/ssh_host_ed25519_key is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_ed25519_key is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_ed25519_key gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ed25519_key uid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_rsa_key is expected not to be readable by group
+     ✔  File /etc/ssh/ssh_host_rsa_key is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_rsa_key is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_rsa_key is expected not to be readable by other
+     ✔  File /etc/ssh/ssh_host_rsa_key is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_rsa_key is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_rsa_key gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_rsa_key uid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ecdsa_key is expected not to be readable by group
+     ✔  File /etc/ssh/ssh_host_ecdsa_key is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_ecdsa_key is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_ecdsa_key is expected not to be readable by other
+     ✔  File /etc/ssh/ssh_host_ecdsa_key is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_ecdsa_key is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_ecdsa_key gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ecdsa_key uid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_dsa_key is expected not to be readable by group
+     ✔  File /etc/ssh/ssh_host_dsa_key is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_dsa_key is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_dsa_key is expected not to be readable by other
+     ✔  File /etc/ssh/ssh_host_dsa_key is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_dsa_key is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_dsa_key gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_dsa_key uid is expected to cmp == 0
+  ✔  cis-dil-benchmark-5.2.3: Ensure permissions on SSH public host key files are configured (Scored)
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub is expected to be readable by group
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub is expected to be readable by other
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_dsa_key.pub uid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub is expected to be readable by group
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub is expected to be readable by other
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_rsa_key.pub uid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub is expected to be readable by group
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub is expected to be readable by other
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ed25519_key.pub uid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub is expected to be readable by group
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub is expected not to be writable by group
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub is expected not to be executable by group
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub is expected to be readable by other
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub is expected not to be writable by other
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub is expected not to be executable by other
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub gid is expected to cmp == 0
+     ✔  File /etc/ssh/ssh_host_ecdsa_key.pub uid is expected to cmp == 0
+  ×  cis-dil-benchmark-5.2.4: Ensure SSH Protocol is set to 2 (Scored)
+     ×  SSHD Configuration Protocol is expected to cmp == 2
+     
+     expected: 2
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.2.5: Ensure SSH LogLevel is appropriate (Scored)
+     ×  SSHD Configuration LogLevel is expected to eq "VERBOSE"
+     
+     expected: "VERBOSE"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.6: Ensure SSH X11 forwarding is disabled (Scored)
+     ×  SSHD Configuration X11Forwarding is expected to eq "no"
+     
+     expected: "no"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.7: Ensure SSH MaxAuthTries is set to 4 or less (Scored)
+     ×  SSHD Configuration MaxAuthTries is expected to cmp <= 4
+     
+     expected it to be <= 4
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.2.8: Ensure SSH IgnoreRhosts is enabled (Scored)
+     ×  SSHD Configuration IgnoreRhosts is expected to eq "yes"
+     
+     expected: "yes"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.9: Ensure SSH HostbasedAuthentication is disabled (Scored)
+     ×  SSHD Configuration HostbasedAuthentication is expected to eq "no"
+     
+     expected: "no"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.10: Ensure SSH root login is disabled (Scored)
+     ×  SSHD Configuration PermitRootLogin is expected to eq "no"
+     
+     expected: "no"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.11: Ensure SSH PermitEmptyPasswords is disabled (Scored)
+     ×  SSHD Configuration PermitEmptyPasswords is expected to eq "no"
+     
+     expected: "no"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.12: Ensure SSH PermitUserEnvironment is disabled (Scored)
+     ×  SSHD Configuration PermitUserEnvironment is expected to eq "no"
+     
+     expected: "no"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.13: Ensure only strong Ciphers are used (Scored)
+     ×  SSHD Configuration Ciphers is expected not to be nil
+     expected: not nil
+          got: nil
+  ×  cis-dil-benchmark-5.2.14: Ensure only strong MAC algorithms are used (Scored)
+     ×  SSHD Configuration MACs is expected not to be nil
+     expected: not nil
+          got: nil
+  ×  cis-dil-benchmark-5.2.15: Ensure only strong Key Exchange algorithms are used (Scored)
+     ×  SSHD Configuration KexAlgorithms is expected not to be nil
+     expected: not nil
+          got: nil
+  ×  cis-dil-benchmark-5.2.16: Ensure SSH Idle Timeout Interval is configured (Scored) (1 failed)
+     ✔  SSHD Configuration ClientAliveInterval is expected to cmp <= 300
+     ×  SSHD Configuration ClientAliveCountMax is expected to cmp <= 0
+     
+     expected it to be <= 0
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.2.17: Ensure SSH LoginGraceTime is set to one minute or less (Scored)
+     ×  SSHD Configuration LoginGraceTime is expected to satisfy expression `x == '1m' || ((matches = x.match(/(?<secs>[0-9]+)s?/)) && Integer(matches[:secs]) <= 60)`
+     undefined method `match' for nil:NilClass
+  ×  cis-dil-benchmark-5.2.18: Ensure SSH access is limited (Scored) (4 failed)
+     ×  SSHD Configuration AllowUsers is expected not to be nil
+     expected: not nil
+          got: nil
+     ×  SSHD Configuration AllowGroups is expected not to be nil
+     expected: not nil
+          got: nil
+     ×  SSHD Configuration DenyUsers is expected not to be nil
+     expected: not nil
+          got: nil
+     ×  SSHD Configuration DenyGroups is expected not to be nil
+     expected: not nil
+          got: nil
+  ×  cis-dil-benchmark-5.2.19: Ensure SSH warning banner is configured (Scored)
+     ×  SSHD Configuration Banner is expected not to be nil
+     expected: not nil
+          got: nil
+  ✔  cis-dil-benchmark-5.2.20: Ensure SSH PAM is enabled (Scored)
+     ✔  SSHD Configuration UsePAM is expected to eq "yes"
+  ↺  cis-dil-benchmark-5.2.21: Ensure SSH AllowTcpForwarding is disabled (Scored)
+     ↺  Skipped control due to only_if condition.
+  ×  cis-dil-benchmark-5.2.22: Ensure SSH MaxStartups is configured (Scored)
+     ×  SSHD Configuration MaxStartups is expected to eq "10:30:60"
+     
+     expected: "10:30:60"
+          got: nil
+     
+     (compared using ==)
+
+  ×  cis-dil-benchmark-5.2.23: Ensure SSH MaxSessions is set to 4 or less (Scored)
+     ×  SSHD Configuration MaxSessions is expected to cmp <= 4
+     
+     expected it to be <= 4
+          got: 
+     
+     (compared using `cmp` matcher)
+
+  ↺  cis-dil-benchmark-5.3.2: Ensure lockout for failed password attempts is configured
+     ↺  Not implemented
+  ×  cis-dil-benchmark-5.3.3: Ensure password reuse is limited (4 failed)
+     ×  File /etc/pam.d/common-password content is expected to match /^password\s+(\S+\s+)+pam_unix\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     expected nil to match /^password\s+(\S+\s+)+pam_unix\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     ×  File /etc/pam.d/common-password content is expected to match /^password\s+(\S+\s+)+pam_pwhistory\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     expected nil to match /^password\s+(\S+\s+)+pam_pwhistory\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     ×  File /etc/pam.d/system-auth content is expected to match /^password\s+(\S+\s+)+pam_unix\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     expected nil to match /^password\s+(\S+\s+)+pam_unix\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     ×  File /etc/pam.d/system-auth content is expected to match /^password\s+(\S+\s+)+pam_pwhistory\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+     expected nil to match /^password\s+(\S+\s+)+pam_pwhistory\.so (\S+\s+)*remember=([56789]|[1-9][0-9]+)/
+  ×  cis-dil-benchmark-5.3.4: Ensure password hashing algorithm is SHA-512 (3 failed)
+     ×  File /etc/pam.d/common-password content is expected to match /^password(\s+\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512/
+     expected nil to match /^password(\s+\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512/
+     ×  File /etc/pam.d/system-auth content is expected to match /^password(\s+\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512/
+     expected nil to match /^password(\s+\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512/
+     ×  File /etc/pam.d/password-auth content is expected to match /^password(\s+\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512/
+     expected nil to match /^password(\s+\S+\s+)+pam_unix\.so\s+(\S+\s+)*sha512/
+  ×  cis-dil-benchmark-5.4.1.1: Ensure password expiration is 365 days or less
+     ×  login.defs PASS_MAX_DAYS is expected to cmp <= 365
+     
+     expected it to be <= 365
+          got: 99999
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-5.4.1.2: Ensure minimum days between password changes is 7 or more
+     ×  login.defs PASS_MIN_DAYS is expected to cmp >= 7
+     
+     expected it to be >= 7
+          got: 0
+     
+     (compared using `cmp` matcher)
+
+  ✔  cis-dil-benchmark-5.4.1.3: Ensure password expiration warning days is 7 or more
+     ✔  login.defs PASS_WARN_AGE is expected to cmp >= 7
+  ×  cis-dil-benchmark-5.4.1.4: Ensure inactive password lock is 30 days or less
+     ×  Command: `useradd -D` stdout is expected to match /^INACTIVE=(30|[1-2][0-9]|[1-9])$/
+     expected "GROUP=100\nHOME=/home\nINACTIVE=-1\nEXPIRE=\nSHELL=/bin/bash\nSKEL=/etc/skel\nCREATE_MAIL_SPOOL=no\n" to match /^INACTIVE=(30|[1-2][0-9]|[1-9])$/
+     Diff:
+     @@ -1,7 +1,13 @@
+     -/^INACTIVE=(30|[1-2][0-9]|[1-9])$/
+     +GROUP=100
+     +HOME=/home
+     +INACTIVE=-1
+     +EXPIRE=
+     +SHELL=/bin/bash
+     +SKEL=/etc/skel
+     +CREATE_MAIL_SPOOL=no
+
+  ×  cis-dil-benchmark-5.4.2: Ensure system accounts are secured (26 failed)
+     ×  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     expected "/bin/bash" to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     Diff:
+     @@ -1 +1 @@
+     -/(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     +"/bin/bash"
+
+     ✔  /etc/shadow with user == "core" passwords is expected to cmp == /^[*!]/
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ✔  /etc/shadow with user == "systemd-timesync" passwords is expected to cmp == /^[*!]/
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ✔  /etc/shadow with user == "systemd-coredump" passwords is expected to cmp == /^[*!]/
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "bin" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "daemon" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "adm" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "lp" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "news" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "uucp" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "operator" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "man" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "messagebus" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "syslog" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "ntp" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "sshd" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "tcpdump" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "dhcp" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "etcd" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "docker" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "tlsdate" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "polkitd" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "tss" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "systemd-journal-remote" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "systemd-network" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "systemd-resolve" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "systemd-bus-proxy" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ✔  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     ×  /etc/shadow with user == "portage" passwords is expected to cmp == /^[*!]/
+     
+     expected: (?-mix:^[*!])
+          got: []
+     
+     (compared using `cmp` matcher)
+
+     ×  /etc/passwd with uid to_i < 1000 one entry shell is expected to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     expected "/bin/bash" to match /(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     Diff:
+     @@ -1 +1 @@
+     -/(\/usr\/sbin\/nologin|\/sbin\/nologin|\/bin\/false)/
+     +"/bin/bash"
+
+     ✔  /etc/shadow with user == "core" passwords is expected to cmp == /^[*!]/
+  ✔  cis-dil-benchmark-5.4.3: Ensure default group for the root account is GID 0
+     ✔  /etc/passwd with user == "root" gids is expected to cmp == 0
+  ×  cis-dil-benchmark-5.4.4: Ensure default user umask is 027 or more restrictive (2 failed)
+     ×  File /etc/profile content is expected not to match /^\s*umask [0-7](0[1-7]|[1-7][1-6])\s*(?:#.*)?$/
+     expected "# /etc/profile: login shell setup\n#\n# That this file is used by any Bourne-shell derivative to set... \"$sh\"\ndone\nfor sh in /etc/profile.d/*.sh ; do\n\t[ -r \"$sh\" ] && . \"$sh\"\ndone\nunset sh\n" not to match /^\s*umask [0-7](0[1-7]|[1-7][1-6])\s*(?:#.*)?$/
+     Diff:
+     @@ -1,59 +1,117 @@
+     -/^\s*umask [0-7](0[1-7]|[1-7][1-6])\s*(?:#.*)?$/
+     +# /etc/profile: login shell setup
+     +#
+     +# That this file is used by any Bourne-shell derivative to setup the
+     +# environment for login shells.
+     +#
+     +
+     +# Load environment settings from profile.env, which is created by
+     +# env-update from the files in /etc/env.d
+     +if [ -e /etc/profile.env ] ; then
+     +	. /etc/profile.env
+     +elif [ -e /usr/share/baselayout/profile.env ] ; then
+     +	. /usr/share/baselayout/profile.env
+     +fi
+     +
+     +# You should override these in your ~/.bashrc (or equivalent) for per-user
+     +# settings.  For system defaults, you can add a new file in /etc/profile.d/.
+     +export EDITOR=${EDITOR:-/usr/bin/vim}
+     +export PAGER=${PAGER:-/usr/bin/less}
+     +
+     +# 077 would be more secure, but 022 is generally quite realistic
+     +umask 022
+     +
+     +# Set up PATH, all users get both bin and sbin to keep things simple.
+     +# Gentoo normally splits this up which is why the variable is called ROOTPATH
+     +export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin${ROOTPATH:+:}${ROOTPATH-}"
+     +unset ROOTPATH
+     +
+     +if [ -n "${BASH_VERSION-}" ] ; then
+     +	# Newer bash ebuilds include /etc/bash/bashrc which will setup PS1
+     +	# including color.  We leave out color here because not all
+     +	# terminals support it.
+     +	if [ -f /etc/bash/bashrc ] ; then
+     +		# Bash login shells run only /etc/profile
+     +		# Bash non-login shells run only /etc/bash/bashrc
+     +		# Since we want to run /etc/bash/bashrc regardless, we source it 
+     +		# from here.  It is unfortunate that there is no way to do 
+     +		# this *after* the user's .bash_profile runs (without putting 
+     +		# it in the user's dot-files), but it shouldn't make any 
+     +		# difference.
+     +		. /etc/bash/bashrc
+     +	elif [ -f /usr/share/bash/bashrc ] ; then
+     +		. /usr/share/bash/bashrc
+     +	else
+     +		PS1='\u@\h \w \$ '
+     +	fi
+     +else
+     +	# Setup a bland default prompt.  Since this prompt should be useable
+     +	# on color and non-color terminals, as well as shells that don't
+     +	# understand sequences such as \h, don't put anything special in it.
+     +	PS1="${USER:-$(whoami 2>/dev/null)}@$(uname -n 2>/dev/null) \$ "
+     +fi
+     +
+     +for sh in /usr/share/profile.d/*.sh ; do
+     +	[ -r "$sh" ] && . "$sh"
+     +done
+     +for sh in /etc/profile.d/*.sh ; do
+     +	[ -r "$sh" ] && . "$sh"
+     +done
+     +unset sh
+
+     ×  File /etc/profile content is expected to match /^\s*umask [0-7][2367]7\s*(?:#.*)?$/
+     expected "# /etc/profile: login shell setup\n#\n# That this file is used by any Bourne-shell derivative to set... \"$sh\"\ndone\nfor sh in /etc/profile.d/*.sh ; do\n\t[ -r \"$sh\" ] && . \"$sh\"\ndone\nunset sh\n" to match /^\s*umask [0-7][2367]7\s*(?:#.*)?$/
+     Diff:
+     @@ -1,59 +1,117 @@
+     -/^\s*umask [0-7][2367]7\s*(?:#.*)?$/
+     +# /etc/profile: login shell setup
+     +#
+     +# That this file is used by any Bourne-shell derivative to setup the
+     +# environment for login shells.
+     +#
+     +
+     +# Load environment settings from profile.env, which is created by
+     +# env-update from the files in /etc/env.d
+     +if [ -e /etc/profile.env ] ; then
+     +	. /etc/profile.env
+     +elif [ -e /usr/share/baselayout/profile.env ] ; then
+     +	. /usr/share/baselayout/profile.env
+     +fi
+     +
+     +# You should override these in your ~/.bashrc (or equivalent) for per-user
+     +# settings.  For system defaults, you can add a new file in /etc/profile.d/.
+     +export EDITOR=${EDITOR:-/usr/bin/vim}
+     +export PAGER=${PAGER:-/usr/bin/less}
+     +
+     +# 077 would be more secure, but 022 is generally quite realistic
+     +umask 022
+     +
+     +# Set up PATH, all users get both bin and sbin to keep things simple.
+     +# Gentoo normally splits this up which is why the variable is called ROOTPATH
+     +export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin${ROOTPATH:+:}${ROOTPATH-}"
+     +unset ROOTPATH
+     +
+     +if [ -n "${BASH_VERSION-}" ] ; then
+     +	# Newer bash ebuilds include /etc/bash/bashrc which will setup PS1
+     +	# including color.  We leave out color here because not all
+     +	# terminals support it.
+     +	if [ -f /etc/bash/bashrc ] ; then
+     +		# Bash login shells run only /etc/profile
+     +		# Bash non-login shells run only /etc/bash/bashrc
+     +		# Since we want to run /etc/bash/bashrc regardless, we source it 
+     +		# from here.  It is unfortunate that there is no way to do 
+     +		# this *after* the user's .bash_profile runs (without putting 
+     +		# it in the user's dot-files), but it shouldn't make any 
+     +		# difference.
+     +		. /etc/bash/bashrc
+     +	elif [ -f /usr/share/bash/bashrc ] ; then
+     +		. /usr/share/bash/bashrc
+     +	else
+     +		PS1='\u@\h \w \$ '
+     +	fi
+     +else
+     +	# Setup a bland default prompt.  Since this prompt should be useable
+     +	# on color and non-color terminals, as well as shells that don't
+     +	# understand sequences such as \h, don't put anything special in it.
+     +	PS1="${USER:-$(whoami 2>/dev/null)}@$(uname -n 2>/dev/null) \$ "
+     +fi
+     +
+     +for sh in /usr/share/profile.d/*.sh ; do
+     +	[ -r "$sh" ] && . "$sh"
+     +done
+     +for sh in /etc/profile.d/*.sh ; do
+     +	[ -r "$sh" ] && . "$sh"
+     +done
+     +unset sh
+
+  ↺  cis-dil-benchmark-5.4.5: Ensure default user shell timeout is 900 seconds or less
+     ↺  Skipped control due to only_if condition.
+  ↺  cis-dil-benchmark-5.5: Ensure root login is restricted to system console
+     ↺  Not implemented
+  ×  cis-dil-benchmark-5.6: Ensure access to the su command is restricted (1 failed)
+     ×  File /etc/pam.d/su content is expected to match /^auth\s+required\s+pam_wheel.so use_uid$/
+     expected nil to match /^auth\s+required\s+pam_wheel.so use_uid$/
+     ✔  Groups with name == "wheel" is expected to exist
+  ↺  cis-dil-benchmark-6.1.1: Audit system file permissions
+     ↺  Skipped control due to only_if condition.
+  ✔  cis-dil-benchmark-6.1.2: Ensure permissions on /etc/passwd are configured
+     ✔  File /etc/passwd is expected to exist
+     ✔  File /etc/passwd mode is expected to cmp == "0644"
+     ✔  File /etc/passwd uid is expected to cmp == 0
+     ✔  File /etc/passwd gid is expected to cmp == 0
+     ✔  File /etc/passwd sticky is expected to equal false
+     ✔  File /etc/passwd suid is expected to equal false
+     ✔  File /etc/passwd sgid is expected to equal false
+     ✔  File /usr/share/baselayout/passwd is expected to exist
+     ✔  File /usr/share/baselayout/passwd mode is expected to cmp == "0644"
+     ✔  File /usr/share/baselayout/passwd uid is expected to cmp == 0
+     ✔  File /usr/share/baselayout/passwd gid is expected to cmp == 0
+     ✔  File /usr/share/baselayout/passwd sticky is expected to equal false
+     ✔  File /usr/share/baselayout/passwd suid is expected to equal false
+     ✔  File /usr/share/baselayout/passwd sgid is expected to equal false
+  ✔  cis-dil-benchmark-6.1.3: Ensure permissions on /etc/shadow are configured
+     ✔  File /etc/shadow is expected to exist
+     ✔  File /etc/shadow is expected not to be more permissive than "0644"
+     ✔  File /etc/shadow uid is expected to cmp == 0
+     ✔  File /etc/shadow gid is expected to cmp == 0
+     ✔  File /usr/share/baselayout/shadow is expected to exist
+     ✔  File /usr/share/baselayout/shadow is expected not to be more permissive than "0644"
+     ✔  File /usr/share/baselayout/shadow uid is expected to cmp == 0
+     ✔  File /usr/share/baselayout/shadow gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.1.4: Ensure permissions on /etc/group are configured
+     ✔  File /etc/group is expected to exist
+     ✔  File /etc/group mode is expected to cmp == "0644"
+     ✔  File /etc/group uid is expected to cmp == 0
+     ✔  File /etc/group gid is expected to cmp == 0
+     ✔  File /usr/share/baselayout/group is expected to exist
+     ✔  File /usr/share/baselayout/group mode is expected to cmp == "0644"
+     ✔  File /usr/share/baselayout/group uid is expected to cmp == 0
+     ✔  File /usr/share/baselayout/group gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.1.5: Ensure permissions on /etc/gshadow are configured
+     ✔  File /etc/gshadow is expected to exist
+     ✔  File /etc/gshadow is expected not to be more permissive than "0640"
+     ✔  File /etc/gshadow uid is expected to cmp == 0
+     ✔  File /etc/gshadow gid is expected to cmp == 0
+  ×  cis-dil-benchmark-6.1.6: Ensure permissions on /etc/passwd- are configured (1 failed)
+     ✔  File /etc/passwd- is expected to exist
+     ×  File /etc/passwd- is expected not to be more permissive than "0600"
+     expected `File /etc/passwd-.more_permissive_than?("0600")` to be falsey, got true
+     ✔  File /etc/passwd- uid is expected to cmp == 0
+     ✔  File /etc/passwd- gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.1.7: Ensure permissions on /etc/shadow- are configured
+     ✔  File /etc/shadow- is expected to exist
+     ✔  File /etc/shadow- is expected not to be more permissive than "0640"
+     ✔  File /etc/shadow- uid is expected to cmp == 0
+     ✔  File /etc/shadow- gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.1.8: Ensure permissions on /etc/group- are configured
+     ✔  File /etc/group- is expected to exist
+     ✔  File /etc/group- is expected not to be more permissive than "0644"
+     ✔  File /etc/group- uid is expected to cmp == 0
+     ✔  File /etc/group- gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.1.9: Ensure permissions on /etc/gshadow- are configured
+     ✔  File /etc/gshadow- is expected to exist
+     ✔  File /etc/gshadow- is expected not to be more permissive than "0640"
+     ✔  File /etc/gshadow- uid is expected to cmp == 0
+     ✔  File /etc/gshadow- gid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.1.10: Ensure no world writable files exist
+     ✔  Command: `df --local -P | awk '{ if (NR!=1) print $6 }' | xargs -I '{}' find '{}' -xdev -type f -perm -0002` stdout is expected to cmp == ""
+  ×  cis-dil-benchmark-6.1.11: Ensure no unowned files or directories exist
+     ×  Command: `df --local -P | awk '{ if (NR!=1) print $6 }' | xargs -I '{}' find '{}' -xdev -nouser` stdout is expected to cmp == ""
+     
+     expected: 
+          got: /media/configvirtfs
+     /media/configvirtfs
+     /media/configvirtfs/openstack
+     /media/configvirtfs/openstack/latest
+     /media/configvirtfs/openstack/latest/user_data
+     
+     
+     (compared using `cmp` matcher)
+
+  ×  cis-dil-benchmark-6.1.12: Ensure no ungrouped files or directories exist
+     ×  Command: `df --local -P | awk '{ if (NR!=1) print $6 }' | xargs -I '{}' find '{}' -xdev -nogroup` stdout is expected to cmp == ""
+     
+     expected: 
+          got: /media/configvirtfs
+     /media/configvirtfs
+     /media/configvirtfs/openstack
+     /media/configvirtfs/openstack/latest
+     /media/configvirtfs/openstack/latest/user_data
+     
+     
+     (compared using `cmp` matcher)
+
+  ↺  cis-dil-benchmark-6.1.13: Audit SUID executables
+     ↺  Not implemented
+  ↺  cis-dil-benchmark-6.1.14: Audit SGID executables
+     ↺  Not implemented
+  ✔  cis-dil-benchmark-6.2.1: Ensure password fields are not empty
+     ✔  /etc/shadow passwords is expected not to include ""
+     ✔  /usr/share/baselayout/shadow passwords is expected not to include ""
+  ✔  cis-dil-benchmark-6.2.2: Ensure no legacy "+" entries exist in /etc/passwd
+     ✔  /etc/passwd users is expected not to include "+"
+     ✔  /etc/passwd users is expected not to include "+"
+  ✔  cis-dil-benchmark-6.2.3: Ensure no legacy "+" entries exist in /etc/shadow
+     ✔  /etc/shadow users is expected not to include "+"
+     ✔  /usr/share/baselayout/shadow users is expected not to include "+"
+  ✔  cis-dil-benchmark-6.2.4: Ensure no legacy "+" entries exist in /etc/group
+     ✔  /etc/group groups is expected not to include "+"
+     ✔  /etc/group groups is expected not to include "+"
+  ✔  cis-dil-benchmark-6.2.5: Ensure root is the only UID 0 account
+     ✔  /etc/passwd with uid == 0 users is expected to cmp == ["root"]
+     ✔  /etc/passwd with uid == 0 users is expected to cmp == ["root"]
+  ✔  cis-dil-benchmark-6.2.6: Ensure root PATH Integrity
+     ✔  ["/usr/bin", "/bin", "/usr/sbin", "/sbin"] is expected not to be empty
+     ✔  ["/usr/bin", "/bin", "/usr/sbin", "/sbin"] is expected not to include ""
+     ✔  ["/usr/bin", "/bin", "/usr/sbin", "/sbin"] is expected not to include "."
+     ✔  File /usr/bin is expected to be directory
+     ✔  File /usr/bin is expected not to be writable by group
+     ✔  File /usr/bin is expected not to be writable by other
+     ✔  File /usr/bin uid is expected to cmp == 0
+     ✔  File /bin is expected to be directory
+     ✔  File /bin is expected not to be writable by group
+     ✔  File /bin is expected not to be writable by other
+     ✔  File /bin uid is expected to cmp == 0
+     ✔  File /usr/sbin is expected to be directory
+     ✔  File /usr/sbin is expected not to be writable by group
+     ✔  File /usr/sbin is expected not to be writable by other
+     ✔  File /usr/sbin uid is expected to cmp == 0
+     ✔  File /sbin is expected to be directory
+     ✔  File /sbin is expected not to be writable by group
+     ✔  File /sbin is expected not to be writable by other
+     ✔  File /sbin uid is expected to cmp == 0
+  ✔  cis-dil-benchmark-6.2.11: Ensure no users have .forward files
+     ✔  File /root/.forward is expected not to exist
+     ✔  File /home/core/.forward is expected not to exist
+     ✔  File //.forward is expected not to exist
+     ✔  File //.forward is expected not to exist
+     ✔  File /root/.forward is expected not to exist
+     ✔  File /bin/.forward is expected not to exist
+     ✔  File /sbin/.forward is expected not to exist
+     ✔  File /var/adm/.forward is expected not to exist
+     ✔  File /var/spool/lpd/.forward is expected not to exist
+     ✔  File /sbin/.forward is expected not to exist
+     ✔  File /sbin/.forward is expected not to exist
+     ✔  File /sbin/.forward is expected not to exist
+     ✔  File /var/spool/news/.forward is expected not to exist
+     ✔  File /var/spool/uucp/.forward is expected not to exist
+     ✔  File /root/.forward is expected not to exist
+     ✔  File /usr/share/man/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /var/empty/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /var/lib/dhcpcd/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /var/lib/polkit-1/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /dev/null/.forward is expected not to exist
+     ✔  File /var/tmp/portage/.forward is expected not to exist
+     ✔  File /home/core/.forward is expected not to exist
+     ✔  File /var/empty/.forward is expected not to exist
+  ✔  cis-dil-benchmark-6.2.12: Ensure no users have .netrc files
+     ✔  File /root/.netrc is expected not to exist
+     ✔  File /home/core/.netrc is expected not to exist
+     ✔  File //.netrc is expected not to exist
+     ✔  File //.netrc is expected not to exist
+     ✔  File /root/.netrc is expected not to exist
+     ✔  File /bin/.netrc is expected not to exist
+     ✔  File /sbin/.netrc is expected not to exist
+     ✔  File /var/adm/.netrc is expected not to exist
+     ✔  File /var/spool/lpd/.netrc is expected not to exist
+     ✔  File /sbin/.netrc is expected not to exist
+     ✔  File /sbin/.netrc is expected not to exist
+     ✔  File /sbin/.netrc is expected not to exist
+     ✔  File /var/spool/news/.netrc is expected not to exist
+     ✔  File /var/spool/uucp/.netrc is expected not to exist
+     ✔  File /root/.netrc is expected not to exist
+     ✔  File /usr/share/man/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /var/empty/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /var/lib/dhcpcd/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /var/lib/polkit-1/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /dev/null/.netrc is expected not to exist
+     ✔  File /var/tmp/portage/.netrc is expected not to exist
+     ✔  File /home/core/.netrc is expected not to exist
+     ✔  File /var/empty/.netrc is expected not to exist
+  ✔  cis-dil-benchmark-6.2.14: Ensure no users have .rhosts files
+     ✔  File /root/.rhosts is expected not to exist
+     ✔  File /home/core/.rhosts is expected not to exist
+     ✔  File //.rhosts is expected not to exist
+     ✔  File //.rhosts is expected not to exist
+     ✔  File /root/.rhosts is expected not to exist
+     ✔  File /bin/.rhosts is expected not to exist
+     ✔  File /sbin/.rhosts is expected not to exist
+     ✔  File /var/adm/.rhosts is expected not to exist
+     ✔  File /var/spool/lpd/.rhosts is expected not to exist
+     ✔  File /sbin/.rhosts is expected not to exist
+     ✔  File /sbin/.rhosts is expected not to exist
+     ✔  File /sbin/.rhosts is expected not to exist
+     ✔  File /var/spool/news/.rhosts is expected not to exist
+     ✔  File /var/spool/uucp/.rhosts is expected not to exist
+     ✔  File /root/.rhosts is expected not to exist
+     ✔  File /usr/share/man/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /var/empty/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /var/lib/dhcpcd/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /var/lib/polkit-1/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /dev/null/.rhosts is expected not to exist
+     ✔  File /var/tmp/portage/.rhosts is expected not to exist
+     ✔  File /home/core/.rhosts is expected not to exist
+     ✔  File /var/empty/.rhosts is expected not to exist
+  ×  cis-dil-benchmark-6.2.15: Ensure all groups in /etc/passwd exist in /etc/group (2 failed)
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 500
+     ✔  /etc/group gids is expected to include 500
+     ✔  /etc/group gids is expected to include 998
+     ✔  /etc/group gids is expected to include 997
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 1
+     ✔  /etc/group gids is expected to include 2
+     ✔  /etc/group gids is expected to include 4
+     ✔  /etc/group gids is expected to include 7
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 13
+     ✔  /etc/group gids is expected to include 14
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 0
+     ✔  /etc/group gids is expected to include 15
+     ✔  /etc/group gids is expected to include 201
+     ✔  /etc/group gids is expected to include 202
+     ✔  /etc/group gids is expected to include 203
+     ✔  /etc/group gids is expected to include 204
+     ✔  /etc/group gids is expected to include 215
+     ✔  /etc/group gids is expected to include 224
+     ✔  /etc/group gids is expected to include 232
+     ✔  /etc/group gids is expected to include 233
+     ✔  /etc/group gids is expected to include 233
+     ✔  /etc/group gids is expected to include 234
+     ✔  /etc/group gids is expected to include 235
+     ×  /etc/group gids is expected to include 236
+     expected [0, 10, 150, 233, 500, 999, 251, 998, 997] to include 236
+     ×  /etc/group gids is expected to include 236
+     expected [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18, 19, 26, 27, 28, 29, 30, 78, 80, 85, 100, 1..., 204, 215, 224, 232, 233, 234, 235, 242, 244, 245, 246, 248, 249, 250, 252, 406, 500, 65533, 65534] to include 236
+     ✔  /etc/group gids is expected to include 242
+     ✔  /etc/group gids is expected to include 244
+     ✔  /etc/group gids is expected to include 245
+     ✔  /etc/group gids is expected to include 246
+     ✔  /etc/group gids is expected to include 250
+     ✔  /etc/group gids is expected to include 500
+     ✔  /etc/group gids is expected to include 500
+     ✔  /etc/group gids is expected to include 65534
+  ✔  cis-dil-benchmark-6.2.16: Ensure no duplicate UIDs exist
+     ✔  is expected to be nil
+     ✔  is expected to be nil
+  ✔  cis-dil-benchmark-6.2.17: Ensure no duplicate GIDs exist
+     ✔  is expected to be nil
+     ✔  is expected to be nil
+  ✔  cis-dil-benchmark-6.2.18: Ensure no duplicate user names exist
+     ✔  is expected to be nil
+     ✔  is expected to be nil
+  ✔  cis-dil-benchmark-6.2.19: Ensure no duplicate group names exist
+     ✔  is expected to be nil
+     ✔  is expected to be nil
+  ✔  cis-dil-benchmark-6.2.20: Ensure shadow group is empty
+     ✔  #<Inspec::Resources::EtcGroupView:0x00005653ef65b8e8> users is expected to be empty
+     ✔  #<Inspec::Resources::EtcGroupView:0x00005653ef8865f0> users is expected to be empty
+
+
+Profile Summary: 65 successful controls, 83 control failures, 82 controls skipped
+Test Summary: 593 successful, 258 failures, 88 skipped
