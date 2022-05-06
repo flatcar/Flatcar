@@ -51,10 +51,10 @@ Lastly, epics like major features and long-term items are reflected in our [road
 
 We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our community calls and release planning meeting series which interested folks can comfortably import into the calendar app of their choice.
 
-Join us in our monthly [community meetings](community-meetings) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
-Meeting agendas are published in advance - watch out for [open PRs on the community-meetings/](https://github.com/flatcar-linux/Flatcar/pulls) folder. If you have a pressing issue of common interest you'd like discussed, please let us know on Matrix, or simply bring it to the next meeting's Q&A.
-
-For more sizeable agenda items please consider speaking up on the PR of the agenda of the next meeting, or file a new PR if the upcoming meeting's agenda was already merged.
+Join us in our monthly [community meetings](discussions/categories/community-meeting-agenda) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
+Meeting agendas are published in advance - check our [discussions section](discussions/categories/community-meeting-agenda) for examples.
+These meetings also serve as our office hours, so if you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
+Either comment on the respective meeting discussion, reach out to us on Matrix (see below), or simply join the meeting and speak up in the meeting's Q&A.
 
 **Community calls are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
 * Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
