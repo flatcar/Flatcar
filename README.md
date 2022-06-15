@@ -16,7 +16,7 @@ See the [project website](https://flatcar-linux.org) for information about [curr
 
 Flatcar Container Linux has a dedicated [documentation site](https://docs.flatcar-linux.org). Some helpful links:
 
-* [Getting started](http://docs.flatcar-linux.org/installing)
+* [Getting started](https://www.flatcar.org/docs/latest#getting-started)
 * [Working with clusters](http://docs.flatcar-linux.org/#creating-clusters)
 
 **Does Flatcar run in my environment?** Consult the [interop-matrix](interop-matrix.md).
