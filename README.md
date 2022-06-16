@@ -47,11 +47,11 @@ For the general guidelines on making PRs/commits easier to review, please check 
 
 Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar-linux/projects/7/views/9).
 
-### Monthly Community meeting and release planning
+### Monthly Office Hours and release planning
 
 We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our community calls and release planning meeting series which interested folks can comfortably import into the calendar app of their choice.
 
-Join us in our monthly [community meetings](../../discussions/categories/community-meeting-agenda) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
+Join us in our monthly [Office Hours](../../discussions/categories/community-meeting-agenda) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
 Meeting agendas are published in advance - check our [discussions section](discussions/categories/community-meeting-agenda) for examples.
 These meetings also serve as our office hours, so if you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
 Either comment on the respective meeting discussion, reach out to us on Matrix (see below), or simply join the meeting and speak up in the meeting's Q&A.
