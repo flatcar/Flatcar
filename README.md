@@ -10,14 +10,16 @@ Please refer to the Flatcar [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Releases
 
-See the [project website](https://flatcar-linux.org) for information about [current releases](https://flatcar-linux.org/releases).
+See the [project website](https://www.flatcar.org/) for information about [current releases](https://www.flatcar.org/releases).
 
 ## Install and operate Flatcar
 
-Flatcar Container Linux has a dedicated [documentation site](https://docs.flatcar-linux.org). Some helpful links:
+Flatcar Container Linux has a dedicated [documentation site](https://www.flatcar.org/docs/latest/).
 
-* [Getting started](http://docs.flatcar-linux.org/installing)
-* [Working with clusters](http://docs.flatcar-linux.org/#creating-clusters)
+The getting started guide has further links to the topics Ignition, local testing with QEMU, controlling automatic updates, and usage with cloud providers:
+
+* [Getting started](https://www.flatcar.org/docs/latest/installing/)
+
 
 **Does Flatcar run in my environment?** Consult the [interop-matrix](interop-matrix.md).
 
@@ -33,7 +35,7 @@ For instance, please use the "New Package Request" issue type to [file your requ
 If you are thinking of making a contribution, then please engage with the project as early as possible -- by commenting on an existing issue, or creating a new issue, on GitHub. Consider the project’s mission, and how your contribution furthers it.
 Making your intent visible early on can be a major factor for getting your work accepted.
 
-For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://docs.flatcar-linux.org/reference/developer-guides/); particularly the [customise images howto](https://docs.flatcar-linux.org/reference/developer-guides/sdk-modifying-flatcar/).
+For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://www.flatcar.org/docs/latest/reference/developer-guides/); particularly the [howto on building custom images from source](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/).
 The guides aim to provide a solid base for working with the SDK to help you filing successful PRs to the Flatcar project.
 
 For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
