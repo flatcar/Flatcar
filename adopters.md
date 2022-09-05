@@ -17,7 +17,7 @@ If you are using Flatcar, please consider adding yourself as a user with a quick
 Example entry:
 
     * N: Flatcar Example User Inc.
-      D: Flatcar Example User Inc. is using Flatcar 
+      D: Using Flatcar for running Kubernetes in Azure via Cluster API
       L: https://www.flatcar.org/ 
       C: @slacknick and/or @Matrixnick 
     
