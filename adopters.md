@@ -1,7 +1,7 @@
 Who is using Flatcar?
 ====================
 
-Sharing experiences and learning from other users is essential. While the [Flatcar Slack community](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) allows
+The following is a list of adopters who have publicly spoken about their use of Flatcar, or who have added themselves to this list.
 users to get in touch and also [the Matrix channel](https://app.element.io/#/room/#flatcar:matrix.org) The following is a directory of adopters to help identify users of individual features. The users themselves directly maintain the list.
 
 
