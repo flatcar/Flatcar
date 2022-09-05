@@ -7,7 +7,7 @@ The following is a list of adopters who have publicly spoken about their use of 
 Adding yourself as a user
 -------------------------
 
-If you are using Flatcar, please consider adding yourself as a user with a quick description of your use case by opening a pull request to this file and adding a section describing your usage of Flatcar. If you are open to others contacting you about your use of Flatcar on Slack or Matrix, add your Slack/Matrix nickname as well.
+If you are using Flatcar, please consider adding yourself as a user with a quick description of your use case by opening a pull request to this file and adding a section describing your usage of Flatcar. If you are open to others contacting you about your use of Flatcar on Slack or Matrix, include your Slack/Matrix nickname or email as well.
     
     * N: Name of user (company or individual) 
       D: Description 
