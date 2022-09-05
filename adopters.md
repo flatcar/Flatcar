@@ -18,7 +18,7 @@ Example entry:
 
     * N: Flatcar Example User Inc.
       D: Using Flatcar for running Kubernetes in Azure via Cluster API
-      L: https://www.flatcar.org/ 
+      L: https://www.exampleuser.com 
       C: @slacknick and/or @Matrixnick 
     
 
