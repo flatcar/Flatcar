@@ -2,7 +2,6 @@ Who is using Flatcar?
 ====================
 
 The following is a list of adopters who have publicly spoken about their use of Flatcar, or who have added themselves to this list.
-users to get in touch and also [the Matrix channel](https://app.element.io/#/room/#flatcar:matrix.org) The following is a directory of adopters to help identify users of individual features. The users themselves directly maintain the list.
 
 
 Adding yourself as a user
