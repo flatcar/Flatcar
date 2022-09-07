@@ -43,7 +43,8 @@ Users
       D: Flatcar OS has been useful for us for our on-premise solution to our customers 
       
     * N: Equinix Metal
-
+L: https://kinvolk.io/blog/2021/02/case-study-equinix-metal-builds-on-flatcar/
+D: Equinix uses Flatcar as the OS for its bare metal cloud control plane, which runs in Kubernetes
       
     * N: Finleap Connect
       D: Finleap Connect - At finleap connect we serve over a million financial transactions per day. As a regulated company using a pure cloud-native stack based on Kubernetes, using Flatcar as our foundational building block for reliable, secure and immutable nodes across the public clouds and on bare-metal deployments was a day one decision we never regretted. Today Flatcar serves all of our 12 production clusters with over 300 nodes on public clouds in 3 countries and on our bare-metal private-cloud setup.
@@ -69,14 +70,14 @@ Public anouncmentce:
 
     * N: AT&T (DirectTV) 
       L: https://medium.com/cloud-native-the-gathering/certified-kubernetes-administrator-join-our-team-its-a-good-thing-7e27ab34dc88
-
+D: "We are integrating Flatcar Container Linux, Istio, OPA, Multi-Region, KNative, and so many other technologies and concepts it makes the mind hurt a bit."
 
     * N: Darren Shepherd 
       L:|https://twitter.com/ibuildthecloud/status/1288498089574055938 
       C: https://twitter.com/ibuildthecloud 
 
 
-    * N: Digital Sceince 
+    * N: Digital Science 
       L: https://www.linkedin.com/in/s%C3%B8ren-dalby-larsen-5502141/ 
       C: Søren Dalby Larsen 
 
