@@ -19,7 +19,7 @@ Example entry:
     * N: Flatcar Example User Inc.
       D: Using Flatcar for running Kubernetes in Azure via Cluster API
       L: https://www.exampleuser.com 
-      C: @slacknick and/or @Matrixnick 
+      C: Slack: @slacknick and/or Matrix: @Matrixnick and/or Email: nick [at] exampleuser [dot] com
     
 
 Requirements to be listed
@@ -27,7 +27,7 @@ Requirements to be listed
 
  * You must represent the user listed. Do not add entries on behalf of
    other users.
-* Commercial or production use is not required a user can be an end user, cloud service provider or consultant as long as it is permanent deployment and not a trail deployment. A well-done home lab setup can be equally
+* Commercial or production use is not required. A user can be an end user, cloud service provider or consultant as long as it is a permanent deployment and not a trial deployment. A well-done home lab setup can be equally
    interesting as a large-scale commercial deployment.
 
 
