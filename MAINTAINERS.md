@@ -12,6 +12,7 @@ maintainers:
 ### scripts
 maintainers:
 * Kai Lüke @pothos
+* Gabriel Samfira @gabriel-samfira
 * Thilo Fromm @t-lo
 
 ### coreos-overlay
@@ -39,7 +40,7 @@ maintainers:
 
 ### update_engine
 maintainers:
-* wrl
+* @wrl
 
 ### FLUO 
 maintainers:
@@ -67,4 +68,4 @@ maintainers:
 
 ### sysext-bakery
 maintainers:
-Kai Lüke @pothos
+* Kai Lüke @pothos
