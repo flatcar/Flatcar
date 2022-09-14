@@ -16,7 +16,7 @@ maintainers:
 
 ### coreos-overlay
 maintainers:
-* Krzesimir Nowak @Krzesimir Nowak @krnowak
+* Krzesimir Nowak @krnowak
 * Thilo Fromm @t-lo
 
 ### flatcar-docs
