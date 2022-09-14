@@ -73,7 +73,7 @@ Public anouncmentce:
 
     * N: AT&T (DirectTV) 
       L: https://medium.com/cloud-native-the-gathering/certified-kubernetes-administrator-join-our-team-its-a-good-thing-7e27ab34dc88
-D: "We are integrating Flatcar Container Linux, Istio, OPA, Multi-Region, KNative, and so many other technologies and concepts it makes the mind hurt a bit."
+      D: "We are integrating Flatcar Container Linux, Istio, OPA, Multi-Region, KNative, and so many other technologies and concepts it makes the mind hurt a bit."
 
     * N: Digital Science 
       L: https://digital-science.com
