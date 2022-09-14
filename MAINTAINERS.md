@@ -27,7 +27,7 @@ maintainers:
 
 ### portage-stable
 maintainers:
-* Krzesimir Nowak @Krzesimir Nowak @krnowak
+* Krzesimir Nowak @krnowak
 * Thilo Fromm @t-lo
 
 ### mantle
@@ -40,7 +40,7 @@ maintainers:
 
 ### update_engine
 maintainers:
-* @wrl
+* Willian Light @wrl
 
 ### FLUO 
 maintainers:
@@ -48,7 +48,7 @@ maintainers:
 
 ### init
 maintainers:
-* init
+* Kai Lüke @pothos
 
 ### bootengine
 maintainers:
