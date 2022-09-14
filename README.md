@@ -28,7 +28,7 @@ The getting started guide has further links to the topics Ignition, local testin
 ## Report bugs and request features
 
 Please file a respective [issue](issues) right here in the top-level github project.
-For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar-linux/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
+For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
 
 ## Participate and contribute
 
@@ -42,12 +42,12 @@ For the general guidelines on making PRs/commits easier to review, please check 
 
 ## Project status and roadmap - What's everybody working on, right now and in the future?
 
-1. short-term concerns (bugs and minor enhancements) enter the project via our [issue tracker](https://github.com/flatcar-linux/Flatcar/issues)
-2. our [tactical board](https://github.com/orgs/flatcar-linux/projects/7/views/1) reflects the issues and PRs the maintainers and the contributors are currently engaged with
-3. items which are done will be assigned to an upcoming release on the [release board](https://github.com/orgs/flatcar-linux/projects/7/views/8)
+1. short-term concerns (bugs and minor enhancements) enter the project via our [issue tracker](https://github.com/flatcar/Flatcar/issues)
+2. our [tactical board](https://github.com/orgs/flatcar/projects/7/views/1) reflects the issues and PRs the maintainers and the contributors are currently engaged with
+3. items which are done will be assigned to an upcoming release on the [release board](https://github.com/orgs/flatcar/projects/7/views/8)
    in our release planning calls
 
-Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar-linux/projects/7/views/9).
+Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar/projects/7/views/9).
 
 ### Monthly Office hours and release planning
 
@@ -83,7 +83,7 @@ For quick questions or for just hanging out with the community please use
 
 ### Discussions
 
-For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar-linux/Flatcar/discussions). Feel free to open a new discussion if you don't find an existing one covering your topic.
+For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar/Flatcar/discussions). Feel free to open a new discussion if you don't find an existing one covering your topic.
 
 ### Mailing lists
 
@@ -97,7 +97,7 @@ Flatcar Container Linux follows an Alpha-Beta-Stable release process. New featur
 
 Note that unlike features, bug fixes for any release channel will be released to that respective channel directly, i.e. Alpha bug fixes will be included in the next Alpha, Beta fixes will directly go to Beta, and Stable fixes will be released with the next Stable.
 
-We plan our releases in a 14-day cadence. The maintainer team holds fortnightly release meetings - both as recurring part of our monthly [community calls](tree/main/community-meetings/) as well as a separate meeting in-between the monthly community call cadence. Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/flatcar-linux/projects/7).
+We plan our releases in a 14-day cadence. The maintainer team holds fortnightly release meetings - both as recurring part of our monthly [community calls](tree/main/community-meetings/) as well as a separate meeting in-between the monthly community call cadence. Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/flatcar/projects/7).
 
 ### LTS
 
@@ -138,4 +138,4 @@ The Working Group are project administrators/maintainers and ultimately responsi
 
 The repositories are currently part of the Kinvolk org for historical reasons. Flatcar will move to its own github org soon.
 
-Meanwhile, github repositories that comprise Flatcar Container Linux can be found via the [organization](https://github.com/flatcar-linux) page.
+Meanwhile, github repositories that comprise Flatcar Container Linux can be found via the [organization](https://github.com/flatcar) page.
