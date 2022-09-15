@@ -57,8 +57,12 @@ Users
     
     * N: Intersys AG 
 
-    * N: Spinoco
-
+    * N: Spinoco Czech Republic, a.s.
+      D: Using Flatcar on Bare Metal to run Kubernetes for Spinoco SaaS
+      L: www.spinoco.com
+      C: pavel.chlupacek@spinoco.com 
+   
+   
     * N: Skilld.cloud
       L: https://www.skilld.cloud
       D: Flatcar choice was a no-brainer for Skilld: Flatcar is a perfect fit for running Kubernetes workloads. On premise as well as on public clouds. We rely on Flatcar to power up our cutting-edge NRT data-driven ops platforms. A key asset for building distributed & asset management based businesses such as our Community-as-a-service IT platform, or our customers Train fleet's or smart grid's ones.
