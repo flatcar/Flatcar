@@ -59,18 +59,14 @@ These meetings also serve as our office hours, so if you'd like to share somethi
 Either comment on the respective meeting discussion, reach out to us on Matrix (see below), or simply join the meeting and speak up in the meeting's Q&A.
 
 **Community calls are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
-* Zoom link: [https://us06web.zoom.us/j/84336116610](https://us06web.zoom.us/j/84336116610)
-  * Meeting ID: 843 3611 6610
-  * Passcode: 444888
+* Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 While release planning is a recurring part of each community call we also conduct separate release plannings - the Flatcar Alpha channel roughly has a 2-week release cadence, therefore one planning per month does not suffice.
 
 **Additional stand-alone release planning meetings commence every 4th Tuesday of a month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
 
-* Zoom link: [https://us06web.zoom.us/j/82054240491](https://us06web.zoom.us/j/82054240491)
-  * Meeting ID: 820 5424 0491
-  * Passcode: 444888
+* Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 
