@@ -21,7 +21,7 @@ Contributors are members of the Flatcar community who are engaged and wish to ad
 - Joining discussions on Twitter, our community [Slack channel](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) ,[Matrix channel](https://app.element.io/#/room/#flatcar:matrix.org) and office hours. 
 - Evangelizing about the project. 
 
-For first-time contributors, it’s recommended to start by going through [Contributing-git](https://github.com/flatcar-linux/Flatcar/blob/main/contributions-git.md), and joining our community Slack channel or Matrix channel. 
+For first-time contributors, it’s recommended to start by going through [Contributing-git](https://github.com/flatcar/Flatcar/blob/main/contributions-git.md), and joining our community Slack channel or Matrix channel. 
 
 
 ### Committers
