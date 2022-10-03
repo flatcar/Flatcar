@@ -100,7 +100,10 @@ Public anouncmentce:
       L: https://twitter.com/cpswan/status/1534481517887512577?s=20&t=ODnO_TPa4nhC62KNAB9Stw
       C: Chris Swan https://twitter.com/cpswan/
 
-
+    * N: STACKIT
+      D: Flatcar is used in our Kubernetes as a Service (KaaS) offering called SKE 
+      L: https://www.stackit.de/de/produkt/stackit-kubernetes-engine/
+      C: [info@stackit.de](mailto:info@stackit.de)
 
 
 
