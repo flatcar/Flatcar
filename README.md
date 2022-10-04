@@ -107,10 +107,12 @@ A new LTS is branched from Stable every 12 months, leaving a 6 months window for
 Flatcar is a community-driven project, with community members participating through the following forums:
 
 * Contributors.
-* Commiter.
-* Maintainer.
+* Maintainers.
 
-Please find more details on each of the roles in our [governance doc](governance.md)
+Every participant of the open source project - bug reporter, feature requester, code contributor - is considered a contributor.
+
+Maintainers have commit access to one or more repositories and help govern the project, driving it forward and maintaining its scope and vision.
+Please find more details in our [governance doc](governance.md).
 
 ## Repositories
 
