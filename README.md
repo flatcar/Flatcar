@@ -107,28 +107,12 @@ A new LTS is branched from Stable every 12 months, leaving a 6 months window for
 Flatcar is a community-driven project, with community members participating through the following forums:
 
 * Contributors.
-* Flatcar Team.
-* Core Working Group.
-
-### Contributors
+* Maintainers.
 
 Every participant of the open source project - bug reporter, feature requester, code contributor - is considered a contributor.
 
-### The Flatcar Team
-
-The Flatcar Team comprises contributors with a proven track record of helping the project.
-They are members of the Flatcar project on github and are typically responsible for a specific domain within the project, for example:
-* Interoperability with a particular environment
-* Prioritization and handling of issues
-* A specific package or set of packages
-* The build / continuous integration process
-* Releases
-* Community engagement.
-
-### The Core Working Group
-
-The Core Working Group comprises long term core contributors who have demonstrable impact on the project as a whole.
-The Working Group are project administrators/maintainers and ultimately responsible for the project's long-term direction as well as stewarding day-to-day project work.
+Maintainers have commit access to one or more repositories and help govern the project, driving it forward and maintaining its scope and vision.
+Please find more details in our [governance doc](governance.md).
 
 ## Repositories
 

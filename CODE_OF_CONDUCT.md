@@ -1,5 +1,3 @@
-# Flatcar Code of Conduct
-
 ## Purpose
 
 Flatcar pledges to foster an open and welcoming community, to make our events
@@ -9,88 +7,58 @@ participants of the Flatcar project pledge to be committed to providing a
 friendly, safe and welcoming environment for all, regardless of age, physical
 appearance, disability, ethnicity, socioeconomic status, religion (or lack
 thereof), level of experience, education, nationality, ethnicity, gender, or
-sexual identity and orientation.
+sexual identity and orientation. We adopted the Microsoft Open Source Code to reflect these values.
 
 This Code of Conduct outlines our expectations for all those who participate in
 our projects and community, as well as the consequences for unacceptable
 behavior.
 
 We invite all those who participate in our projects to help us create safe and
-positive experiences for everyone.
+positive experiences for everyone.  
 
-## Open [Source/Culture/Tech] Citizenship
+# Microsoft Open Source Code of Conduct
 
-A supplemental goal of this Code of Conduct is to increase open
-[source/culture/tech] citizenship by encouraging participants to recognize and
-strengthen the relationships between our actions and their effects on our
-community.
+This code of conduct outlines expectations for participation in Microsoft-managed open source communities, as well as steps for reporting unacceptable behavior. We are committed to providing a welcoming and inspiring community for all. People violating this code of conduct may be banned from the community.
 
-Communities mirror the societies in which they exist and positive action is
-essential to counteract the many forms of inequality and abuses of power that
-exist in society.
+Our open source communities strive to:
 
-If you see someone who is making an extra effort to ensure our community is
-welcoming, friendly, and encourages all participants to contribute to the
-fullest extent, we want to know.
-
-## Expected Behavior
-
-* Participate in an authentic and active way. In doing so, you contribute to the
-  health and longevity of this community.
-* Exercise consideration and respect in your communication and actions.
-* Attempt collaboration before conflict.
-* Give constructive feedback.
-* Refrain from demeaning, discriminatory, or harassing behavior.
-* Be mindful of your fellow participants. Alert the project leaders if you
-  notice violations of this Code of Conduct, even if they seem inconsequential.
-
-## Unacceptable Behavior
-
-Unacceptable behaviors include: intimidating, harassing, trolling, abusive,
-discriminatory, derogatory or demeaning communication or actions by any
-participant in our community online, at all related projects and in one-on-one
-communications carried out in the context of community business.
-
-
-Harassment includes: harmful or prejudicial verbal or written comments related
-to gender, sexual orientation, ethnicity, religion, disability; inappropriate
-use of nudity and/or sexual images; inappropriate depictions of violence;
-deliberate intimidation, stalking; unwelcome sexual attention.
-
-## Consequences of Unacceptable Behavior
-
-Unacceptable behavior from any community member, including corporate
-participants or sponsors and those with decision-making authority, will not be
-tolerated. Anyone asked to stop unacceptable behavior is expected to comply
-immediately.
-
-If a community member engages in unacceptable behavior, the project maintainers
-may take any action they deem appropriate, up to and including a
-temporary or permanent ban from participating in the project and community
-without warning.
-
-## If You Witness or Are Subject to Unacceptable Behavior
-
-If you are subject to or witness unacceptable behavior, or have any other
-concerns, please report it to conduct@flatcar-linux.org.
-
-## Addressing Grievances
-
-If you feel you have been falsely or unfairly accused of violating this Code of
-Conduct, you should notify us at conduct@flatcar-linux.org with a concise
-description of your grievance. Your grievance will be handled in accordance with
-our existing governing policies.
+* **Be friendly and patient:** Remember you might not be communicating in someone else's primary spoken or programming language, and others may not have your level of understanding.
+* **Be welcoming:** Our communities welcome and support people of all backgrounds and identities. This includes, but is not limited to members of any race, ethnicity, culture, national origin, color, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
+* **Be respectful:** We are a world-wide community of professionals, and we conduct ourselves professionally. Disagreement is no excuse for poor behavior and poor manners. Disrespectful and unacceptable behavior includes, but is not limited to:
+    * Violent threats or language.
+    * Discriminatory or derogatory jokes and language.
+    * Posting sexually explicit or violent material.
+    * Posting, or threatening to post, people's personally identifying information ("doxing").
+    * Insults, especially those using discriminatory terms or slurs.
+    * Behavior that could be perceived as sexual attention.
+    * Advocating for or encouraging any of the above behaviors.
+* **Understand disagreements:** Disagreements, both social and technical, are useful learning opportunities. Seek to understand the other viewpoints and resolve differences constructively.
+* This code is not exhaustive or complete. It serves to capture our common understanding of a productive, collaborative environment. We expect the code to be followed in spirit as much as in the letter.
 
 ## Scope
+This code of conduct applies to all repos and communities for Microsoft-managed open source projects regardless of whether or not the repo explicitly calls out its use of this code. The code also applies in public spaces when an individual is representing a project or its community. Examples include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
 
-We expect all project participants (contributors, paid or otherwise; sponsors;
-and others) to abide by this Code of Conduct in all projects as well as in all
-communications pertaining to community affairs.
+Note: Some Microsoft-managed communities have codes of conduct that pre-date this document and issue resolution process. While communities are not required to change their code, they are expected to use the resolution process outlined here.  The review team will coordinate with the communities involved to address your concerns.
+
+## Reporting Code of Conduct Issues
+We encourage all communities to resolve issues on their own whenever possible. This builds a broader and deeper understanding and ultimately a healthier interaction. In the event that an issue cannot be resolved locally, please feel free to report your concerns by contacting [opencode@microsoft.com](mailto:opencode@microsoft.com).  Your report will be handled in accordance with the issue resolution process described in the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/).
+
+In your report please include:
+
+* Your contact information.
+* Names (real, usernames or pseudonyms) of any individuals involved. If there are additional witnesses, please include them as well.
+* Your account of what occurred, and if you believe the incident is ongoing. If there is a publicly available record (e.g. a mailing list archive or a public chat log), please include a link or attachment.
+* Any additional information that may be helpful.
+
+All reports will be reviewed by a multi-person team and will result in a response that is deemed necessary and appropriate to the circumstances. Where additional perspectives are needed, the team may seek insight from others with relevant expertise or experience. The confidentiality of the person reporting the incident will be kept at all times. Involved parties are never part of the review team.
+
+Anyone asked to stop unacceptable behavior is expected to comply immediately. If an individual engages in unacceptable behavior, the review team may take any action they deem appropriate, including a permanent ban from the community.
 
 ## License and attribution
 
-Flatcar CoC is distributed under CC BY SA 4.0 license.
+_This code of conduct is based on the template established by the [TODO Group](http://todogroup.org/) and used by numerous other large communities (e.g., [Facebook](https://code.facebook.com/pages/876921332402685/open-source-code-of-conduct), Twitter, GitHub and the Scope section from the [Contributor Covenant version 1.4](http://contributor-covenant.org/version/1/4/)._
 
-This CoC is adapted from [Berlin CoC](https://berlincodeofconduct.org/) and
-[Packet CoC](https://github.com/packethost/standards/blob/master/CODE_OF_CONDUCT.md).
+The [Microsoft code of conduct](https://github.com/microsoft/microsoft.github.io/blob/main/codeofconduct/index.md]
+
+
 
