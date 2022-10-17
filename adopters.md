@@ -25,8 +25,8 @@ Example entry:
 Requirements to be listed
 -------------------------
 
- * You must represent the user listed. Do not add entries on behalf of
-   other users.
+* You must represent the user listed. Do not add entries on behalf of
+   other users, unless adding a link to a public announcement / blog post.
 * Commercial or production use is not required. A user can be an end user, cloud service provider or consultant as long as it is a permanent deployment and not a trial deployment. A well-done home lab setup can be equally
    interesting as a large-scale commercial deployment.
 
@@ -41,9 +41,18 @@ Users
     * N: AloPeyk
       D: We are an on-demand delivery business that every day serve millions of requests on a consistent bare metal infrastructure have this concern to choose a reliable and atomic operations system but none of the common OS couldn't satisfy us for such heavy workloads. Since we migrated our production Kubernetes cluster nothing can break this consistent and solid cluster which is powered by amazing Flatcoar OS.
     
+    * N: AT&T 
+      L: https://medium.com/cloud-native-the-gathering/certified-kubernetes-administrator-join-our-team-its-a-good-thing-7e27ab34dc88
+      D: "We are integrating Flatcar Container Linux, Istio, OPA, Multi-Region, KNative, and so many other technologies and concepts it makes the mind hurt a bit."
+      
     * N: Cloud house
       D: Flatcar OS has been useful for us for our on-premise solution to our customers 
-      
+
+    * N: Digital Science 
+      L: https://digital-science.com
+      D: We're running Flatcar on all our self-hosted Kubernetes clusters on AWS, used for all data processing behind Dimensions (https://dimensions.ai). We choose Flatcar for security and simplicity.
+      C: soren [at] uberresearch.com
+
     * N: Equinix Metal
       L: https://kinvolk.io/blog/2021/02/case-study-equinix-metal-builds-on-flatcar/
       D: Equinix uses Flatcar as the OS for its bare metal cloud control plane, which runs in Kubernetes
@@ -51,9 +60,12 @@ Users
     * N: Finleap Connect
       D: Finleap Connect - At finleap connect we serve over a million financial transactions per day. As a regulated company using a pure cloud-native stack based on Kubernetes, using Flatcar as our foundational building block for reliable, secure and immutable nodes across the public clouds and on bare-metal deployments was a day one decision we never regretted. Today Flatcar serves all of our 12 production clusters with over 300 nodes on public clouds in 3 countries and on our bare-metal private-cloud setup.
     
+    * N: Giant Swarm 
+       L: https://www.giantswarm.io/blog/time-to-catch-a-new-train-flatcar-linux
+
     * N: Planetary Quantum GmbH
-	  L: https://www.planetary-quantum.com/
-	  D: Planetary Quantum is a berlin-based provider of Docker-hosting and application hosting. Our sister company Planetary Networks colocates their private cloud in two (fiber-)interconnected datacenters in Berlin and Quantum offers container-based solutions (Docker Swarm and a custom tailored application hosting) on top of Flatcar Linux. Flatcar Linux is a great choice for us because it's a modern Linux, well-suited for Docker and Kubernetes due to recent versions of Kernel, SystemD, immutable root and a well-tested userland. Simple and straight-forward updates of the OS make running Flatcar a no-brainer for us. We currently operate over 50 clusters for our customers in our private cloud — all based on Flatcar Linux.
+       L: https://www.planetary-quantum.com/
+       D: Planetary Quantum is a berlin-based provider of Docker-hosting and application hosting. Our sister company Planetary Networks colocates their private cloud in two (fiber-)interconnected datacenters in Berlin and Quantum offers container-based solutions (Docker Swarm and a custom tailored application hosting) on top of Flatcar Linux. Flatcar Linux is a great choice for us because it's a modern Linux, well-suited for Docker and Kubernetes due to recent versions of Kernel, SystemD, immutable root and a well-tested userland. Simple and straight-forward updates of the OS make running Flatcar a no-brainer for us. We currently operate over 50 clusters for our customers in our private cloud — all based on Flatcar Linux.
     
     * N: Intersys AG 
 
@@ -70,40 +82,17 @@ Users
     * N: Memzo 
       D: Kinvolk was a valuable source of knowledge when troubleshooting installation issues with our platform vendor. They were able to join us and the vendor on a call and sort out the issues quickly.The use of the Flatcar Update Server gave us confidence about what software/OS versions were running in each of our environments. This allowed us to better test upgrades before promoting the change to production environments.
 
-    * N: Wipro
-      D: Wipro Business Solutions uses Flatcar Linux to power their hybrid/multi-cloud PostgreSQL containerized DBaaS platform. Each provisioned database is running on a dedicated lightweight stack with Flatcar Linux as the foundational OS running on each database VM. In addition the DBaaS API itself and all supporting machines use Flatcar Linux as well. Flatcar Linux has proven to be a well-supported rocket solid OS with minimal attack surface, build in update mechanism and integrated docker daemon. Ignition brings in an early boot provisioning utility that perfectly adds to the full automation approach of the PostgreSQL DBaaS platform. We use it at scale on-prem with OpenStack cloud but also with public clouds like Google and Tencent
-      
-Public anouncmentce: 
-
-    * N: AT&T (DirectTV) 
-      L: https://medium.com/cloud-native-the-gathering/certified-kubernetes-administrator-join-our-team-its-a-good-thing-7e27ab34dc88
-      D: "We are integrating Flatcar Container Linux, Istio, OPA, Multi-Region, KNative, and so many other technologies and concepts it makes the mind hurt a bit."
-
-    * N: Digital Science 
-      L: https://digital-science.com
-      D: We're running Flatcar on all our self-hosted Kubernetes clusters on AWS, used for all data processing behind Dimensions (https://dimensions.ai). We choose Flatcar for security and simplicity.
-      C: soren [at] uberresearch.com
-
-
-    * N: Giant Swarm 
-       L: Https://www.giantswarm.io/blog/time-to-catch-a-new-train-flatcar-linux| 
-
-    * N: Jérôme Petazzoni
-      L: https://twitter.com/jpetazzo/status/1317903569081741312 
-      C: https://twitter.com/jpetazzo/
-
-
     * N: Mettle
       L https://swade1987.medium.com/upgrading-to-flatcar-linux-746751e89ab4
-
-    * N: The @ Company 
-      L: https://twitter.com/cpswan/status/1534481517887512577?s=20&t=ODnO_TPa4nhC62KNAB9Stw
-      C: Chris Swan https://twitter.com/cpswan/
 
     * N: STACKIT
       D: Flatcar is used in our Kubernetes as a Service (KaaS) offering called SKE 
       L: https://www.stackit.de/de/produkt/stackit-kubernetes-engine/
       C: [info@stackit.de](mailto:info@stackit.de)
 
+    * N: The @ Company 
+      L: https://twitter.com/cpswan/status/1534481517887512577?s=20&t=ODnO_TPa4nhC62KNAB9Stw
+      C: Chris Swan https://twitter.com/cpswan/
 
-
+    * N: Wipro
+      D: Wipro Business Solutions uses Flatcar Linux to power their hybrid/multi-cloud PostgreSQL containerized DBaaS platform. Each provisioned database is running on a dedicated lightweight stack with Flatcar Linux as the foundational OS running on each database VM. In addition the DBaaS API itself and all supporting machines use Flatcar Linux as well. Flatcar Linux has proven to be a well-supported rock solid OS with minimal attack surface, built in update mechanism and integrated docker daemon. Ignition brings in an early boot provisioning utility that perfectly adds to the full automation approach of the PostgreSQL DBaaS platform. We use it at scale on-prem with OpenStack cloud but also with public clouds like Google and Tencent
