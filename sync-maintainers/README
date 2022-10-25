@@ -1,0 +1,10 @@
+Usage:
+
+```
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirements.txt
+./sync-maintainers.py list
+./sync-maintainers.py repo --repo=REPONAME
+GITHUB_TOKEN=... ./sync-maintainers github --repo=REPONAME
+```
