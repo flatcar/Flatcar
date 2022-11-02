@@ -23,4 +23,4 @@ Other criteria that are weighed are the following.
 
 ## How to propose a package for inclusion
 
-In order to propose a new package for inclusion, [open an issue using the "New Package Request" template](https://github.com/flatcar-linux/Flatcar/issues/new?assignees=&labels=kind%2Fnew-package&template=new-package-request.md&title=New+Package+Request%3A+%5Bpackage-name%5D).
+In order to propose a new package for inclusion, [open an issue using the "New Package Request" template](https://github.com/flatcar/Flatcar/issues/new?assignees=&labels=kind%2Fnew-package&template=new-package-request.md&title=New+Package+Request%3A+%5Bpackage-name%5D).
