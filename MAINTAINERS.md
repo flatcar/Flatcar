@@ -42,7 +42,7 @@ maintainers:
 maintainers:
 * Willian Light @wrl
 
-### FLUO 
+### flatcar-linux-update-operator
 maintainers:
 * Mateusz Gozdek @invidian
 
