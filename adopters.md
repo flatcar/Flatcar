@@ -96,3 +96,7 @@ Users
 
     * N: Wipro
       D: Wipro Business Solutions uses Flatcar Linux to power their hybrid/multi-cloud PostgreSQL containerized DBaaS platform. Each provisioned database is running on a dedicated lightweight stack with Flatcar Linux as the foundational OS running on each database VM. In addition the DBaaS API itself and all supporting machines use Flatcar Linux as well. Flatcar Linux has proven to be a well-supported rock solid OS with minimal attack surface, built in update mechanism and integrated docker daemon. Ignition brings in an early boot provisioning utility that perfectly adds to the full automation approach of the PostgreSQL DBaaS platform. We use it at scale on-prem with OpenStack cloud but also with public clouds like Google and Tencent
+      
+    * N: 1&1 Mail & Media (GMX, WEB.DE, mail.com)
+      D: 1&1 Mail & Media is happily using FlatCar as the underlying OS in their large on-premise bare-metal Kubernetes installation, hosting the majority of services for their >40M users
+      C: stephan.fudeus [at] 1und1 [dot] de
