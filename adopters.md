@@ -100,3 +100,8 @@ Users
     * N: 1&1 Mail & Media (GMX, WEB.DE, mail.com)
       D: 1&1 Mail & Media is happily using FlatCar as the underlying OS in their large on-premise bare-metal Kubernetes installation, hosting the majority of services for their >40M users
       C: stephan.fudeus [at] 1und1 [dot] de
+
+    * N: Genesis Cloud
+      D: Genesis Cloud is using Flatcar Linux as the base for its public cloud offering for instances with GPUs and other accelerators
+      L: https://genesiscloud.com/
+      C: Slack: @Philipp Riederer / @Lukas Stockner
