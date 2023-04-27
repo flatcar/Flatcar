@@ -9,7 +9,7 @@ Please propose ownership by filing a PR for this document.
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
-| EC2         |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers | [#107](https://github.com/flatcar/Flatcar/issues/107) | EC2 vendor tools not fully supported (e.g. SSM agent for run-command);  IAM 2.0 support missing |
+| EC2         |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers |    | IAM 2.0 support missing |
 | Azure       |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers |    | HyperV telemetry support missing; needs tracking issue |
 | GCE         |               X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | Digital Ocean (VMs) |       X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
