@@ -105,3 +105,8 @@ Users
       D: Genesis Cloud is using Flatcar Linux as the base for its public cloud offering for instances with GPUs and other accelerators
       L: https://genesiscloud.com/
       C: Slack: @Philipp Riederer / @Lukas Stockner
+
+    * N: Norwegian Labor and Welfare Administration (NAV)
+      D: The largest Norweigan government agency have been using Flatcar to run all of their on-prem Kuberntes clusters enabling application teams become more autonomous and to build better welfare services and deliver then with a higher velocity then before.
+      L: https://nais.io
+      C: hans.kristian.flaatten@nav.no
