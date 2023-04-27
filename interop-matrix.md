@@ -31,7 +31,7 @@ Please propose ownership by filing a PR for this document.
 | Tinkerbell  |                                |   X   |             | [no owner] |                      |       |
 | Rancher (VMs) |                              |   X   |             | [no owner] |                      |       |
 | QEmu / KVM backed |         X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
-| OpenStack |                                  |   X   |             | [no owner] |                      | https://docs.openstack.org/image-guide/obtain-images.html |
+| OpenStack |                 X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | VirtualBox |                                 |   X   |             | [no owner] |                      |       |
 | Vagrant |                                    |   X   |             | [no owner] |                      | Isn't this plain qemu/kvm? |
 
@@ -53,6 +53,7 @@ Please propose ownership by filing a PR for this document.
 | CAPV        |                                | [no owner] |        |                                   |       |
 | CAPM3       |                                | [no owner] |        |                                   |       |
 | CAPG        |                                | [no owner] |        |                                   |       |
+| CAPO        |                                |   X   |  X (upstream) | Upstream |                      |       |
 
 ## Kubernetes Distros
 
