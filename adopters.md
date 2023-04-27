@@ -107,6 +107,6 @@ Users
       C: Slack: @Philipp Riederer / @Lukas Stockner
 
     * N: Norwegian Labor and Welfare Administration (NAV)
-      D: The largest Norweigan government agency have been using Flatcar to run all of their on-prem Kuberntes clusters enabling application teams become more autonomous and to build better welfare services and deliver then with a higher velocity then before.
+      D: The largest Norweigan government agency have been using Flatcar since 2021 to run all of their on-prem Kuberntes clusters enabling application teams become more autonomous and to build better welfare services and deliver then with a higher velocity then before.
       L: https://nais.io
       C: hans.kristian.flaatten@nav.no
