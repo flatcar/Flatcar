@@ -61,7 +61,8 @@ Users
       D: Finleap Connect - At finleap connect we serve over a million financial transactions per day. As a regulated company using a pure cloud-native stack based on Kubernetes, using Flatcar as our foundational building block for reliable, secure and immutable nodes across the public clouds and on bare-metal deployments was a day one decision we never regretted. Today Flatcar serves all of our 12 production clusters with over 300 nodes on public clouds in 3 countries and on our bare-metal private-cloud setup.
     
     * N: Giant Swarm 
-       L: https://www.giantswarm.io/blog/time-to-catch-a-new-train-flatcar-linux
+      L: https://www.giantswarm.io/blog/time-to-catch-a-new-train-flatcar-linux
+      D: Giant Swarm uses Flatcar within their Kubernetes Distribution. Flatcar is used on all providers (Azure, AWS, Google, OpenStack and Vmware). Giant Swarm manages 100s of clusters with 1000s of nodes running on Flatcar across the planet.
 
     * N: Planetary Quantum GmbH
        L: https://www.planetary-quantum.com/
