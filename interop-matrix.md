@@ -9,12 +9,12 @@ Please propose ownership by filing a PR for this document.
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
-| EC2         |           Partial              |   X   |      X      | @kinvolk/flatcar-maintainers | [#107](https://github.com/kinvolk/Flatcar/issues/107) | EC2 vendor tools not fully supported (e.g. SSM agent for run-command);  IAM 2.0 support missing |
-| Azure       |           Partial              |   X   |      X      | @kinvolk/flatcar-maintainers |    | HyperV telemetry support missing; needs tracking issue |
-| GCE         |               X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
-| Digital Ocean (VMs) |       X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
-| Equinix Metal |             X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
-| ESXi / vSphere |            X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
+| EC2         |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers |    | IAM 2.0 support missing |
+| Azure       |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers |    | HyperV telemetry support missing; needs tracking issue |
+| GCE         |               X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
+| Digital Ocean (VMs) |       X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
+| Equinix Metal |             X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
+| ESXi / vSphere |            X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | Hetzner Cloud |                              |   X   |             | [no owner] |                      |       |
 | Vultr VPS  |                                 |   X   |             | [no owner] |                      |       |
 | Cloudscale |                                 |   X   |             | [no owner] |                      |       |
@@ -30,8 +30,8 @@ Please propose ownership by filing a PR for this document.
 | Azure Stack |                                | w/ caveat |         | [no owner] |                      | controller node not supported on Flatcar (cloud-init feature missing) |
 | Tinkerbell  |                                |   X   |             | [no owner] |                      |       |
 | Rancher (VMs) |                              |   X   |             | [no owner] |                      |       |
-| QEmu / KVM backed |         X                |   X   |      X      | @kinvolk/flatcar-maintainers |    |       |
-| OpenStack |                                  |   X   |             | [no owner] |                      | https://docs.openstack.org/image-guide/obtain-images.html |
+| QEmu / KVM backed |         X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
+| OpenStack |                 X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | VirtualBox |                                 |   X   |             | [no owner] |                      |       |
 | Vagrant |                                    |   X   |             | [no owner] |                      | Isn't this plain qemu/kvm? |
 
@@ -49,10 +49,11 @@ Please propose ownership by filing a PR for this document.
 | CAPB        |              X                 |   X   |  X (upstream) | Upstream |                      | Covered by CAPB release tests |
 | CAPA        |              X                 |   X   |  X (upstream) | Upstream |                      | Covered by CAPA release tests |
 | CAPA EKS    |                                |       |             | [no owner] |                      |       |
-| CAPZ        |                                |   w/ caveat |       | @kinvolk/flatcar-maintainers |  | WIP Prototype |
+| CAPZ        |                                |   w/ caveat |       | @flatcar/flatcar-maintainers |  | WIP Prototype |
 | CAPV        |                                | [no owner] |        |                                   |       |
 | CAPM3       |                                | [no owner] |        |                                   |       |
 | CAPG        |                                | [no owner] |        |                                   |       |
+| CAPO        |                                |   X   |  X (upstream) | Upstream |                      |       |
 
 ## Kubernetes Distros
 
