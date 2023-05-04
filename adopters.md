@@ -75,7 +75,6 @@ Users
       L: www.spinoco.com
       C: pavel.chlupacek@spinoco.com 
    
-   
     * N: Skilld.cloud
       L: https://www.skilld.cloud
       D: Flatcar choice was a no-brainer for Skilld: Flatcar is a perfect fit for running Kubernetes workloads. On premise as well as on public clouds. We rely on Flatcar to power up our cutting-edge NRT data-driven ops platforms. A key asset for building distributed & asset management based businesses such as our Community-as-a-service IT platform, or our customers Train fleet's or smart grid's ones.
@@ -112,8 +111,8 @@ Users
       L: https://nais.io
       C: hans.kristian.flaatten@nav.no
 
-      N: Qualys, Inc 
+    * N: Qualys, Inc
       D: Qualys Gateway Service uses Flatcar Container Linux as a base for its container-based appliance, which is mainly focussed on proxy and caching services, serving other Qualys sensors such as Cloud Agent, Scanner and Passive Sensor. QGS also serves Qualys modules including VMDR, Patch Management, Policy Compliance, EDR, FIM and XDR.
       L: https://www.qualys.com/documentation/#qualys-gateway-service
       C: jrose@qualys.com
-      
+
