@@ -1,7 +1,7 @@
 # Overview
 
 
-Flatcar is a community based project, anyone who wants to participate is welcomed. We adopted the (Microsoft Open Source code of Conduct) [https://microsoft.github.io/codeofconduct/] as we pledge to be an opening and welcoming community for anyone who want to participate in it.
+Flatcar is a community based project, anyone who wants to participate is welcomed. We adopted the [Microsoft Open Source code of Conduct](https://microsoft.github.io/codeofconduct/) as we pledge to be an opening and welcoming community for anyone who want to participate in it.
 
 The project is governed by a flat hierarchy - a group of people sharing a common vision of Flatcar in accordance to its mission statement.
 
