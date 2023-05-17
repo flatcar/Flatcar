@@ -49,23 +49,29 @@ For the general guidelines on making PRs/commits easier to review, please check 
 
 Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar/projects/7/views/9).
 
-### Monthly Office hours and release planning
+### Monthly Office hours and Developer Syncs
 
-We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our community calls and release planning meeting series which interested folks can comfortably import into the calendar app of their choice.
+We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our Office Hours and Developer Sync meeting series which interested folks can comfortably import into the calendar app of their choice.
 
-Join us in our monthly [office hours meetings](../../discussions/categories/community-meeting-agenda) to engage with the Flatcar community interactively, to learn about the project's directions, and to discuss contributions.
-Meeting agendas are published in advance - check our [discussions section](discussions/categories/community-meeting-agenda) for examples.
-These meetings also serve as our office hours, so if you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
+Join us in our monthly [office hours meetings](../../discussions/categories/office-hours-agenda) to engage with the Flatcar User community interactively, to learn about the project's directions, and to discuss contributions. We also conduct the occasional user-focused demo of technologies related to image-based Linux.
+Lastly, the call includes a brief Release Planning with an update on the changes in the next immediate releases.
+
+If you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
 Either comment on the respective meeting discussion, reach out to us on Matrix (see below), or simply join the meeting and speak up in the meeting's Q&A.
 
-**Community calls are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+**Flatcar Office Hours are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+
+* Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/office-hours-agenda) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
-While release planning is a recurring part of each community call we also conduct separate release plannings - the Flatcar Alpha channel roughly has a 2-week release cadence, therefore one planning per month does not suffice.
 
-**Additional stand-alone release planning meetings commence every 4th Tuesday of a month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+**Flatcar Developer Syncs commence every 4th Tuesday of a month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
 
+While release planning is a recurring part of each community call we also conduct separate Developer Syncs for backlog grooming and task planning. We discuss Roadmap items, special projects, and day-to-day issues in these calls. If you want to participate and discuss or pick up work, that call is for you!
+Just like the Office Hours the call includes a brief Release Planning with an update on the changes in the next immediate releases.
+
+* Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/flatcar-developer-sync) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
