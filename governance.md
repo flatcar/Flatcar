@@ -1,11 +1,65 @@
-# Overview
+# Flatcar Project Governance
 
 
-Flatcar is a community based project, anyone who wants to participate is welcomed. We adopted the [Microsoft Open Source code of Conduct](https://microsoft.github.io/codeofconduct/) as we pledge to be an opening and welcoming community for anyone who want to participate in it.
+Flatcar is a community based project, anyone who wants to participate is welcomed. We adopted the [CNCD code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be an opening and welcoming community for anyone who want to participate in it.
 
 The project is governed by a flat hierarchy - a group of people sharing a common vision of Flatcar in accordance to its mission statement.
 
-### Maintainers
+This goverance explains how the project is run.
+
+- [Values](#values)
+- [Maintainers](#maintainers)
+- [Becoming a Maintainer](#becoming-a-maintainer)
+- [Meetings](#meetings)
+- [CNCF Resources](#cncf-resources)
+- [Code of Conduct Enforcement](#code-of-conduct)
+- [Security Response Team](#security-response-team)
+- [Voting](#voting)
+- [Modifications](#modifying-this-charter)
+
+## Values
+
+The Flatcar and its leadership embrace the following values:
+
+* Openness: Communication and decision-making happens in the open and is discoverable for future
+  reference. As much as possible, all discussions and work take place in public
+  forums and open repositories.
+
+* Fairness: All stakeholders have the opportunity to provide feedback and submit
+  contributions, which will be considered on their merits.
+
+* Community over Product or Company: Sustaining and growing our community takes
+  priority over shipping code or sponsors' organizational goals.  Each
+  contributor participates in the project as an individual.
+
+* Inclusivity: We innovate through different perspectives and skill sets, which
+  can only be accomplished in a welcoming and respectful environment.
+
+* Participation: Responsibilities within the project are earned through
+  participation, and there is a clear path up the contributor ladder into leadership
+  positions.
+
+## Maintainers
+
+Flatcar Maintainers have write access to the [Flatcar](https://github.com/flatcar/Flatcar).
+They can merge their own patches or patches from others. The current maintainers
+can be found in [MAINTAINERS.md](./MAINTAINERS.md).  Maintainers collectively manage the project's
+resources and contributors.
+
+This privilege is granted with some expectation of responsibility: maintainers
+are people who care about the Flatcar project and want to help it grow and
+improve. A maintainer is not just someone who can make changes, but someone who
+has demonstrated their ability to collaborate with the team, get the most
+knowledgeable people to review code and docs, contribute high-quality code, and
+follow through to fix issues (in code or tests).
+
+A maintainer is a contributor to the project's success and a citizen helping
+the project succeed.
+
+The collective team of all Maintainers is known as the Maintainer Council, which
+is the governing body for the project.
+
+### Becoming a Maintainer
 
 Flatcar maintainers are members of the Flatcar community with commit access to one or more repositories of the project.
 Maintainers are active community members who are responsible for the overall quality and stewardship of the project, and are expected to remain actively involved in the project and participate in voting and discussing of proposed project level changes.
@@ -20,16 +74,96 @@ Maintainer candidates should have demonstrated they:
 - Have a deep and comprehensive understanding of the Flatcar code base, technical goals, and directions.
 - Actively engage with major Flatcar feature proposals and implementations.
 
+To achive that the following is expected:
+  * commitment to the project:
+    * participate in discussions, contributions, code and documentation reviews
+      for [TODO: Time Period] or more,
+    * perform reviews for [TODO:Number] non-trivial pull requests,
+    * contribute [TODO:Number] non-trivial pull requests and have them merged,
+  * ability to write quality code and/or documentation,
+  * ability to collaborate with the team,
+  * understanding of how the team works (policies, processes for testing and code review, etc),
+  * understanding of the project's code base and coding and documentation style.
+
 Periodically, the existing maintainers curate a list of contributors that have shown regular activity on the project over the prior months.
 The nominating maintainer will create a PR to update the Maintainers List.
 It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
 Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
 
+Maintainers who are selected will be granted the necessary GitHub rights.
 
-### Retirement
+
+### Removing a Maintainer
 
 Life priorities, interests, and passions can change.
 If you're a maintainer but feel you must remove yourself from the list, inform other maintainers that you intend to step down, and if possible, help find someone to pick up your work. 
 At the very least, ensure your work can be continued where you left off.
-
 After you've informed other maintainers, create a pull request to remove yourself from the MAINTAINERS file.
+
+Maintainers may also be removed after being inactive, failure to fulfill their 
+Maintainer responsibilities, violating the Code of Conduct, or other reasons.
+Inactivity is defined as a period of very low or no activity in the project 
+for a year or more, with no definite schedule to return to full Maintainer 
+activity.
+
+A Maintainer may be removed at any time by a 2/3 vote of the remaining maintainers.
+
+Depending on the reason for removal, a Maintainer may be converted to Emeritus
+status.  Emeritus Maintainers will still be consulted on some project matters,
+and can be rapidly returned to Maintainer status if their availability changes.
+
+
+## Meetings
+
+Time zones permitting, Maintainers are expected to participate in the Flatcar Developer Syncs meeting, which occurs every 4th Tuesday of a month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST
+
+Maintainers will also have closed meetings in order to discuss security reports
+or Code of Conduct violations.  Such meetings should be scheduled by any
+Maintainer on receipt of a security issue or CoC report.  All current Maintainers
+must be invited to such closed meetings, except for any Maintainer who is
+accused of a CoC violation.
+
+## CNCF Resources
+
+Any Maintainer may suggest a request for CNCF resources during a
+meeting.  A simple majority of Maintainers approves the request.  The Maintainers
+may also choose to delegate working with the CNCF to non-Maintainer community
+members, who will then be added to the [CNCF's Maintainer List](https://github.com/cncf/foundation/blob/main/project-maintainers.csv)
+for that purpose.
+
+## Code of Conduct
+
+[Code of Conduct](./code-of-conduct.md)
+violations by community members will be discussed and resolved
+on the [private Maintainer mailing list](maintainers-noreply@flatcar-linux.org).  If a Maintainer is directly involved
+in the report, the Maintainers will instead designate two Maintainers to work
+with the CNCF Code of Conduct Committee in resolving it.
+
+## Security Response Team
+
+The Maintainers will appoint a Security Response Team to handle security reports.
+This committee may simply consist of the Maintainer Council themselves.  If this
+responsibility is delegated, the Maintainers will appoint a team of at least two 
+contributors to handle it.  The Maintainers will review who is assigned to this
+at least once a year.
+
+The Security Response Team is responsible for handling all reports of security
+holes and breaches according to the [security policy](TODO:Link to security.md).
+
+## Voting
+
+While most business in Flatcar is conducted by "[lazy consensus](https://community.apache.org/committers/lazyConsensus.html)", 
+periodically the Maintainers may need to vote on specific actions or changes.
+A vote can be taken on 
+[the private Maintainer mailing list](maintainers-noreply@flatcar-linux.org) for security or conduct matters.  
+Votes may also be taken at [Flatcar Developer Syncs meetings](https://meet.flatcar.org/OfficeHours).  Any Maintainer may
+demand a vote be taken.
+
+Most votes require a simple majority of all Maintainers to succeed, except where
+otherwise noted.  Two-thirds majority votes mean at least two-thirds of all 
+existing maintainers.
+
+## Modifying this Charter
+
+Changes to this Governance and its supporting documents may be approved by 
+a 2/3 vote of the Maintainers.
