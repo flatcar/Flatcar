@@ -99,7 +99,8 @@ that you want to work on it. Something like "I want to work on this" is fine.
 <todo>
 
 ## Development Environment Setup
-<TODO>
+For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://www.flatcar.org/docs/latest/reference/developer-guides/); particularly the [howto on building custom images from source](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/).
+The guides aim to provide a solid base for working with the SDK to help you filing successful PRs to the Flatcar project.
 
 # Git and Github
 
