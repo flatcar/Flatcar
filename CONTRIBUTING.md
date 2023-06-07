@@ -53,6 +53,17 @@ together.
 If you are thinking of making a contribution, then please engage with the project as early as possible -- by commenting on an existing issue, or creating a new issue, on GitHub. Consider the project’s mission, and how your contribution furthers it.
 Making your intent visible early on can be a major factor for getting your work accepted.
 
+You can reach contributors and maintainers via
+
+* Our matrix chat (via element.io): https://app.element.io/#/room/#flatcar:matrix.org
+* Our Slack channel in the Kubernetes Slack org: https://kubernetes.slack.com/archives/C03GQ8B5XNJ
+* By engaging in or starting a new Github Discussion: https://github.com/flatcar/Flatcar/discussions
+
+Though Matrix and Github discussions are encouraged and the preferred way to interact with the Flatcar community, we also maintain mailing lists for Flatcar users and developers:
+* Flatcar Users: https://groups.google.com/g/flatcar-linux-user
+* Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
+
+
 For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
 
 
