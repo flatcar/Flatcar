@@ -107,7 +107,28 @@ Once you see an issue that you'd like to work on, please post a comment saying
 that you want to work on it. Something like "I want to work on this" is fine.
 
 ## Pull Request Lifecycle
-<todo>
+
+Pull requests may be issued from repository branches or from a fork of the repo.
+Branch PRs are limited to Maintainers since these require write access to the respective repository.
+While the origin of a PR may have impact on the approvals required for the CI to build and test, the project does not discriminate PR origins regarding getting a change reviewed or merged.
+
+PRs need to undergo a successful build+test as well as a review, and require at least one LGTM from a maintainer who is not the author of the PR for a merge.
+Note that the approver(s) of a PR may be co-authors though - this allows reviewers to suggest changes.
+
+A PR undergoes the following stages:
+1. PR filed. <br/>
+    This includes filing "draft" PRs which are not considered ready for review and will only undergo build+test  when explicitly requested.
+2. PR is ready for review. <br/>
+    In this stage, maintainers can start reviewing the PR as well as approve build+test runs.
+    PRs can be filed in this stage if the author considers the PR ready at the time of creation.
+    To generate traction on stale PRs, authors or project coordinators may actively reach out to the maintainers team, e.g via the Matrix channel or in office hours and developer syncs.
+3. PR is being reviewed. <br/>
+  Maintainers add comments and may request changes.
+  Reviewers may also add change suggestions, streamlining the review process for the author.
+  During review, the PR is also vetted against Flatcar's mission statement and our core principles.
+  Multiple build + test runs may be approved by maintainers to further validate the PR.
+4. PR is being merged, or closed w/o merge. <br/>
+  Depending on the outcome of the review, the PR is being merged or closed without a merge.
 
 ## Development Environment Setup
 For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://www.flatcar.org/docs/latest/reference/developer-guides/); particularly the [howto on building custom images from source](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/).
