@@ -40,6 +40,9 @@ We welcome many different types of contributions including:
 * Web design, helping to maintain the Flatcar website
 * Communications / Social Media / Blog Posts
 * Release management
+* Evangelise the project in talks, presentations, and workshops
+* Coordinate work between Flatcar maintainers and upstream projects, for instance coordinating work items and planning project roadmaps in special sub-projects like Flatcar CAPI, or our sysext initiative
+* Work with contributors and maintainers to organise project-wide events like bug fixing or doc writing days, devrooms at conferences, community days / meetups, or even conferences
 
 Not everything happens through a GitHub pull request. Please come to our
 [meetings](### Monthly Office hours and Developer Syncs) or [contact us](maintainers-noreply@flatcar-linux.org) and let's discuss how we can work
