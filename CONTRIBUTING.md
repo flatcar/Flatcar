@@ -45,7 +45,7 @@ We welcome many different types of contributions including:
 * Work with contributors and maintainers to organise project-wide events like bug fixing or doc writing days, devrooms at conferences, community days / meetups, or even conferences
 
 Not everything happens through a GitHub pull request. Please come to our
-[meetings](### Monthly Office hours and Developer Syncs) or [contact us](maintainers-noreply@flatcar-linux.org) and let's discuss how we can work
+[meetings](### Monthly Office hours and Developer Syncs) or [contact us](maintainers@flatcar-linux.org) and let's discuss how we can work
 together. 
 
 ## Participate and contribute
