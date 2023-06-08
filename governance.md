@@ -74,16 +74,19 @@ Maintainer candidates should have demonstrated they:
 - Have a deep and comprehensive understanding of the Flatcar code base, technical goals, and directions.
 - Actively engage with major Flatcar feature proposals and implementations.
 
-To achive that the following is expected:
-  * commitment to the project:
-    * participate in discussions, contributions, code and documentation reviews
-      for [TODO: Time Period] or more,
-    * perform reviews for [TODO:Number] non-trivial pull requests,
-    * contribute [TODO:Number] non-trivial pull requests and have them merged,
+The Flatcar project welcomes both development as well as community-focuses contributions.
+To gain maintainership, the following is expected:
+  * commitment to the project's continued success:
+    * participate in discussions, contributions, code and documentation reviews for 6 months or more,
+    * actively evangelise Flatcar in at least 20 talks/presentations at 10 different conferences or meetups
+    * organise and chair at least 15 maintainer events, e.g. bug fixing or doc writing days, with at least 5 maintainers participating each event
+  * Contribute to the project's development
+    * perform reviews for 30 non-trivial pull requests,
+    * contribute 10 non-trivial pull requests and have them merged,
   * ability to write quality code and/or documentation,
   * ability to collaborate with the team,
-  * understanding of how the team works (policies, processes for testing and code review, etc),
-  * understanding of the project's code base and coding and documentation style.
+  * demonstrated understanding of how the team works (policies, processes for testing and code review, etc),
+  * understanding of the project's code base and coding and / or documentation style.
 
 Periodically, the existing maintainers curate a list of contributors that have shown regular activity on the project over the prior months.
 The nominating maintainer will create a PR to update the Maintainers List.
