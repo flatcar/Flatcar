@@ -11,4 +11,4 @@ Every day look into upstream security trackers like below:
 - Rust security announcements
 - (optional) RedHat vulnerabilities
 - Whenever we discover any new CVE, we add it to an internal database, and use automation tools to create a new issue about the CVE in [Flatcar GitHub issues](https://github.com/Flatcar/Flatcar/issues) with labels `security` and `advisory`.
-- If the package of the new CVE is already open in Kinvolk security Github issues, then unfortunately we need to manually edit the existing issue to add the new CVE.
+- If an issue of updating the specific package affected by the new CVE is already open in [Flatcar GitHub issues](https://github.com/Flatcar/Flatcar/issues), then unfortunately we need to manually edit the existing issue to add the new CVE.
