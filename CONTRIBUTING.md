@@ -64,9 +64,6 @@ Though Matrix and Github discussions are encouraged and the preferred way to int
 * Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
 
 
-For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
-
-
 ### Monthly Office hours and Developer Syncs
 
 We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our Office Hours and Developer Sync meeting series which interested folks can comfortably import into the calendar app of their choice.
