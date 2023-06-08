@@ -1,7 +1,8 @@
 # Flatcar Project Governance
 
 
-Flatcar is a community based project, anyone who wants to participate is welcomed. We adopted the [CNCD code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be an opening and welcoming community for anyone who want to participate in it.
+Flatcar is a community based project, anyone who wants to participate is welcomed.
+We adopted the [CNCF code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be an opening and welcoming community for anyone who want to participate in it.
 
 The project is governed by a flat hierarchy - a group of people sharing a common vision of Flatcar in accordance to its mission statement.
 
