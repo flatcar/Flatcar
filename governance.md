@@ -157,7 +157,7 @@ issues and breaches according to the [security policy](./SECURITY.md).
 While most business in Flatcar is conducted by "[lazy consensus](https://community.apache.org/committers/lazyConsensus.html)", 
 periodically the Maintainers may need to vote on specific actions or changes.
 A vote can be taken on 
-[the private Maintainer mailing list](maintainers-noreply@flatcar-linux.org) for security or conduct matters.  
+[the private Maintainer mailing list](maintainers@flatcar-linux.org) for security or conduct matters.  
 Votes may also be taken at [Flatcar Developer Syncs meetings](https://meet.flatcar.org/OfficeHours).  Any Maintainer may
 demand a vote be taken.
 
