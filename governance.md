@@ -20,7 +20,7 @@ This goverance explains how the project is run.
 
 ## Values
 
-The Flatcar and its leadership embrace the following values:
+The Flatcar project, its leadership, and its maintainers embrace the following values:
 
 * Openness: Communication and decision-making happens in the open and is discoverable for future
   reference. As much as possible, all discussions and work take place in public
