@@ -9,6 +9,6 @@ Every day look into upstream security trackers like below:
 - oss-security mailing list
 - Golang announce mailing list
 - Rust security announcements
-- (optional) RedHat vulnerabilities
+- (optional) issue trackers of other distros
 - Whenever we discover any new CVE, we add it to an internal database, and use automation tools to create a new issue about the CVE in [Flatcar GitHub issues](https://github.com/Flatcar/Flatcar/issues) with labels `security` and `advisory`.
 - If an issue of updating the specific package affected by the new CVE is already open in [Flatcar GitHub issues](https://github.com/Flatcar/Flatcar/issues), then unfortunately we need to manually edit the existing issue to add the new CVE.
