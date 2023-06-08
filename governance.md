@@ -42,10 +42,10 @@ The Flatcar project, its leadership, and its maintainers embrace the following v
 
 ## Maintainers
 
-Flatcar Maintainers have write access to the [Flatcar](https://github.com/flatcar/Flatcar).
-They can merge their own patches or patches from others. The current maintainers
-can be found in [MAINTAINERS.md](./MAINTAINERS.md).  Maintainers collectively manage the project's
-resources and contributors.
+Flatcar Maintainers have full access to most of the repositories in the [Flatcar project](https://github.com/orgs/flatcar/), except for very few repositories that contain sensitive information, e.g. for with undisclosed security issues (see [SECURITY.md](./SECURITY.md) for more information).
+Maintainers can merge PRs, approve PR builds+tests, and create and publish releases.
+Maintainers collectively manage the project's resources, interact with contributors, elect new maintainers, and remove inactive ones.
+The current list of maintainers can be found in [MAINTAINERS.md](./MAINTAINERS.md). Most maintainer access privileges are granted via membership of the Flatcar Github organisation's [Flatcar Maintainers team](https://github.com/orgs/flatcar/teams/flatcar-maintainers).
 
 This privilege is granted with some expectation of responsibility: maintainers
 are people who care about the Flatcar project and want to help it grow and
