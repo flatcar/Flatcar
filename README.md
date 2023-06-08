@@ -6,7 +6,10 @@ _Flatcar Container Linux is a fully open source, minimal-footprint, secure by de
 
 ## Code of Conduct
 
-Please refer to the Flatcar [Code of Conduct](CODE_OF_CONDUCT.md).
+We follow the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md).
+
+Please contact [private Maintainer mailing list](maintainers@flatcar-linux.org) or the Linux Foundation mediator, Mishi Choudhary mishi@linux.com
+to report an issue.
 
 ## Releases
 
@@ -20,25 +23,29 @@ The getting started guide has further links to the topics Ignition, local testin
 
 * [Getting started](https://www.flatcar.org/docs/latest/installing/)
 
-
 **Does Flatcar run in my environment?** Consult the [interop-matrix](interop-matrix.md).
 
 **Does Flatcar have CIS Benchmarks?** Consult the [CIS reports](CIS/README.md).
 
 ## Report bugs and request features
 
-Please file a respective [issue](issues) right here in the top-level github project.
-For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
+Please file a respective [issue](issues) right here in this github project.
+For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose).
+Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
 
 ## Participate and contribute
 
 If you are thinking of making a contribution, then please engage with the project as early as possible -- by commenting on an existing issue, or creating a new issue, on GitHub. Consider the project’s mission, and how your contribution furthers it.
 Making your intent visible early on can be a major factor for getting your work accepted.
 
+For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines](CONTRIBUTING.md).
+
 For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://www.flatcar.org/docs/latest/reference/developer-guides/); particularly the [howto on building custom images from source](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/).
 The guides aim to provide a solid base for working with the SDK to help you filing successful PRs to the Flatcar project.
 
-For the general guidelines on making PRs/commits easier to review, please check out the project's [contribution guidelines on git](contributions-git.md).
+### Becoming a maintainer
+
+The Flatcar maintainer path is laid out in our [governance document](governance.md).
 
 ## Project status and roadmap - What's everybody working on, right now and in the future?
 
@@ -48,6 +55,8 @@ For the general guidelines on making PRs/commits easier to review, please check 
    in our release planning calls
 
 Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar/projects/7/views/9).
+
+Check out our Matrix and Slack channels (see below) for getting into contact with maintainers, and consider joining our Flatcar Developer Sync (next section below) where contributors and maintainers coordinate our work.
 
 ### Monthly Office hours and Developer Syncs
 
