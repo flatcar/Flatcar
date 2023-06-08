@@ -62,7 +62,6 @@ is the governing body for the project.
 
 ### Becoming a Maintainer
 
-Flatcar maintainers are members of the Flatcar community with commit access to one or more repositories of the project.
 Maintainers are active community members who are responsible for the overall quality and stewardship of the project, and are expected to remain actively involved in the project and participate in voting and discussing of proposed project level changes.
 
 Anyone with an established track record of contributions to the project can become a maintainer.
