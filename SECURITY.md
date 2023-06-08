@@ -2,7 +2,12 @@
 <todo - describe a security Schedule of tracking security issues of Flatcar>
 - Describe the process of tracking security issues for Flatcar, especially tracking issues from upstream projects like Gentoo Linux.
 
-## Primary person should do so:
+## Daily security runbook for Security team primaries and secondaries
+
+The runbook below discusses steps for identifying new potential security issues and for making the issues known to the Flatcar project's maintainers and / or the other members of the Security team.
+Embargoed issues are recorded in a private issue tracker only accessible by the Security team, while public issues are openly tracked in the [Flatcar project](https://github.com/Flatcar/Flatcar/issues).
+
+Primaries are expected to execute the runbook at least once per day, optionally assisted or off-loaded by Secondaries.
 
 Every day look into upstream security trackers like below:
 - Gentoo security vulnerabilities. It might be useful to use gorss + RSS feed for this.
