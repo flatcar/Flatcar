@@ -101,7 +101,9 @@ Maintainers who are selected will be granted the necessary GitHub rights.
 Life priorities, interests, and passions can change.
 If you're a maintainer but feel you must remove yourself from the list, inform other maintainers that you intend to step down, and if possible, help find someone to pick up your work. 
 At the very least, ensure your work can be continued where you left off.
-After you've informed other maintainers, create a pull request to remove yourself from the MAINTAINERS file.
+After you've informed other maintainers, create a pull request to remove yourself from the [MAINTAINERS](MAINTAINERS.md) file.
+If applicable, include a change to [EMERITUS_MAINTAINERS](EMERITUS_MAINTAINERS.md) to add yourself to the list of emeritus maintainers.
+This will ease your return to active maintainership in the future.
 
 Maintainers may also be removed after being inactive, failure to fulfill their 
 Maintainer responsibilities, violating the Code of Conduct, or other reasons.
