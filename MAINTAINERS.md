@@ -15,19 +15,9 @@ maintainers:
 * Gabriel Samfira @gabriel-samfira
 * Thilo Fromm @t-lo
 
-### coreos-overlay
-maintainers:
-* Krzesimir Nowak @krnowak
-* Thilo Fromm @t-lo
-
 ### flatcar-docs
 maintainers:
 * Kai Lüke @pothos
-* Thilo Fromm @t-lo
-
-### portage-stable
-maintainers:
-* Krzesimir Nowak @krnowak
 * Thilo Fromm @t-lo
 
 ### mantle
