@@ -29,7 +29,7 @@ The getting started guide has further links to the topics Ignition, local testin
 
 ## Report bugs and request features
 
-Please file a respective [issue](issues) right here in this github project.
+Please file a respective [issue](https://github.com/flatcar/Flatcar/issues) right here in this github project.
 For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose).
 Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
 
