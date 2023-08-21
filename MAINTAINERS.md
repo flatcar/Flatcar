@@ -14,6 +14,7 @@ maintainers:
 * Kai Lüke @pothos
 * Gabriel Samfira @gabriel-samfira
 * Thilo Fromm @t-lo
+* Krzesimir Nowak @krnowak
 
 ### flatcar-docs
 maintainers:
