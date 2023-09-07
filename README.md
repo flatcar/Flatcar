@@ -84,6 +84,9 @@ Just like the Office Hours the call includes a brief Release Planning with an up
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
+### Social Media/Fediverse
+
+You can follow the [Flatcar Mastodon account](https://hachyderm.io/@flatcar).
 
 ### Chat
 
