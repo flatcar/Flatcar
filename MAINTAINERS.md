@@ -16,10 +16,11 @@ maintainers:
 * Thilo Fromm @t-lo
 * Krzesimir Nowak @krnowak
 
-### flatcar-docs
+### flatcar-website
 maintainers:
 * Kai Lüke @pothos
 * Thilo Fromm @t-lo
+* Mathieu Tortuyaux @tormath1
 
 ### mantle
 maintainers:
