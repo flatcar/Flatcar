@@ -35,7 +35,7 @@ jobs:
             end_date=${{inputs.end_date}}
           fi
 
-          # This runs at midnight so mentrics from the previous month's 22nd are not included
+          # This runs at midnight so metrics from the previous month's 22nd are not included
           #  in the prev month's stats.
           start_date=$(date -d "last month" +%Y-%m-22)
           end_date=$(date -d "today" +%Y-%m-22)
