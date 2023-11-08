@@ -33,14 +33,11 @@ jobs:
           if [[ -n "${{inputs.start_date}}" && -n "${{inputs.end_date}}" ]] ; then
             start_date="${{inputs.start_date}}"
             end_date=${{inputs.end_date}}
+          else
+            start_date=$(date -d "last month" +%Y-%m-%d)
+            end_date=$(date -d "yesterday" +%Y-%m-%d)
           fi
 
-          # This runs at midnight so metrics from the previous month's 22nd are not included
-          #  in the prev month's stats.
-          start_date=$(date -d "last month" +%Y-%m-22)
-          end_date=$(date -d "today" +%Y-%m-22)
-  
-          #Set an environment variable with the date range
           echo "START_DATE=$start_date" >> "$GITHUB_ENV"
           echo "END_DATE=$end_date" >> "$GITHUB_ENV"
   
@@ -52,50 +49,56 @@ jobs:
           END_DATE: ${{ env.END_DATE }}
           # We explicitly list repos for our metrics here so temporary forks like
           #  e.g. systemd, gentoo, or udev don't pollute the stats
-          REPOSITORY: "flatcar/nebraska,flatcar/flatcar-website,flatcar/flatcar-build-script,flatcar/baselayout,flatcar/bootengine,flatcar/coreos-cloudinit,flatcar/flatcar-dev-util,flatcar/init,flatcar/locksmith,flatcar/mantle,flatcar/mayday,flatcar/nss-altfiles,flatcar/scripts,flatcar/seismograph,flatcar/shim,flatcar/sysroot-wrappers,flatcar/toolbox,flatcar/torcx,flatcar/update-ssh-keys,flatcar/update_engine,flatcar/updateservicectl,flatcar/Flatcar,flatcar/flatcar-packer-qemu,flatcar/flatcar-ipxe-scripts,flatcar/flatcar-cloud-image-uploader,flatcar/flatcar-linux-update-operator,flatcar/flatcar-release-mirror,flatcar/flatcar-terraform,flatcar/sdnotify-proxy,flatcar/flatcar-automation,flatcar/nebraska-update-agent,flatcar/fleetlock,flatcar/flog,flatcar/ign-converter,flatcar/nomad-on-flatcar,flatcar/sysext-bakery,flatcar/reports,flatcar/flatcar-demos,flatcar/jitsi-server,flatcar/flatcar-mastodon,flatcar/ue-rs,flatcar/azure-marketplace-ingestion-api"
+          REPOSITORY: "flatcar/nebraska,flatcar/flatcar-website,flatcar/flatcar-build-scripts,flatcar/baselayout,flatcar/bootengine,flatcar/coreos-cloudinit,flatcar/flatcar-dev-util,flatcar/init,flatcar/locksmith,flatcar/mantle,flatcar/mayday,flatcar/nss-altfiles,flatcar/scripts,flatcar/seismograph,flatcar/shim,flatcar/sysroot-wrappers,flatcar/toolbox,flatcar/torcx,flatcar/update-ssh-keys,flatcar/update_engine,flatcar/updateservicectl,flatcar/Flatcar,flatcar/flatcar-packer-qemu,flatcar/flatcar-ipxe-scripts,flatcar/flatcar-cloud-image-uploader,flatcar/flatcar-linux-update-operator,flatcar/flatcar-release-mirror,flatcar/flatcar-terraform,flatcar/sdnotify-proxy,flatcar/flatcar-automation,flatcar/nebraska-update-agent,flatcar/fleetlock,flatcar/flog,flatcar/ign-converter,flatcar/nomad-on-flatcar,flatcar/sysext-bakery,flatcar/reports,flatcar/flatcar-demos,flatcar/jitsi-server,flatcar/flatcar-mastodon,flatcar/ue-rs,flatcar/azure-marketplace-ingestion-api"
           SPONSOR_INFO: "false"
 
       - name: Collect PR metrics
         uses: github/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:pr created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
 
       - name: rename PR metrics file
         shell: bash
         run: |
           set -euo pipefail
-          mv issue-metrics.md pr-metrics.md
+          mv issue_metrics.md pr_metrics.md
   
       - name: Collect discussion  metrics
         uses: github/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar type:discussion created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions created:${{ env.START_DATE }}..${{ env.END_DATE }}'
 
       - name: rename discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
-          mv issue-metrics.md discussion-metrics.md
+          mv issue_metrics.md discussion_metrics.md
   
       - name: Collect issue metrics
         uses: github/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:issue created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
   
       - name: Assemble full report
         shell: bash
         run: |
           set -euo pipefail
-          mv contributors.md report.md
+          cat contributors.md > report.md
           echo -e "\n\n# Discussions Metrics" >> report.md
-          tail --lines=+2 discussion-metrics.md >> report.md
+          tail --lines=+2 discussion_metrics.md >> report.md
           # issues already have the correct headline
-          cat issue-metrics.md >> report.md
+          cat issue_metrics.md >> report.md
           echo -e "\n\n# Pull Requests Metrics" >> report.md
-          tail --lines=+2 pr-metrics.md >> report.md
+          tail --lines=+2 pr_metrics.md >> report.md
   
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
