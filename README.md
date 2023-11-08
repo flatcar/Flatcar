@@ -68,14 +68,14 @@ Lastly, the call includes a brief Release Planning with an update on the changes
 If you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
 Either comment on the respective meeting discussion, reach out to us on Matrix (see below), or simply join the meeting and speak up in the meeting's Q&A.
 
-**Flatcar Office Hours are on the second Tuesday of every month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+**Flatcar Office Hours are on the second Tuesday of every month at 3:30pm UTC**
 
 * Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/office-hours-agenda) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 
-**Flatcar Developer Syncs commence every 4th Tuesday of a month at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST**
+**Flatcar Developer Syncs commence every 4th Tuesday of a month at 3:30pm UTC**
 
 While release planning is a recurring part of each community call we also conduct separate Developer Syncs for backlog grooming and task planning. We discuss Roadmap items, special projects, and day-to-day issues in these calls. If you want to participate and discuss or pick up work, that call is for you!
 Just like the Office Hours the call includes a brief Release Planning with an update on the changes in the next immediate releases.
