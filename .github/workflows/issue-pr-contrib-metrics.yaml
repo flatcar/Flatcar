@@ -33,17 +33,17 @@ jobs:
           if [[ -n "${{inputs.start_date}}" && -n "${{inputs.end_date}}" ]] ; then
             start_date="${{inputs.start_date}}"
             end_date=${{inputs.end_date}}
+          else
+            start_date=$(date -d "last month" +%Y-%m-%d)
+            end_date=$(date -d "yesterday" +%Y-%m-%d)
           fi
 
-          # This runs at midnight so metrics from the previous month's 22nd are not included
-          #  in the prev month's stats.
-          start_date=$(date -d "last month" +%Y-%m-22)
-          end_date=$(date -d "today" +%Y-%m-22)
-  
-          #Set an environment variable with the date range
           echo "START_DATE=$start_date" >> "$GITHUB_ENV"
           echo "END_DATE=$end_date" >> "$GITHUB_ENV"
-  
+
+      #
+      #   Contributors stats
+      #
       - name: Collect contributor metrics
         uses: github/contributors@v1
         env:
@@ -52,50 +52,289 @@ jobs:
           END_DATE: ${{ env.END_DATE }}
           # We explicitly list repos for our metrics here so temporary forks like
           #  e.g. systemd, gentoo, or udev don't pollute the stats
-          REPOSITORY: "flatcar/nebraska,flatcar/flatcar-website,flatcar/flatcar-build-script,flatcar/baselayout,flatcar/bootengine,flatcar/coreos-cloudinit,flatcar/flatcar-dev-util,flatcar/init,flatcar/locksmith,flatcar/mantle,flatcar/mayday,flatcar/nss-altfiles,flatcar/scripts,flatcar/seismograph,flatcar/shim,flatcar/sysroot-wrappers,flatcar/toolbox,flatcar/torcx,flatcar/update-ssh-keys,flatcar/update_engine,flatcar/updateservicectl,flatcar/Flatcar,flatcar/flatcar-packer-qemu,flatcar/flatcar-ipxe-scripts,flatcar/flatcar-cloud-image-uploader,flatcar/flatcar-linux-update-operator,flatcar/flatcar-release-mirror,flatcar/flatcar-terraform,flatcar/sdnotify-proxy,flatcar/flatcar-automation,flatcar/nebraska-update-agent,flatcar/fleetlock,flatcar/flog,flatcar/ign-converter,flatcar/nomad-on-flatcar,flatcar/sysext-bakery,flatcar/reports,flatcar/flatcar-demos,flatcar/jitsi-server,flatcar/flatcar-mastodon,flatcar/ue-rs,flatcar/azure-marketplace-ingestion-api"
+          REPOSITORY: "flatcar/nebraska,flatcar/flatcar-website,flatcar/flatcar-build-scripts,flatcar/baselayout,flatcar/bootengine,flatcar/coreos-cloudinit,flatcar/flatcar-dev-util,flatcar/init,flatcar/locksmith,flatcar/mantle,flatcar/mayday,flatcar/nss-altfiles,flatcar/scripts,flatcar/seismograph,flatcar/shim,flatcar/sysroot-wrappers,flatcar/toolbox,flatcar/torcx,flatcar/update-ssh-keys,flatcar/update_engine,flatcar/updateservicectl,flatcar/Flatcar,flatcar/flatcar-packer-qemu,flatcar/flatcar-ipxe-scripts,flatcar/flatcar-cloud-image-uploader,flatcar/flatcar-linux-update-operator,flatcar/flatcar-release-mirror,flatcar/flatcar-terraform,flatcar/sdnotify-proxy,flatcar/flatcar-automation,flatcar/nebraska-update-agent,flatcar/fleetlock,flatcar/flog,flatcar/ign-converter,flatcar/nomad-on-flatcar,flatcar/sysext-bakery,flatcar/reports,flatcar/flatcar-demos,flatcar/jitsi-server,flatcar/flatcar-mastodon,flatcar/ue-rs,flatcar/azure-marketplace-ingestion-api"
           SPONSOR_INFO: "false"
 
-      - name: Collect PR metrics
+      #
+      #   Q&A Discussions stats
+      #
+      - name: All unanswered Q&A summary metrics
         uses: github/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:pr created:${{ env.START_DATE }}..${{ env.END_DATE }}'
-
-      - name: rename PR metrics file
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:unanswered'
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+      - name: rename open discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
-          mv issue-metrics.md pr-metrics.md
-  
-      - name: Collect discussion  metrics
+          mv issue_metrics.md discussion_qna_open.md
+
+      - name: New Q&A opened (and still unanswered) metrics
         uses: github/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar type:discussion created:${{ env.START_DATE }}..${{ env.END_DATE }}'
-
-      - name: rename discussion metrics file
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:unanswered created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+      - name: rename open discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
-          mv issue-metrics.md discussion-metrics.md
-  
-      - name: Collect issue metrics
+          mv issue_metrics.md discussion_qna_opened.md
+
+      - name: Q&A Discussions answered metrics
         uses: github/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:issue created:${{ env.START_DATE }}..${{ env.END_DATE }}'
-  
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:answered created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+      - name: rename open discussion metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md discussion_qna_closed.md
+
+      #
+      #   Regular Discussions stats
+      #
+      - name: All open Discussions summary metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A is:open'
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+      - name: rename open discussion metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md discussion_open.md
+
+      - name: New Discussions opened (and still open) metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A is:open created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+      - name: rename open discussion metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md discussion_opened.md
+
+      - name: Discussions closed metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
+      - name: rename open discussion metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md discussion_closed.md
+
+
+      #
+      #   Issues stats
+      #
+      - name: All open Issues summary metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'org:flatcar is:issue is:open'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
+      - name: rename open issues metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md issues_open.md
+
+      - name: New issues opened (and still open) metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'org:flatcar is:issue is:open created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
+      - name: rename new issues opened metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md issues_opened.md
+
+      - name: Issues closed metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'org:flatcar is:issue closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
+      - name: rename issues closed metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md issues_closed.md
+
+      #
+      #   Pull Requests stats
+      #
+      - name: All open PRs summary metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'org:flatcar is:pr is:open -author:flatcar-infra'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
+      - name: rename open PR metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md prs_open.md
+
+      - name: New PRs opened (and still open) metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'org:flatcar is:pr is:open -author:flatcar-infra created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
+      - name: rename new PRs metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md prs_opened.md
+
+      - name: PRs closed metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
+      - name: rename closed PRs metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md prs_closed.md
+
+      #
+      # Upload and post-process, create issue
+      #
+
+      - name: Upload individual reports
+        uses: actions/upload-artifact@v3
+        with:
+          retention-days: 32
+          name: raw-reports
+          path: |
+            ./*.md
+
       - name: Assemble full report
         shell: bash
         run: |
           set -euo pipefail
-          mv contributors.md report.md
+
+          cat contributors.md > report.md
+
           echo -e "\n\n# Discussions Metrics" >> report.md
-          tail --lines=+2 discussion-metrics.md >> report.md
-          # issues already have the correct headline
-          cat issue-metrics.md >> report.md
+          echo -e "\n## Questions & Answers" >> report.md
+          echo -e "\n### Summary of all unanswered Questions" >> report.md
+          echo "These summary statistics include all currently unanswered Q&A discussions (openend at any point in the past)." \
+              >> report.md
+          # remove full discussions list from stats; we only want the summary
+          tail --lines=+2 discussion_qna_open.md \
+              | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
+              >> report.md
+
+          echo -e "\n### New Questions" >> report.md
+          echo -e "\nThese Q&A discussions were created between ${{ env.START_DATE }} - ${{ env.END_DATE }} and are still open." \
+              >> report.md
+          tail --lines=+2 discussion_qna_opened.md >> report.md
+
+          echo -e "\n### Answered Questions" >> report.md
+          echo -e "\nThese Q&A discussions were openend and also answered between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
+              >> report.md
+          echo -e "(Discussions search is somewhat limited on Github; there's currently no way to search for discussions answered within a given timespan)" \
+              >> report.md
+          tail --lines=+2 discussion_qna_closed.md >> report.md
+
+          echo -e "\n## Other Discussions" >> report.md
+          echo -e "\n### Summary of open Discussions" >> report.md
+          echo "These summary statistics include all currently open discussions except Q&A (openend at any point in the past)." \
+              >> report.md
+          # remove full discussions list from stats; we only want the summary
+          tail --lines=+2 discussion_open.md \
+              | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
+              >> report.md
+
+          echo -e "\n## New discussions" >> report.md
+          echo -e "\nThese discussions (except Q&A) were created between ${{ env.START_DATE }} - ${{ env.END_DATE }} and are still open." \
+              >> report.md
+          tail --lines=+2 discussion_opened.md >> report.md
+
+          echo -e "\n## Discussions closed" >> report.md
+          echo -e "\nThese discussions (except Q&A) were opened at any point in the past and closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
+              >> report.md
+          tail --lines=+2 discussion_closed.md >> report.md
+
+
+          echo -e "\n\n# Issue Metrics" >> report.md
+
+          echo -e "\n## Summary of all open Issues" >> report.md
+          echo "These summary statistics include all currently open issues (openend at any point in the past)." \
+              >> report.md
+          # remove full issues list from stats; we only want the summary
+          tail --lines=+2 issues_open.md \
+              | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
+              >> report.md
+
+          echo -e "\n## New Issues" >> report.md
+          echo -e "\nThese issues were created between ${{ env.START_DATE }} - ${{ env.END_DATE }} and are still open." \
+              >> report.md
+          tail --lines=+2 issues_opened.md >> report.md
+
+          echo -e "\n## Issues closed" >> report.md
+          echo -e "\nThese issues were openend at any point in the past and were closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
+              >> report.md
+          tail --lines=+2 issues_closed.md >> report.md
+
+
           echo -e "\n\n# Pull Requests Metrics" >> report.md
-          tail --lines=+2 pr-metrics.md >> report.md
+
+          echo -e "\n## Summary of all open PRs" >> report.md
+          echo "These summary statistics include all currently open PRs (openend at any point in the past)." \
+              >> report.md
+          # remove full PRs list from stats; we only want the summary
+          tail --lines=+2 prs_open.md \
+              | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
+              >> report.md
+
+          echo -e "\n## New PRs" >> report.md
+          echo -e "\nThese PRs were created between ${{ env.START_DATE }} - ${{ env.END_DATE }} and are still open." \
+              >> report.md
+          tail --lines=+2 prs_opened.md >> report.md
+
+          echo -e "\n## PRs closed" >> report.md
+          echo -e "\nThese PRs were openend at any point in the past and were closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
+              >> report.md
+          tail --lines=+2 prs_closed.md >> report.md
   
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
