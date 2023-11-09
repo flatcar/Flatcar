@@ -181,25 +181,28 @@ jobs:
           tail --lines=+2 discussion_metrics.md >> report.md
 
           echo -e "\n\n# Issue Metrics" >> report.md
+
+          echo -e "\n## Open Issues Summary" >> report.md
           # remove full issues list from stats; we only want the summary
           tail --lines=+2 issues_open.md \
               | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
               >> report.md
 
-          echo -e "\n## New Issues" >> report.md
+          echo -e "\n## New Issues created (and still open)" >> report.md
           tail --lines=+2 issues_opened.md >> report.md
-          echo -e "\n## Closed Issues" >> report.md
+          echo -e "\n## Issues closed" >> report.md
           tail --lines=+2 issues_closed.md >> report.md
 
           echo -e "\n\n# Pull Requests Metrics" >> report.md
+          echo -e "\n## Open PRs Summary" >> report.md
           # remove full PRs list from stats; we only want the summary
           tail --lines=+2 prs_open.md \
               | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
               >> report.md
 
-          echo -e "\n## New PRs" >> report.md
+          echo -e "\n## New PRs created (and still open)" >> report.md
           tail --lines=+2 prs_opened.md >> report.md
-          echo -e "\n## Closed PRs" >> report.md
+          echo -e "\n## PRs closed" >> report.md
           tail --lines=+2 prs_closed.md >> report.md
   
       - name: Create issue
