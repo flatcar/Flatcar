@@ -182,7 +182,9 @@ jobs:
 
           echo -e "\n\n# Issue Metrics" >> report.md
           # remove full issues list from stats; we only want the summary
-          tail --lines=+2 issues_open.md | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}'
+          tail --lines=+2 issues_open.md \
+              | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
+              >> report.md
 
           echo -e "\n## New Issues" >> report.md
           tail --lines=+2 issues_opened.md >> report.md
@@ -191,12 +193,14 @@ jobs:
 
           echo -e "\n\n# Pull Requests Metrics" >> report.md
           # remove full PRs list from stats; we only want the summary
-          tail --lines=+2 prs_open.md | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}'
+          tail --lines=+2 prs_open.md \
+              | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
+              >> report.md
 
           echo -e "\n## New PRs" >> report.md
           tail --lines=+2 prs_opened.md >> report.md
           echo -e "\n## Closed PRs" >> report.md
-          tail --lines=+2 prss_closed.md >> report.md
+          tail --lines=+2 prs_closed.md >> report.md
   
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
