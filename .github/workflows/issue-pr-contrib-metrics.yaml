@@ -61,7 +61,7 @@ jobs:
             HIDE_TIME_TO_ANSWER: true
             # This metric measures items that are still open
             HIDE_TIME_TO_CLOSE: true
-            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
 
       - name: rename new PRs metrics file
         shell: bash
@@ -76,7 +76,7 @@ jobs:
             SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
-            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
 
       - name: rename closed PRs metrics file
         shell: bash
@@ -93,7 +93,7 @@ jobs:
             HIDE_TIME_TO_ANSWER: true
             # This metric measures items that are still open
             HIDE_TIME_TO_CLOSE: true
-            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
 
       - name: rename open PR metrics file
         shell: bash
@@ -122,7 +122,7 @@ jobs:
             HIDE_TIME_TO_ANSWER: true
             # This metric measures items that are still open
             HIDE_TIME_TO_CLOSE: true
-            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
 
       - name: rename new issues opened metrics file
         shell: bash
@@ -137,7 +137,7 @@ jobs:
             SEARCH_QUERY: 'org:flatcar is:issue closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
-            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
 
       - name: rename issues closed metrics file
         shell: bash
@@ -154,7 +154,7 @@ jobs:
             HIDE_TIME_TO_ANSWER: true
             # This metric measures items that are still open
             HIDE_TIME_TO_CLOSE: true
-            IGNORE_USERS: "flatcar-infra,github-actions[bot]"
+            IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
 
       - name: rename issues closed metrics file
         shell: bash
