@@ -62,7 +62,7 @@ Check out our Matrix and Slack channels (see below) for getting into contact wit
 
 We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our Office Hours and Developer Sync meeting series which interested folks can comfortably import into the calendar app of their choice.
 
-Join us in our monthly [office hours meetings](../../discussions/categories/office-hours-agenda) to engage with the Flatcar User community interactively, to learn about the project's directions, and to discuss contributions. We also conduct the occasional user-focused demo of technologies related to image-based Linux.
+Join us in our monthly [office hours meetings](../../discussions/categories/flatcar-office-hours) to engage with the Flatcar User community interactively, to learn about the project's directions, and to discuss contributions. We also conduct the occasional user-focused demo of technologies related to image-based Linux.
 Lastly, the call includes a brief Release Planning with an update on the changes in the next immediate releases.
 
 If you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
@@ -70,7 +70,7 @@ Either comment on the respective meeting discussion, reach out to us on Matrix (
 
 **Flatcar Office Hours are on the second Tuesday of every month at 3:30pm UTC**
 
-* Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/office-hours-agenda) for examples.
+* Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/flatcar-office-hours) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
