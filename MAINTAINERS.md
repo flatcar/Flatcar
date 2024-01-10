@@ -15,6 +15,7 @@ maintainers:
 * Gabriel Samfira @gabriel-samfira
 * Thilo Fromm @t-lo
 * Krzesimir Nowak @krnowak
+* Adrian Vladu @ader1990
 
 ### flatcar-website
 maintainers:
