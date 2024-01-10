@@ -32,7 +32,13 @@ maintainers:
 
 ### update_engine
 maintainers:
-* Willian Light @wrl
+* Kai Lüke @pothos
+* Dongsu Park @dongsupark
+
+### ue-rs
+maintainers:
+* Kai Lüke @pothos
+* Dongsu Park @dongsupark
 
 ### flatcar-linux-update-operator
 maintainers:
