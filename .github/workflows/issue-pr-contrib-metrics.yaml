@@ -179,6 +179,51 @@ jobs:
           mv issue_metrics.md issues_closed.md
 
       #
+      #   Advisories stats
+      #
+      - name: All open Advisories summary metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'repo:flatcar/Flatcar is:issue is:open label:advisory -status:implemented'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+            # This metric measures items that are still open
+            HIDE_TIME_TO_CLOSE: true
+      - name: rename open advisories metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md advisories_open.md
+
+      - name: New advisories created metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'repo:flatcar/Flatcar is:issue label:advisory created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+      - name: rename new advisories opened metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md advisories_opened.md
+
+      - name: Advisories closed metrics
+        uses: github/issue-metrics@v2
+        env:
+            GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
+            SEARCH_QUERY: 'repo:flatcar/Flatcar is:issue label:advisory closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            # "time to answer" only supported for discussions
+            HIDE_TIME_TO_ANSWER: true
+      - name: rename advisories closed metrics file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mv issue_metrics.md advisories_closed.md
+
+
+      #
       #   Pull Requests stats
       #
       - name: All open PRs summary metrics
@@ -242,10 +287,37 @@ jobs:
         run: |
           set -euo pipefail
 
-          cat contributors.md > report.md
+          # Create table of contents.
+          # Anchor targets defined here are created below when the respective section is added.
+          echo "# Contents" >> report.md
+          echo "* [Contributors Metrics](#contributors-metrics)" >> report.md
+          echo "* [Github Discussions Metrics](#discussions-metrics)" >> report.md
+          echo "  * [Questions and Answers Discussions](#discussions-metrics-qna)" >> report.md
+          echo "  * [Other Discussions](#discussions-metrics-other)" >> report.md
+          echo "* [Issue Metrics](#issue-metrics)" >> report.md
+          echo "  * [Summary of all open Issues](#issue-metrics-summary)" >> report.md
+          echo "  * [New Issues](#issue-metrics-new)" >> report.md
+          echo "  * [Closed Issues](#issue-metrics-closed)" >> report.md
+          echo "* [Advisory Metrics](#advisory-metrics)" >> report.md
+          echo "  * [New Advisories](#advisory-metrics-new)" >> report.md
+          echo "  * [Closed Advisories](#advisory-metrics-closed)" >> report.md
+          echo "  * [All open Advisories](#advisory-metrics-summary)" >> report.md
+          echo "* [Pull Requests Metrics](#pr-metrics)" >> report.md
+          echo "  * [Summary of all open PRs](#pr-metrics-summary)" >> report.md
+          echo "  * [New PRs](#pr-metrics-new)" >> report.md
+          echo "  * [Closed PRs](#pr-metrics-closed)" >> report.md
 
-          echo -e "\n\n# Discussions Metrics" >> report.md
-          echo -e "\n## Questions & Answers" >> report.md
+          #
+          # Contributors
+          #
+          echo -e '\n\n<h1 id="contributors-metrics">Contributors Metrics</h1>' >> report.md
+          tail --lines=+2 contributors.md >> report.md
+
+          #
+          # Discussions
+          #
+          echo -e '\n\n<h1 id="discussions-metrics">Discussions Metrics</h1>' >> report.md
+          echo -e '\n<h2 id="discussions-metrics-qna">Questions & Answers</h2>' >> report.md
           echo -e "\n### Summary of all unanswered Questions" >> report.md
           echo "These summary statistics include all currently unanswered Q&A discussions (openend at any point in the past)." \
               >> report.md
@@ -270,7 +342,7 @@ jobs:
           tail --lines=+2 discussion_qna_opened.md >> report.md
 
 
-          echo -e "\n## Other Discussions" >> report.md
+          echo -e '\n<h2 id="discussions-metrics-other">Other Discussions</h2>' >> report.md
           echo -e "\n### Summary of open Discussions" >> report.md
           echo "These summary statistics include all currently open discussions except Q&A (openend at any point in the past)." \
               >> report.md
@@ -289,10 +361,12 @@ jobs:
               >> report.md
           tail --lines=+2 discussion_closed.md >> report.md
 
+          #
+          # Issues
+          #
+          echo -e '\n\n<h1 id="issue-metrics">Issue Metrics</h1>' >> report.md
 
-          echo -e "\n\n# Issue Metrics" >> report.md
-
-          echo -e "\n## Summary of all open Issues" >> report.md
+          echo -e '\n<h2 id="issue-metrics-summary">Summary of all open Issues</h2>' >> report.md
           echo "These summary statistics include all currently open issues (openend at any point in the past)." \
               >> report.md
           # remove full issues list from stats; we only want the summary
@@ -300,20 +374,44 @@ jobs:
               | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
               >> report.md
 
-          echo -e "\n## New Issues" >> report.md
+          echo -e '\n<h2 id="issue-metrics-new">New Issues</h2>' >> report.md
           echo -e "\nThese issues were created between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
               >> report.md
           tail --lines=+2 issues_opened.md >> report.md
 
-          echo -e "\n## Issues closed" >> report.md
+          echo -e '\n<h2 id="issue-metrics-closed">Issues closed</h2>' >> report.md
           echo -e "\nThese issues were openend at any point in the past and were closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
               >> report.md
           tail --lines=+2 issues_closed.md >> report.md
 
+          #
+          # Advisories
+          #
+          echo -e '\n\n<h1 id="advisory-metrics">Advisory Metrics</h1>' >> report.md
+          echo -e "\n\nNote that advisories are tracked in issues, so the advisories discussed in this section also contribute to the overall issue statistics above.\n\n" \
+              >> report.md
 
-          echo -e "\n\n# Pull Requests Metrics" >> report.md
+          echo -e '\n<h2 id="advisory-metrics-new">New Advisories</h2>' >> report.md
+          echo -e "\nThese advisories were created between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
+              >> report.md
+          tail --lines=+2 advisories_opened.md >> report.md
 
-          echo -e "\n## Summary of all open PRs" >> report.md
+          echo -e '\n<h2 id="advisory-metrics-closed">Advisories closed</h2>' >> report.md
+          echo -e "\nThese advisories were openend at any point in the past and were closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
+              >> report.md
+          tail --lines=+2 advisories_closed.md >> report.md
+
+          echo -e '\n<h2 id="advisory-metrics-summary">All open Advisoriess</h2>' >> report.md
+          echo "These statistics cover all open advisories (openend at any point in the past)." \
+              >> report.md
+          tail --lines=+2 advisories_open.md >> report.md
+
+          #
+          # Pull Requests
+          #
+          echo -e '\n\n<h1 id="pr-metrics">Pull Requests Metrics</h1>' >> report.md
+
+          echo -e '\n<h2 id="pr-metrics-summary">Summary of all open PRs</h2>' >> report.md
           echo "These summary statistics include all currently open PRs (openend at any point in the past)." \
               >> report.md
           # remove full PRs list from stats; we only want the summary
@@ -321,12 +419,12 @@ jobs:
               | awk '/^\| Title \| URL \| Author \|/{silent=1} {if (silent==0) print $0}' \
               >> report.md
 
-          echo -e "\n## New PRs" >> report.md
+          echo -e '\n<h2 id="pr-metrics-new">New PRs</h2>' >> report.md
           echo -e "\nThese PRs were created between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
               >> report.md
           tail --lines=+2 prs_opened.md >> report.md
 
-          echo -e "\n## PRs closed" >> report.md
+          echo -e '\n<h2 id="pr-metrics-closed">PRs closed</h2>' >> report.md
           echo -e "\nThese PRs were openend at any point in the past and were closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
               >> report.md
           tail --lines=+2 prs_closed.md >> report.md
