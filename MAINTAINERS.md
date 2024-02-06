@@ -68,3 +68,7 @@ maintainers:
 ### sysext-bakery
 maintainers:
 * Kai Lüke @pothos
+
+### flatcar-tutorial
+maintainers:
+* Mathieu Tortuyaux @tormath1
