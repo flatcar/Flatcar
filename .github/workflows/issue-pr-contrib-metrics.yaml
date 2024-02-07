@@ -275,7 +275,7 @@ jobs:
       #
 
       - name: Upload individual reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           retention-days: 32
           name: raw-reports
@@ -430,7 +430,7 @@ jobs:
           tail --lines=+2 prs_closed.md >> report.md
   
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@v5
         with:
           title: Monthly contributions report ${{ env.START_DATE }} - ${{ env.END_DATE }}
           token: ${{ secrets.GITHUB_TOKEN }}
