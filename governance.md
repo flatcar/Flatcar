@@ -120,12 +120,11 @@ and can be rapidly returned to Maintainer status if their availability changes.
 
 ## Meetings
 
-Time zones permitting, Maintainers are expected to participate in the Flatcar Developer Syncs meeting every 4th Tuesday of a month.
-The meeting time observes the Central European Timezone and is subject to summer time changes.
-It occurs at 5:30pm CE[S]T.
-* During summer time (CEST), the meeting occurs at 9pm IST / 5:30pm CEST / 3:30pm GMT / 11:30am EDT / 8:30am PST.
-* Outside of summer time (CET), the meeting occurs at 10pm IST / 5:30pm CEST / 4:30pm GMT / 11:30am EST / 8:30am PST.
-Special cases occur when CEST is active and EDT/PDT are not - which usually occurs in a narrow, 2-week time window each spring and autumn. Since the meeting always observes CE[S]T, special care needs to be taken by attendees from the Americas.
+Time zones permitting, Maintainers are expected to participate in the Flatcar Developer Syncs meeting every 4th Wednesday of a month.
+The meeting time observes the Universal Coordinated time. It occurs at 2:30pm UTC.
+Depending on your local timezone, the slot might be subject to summer time changes.
+* During daylight saving time, the meeting occurs at 8pm IST (IST does not observe daylight saving time) / 4:30pm CEST / 10:30am EDT / 7:30am PST.
+* Outside of daylight saving time, the meeting occurs at 8pm IST  / 3:30pm CET / 9:30am EST / 6:30am PST.
 
 A calendar is available to ease planning. The calendar contains Developer syncs, project office hours, and one-off events like bug fixing or doc writing days.
 * Google calendar link: https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com
