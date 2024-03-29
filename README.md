@@ -134,6 +134,4 @@ Please find more details in our [governance doc](governance.md).
 
 ## Repositories
 
-The repositories are currently part of the Kinvolk org for historical reasons. Flatcar will move to its own github org soon.
-
-Meanwhile, github repositories that comprise Flatcar Container Linux can be found via the [organization](https://github.com/flatcar) page.
+The github repositories that comprise Flatcar Container Linux can be found via the [organization](https://github.com/flatcar) page.
