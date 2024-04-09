@@ -89,6 +89,10 @@ Users
     * N: Planetary Quantum GmbH
        L: https://www.planetary-quantum.com/
        D: Planetary Quantum is a berlin-based provider of Docker-hosting and application hosting. Our sister company Planetary Networks colocates their private cloud in two (fiber-)interconnected datacenters in Berlin and Quantum offers container-based solutions (Docker Swarm and a custom tailored application hosting) on top of Flatcar Linux. Flatcar Linux is a great choice for us because it's a modern Linux, well-suited for Docker and Kubernetes due to recent versions of Kernel, SystemD, immutable root and a well-tested userland. Simple and straight-forward updates of the OS make running Flatcar a no-brainer for us. We currently operate over 50 clusters for our customers in our private cloud — all based on Flatcar Linux.
+
+    * N: plusserver GmbH
+      D: Plus Server is using Flatcar as the basis of its managed Kubernetes offering, plusserver Kubernetes Engine (PSKE). As they state in their blog, "Flatcar is currently one of the most popular operating systems for Kubernetes clusters. With its container-optimized design, strong security, and support from an active open source community, it provides an excellent foundation for all container workloads."
+      L: https://www.plusserver.com/blog/flatcar/
     
     * N: Qualys, Inc
       D: Qualys Gateway Service uses Flatcar Container Linux as a base for its container-based appliance, which is mainly focussed on proxy and caching services, serving other Qualys sensors such as Cloud Agent, Scanner and Passive Sensor. QGS also serves Qualys modules including VMDR, Patch Management, Policy Compliance, EDR, FIM and XDR.
