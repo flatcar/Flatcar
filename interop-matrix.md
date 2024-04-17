@@ -22,6 +22,7 @@ Please propose ownership by filing a PR for this document.
 | Tencent |                                    |       |             | [no owner] |                      |       |
 | AliCloud |                                   |       |             | [no owner] |                      |       |
 | Yandex |                                     |       |             | [no owner] |                      |       |
+| Brightbox |                 X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 
 ## Private Cloud (machines)
 
