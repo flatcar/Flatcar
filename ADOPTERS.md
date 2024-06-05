@@ -57,6 +57,11 @@ Users
     * N: Cloud house
       D: Flatcar OS has been useful for us for our on-premise solution to our customers 
 
+    * N: DeepL
+      D: We use Flatcar for our on-prem K8s clusters to run everything from CI/CD to performance-sensitive GPU workloads.
+      L: https://deepl.com/
+      C: simon.campion [at] deepl [dot] com
+
     * N: Digital Science 
       L: https://digital-science.com
       D: We're running Flatcar on all our self-hosted Kubernetes clusters on AWS, used for all data processing behind Dimensions (https://dimensions.ai). We choose Flatcar for security and simplicity.
