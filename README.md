@@ -29,9 +29,28 @@ The getting started guide has further links to the topics Ignition, local testin
 
 ## Report bugs and request features
 
-Please file a respective [issue](https://github.com/flatcar/Flatcar/issues) right here in this github project.
-For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose).
-Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
+If you hit a bug, or have a feature request, please [file an issue](https://github.com/flatcar/Flatcar/issues/new/choose) right here in this github project.
+Please select the appropriate issue type to help us triage incoming requests. For example, if you would like a new package to be added to the base Flatcar image, use the "New Package Request" issue type. (In that specific case, please also see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.)
+
+### Chat
+
+For quick questions or for just hanging out with the community please use
+* Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
+* Our Slack channel in the Kubernetes Slack org: https://kubernetes.slack.com/archives/C03GQ8B5XNJ
+
+### Discussions
+
+For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar/Flatcar/discussions). Feel free to open a new discussion if you don't find an existing one covering your topic.
+
+### Mailing lists
+
+Though the use of Github Discussions is encouraged (see above), we also maintain groups / mailing lists for a more old-fashioned way of having a discussion. Please note that we might consider to discontinue these mailing lists at some point in the future.
+* Flatcar Users: https://groups.google.com/g/flatcar-linux-user
+* Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
+ 
+### Social Media/Fediverse
+
+You can follow the [Flatcar Mastodon account](https://hachyderm.io/@flatcar). While Mastodon, as an open platform, is our preferred social media channel, we also have an [account on X](https://x.com/flatcar).
 
 ## Participate and contribute
 
@@ -56,7 +75,7 @@ The Flatcar maintainer path is laid out in our [governance document](governance.
 
 Lastly, epics like major features and long-term items are reflected in our [roadmap board](https://github.com/orgs/flatcar/projects/7/views/9).
 
-Check out our Matrix and Slack channels (see below) for getting into contact with maintainers, and consider joining our Flatcar Developer Sync (next section below) where contributors and maintainers coordinate our work.
+Check out our Matrix and Slack channels (mentioned above) for getting into contact with maintainers, and consider joining our Flatcar Developer Sync (next section below) where contributors and maintainers coordinate our work.
 
 ### Monthly Office hours and Developer Syncs
 
@@ -83,27 +102,6 @@ Just like the Office Hours the call includes a brief Release Planning with an up
 * Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/flatcar-developer-sync) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
-
-### Social Media/Fediverse
-
-You can follow the [Flatcar Mastodon account](https://hachyderm.io/@flatcar).
-
-### Chat
-
-For quick questions or for just hanging out with the community please use
-* Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
-* Our Slack channel in the Kubernetes Slack org: https://kubernetes.slack.com/archives/C03GQ8B5XNJ
-* A bridged IRC channel (Libera.chat): #[flatcar](ircs://irc.libera.chat:6697/#flatcar) channel is also available.
-
-### Discussions
-
-For more far-reaching topics please have a look at our [discussions](https://github.com/flatcar/Flatcar/discussions). Feel free to open a new discussion if you don't find an existing one covering your topic.
-
-### Mailing lists
-
-Though the use of Github Discussions is encouraged (see above), we also maintain groups / mailing lists for a more old-fashioned way of having a discussion. Please note that we might consider to discontinue these mailing lists at some point in the future.
-* Flatcar Users: https://groups.google.com/g/flatcar-linux-user
-* Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
 
 ## Release process
 
