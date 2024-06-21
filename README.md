@@ -37,7 +37,6 @@ Please select the appropriate issue type to help us triage incoming requests. Fo
 For quick questions or for just hanging out with the community please use
 * Our matrix chat (via element.io): [https://app.element.io/#/room/#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 * Our Slack channel in the Kubernetes Slack org: https://kubernetes.slack.com/archives/C03GQ8B5XNJ
-* A bridged IRC channel (Libera.chat): #[flatcar](ircs://irc.libera.chat:6697/#flatcar) channel is also available.
 
 ### Discussions
 
