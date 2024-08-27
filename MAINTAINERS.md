@@ -5,7 +5,7 @@ See [Governance](https://github.com/flatcar/Flatcar/blob/main/governance.md) for
 
 ## Repositories
 
-### Flatcar 
+### Flatcar
 maintainers:
 * Thilo Fromm @t-lo
 
@@ -16,6 +16,11 @@ maintainers:
 * Thilo Fromm @t-lo
 * Krzesimir Nowak @krnowak
 * Adrian Vladu @ader1990
+* Dongsu Park @dongsupark
+* Mathieu Tortuyaux @tormath1
+* Sayan Chowdhury @sayanchowdhury
+* Jeremi Piotrowski @jepio
+* James Le Cuirot @chewi
 
 ### flatcar-website
 maintainers:
@@ -52,6 +57,7 @@ maintainers:
 ### bootengine
 maintainers:
 * Kai Lüke @pothos
+* James Le Cuirot @chewi
 
 ### container-linux-config-transpiler
 maintainers:
