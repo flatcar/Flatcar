@@ -22,6 +22,10 @@ maintainers:
 * Jeremi Piotrowski @jepio
 * James Le Cuirot @chewi
 
+### Nebraska
+maintainers:
+* Ervin Racz @ErvinRacz
+
 ### flatcar-website
 maintainers:
 * Kai Lüke @pothos
