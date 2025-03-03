@@ -10,7 +10,7 @@ Please propose ownership by filing a PR for this document.
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
 | EC2         |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers |    | IAM 2.0 support missing |
-| Azure       |           Partial              |   X   |      X      | @flatcar/flatcar-maintainers |    | HyperV telemetry support missing; needs tracking issue |
+| Azure       |               X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | GCE         |               X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | Digital Ocean (VMs) |       X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
 | Equinix Metal |             X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
