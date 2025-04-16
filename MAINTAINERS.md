@@ -82,3 +82,7 @@ maintainers:
 ### flatcar-tutorial
 maintainers:
 * Mathieu Tortuyaux @tormath1
+
+### flatcar-app-minecraft
+maintainers:
+* Jan Bronicki @John15321
