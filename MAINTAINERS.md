@@ -90,3 +90,7 @@ maintainers:
 ### garm-provider-linode
 maintainers:
 * Mathieu Tortuyaux @tormath1
+
+### socials
+maintainers:
+* Mathieu Tortuyaux @tormath1
