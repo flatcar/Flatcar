@@ -1,0 +1,5 @@
+# CODEOWNERS file for Flatcar
+# This file defines who is responsible for code review
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @flatcar/flatcar-maintainers
