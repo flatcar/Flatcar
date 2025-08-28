@@ -144,3 +144,35 @@ Please find more details in our [governance doc](governance.md).
 ## Repositories
 
 The github repositories that comprise Flatcar Container Linux can be found via the [organization](https://github.com/flatcar) page.
+
+## AWS Security Groups Security Guidance
+
+When using Terraform to provision AWS EC2 instances, it is important to configure security groups carefully to avoid exposing instances to unnecessary risk.
+
+**Best Practices:**
+
+1. **Restrict SSH Access**
+   - Only allow SSH (port 22) from trusted IPs.
+   - Avoid `0.0.0.0/0` unless necessary for testing.
+
+2. **Limit Public Access**
+   - Review all inbound rules.
+   - Only open ports required for your application.
+
+3. **Use Variables for IPs**
+   - In Terraform, define allowed IPs via variables for easier management.
+   - Example:
+     ```hcl
+     variable "allowed_ips" {
+       type = list(string)
+       default = ["203.0.113.10/32"]
+     }
+     ```
+
+4. **Reference Terraform Modules**
+   - If using modules for EC2 or security groups, ensure that modules include proper security rules by default.
+
+5. **Audit Security Groups Regularly**
+   - Periodically review your security groups for unnecessary open ports.
+
+> ⚠️ **Note:** This guidance is in reference to [GitHub Issue #1848](https://github.com/flatcar/flatcar-terraform/issues/1848) regarding AWS security group best practices.
