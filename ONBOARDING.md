@@ -55,8 +55,6 @@ Add the new maintainer to the following mailing lists:
 Grant the new maintainer access to the following infrastructure systems (at minimum read/user level; escalate as required by their role):
 
 - [ ] Jenkins (CI)
-- [ ] Akamai / Linode
-- [ ] Add SSH pub key to Infrastructure as Code configuration
 
 ### Communication and Collaboration Tools
 
@@ -101,7 +99,7 @@ These are steps you should complete yourself after your coordinator has provisio
 
 ### Infrastructure and Tooling
 
-- [ ] Verify your access to Jenkins, Akamai/Linode
+- [ ] Verify your access to Jenkins
 - [ ] Log in to HackMD and confirm access to shared Flatcar documents.
 - [ ] Log in to the Linux Foundation Jira and confirm access to the Flatcar project board.
 - [ ] Verify CNCF account access.
