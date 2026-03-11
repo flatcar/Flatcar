@@ -159,7 +159,7 @@ password user1 password1
 *               hard    core          0
 ```
 
-* sysctl (currently there is a bug for persistence of these settings https://github.com/kinvolk/Flatcar/issues/297)
+* sysctl (currently there is a bug for persistence of these settings https://github.com/flatcar/Flatcar/issues/297)
   * IP forwarding
 
 ```sysclt

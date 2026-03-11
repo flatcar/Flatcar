@@ -146,7 +146,7 @@ for that purpose.
 
 ## Code of Conduct
 
-[Code of Conduct](./code-of-conduct.md)
+[Code of Conduct](./CODE_OF_CONDUCT.md)
 violations by community members will be discussed and resolved
 on the [private Maintainer mailing list](maintainers@flatcar-linux.org).  If a Maintainer is directly involved
 in the report, the Maintainers will instead designate two Maintainers to work

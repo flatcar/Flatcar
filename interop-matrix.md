@@ -60,7 +60,7 @@ Please propose ownership by filing a PR for this document.
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
-| AKS Engine  |                                |   X   |             | [no owner] |                      | https://kinvolk.io/blog/2020/12/supercharging-aks-engine-with-flatcar-container-linux/ |
+| AKS Engine  |                                |   X   |             | [no owner] |                      | https://kinvolk.io/blog/2020/12/aks-engine-on-flatcar/ |
 | Rancher (rke) |                              |   X   |             | [no owner] |                      |       |
 | Rancher (rke2) |                             |       |             | [no owner] |                      |       |
 | Lokomotive |                X                |   X   |      X      | @kinvolk/lokomotive-developers |  |       |
