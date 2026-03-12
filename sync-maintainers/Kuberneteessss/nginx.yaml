@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ngnix-2
+  labels:
+    env: production
+spec:
+  containers:
+    - name: ngnix
+      image: ngnix
