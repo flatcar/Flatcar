@@ -97,8 +97,8 @@ Users
       C: hans.kristian.flaatten@nav.no
 
     * N: Planetary Quantum GmbH
-       L: https://www.planetary-quantum.com/
-       D: Planetary Quantum is a berlin-based provider of Docker-hosting and application hosting. Our sister company Planetary Networks colocates their private cloud in two (fiber-)interconnected datacenters in Berlin and Quantum offers container-based solutions (Docker Swarm and a custom tailored application hosting) on top of Flatcar Linux. Flatcar Linux is a great choice for us because it's a modern Linux, well-suited for Docker and Kubernetes due to recent versions of Kernel, SystemD, immutable root and a well-tested userland. Simple and straight-forward updates of the OS make running Flatcar a no-brainer for us. We currently operate over 50 clusters for our customers in our private cloud — all based on Flatcar Linux.
+      L: https://www.planetary-quantum.com/
+      D: Planetary Quantum is a berlin-based provider of Docker-hosting and application hosting. Our sister company Planetary Networks colocates their private cloud in two (fiber-)interconnected datacenters in Berlin and Quantum offers container-based solutions (Docker Swarm and a custom tailored application hosting) on top of Flatcar Linux. Flatcar Linux is a great choice for us because it's a modern Linux, well-suited for Docker and Kubernetes due to recent versions of Kernel, SystemD, immutable root and a well-tested userland. Simple and straight-forward updates of the OS make running Flatcar a no-brainer for us. We currently operate over 50 clusters for our customers in our private cloud — all based on Flatcar Linux.
 
     * N: plusserver GmbH
       D: Plus Server is using Flatcar as the basis of its managed Kubernetes offering, plusserver Kubernetes Engine (PSKE). As they state in their blog, "Flatcar is currently one of the most popular operating systems for Kubernetes clusters. With its container-optimized design, strong security, and support from an active open source community, it provides an excellent foundation for all container workloads."
@@ -118,10 +118,10 @@ Users
       L: www.spinoco.com
       C: pavel.chlupacek@spinoco.com 
    
-    * N: STACKIT
-      D: Flatcar is used in our Kubernetes as a Service (KaaS) offering called SKE 
-      L: https://www.stackit.de/de/produkt/stackit-kubernetes-engine/
-      C: [info@stackit.de](mailto:info@stackit.de)
+    * N: Schwarz Digits Cloud GmbH & Co. KG (STACKIT)
+      D: Flatcar Container Linux is the foundation of our managed Kubernetes offering (SKE), powering over 20,000 nodes. It is our customers' most popular OS choice, and we highly value the vibrant and active Open Source community behind Flatcar, which ensures continuous innovation and stability. 
+      L: https://stackit.com/en/products/runtime/stackit-kubernetes-engine
+      C: @justrobin:matrix.org / info@stackit.cloud
 
     * N: Wipro
       D: Wipro Business Solutions uses Flatcar Linux to power their hybrid/multi-cloud PostgreSQL containerized DBaaS platform. Each provisioned database is running on a dedicated lightweight stack with Flatcar Linux as the foundational OS running on each database VM. In addition the DBaaS API itself and all supporting machines use Flatcar Linux as well. Flatcar Linux has proven to be a well-supported rock solid OS with minimal attack surface, built in update mechanism and integrated docker daemon. Ignition brings in an early boot provisioning utility that perfectly adds to the full automation approach of the PostgreSQL DBaaS platform. We use it at scale on-prem with OpenStack cloud but also with public clouds like Google and Tencent
