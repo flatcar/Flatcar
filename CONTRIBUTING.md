@@ -10,7 +10,7 @@
   * [Git and Github](#Git-and-Github)
   * [Start coding](#Start-coding)
   * [Proposing new features](#Proposing-new-features)
-  * [Authoring PRs](Authoring-PRs)
+  * [Authoring PRs](#Authoring-PRs)
   
 
 Welcome! We are glad that you want to contribute to our project! 💖
@@ -68,7 +68,7 @@ Though Matrix and Github discussions are encouraged and the preferred way to int
 
 We maintain a [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) with both our Office Hours and Developer Sync meeting series which interested folks can comfortably import into the calendar app of their choice.
 
-Join us in our monthly [office hours meetings](../../discussions/categories/office-hours-agenda) to engage with the Flatcar User community interactively, to learn about the project's directions, and to discuss contributions. We also conduct the occasional user-focused demo of technologies related to image-based Linux.
+Join us in our monthly [office hours meetings](https://github.com/flatcar/Flatcar/discussions/categories/office-hours-agenda) to engage with the Flatcar User community interactively, to learn about the project's directions, and to discuss contributions. We also conduct the occasional user-focused demo of technologies related to image-based Linux.
 Lastly, the call includes a brief Release Planning with an update on the changes in the next immediate releases.
 
 If you'd like to share something or if you have a pressing issue you'd like discussed, please let us know.
@@ -79,7 +79,7 @@ Either comment on the respective meeting discussion, reach out to us on Matrix (
 The meeting time observes the Central European Time zone and is subject to summer time changes.
 It occurs at 3:30pm UTC, which may fluctuate in your timezone if you observe daylight saving time.
 
-Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/office-hours-agenda) for examples.
+Meeting agendas are published in advance - check our [discussions section](https://github.com/flatcar/Flatcar/discussions/categories/office-hours-agenda) for examples.
 * Video call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
@@ -92,16 +92,16 @@ It occurs at 3:30pm UTC, which may fluctuate in your timezone if you observe day
 While release planning is a recurring part of each community call we also conduct separate Developer Syncs for backlog grooming and task planning. We discuss Roadmap items, special projects, and day-to-day issues in these calls. If you want to participate and discuss or pick up work, that call is for you!
 Just like the Office Hours the call includes a brief Release Planning with an update on the changes in the next immediate releases.
 
-* Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/flatcar-developer-sync) for examples.
+* Meeting agendas are published in advance - check our [discussions section](https://github.com/flatcar/Flatcar/discussions/categories/flatcar-developer-sync) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
 * A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 ## Report bugs and request features
 
-Please file a respective [issue](issues) right here in the top-level Flatcar github project.
+Please file a respective [issue](https://github.com/flatcar/Flatcar/issues) right here in the top-level Flatcar github project.
 For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
 
-We have good first issues for new contributors and help wanted issues suitable for any contributor. [good first issue](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) has extra information to help you make your first contribution. [help wanted](TODO) are issues suitable for someone who isn't a core maintainer and is good to move onto after
+We have good first issues for new contributors and help wanted issues suitable for any contributor. [good first issue](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) has extra information to help you make your first contribution. [help wanted](https://github.com/flatcar/Flatcar/labels/help%20wanted) are issues suitable for someone who isn't a core maintainer and is good to move onto after
 your first pull request.
 
 Sometimes there won’t be any issues with these labels. That’s ok! There is likely still something for you to work on. If you want to contribute but you don’t know where to start or can't find a suitable issue, you can ⚠️ **explain how people can ask for an issue to work on**.
