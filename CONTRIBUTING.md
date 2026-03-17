@@ -3,14 +3,14 @@
 * [New Contributor Guide](#contributing-guide)
   * [Ways to Contribute](#ways-to-contribute)
   * [Participate and contribute](#participate-and-contribute)
-  * [Monthly Office hours and Developer Syncs](#Monthly-Office-hours-and-Developer-Syncs)
-  * [Report bugs and request features](#Report-bugs-and-request-features)
+  * [Monthly Office hours and Developer Syncs](#monthly-office-hours-and-developer-syncs)
+  * [Report bugs and request features](#report-bugs-and-request-features)
   * [Pull Request Lifecycle](#pull-request-lifecycle)
   * [Development Environment Setup](#development-environment-setup)
-  * [Git and Github](#Git-and-Github)
-  * [Start coding](#Start-coding)
-  * [Proposing new features](#Proposing-new-features)
-  * [Authoring PRs](Authoring-PRs)
+  * [Git and GitHub](#git-and-github)
+  * [Start coding](#start-coding)
+  * [Proposing new features](#proposing-new-features)
+  * [Authoring PRs](#authoring-prs)
   
 
 Welcome! We are glad that you want to contribute to our project! 💖
@@ -27,7 +27,7 @@ bug report and let us know!
 
 ## Ways to Contribute
 
-[Instructions](https://contribute.cncf.io/maintainers/github/templates/required/contributing/#ways-to-contribute)
+[Instructions](https://contribute.cncf.io/projects/best-practices/templates/contributing/#ways-to-contribute)
 
 We welcome many different types of contributions including:
 
@@ -45,7 +45,7 @@ We welcome many different types of contributions including:
 * Work with contributors and maintainers to organise project-wide events like bug fixing or doc writing days, devrooms at conferences, community days / meetups, or even conferences
 
 Not everything happens through a GitHub pull request. Please come to our
-[meetings](### Monthly Office hours and Developer Syncs) or [contact us](maintainers@flatcar-linux.org) and let's discuss how we can work
+[meetings](#monthly-office-hours-and-developer-syncs) or [contact us](mailto:maintainers@flatcar-linux.org) and let's discuss how we can work
 together. 
 
 ## Participate and contribute
@@ -57,9 +57,9 @@ You can reach contributors and maintainers via
 
 * Our matrix chat (via element.io): https://app.element.io/#/room/#flatcar:matrix.org
 * Our Slack channel in the Kubernetes Slack org: https://kubernetes.slack.com/archives/C03GQ8B5XNJ
-* By engaging in or starting a new Github Discussion: https://github.com/flatcar/Flatcar/discussions
+* By engaging in or starting a new GitHub Discussion: https://github.com/flatcar/Flatcar/discussions
 
-Though Matrix and Github discussions are encouraged and the preferred way to interact with the Flatcar community, we also maintain mailing lists for Flatcar users and developers:
+Though Matrix and GitHub discussions are encouraged and the preferred way to interact with the Flatcar community, we also maintain mailing lists for Flatcar users and developers:
 * Flatcar Users: https://groups.google.com/g/flatcar-linux-user
 * Flatcar Devs: https://groups.google.com/g/flatcar-linux-dev
 
@@ -81,7 +81,7 @@ It occurs at 3:30pm UTC, which may fluctuate in your timezone if you observe day
 
 Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/office-hours-agenda) for examples.
 * Video call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
-* A Youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
+* A YouTube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 **Flatcar Developer Syncs commence every 4th Tuesday of a month at 3:30 UTC**
 
@@ -94,17 +94,17 @@ Just like the Office Hours the call includes a brief Release Planning with an up
 
 * Meeting agendas are published in advance - check our [discussions section](../../discussions/categories/flatcar-developer-sync) for examples.
 * Call link: [https://meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours)
-* A youtube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
+* A YouTube live stream (which also serves as the meeting's recording) will be published on the respective agenda when a meeting starts.
 
 ## Report bugs and request features
 
-Please file a respective [issue](issues) right here in the top-level Flatcar github project.
+Please file a respective [issue](issues) right here in the top-level Flatcar GitHub project.
 For instance, please use the "New Package Request" issue type to [file your request](https://github.com/flatcar/Flatcar/issues/new/choose). Please see [adding new packages to the Flatcar Linux OS image](adding-new-packages.md) for general guidelines.
 
-We have good first issues for new contributors and help wanted issues suitable for any contributor. [good first issue](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) has extra information to help you make your first contribution. [help wanted](TODO) are issues suitable for someone who isn't a core maintainer and is good to move onto after
+We have good first issues for new contributors and help wanted issues suitable for any contributor. [good first issue](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) has extra information to help you make your first contribution. [help wanted](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) are issues suitable for someone who isn't a core maintainer and is good to move onto after
 your first pull request.
 
-Sometimes there won’t be any issues with these labels. That’s ok! There is likely still something for you to work on. If you want to contribute but you don’t know where to start or can't find a suitable issue, you can ⚠️ **explain how people can ask for an issue to work on**.
+Sometimes there won’t be any issues with these labels. That’s ok! There is likely still something for you to work on. If you want to contribute but you don’t know where to start or can't find a suitable issue, you can reach out to us on Matrix or join our monthly Office Hours to discuss how you can help.
 
 Once you see an issue that you'd like to work on, please post a comment saying
 that you want to work on it. Something like "I want to work on this" is fine.
@@ -137,10 +137,10 @@ A PR undergoes the following stages:
 For an introduction to the Flatcar SDK and a walk-through of common developer cases like customising the OS image (e.g. adding or upgrading packages), have a look at our [developer guides](https://www.flatcar.org/docs/latest/reference/developer-guides/); particularly the [howto on building custom images from source](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/).
 The guides aim to provide a solid base for working with the SDK to help you filing successful PRs to the Flatcar project.
 
-# Git and Github
+## Git and GitHub
 
 This section has the guidelines we use to keep consistency across our different
-Git repositories and Github projects.
+Git repositories and GitHub projects.
 
 ## Start coding
 
@@ -160,7 +160,7 @@ it with the community.
 These are general guidelines for making PRs/commits easier to review:
 
  * Commits should be atomic and self-contained. Divide logically separate changes
-   to separate commits. This principle is best explained in the the Linux Kernel
+   to separate commits. This principle is best explained in the Linux Kernel
    [submitting patches][linux-sep-changes] guide.
 
  * Commit messages should explain the intention, _why_ something is done. This,
@@ -201,7 +201,7 @@ PRs which follow these rules are easier to review and merge.
 Detailed information about the commit message goes here
 ```
 
-Both the title and the body of the commit message shoud not exceed
+Both the title and the body of the commit message should not exceed
 72 characters in length. i.e. Please keep the title length under 72
 characters, and the wrap the body of the message at 72 characters.
 
