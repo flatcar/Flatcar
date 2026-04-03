@@ -45,7 +45,7 @@ jobs:
       #   Contributors stats
       #
       - name: Collect contributor metrics
-        uses: github/contributors@v1
+        uses: github-community-projects/contributors@v1
         env:
           GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
           START_DATE: ${{ env.START_DATE }}
@@ -59,7 +59,7 @@ jobs:
       #   Q&A Discussions stats
       #
       - name: All unanswered Q&A summary metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:unanswered'
@@ -72,7 +72,7 @@ jobs:
           mv issue_metrics.md discussion_qna_open.md
 
       - name: All answered Q&A Discussions metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:answered'
@@ -83,7 +83,7 @@ jobs:
           mv issue_metrics.md discussion_qna_closed.md
 
       - name: New Q&A discussions created metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A created:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -97,7 +97,7 @@ jobs:
       #   Regular Discussions stats
       #
       - name: All open Discussions summary metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A is:open'
@@ -110,7 +110,7 @@ jobs:
           mv issue_metrics.md discussion_open.md
 
       - name: New Discussions created metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A created:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -121,7 +121,7 @@ jobs:
           mv issue_metrics.md discussion_opened.md
 
       - name: Discussions closed metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -135,7 +135,7 @@ jobs:
       #   Issues stats
       #
       - name: All open Issues summary metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:issue is:open'
@@ -151,7 +151,7 @@ jobs:
           mv issue_metrics.md issues_open.md
 
       - name: New issues created metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:issue created:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -165,7 +165,7 @@ jobs:
           mv issue_metrics.md issues_opened.md
 
       - name: Issues closed metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:issue closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -182,7 +182,7 @@ jobs:
       #   Advisories stats
       #
       - name: All open Advisories summary metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar is:issue is:open label:advisory -status:implemented'
@@ -197,7 +197,7 @@ jobs:
           mv issue_metrics.md advisories_open.md
 
       - name: New advisories created metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar is:issue label:advisory created:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -210,7 +210,7 @@ jobs:
           mv issue_metrics.md advisories_opened.md
 
       - name: Advisories closed metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar is:issue label:advisory closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -227,7 +227,7 @@ jobs:
       #   Pull Requests stats
       #
       - name: All open PRs summary metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:pr is:open -author:flatcar-infra'
@@ -243,7 +243,7 @@ jobs:
           mv issue_metrics.md prs_open.md
 
       - name: New PRs created metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra created:${{ env.START_DATE }}..${{ env.END_DATE }}'
@@ -257,7 +257,7 @@ jobs:
           mv issue_metrics.md prs_opened.md
 
       - name: PRs closed metrics
-        uses: github/issue-metrics@v2
+        uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
