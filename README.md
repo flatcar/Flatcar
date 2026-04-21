@@ -21,6 +21,8 @@ _Flatcar Container Linux is a fully open source, minimal-footprint, secure by de
 
 Flatcar ships only the essentials needed to run containers — no package manager, no configuration drift. Its immutable, read-only filesystem minimizes attack surfaces, and atomic, automated updates keep your system secure and up-to-date without manual intervention.
 
+Don't forget to check out [flatcar.org](https://www.flatcar.org/) for documentation, guides, and other useful resources!
+
 ## Table of Contents
 
 - [Flatcar Container Linux](#flatcar-container-linux)
