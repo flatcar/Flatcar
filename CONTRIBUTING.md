@@ -4,17 +4,22 @@ Welcome! We're so glad you're here and interested in contributing to Flatcar! �
 
 ## Table of Contents
 
-- [Ways to Contribute](#ways-to-contribute)
-- [Getting Started](#getting-started)
-  - [Finding Issues](#finding-issues)
-  - [Proposing New Features](#proposing-new-features)
-- [Communication Channels](#communication-channels)
-  - [Community Meetings](#community-meetings)
-- [Development](#development)
-  - [Development Environment Setup](#development-environment-setup)
-  - [Pull Request Lifecycle](#pull-request-lifecycle)
-  - [Authoring PRs](#authoring-prs)
-  - [Commit Guidelines](#commit-guidelines)
+- [Contributing Guide](#contributing-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Ways to Contribute](#ways-to-contribute)
+  - [Getting Started](#getting-started)
+    - [Finding Issues](#finding-issues)
+    - [Proposing New Features](#proposing-new-features)
+  - [Communication Channels](#communication-channels)
+  - [Development](#development)
+    - [Development Environment Setup](#development-environment-setup)
+    - [Pull Request Lifecycle](#pull-request-lifecycle)
+    - [Authoring PRs](#authoring-prs)
+      - [Commit Best Practices](#commit-best-practices)
+      - [PR Description](#pr-description)
+    - [Commit Guidelines](#commit-guidelines)
+      - [The Rules](#the-rules)
+      - [Examples](#examples)
 
 ---
 
@@ -32,18 +37,18 @@ If something doesn't make sense or doesn't work, please let us know by opening a
 
 There are so many ways to get involved! We welcome all kinds of contributions:
 
-| Category | Examples |
-|----------|----------|
-| **Code** | New features, bug fixes, builds, CI/CD |
-| **Documentation** | Guides, tutorials, API docs |
-| **Community** | Issue triage, answering questions on Slack/Matrix/Mailing Lists |
-| **Flatcar Apps** | Create reference implementations for running services on Flatcar (e.g., [Minecraft](https://github.com/flatcar/flatcar-app-minecraft), [Jitsi](https://github.com/flatcar/flatcar-app-jitsi)) — great for learning! |
-| **Outreach** | Blog posts, talks, presentations, workshops |
-| **Coordination** | Release management, upstream project coordination (e.g., Flatcar CAPI, sysext initiative) |
-| **Events** | Bug fixing days, doc writing days, devrooms, meetups, conferences |
-| **Design** | Web design, maintaining the Flatcar website |
+| Category          | Examples                                                                                                                                                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Code**          | New features, bug fixes, builds, CI/CD                                                                                                                                                                              |
+| **Documentation** | Guides, tutorials, API docs                                                                                                                                                                                         |
+| **Community**     | Issue triage, answering questions on Discord/Matrix/Slack                                                                                                                                                           |
+| **Flatcar Apps**  | Create reference implementations for running services on Flatcar (e.g., [Minecraft](https://github.com/flatcar/flatcar-app-minecraft), [Jitsi](https://github.com/flatcar/flatcar-app-jitsi)) — great for learning! |
+| **Outreach**      | Blog posts, talks, presentations, workshops                                                                                                                                                                         |
+| **Coordination**  | Release management, upstream project coordination (e.g., Flatcar CAPI, sysext initiative)                                                                                                                           |
+| **Events**        | Bug fixing days, doc writing days, devrooms, meetups, conferences                                                                                                                                                   |
+| **Design**        | Web design, maintaining the Flatcar website                                                                                                                                                                         |
 
-Not everything happens through a GitHub pull request. Please come to our [meetings](#community-meetings) or [contact us](mailto:maintainers@flatcar-linux.org) to discuss how we can work together — we'd love to meet you!
+Not everything happens through a GitHub pull request. Please come to our [meetings or contact us](https://github.com/flatcar/Flatcar/blob/main/README.md#community-meetings) to discuss how we can work together — we'd love to meet you!
 
 ---
 
@@ -57,12 +62,12 @@ To report bugs or request features, just file an [issue](https://github.com/flat
 
 Not sure where to start? No worries — we've got you covered!
 
-| Label | Description |
-|-------|-------------|
+| Label                                                                                                                 | Description                                             |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | [`good first issue`](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) | Extra guidance to help you make your first contribution |
-| [`help wanted`](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) | Issues suitable for non-core maintainers |
+| [`help wanted`](https://github.com/flatcar/Flatcar/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22)           | Issues suitable for non-core maintainers                |
 
-> 💡 **Tip:** Don't see any issues with these labels? No problem! There's always something exciting to work on. Hop on Matrix or join one of our Office Hours — we'll find something that fits your interests and skill level.
+> 💡 **Tip:** Don't see any issues with these labels? No problem! There's always something exciting to work on. Hop on [Discord](https://discord.gg/PMYjFUsJyq) or join one of our Office Hours — we'll find something that fits your interests and skill level.
 
 > 🌟 **Great for newcomers:** Consider contributing a [Flatcar App](https://github.com/flatcar/Flatcar/issues/2029)! A Flatcar App is a reference implementation showing how to run a specific service on Flatcar (e.g., [Minecraft Server](https://github.com/flatcar/flatcar-app-minecraft), [Jitsi](https://github.com/flatcar/flatcar-app-jitsi)). It's a fantastic way to learn Flatcar hands-on while creating something awesome that helps other newcomers learn too!
 
@@ -78,44 +83,7 @@ For package requests, use the "New Package Request" issue type and check out [Ad
 
 ## Communication Channels
 
-We're a friendly bunch and always excited to chat! Here's where you can find us:
-
-| Channel | Link |
-|---------|------|
-| **Matrix** (preferred) | 💬 [#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org) |
-| **Slack** | [#flatcar](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) (Kubernetes Slack) |
-| **GitHub Discussions** | [flatcar/Flatcar/discussions](https://github.com/flatcar/Flatcar/discussions) |
-| **Mailing List (Users)** | [flatcar-linux-user](https://groups.google.com/g/flatcar-linux-user) |
-
-> Matrix and GitHub Discussions are the preferred ways to interact with the Flatcar community.
-
-### Community Meetings
-
-We love meeting our contributors and users! Come say hi! Check our [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com) ([iCal](https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics)) for all meeting times!
-
-#### Office Hours
-
-| | |
-|---|---|
-| **When** | 2nd Wednesday of every month at 2:30pm UTC (check calendar) |
-| **Where** | [meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours) |
-| **Agenda** | [Office Hours Discussions](https://github.com/flatcar/Flatcar/discussions/categories/flatcar-office-hours) |
-
-Join us to chat with the Flatcar community, hear about where the project is headed, discuss your contributions, and catch occasional demos of image-based Linux technologies. We also do a quick Release Planning update each call.
-
-Got something to share or a burning question? We want to hear from you! Comment on the meeting discussion beforehand, ping us on Matrix, or just show up and speak up during Q&A — newcomers are especially welcome!
-
-#### Developer Syncs
-
-| | |
-|---|---|
-| **When** | 4th Wednesday of every month at 2:30pm UTC (check calendar) |
-| **Where** | [meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours) |
-| **Agenda** | [Developer Sync Discussions](https://github.com/flatcar/Flatcar/discussions/categories/flatcar-developer-sync) |
-
-These calls are where we roll up our sleeves and dig into the work — backlog grooming, task planning, roadmap discussions, and tackling day-to-day issues. If you're looking to get hands-on with development, this is the call for you! We also cover Release Planning here, just like in Office Hours.
-
-> 🎥 All our meetings are live-streamed on YouTube and the recordings are linked in each meeting's agenda — so you can catch up anytime!
+For all communication channels, community meetings, and social media links, see the [Communication Channels](https://github.com/flatcar/Flatcar/blob/main/README.md#communication-channels) section in the README. Come hang out with us on [Discord](https://discord.gg/PMYjFUsJyq)!
 
 ---
 
@@ -134,20 +102,20 @@ These guides will give you a solid foundation for working with the SDK and help 
 Pull requests can be issued from repository branches (maintainers only) or from forks. The project treats all PRs equally for review and merge, regardless of origin.
 
 **Requirements:**
-- Successful build + test
+- Successful CI
 - At least one LGTM from a maintainer who is not the PR author
 - Approvers may be co-authors (allowing reviewers to suggest changes)
 
 **Stages:**
 
-| Stage | Description |
-|-------|-------------|
-| **1. Filed** | PR is created. Draft PRs only undergo build+test when explicitly requested. |
+| Stage                   | Description                                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **1. Filed**            | PR is created. Draft PRs only undergo build+test when explicitly requested.                                      |
 | **2. Ready for Review** | Maintainers can begin reviewing and approve CI runs. Authors may file directly in this stage if the PR is ready. |
-| **3. Under Review** | Maintainers add comments, request changes, and vet against Flatcar's mission and core principles. |
-| **4. Merged or Closed** | PR is merged upon approval or closed without merge. |
+| **3. Under Review**     | Maintainers add comments, request changes, and vet against Flatcar's mission and core principles.                |
+| **4. Merged or Closed** | PR is merged upon approval or closed without merge.                                                              |
 
-> 💡 **Tip:** PR feeling stuck? Don't be shy — reach out on Matrix or bring it up in a community meeting. We're here to help and we want to see your contribution succeed!
+> 💡 **Tip:** PR feeling stuck? Don't be shy — reach out on [Discord](https://discord.gg/PMYjFUsJyq) or bring it up in a community meeting. We're here to help and we want to see your contribution succeed!
 
 ### Authoring PRs
 
@@ -185,13 +153,13 @@ Detailed information about the commit message goes here.
 
 #### The Rules
 
-| Rule | Details |
-|------|---------|
-| **Line length** | Title ≤ 72 characters; body wrapped at 72 characters |
-| **Blank line** | Separate title and body with one empty line |
-| **Title mood** | Use [imperative mood](https://chris.beams.io/posts/git-commit/#imperative) (e.g., "Add feature" not "Added feature") |
-| **Title punctuation** | No period at the end |
-| **Body punctuation** | End sentences with periods |
+| Rule                  | Details                                                                                                              |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **Line length**       | Title ≤ 72 characters; body wrapped at 72 characters                                                                 |
+| **Blank line**        | Separate title and body with one empty line                                                                          |
+| **Title mood**        | Use [imperative mood](https://chris.beams.io/posts/git-commit/#imperative) (e.g., "Add feature" not "Added feature") |
+| **Title punctuation** | No period at the end                                                                                                 |
+| **Body punctuation**  | End sentences with periods                                                                                           |
 
 #### Examples
 
@@ -213,3 +181,6 @@ Updated bash to the latest one.
 ---
 
 Thanks for reading, and thank you so much for contributing! 🙏 We're thrilled to have you as part of the Flatcar community. If you have any questions at all, don't hesitate to reach out — we're always happy to help and can't wait to see what you build! 🎉
+
+[linux-sep-changes]: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#separate-your-changes
+[linux-desc-changes]: https://www.kernel.org/doc/html/latest/process/submitting-patches.html#describe-your-changes
