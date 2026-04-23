@@ -1,7 +1,28 @@
 # Flatcar Releases
 
-A Flatcar instance receives **automatic** updates from a specific release channel. The **Stable** channel is the default, and new major releases only appear there after passing through the **Alpha** and **Beta** channels. Each release channel always points to the latest release in that particular channel, linked as the `current` release. Each release has a version number and separate release notes.
+Flatcar Container Linux uses **automatic, atomic updates** to keep your system secure and up-to-date without manual intervention. Each Flatcar instance receives updates from one of three release channels:
 
-Learn more about updating and release channels in the [channel docs](https://www.flatcar.org/docs/latest/setup/releases/switching-channels/). Browse all available releases at [flatcar.org/releases](https://www.flatcar.org/releases/). Click `amd64` or `arm64` to download images for the channel's `current` release from the channel overview, or for a particular version from the release notes. You will be able to choose from many images for various platforms. The [installation docs](https://www.flatcar.org/docs/latest/installing/) have a quick start guide and information about public images directly available at each cloud provider.
+- **Alpha** — the bleeding edge. New features, major version upgrades, and experimental changes land here first. Expect frequent updates and occasional rough edges.
+- **Beta** — a stabilization step. Changes that have proven themselves in Alpha are promoted here for broader testing before reaching production.
+- **Stable** — the default and recommended channel for production workloads. Only thoroughly tested releases make it here.
 
-For the full release process documentation and how releases work under the hood, see the [Release Guide](https://www.flatcar.org/docs/latest/reference/developer-guides/release-guide/) on the Flatcar documentation site.
+Each channel always points to its latest version as the `current` release. Every release has its own version number and dedicated release notes. Bug fixes are shipped directly to the affected channel — an Alpha fix goes to Alpha, a Beta fix to Beta, a Stable fix to Stable.
+
+Releases follow a **14-day cadence**. You can learn more about switching between channels and configuring update behavior in the [channel docs](https://www.flatcar.org/docs/latest/setup/releases/switching-channels/).
+
+## Download Images
+
+Browse all available releases at [flatcar.org/releases](https://www.flatcar.org/releases/). Click `amd64` or `arm64` on the channel overview to download images for the `current` release, or navigate to a specific version's release notes to grab that particular build. You'll be able to choose from images for many platforms and cloud providers. The [installation docs](https://www.flatcar.org/docs/latest/installing/) have a quick start guide and information about public images directly available at each cloud provider.
+
+## Track Releases
+
+| Resource | Link |
+|----------|------|
+| **Releases Tracker** | [Project board](https://github.com/orgs/flatcar/projects/7/views/24) — status of each release across all channels |
+| **Release issues** | [kind/release](https://github.com/flatcar/Flatcar/issues?q=is%3Aissue+state%3Aopen+label%3Akind%2Frelease) — upcoming and in-progress releases that populate the tracker |
+
+## Release Process
+
+For the full release process documentation — how releases are built, tested, signed, and published — see the [Release Guide](https://www.flatcar.org/docs/latest/reference/developer-guides/release-guide/) on the Flatcar documentation site.
+
+Have questions about releases or updates? Join one of our [chats or community calls](https://github.com/flatcar/Flatcar/blob/main/README.md#communication-channels) — we're always happy to help!

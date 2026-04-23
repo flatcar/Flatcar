@@ -41,8 +41,6 @@ Don't forget to check out [flatcar.org](https://www.flatcar.org/) for documentat
     - [LTS](#lts)
   - [Project Governance](#project-governance)
   - [Code of Conduct](#code-of-conduct)
-  - [Repositories and Subprojects](#repositories-and-subprojects)
-    - [Subprojects](#subprojects)
   - [Reference](#reference)
 
 ---
@@ -148,6 +146,7 @@ The Flatcar maintainer path is laid out in our [governance document](governance.
 | [**Issue Tracker**](https://github.com/flatcar/Flatcar/issues)           | Short-term concerns — bugs and minor enhancements          |
 | [**Tactical Board**](https://github.com/orgs/flatcar/projects/7/views/1) | What maintainers and contributors are currently working on |
 | [**Release Board**](https://github.com/orgs/flatcar/projects/7/views/8)  | Completed items assigned to upcoming releases              |
+| [**Releases Tracker**](https://github.com/orgs/flatcar/projects/7/views/24) | Track the status of each release across all channels    |
 | [**Roadmap Board**](https://github.com/orgs/flatcar/projects/7/views/9)  | Epics, major features, and long-term items                 |
 
 ---
@@ -193,21 +192,6 @@ For full details see our [governance document](governance.md).
 We follow the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/main/code-of-conduct.md).
 
 Please contact the [private Maintainer mailing list](mailto:maintainers@flatcar-linux.org) or the Linux Foundation mediator, Mishi Choudhary ([mishi@linux.com](mailto:mishi@linux.com)), to report an issue.
-
----
-
-## Repositories and Subprojects
-
-All GitHub repositories that comprise Flatcar Container Linux can be found via the [Flatcar organization](https://github.com/flatcar) page.
-
-### Subprojects
-
-| Project                                                            | Description                                                                                                                                                                                   |
-| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**Nebraska**](https://github.com/flatcar/nebraska)                | Update manager for Flatcar Container Linux — manages rollouts, update groups, and instance tracking                                                                                           |
-| [**sysext-bakery**](https://github.com/flatcar/sysext-bakery)      | Build and publish systemd-sysext images to extend Flatcar with additional software (e.g., Docker, Kubernetes)                                                                                 |
-| [**linode-garm**](https://github.com/flatcar/linode-garm)          | GARM provider for Linode — spin up GitHub Actions self-hosted runners on Linode infrastructure                                                                                                |
-| [**Flatcar Apps**](https://github.com/flatcar/Flatcar/issues/2029) | Reference implementations showing how to run services on Flatcar (e.g., [Minecraft](https://github.com/flatcar/flatcar-app-minecraft), [Jitsi](https://github.com/flatcar/flatcar-app-jitsi)) |
 
 ---
 
