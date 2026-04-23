@@ -158,7 +158,16 @@ Flatcar Container Linux follows an **Alpha → Beta → Stable** release process
 - **New features** and major version upgrades enter Alpha, transition to Beta, then land in Stable.
 - **Bug fixes** are released directly to the affected channel (Alpha fixes go to Alpha, Beta to Beta, Stable to Stable).
 
-Releases are planned on a **14-day cadence**. Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/flatcar/projects/7). For the full release process documentation, see the [Release Guide](RELEASES.md).
+Within each channel, updates are planned on a **14-day cadence**. Major releases follow a broader rhythm:
+
+| Promotion | Target cadence |
+|-----------|----------------|
+| New major **Alpha** | Monthly |
+| Alpha → **Beta** | Every 2 months |
+| Beta → **Stable** | Every 3–4 months |
+| New **LTS** | Yearly |
+
+Up-to-date planning status is reflected in our [release planning board](https://github.com/orgs/flatcar/projects/7). For the full release process documentation, see the [Release Guide](RELEASES.md).
 
 ### LTS
 
