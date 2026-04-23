@@ -31,7 +31,7 @@ These steps require elevated access and must be completed by an existing maintai
   - `flatcar-ci`
   - `nebraska-maintainers`
   - Other repository-specific teams as applicable.
-- [ ] If the new maintainer will be involved in release management, add them to the Nebraska read-only (`ro`) or read-write (`rw`) groups in the Nebraska release process as appropriate.
+- [ ] If the new maintainer will be involved in release management, add them to the Nebraska read-only (`ro`) or read-write (`rw`) groups in the Nebraska release process as appropriate. See [RELEASES.md](./RELEASES.md) for the full release guide.
 
 ### CNCF Registration
 
@@ -94,6 +94,7 @@ These are steps you should complete yourself after your coordinator has provisio
 
 ### Community Channels
 
+- [ ] Join the Flatcar Discord server: [discord.gg/PMYjFUsJyq](https://discord.gg/PMYjFUsJyq)
 - [ ] Join the Flatcar Matrix room: [#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 - [ ] Join the [#flatcar channel](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) in the Kubernetes Slack workspace.
 
@@ -109,7 +110,7 @@ These are steps you should complete yourself after your coordinator has provisio
 - [ ] Schedule onboarding knowledge-sharing sessions with existing maintainers to cover key areas of the project. Suggested topics include:
   - Overview of the Flatcar build system and SDK
   - CI/CD pipeline and infrastructure
-  - Release management process
+  - Release management process (see [RELEASES.md](./RELEASES.md))
   - Security response process
   - Governance and decision-making
 - [ ] Read through the [Flatcar developer guides](https://www.flatcar.org/docs/latest/reference/developer-guides/) and the [SDK how-to](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/).
@@ -123,6 +124,7 @@ These are steps you should complete yourself after your coordinator has provisio
 
 If you have any questions during onboarding, please reach out to the maintainer team via:
 
+- Discord: [discord.gg/PMYjFUsJyq](https://discord.gg/PMYjFUsJyq)
 - Matrix: [#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 - Slack: [#flatcar](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) in the Kubernetes Slack org
 - Private maintainer mailing list: `maintainers@flatcar-linux.org`
