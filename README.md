@@ -67,7 +67,7 @@ We're a friendly bunch and always excited to chat! Here's where you can find us:
 | ------------------------ | -------------------------------------------------------------------------------------------------------------- |
 | **Discord** (preferred)  | [discord.gg/PMYjFUsJyq](https://discord.gg/PMYjFUsJyq) — text, voice & video with contributors and maintainers |
 | **Matrix**               | [#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)                                       |
-| **Slack**                | [#flatcar](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) (Kubernetes Slack)                               |
+| **Slack**                | [#flatcar](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) (Kubernetes Slack) / | [#flatcar](https://cloud-native.slack.com/archives/C07LW8GQ4F9)  (CNCF Slack)                                 |
 | **GitHub Discussions**   | [flatcar/Flatcar/discussions](https://github.com/flatcar/Flatcar/discussions)                                  |
 | **Mailing List (Users)** | [flatcar-linux-user](https://groups.google.com/g/flatcar-linux-user)                                           |
 
