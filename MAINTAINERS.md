@@ -24,6 +24,7 @@ Official Flatcar project maintainers. All maintainers listed here should also be
 | Ervin Racz        | [@ervcz](https://github.com/ervcz)                     |
 | Jan Bronicki      | [@John15321](https://github.com/John15321)             |
 | Lexi Nadolski     | [@lexinadolski](https://github.com/lexinadolski)       |
+| Robin Schneider   | [@robinschneider](https://github.com/robinschneider)   |
 
 ## Flatcar Security Team
 
