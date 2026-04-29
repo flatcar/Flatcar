@@ -10,7 +10,7 @@ Official Flatcar project maintainers. All maintainers listed here should also be
 | Name              | GitHub                                                 |
 | ----------------- | ------------------------------------------------------ |
 | James Le Cuirot   | [@chewi](https://github.com/chewi)                     |
-| Thilo From        | [@t-lo](https://github.com/t-lo)                       |
+| Thilo Fromm       | [@t-lo](https://github.com/t-lo)                       |
 | Krzesimir Nowak   | [@krnowak](https://github.com/krnowak)                 |
 | Sayan Chowdhury   | [@sayanchowdhury](https://github.com/sayanchowdhury)   |
 | Gabriel Samfira   | [@gabriel-samfira](https://github.com/gabriel-samfira) |
@@ -23,6 +23,7 @@ Official Flatcar project maintainers. All maintainers listed here should also be
 | Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)               |
 | Ervin Racz        | [@ervcz](https://github.com/ervcz)                     |
 | Jan Bronicki      | [@John15321](https://github.com/John15321)             |
+| Lexi Nadolski     | [@lexinadolski](https://github.com/lexinadolski)       |
 
 ## Flatcar Security Team
 
