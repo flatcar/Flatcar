@@ -10,6 +10,16 @@ Welcome! We're so glad you're here and interested in contributing to Flatcar! �
   - [Getting Started](#getting-started)
     - [Finding Issues](#finding-issues)
     - [Proposing New Features](#proposing-new-features)
+  - [Repository Overview](#repository-overview)
+    - [OS Image Build System](#os-image-build-system)
+    - [Update and Reboot Infrastructure](#update-and-reboot-infrastructure)
+    - [Node Configuration and Provisioning](#node-configuration-and-provisioning)
+    - [System Extensions](#system-extensions)
+    - [Testing and Tooling](#testing-and-tooling)
+    - [Deployment and Cloud](#deployment-and-cloud)
+    - [Cluster API Integration](#cluster-api-integration)
+    - [Flatcar Apps](#flatcar-apps)
+    - [Project and Community](#project-and-community)
   - [Communication Channels](#communication-channels)
   - [Development](#development)
     - [Development Environment Setup](#development-environment-setup)
@@ -78,6 +88,103 @@ Found something you'd like to work on? Excellent! Just leave a comment like "I'd
 Got an idea for a new feature or a big architectural change? We'd love to hear it! Don't be shy — the best approach is to open an issue first so we can discuss it together before you invest time in implementation.
 
 For package requests, use the "New Package Request" issue type and check out [Adding New Packages](https://github.com/flatcar/Flatcar/blob/main/adding-new-packages.md) for guidelines.
+
+---
+
+## Repository Overview
+
+The Flatcar project is spread across multiple repositories in the [`flatcar` GitHub organisation](https://github.com/flatcar). Here is a map of the key repos, grouped by function, to help you find where to contribute.
+
+### OS Image Build System
+
+These repos are the beating heart of the OS image build system.
+
+| Repository | Description |
+| ---------- | ----------- |
+| [scripts](https://github.com/flatcar/scripts) | Image build, SDK, and package management — the main entry point for OS development |
+| [init](https://github.com/flatcar/init) | systemd boot files and early OS initialisation |
+| [bootengine](https://github.com/flatcar/bootengine) | Early-boot initrd (dracut) modules |
+| [baselayout](https://github.com/flatcar/baselayout) | Base filesystem layout |
+| [flatcar-build-scripts](https://github.com/flatcar/flatcar-build-scripts) | Extra build helper scripts independent of the main `scripts` repo |
+
+### Update and Reboot Infrastructure
+
+Flatcar ships atomic, automatic updates. These repos implement the full update and reboot-coordination stack.
+
+| Repository | Description |
+| ---------- | ----------- |
+| [update_engine](https://github.com/flatcar/update_engine) | Update daemon — the Omaha protocol client running on each node |
+| [nebraska](https://github.com/flatcar/nebraska) | Web-based Omaha update server, dashboard, and release manager |
+| [ue-rs](https://github.com/flatcar/ue-rs) | Experimental Rust implementation of the Omaha update client |
+| [locksmith](https://github.com/flatcar/locksmith) | Reboot coordinator using etcd locks to prevent cluster-wide simultaneous reboots |
+| [flatcar-linux-update-operator](https://github.com/flatcar/flatcar-linux-update-operator) | Kubernetes operator that integrates the update engine with the Kubernetes node lifecycle |
+| [fleetlock](https://github.com/flatcar/fleetlock) | Go client for the FleetLock reboot-coordination protocol |
+
+### Node Configuration and Provisioning
+
+Tools for bootstrapping and configuring nodes at first boot.
+
+| Repository | Description |
+| ---------- | ----------- |
+| [ignition](https://github.com/flatcar/ignition) | Flatcar's fork of Ignition — used for CAPI builds and development |
+| [coreos-cloudinit](https://github.com/flatcar/coreos-cloudinit) | Legacy cloud-init configuration tool for Flatcar |
+| [container-linux-config-transpiler](https://github.com/flatcar/container-linux-config-transpiler) | Converts human-friendly Container Linux Config YAML into Ignition JSON |
+
+### System Extensions
+
+Flatcar is minimal by design; system extensions let you layer software on top without modifying the read-only OS image.
+
+| Repository | Description |
+| ---------- | ----------- |
+| [sysext-bakery](https://github.com/flatcar/sysext-bakery) | Recipes for building systemd-sysext images (Docker, containerd, Kubernetes, and more) |
+
+### Testing and Tooling
+
+| Repository | Description |
+| ---------- | ----------- |
+| [mantle](https://github.com/flatcar/mantle) | Test framework (kola), image upload tools, and general glue utilities |
+| [toolbox](https://github.com/flatcar/toolbox) | Interactive debugging container that provides a mutable shell on a Flatcar node |
+| [update-ssh-keys](https://github.com/flatcar/update-ssh-keys) | Manages authorized SSH keys from multiple sources |
+| [mayday](https://github.com/flatcar/mayday) | Gathers diagnostic support information from a running node |
+| [seismograph](https://github.com/flatcar/seismograph) | Disk partition management tools |
+| [nss-altfiles](https://github.com/flatcar/nss-altfiles) | NSS module that allows relocating `/etc/passwd` and related files |
+
+### Deployment and Cloud
+
+Templates, examples, and tooling for getting Flatcar running on cloud and on-prem infrastructure.
+
+| Repository | Description |
+| ---------- | ----------- |
+| [flatcar-terraform](https://github.com/flatcar/flatcar-terraform) | Terraform examples for AWS, Azure, GCP, Equinix Metal, and more |
+| [flatcar-packer-qemu](https://github.com/flatcar/flatcar-packer-qemu) | Packer templates for building QEMU and Vagrant images |
+| [flatcar-cloud-image-uploader](https://github.com/flatcar/flatcar-cloud-image-uploader) | Tooling for uploading Flatcar images to cloud providers |
+
+### Cluster API Integration
+
+| Repository | Description |
+| ---------- | ----------- |
+| [cluster-api-bootstrap-provider-kubeadm-ignition](https://github.com/flatcar/cluster-api-bootstrap-provider-kubeadm-ignition) | CAPI bootstrap provider that provisions Flatcar nodes using Ignition configs generated by kubeadm |
+
+### Flatcar Apps
+
+Reference implementations showing how to run real-world services on Flatcar — great for learning and as starting points for your own deployments.
+
+| Repository | Description |
+| ---------- | ----------- |
+| [flatcar-app-minecraft](https://github.com/flatcar/flatcar-app-minecraft) | Containerised PaperMC Minecraft server deployable on Azure and other clouds |
+| [flatcar-app-jitsi](https://github.com/flatcar/flatcar-app-jitsi) | Jitsi video-conferencing server automation |
+| [flatcar-mastodon](https://github.com/flatcar/flatcar-mastodon) | Automation for deploying a Mastodon node on Flatcar |
+
+### Project and Community
+
+| Repository | Description |
+| ---------- | ----------- |
+| [Flatcar](https://github.com/flatcar/Flatcar) | Central issue tracker, project documentation, governance, and release planning |
+| [flatcar-website](https://github.com/flatcar/flatcar-website) | Source for [flatcar.org](https://www.flatcar.org/) |
+| [flatcar-demos](https://github.com/flatcar/flatcar-demos) | Demo scripts and artefacts from conferences and meetups |
+| [flatcar-tutorial](https://github.com/flatcar/flatcar-tutorial) | Hands-on tutorial material for newcomers |
+
+> 💡 **Starting out?** `scripts` is where most OS-level contributions happen. `sysext-bakery` is a great low-barrier entry point for adding or updating software extensions.
 
 ---
 

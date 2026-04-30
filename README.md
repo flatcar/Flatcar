@@ -21,6 +21,20 @@ _Flatcar Container Linux is a fully open source, minimal-footprint, secure by de
 
 Flatcar ships only the essentials needed to run containers — no package manager, no configuration drift. Its immutable, read-only filesystem minimizes attack surfaces, and atomic, automated updates keep your system secure and up-to-date without manual intervention.
 
+### New to Flatcar?
+
+If you've never heard of image-based or immutable Linux, here's a quick orientation:
+
+- **What makes Flatcar different?** Unlike general-purpose distros, Flatcar has no package manager (`apt`, `yum`, etc.) and its root filesystem is read-only. You declare the state you want at boot time (via [Ignition](https://www.flatcar.org/docs/latest/provisioning/ignition/)) and the OS atomically applies it. Updates happen automatically in the background and take effect on the next reboot — no manual patching required.
+- **Who uses Flatcar?** Primarily teams running container workloads (Kubernetes, Docker, etc.) in cloud or on-prem environments where security, reproducibility, and low maintenance overhead matter.
+- **Want a guided tour?** These talks are great starting points:
+
+  | Video | Speaker | Description |
+  | ----- | ------- | ----------- |
+  | [So Flatcar's in the CNCF... What's Next?](https://www.youtube.com/watch?v=aRW3LBR6iHo) | Andrew Randall (Cloud Native Rejekts 2024) | Project status, CNCF acceptance, governance, roadmap, and future direction |
+  | [Flatcar Linux 101: A Hands-Free Server OS](https://youtu.be/reR0UCJ7Ezo) | Brian Exelbierd (InstallfestCz 2026) | Core concepts, Ignition provisioning, automatic updates, and sysext extensions |
+  | [Take the Power Back on Your Containers with Flatcar](https://youtu.be/woZlGiLsKp0) | Mathieu Tortuyaux, Microsoft (Linux Foundation) | Hands-on tutorial: deploy with Terraform, provision with Ignition, set up auto-updates via Nebraska |
+
 Don't forget to check out [flatcar.org](https://www.flatcar.org/) for documentation, guides, and other useful resources!
 
 ## Table of Contents
@@ -36,6 +50,7 @@ Don't forget to check out [flatcar.org](https://www.flatcar.org/) for documentat
   - [Report Bugs and Request Features](#report-bugs-and-request-features)
   - [Participate and Contribute](#participate-and-contribute)
     - [Becoming a Maintainer](#becoming-a-maintainer)
+  - [Repository Overview](#repository-overview)
   - [Project Status and Roadmap](#project-status-and-roadmap)
   - [Release Process](#release-process)
     - [LTS](#lts)
@@ -136,6 +151,12 @@ For full details, check out our [Contributing Guide](CONTRIBUTING.md) which cove
 ### Becoming a Maintainer
 
 The Flatcar maintainer path is laid out in our [governance document](governance.md).
+
+---
+
+## Repository Overview
+
+The Flatcar project is spread across many repositories in the [`flatcar` GitHub organisation](https://github.com/flatcar). For a full map of repos grouped by function, see the [Repository Overview](https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md#repository-overview) in the Contributing Guide.
 
 ---
 
