@@ -83,6 +83,10 @@ Users
       L: https://www.giantswarm.io/blog/time-to-catch-a-new-train-flatcar-linux
       D: Giant Swarm uses Flatcar within their Kubernetes Distribution. Flatcar is used on all providers (Azure, AWS, Google, OpenStack and Vmware). Giant Swarm manages 100s of clusters with 1000s of nodes running on Flatcar across the planet.
 
+    * N: Hedgehog 
+      D: Flatcar is the OS for the control node in our product. We like the air-gap deployment model and how easy it is to stand up a Kubernetes cluster
+      L: hedgehog.cloud
+
     * N: Intersys AG 
 
     * N: Memzo 
