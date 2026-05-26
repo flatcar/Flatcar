@@ -95,7 +95,6 @@ These are steps you should complete yourself after your coordinator has provisio
 ### Community Channels
 
 - [ ] Join the Flatcar Discord server: [discord.gg/PMYjFUsJyq](https://discord.gg/PMYjFUsJyq)
-- [ ] Join the Flatcar Matrix room: [#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 - [ ] Join the [#flatcar channel](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) in the Kubernetes Slack workspace.
 
 ### Infrastructure and Tooling
@@ -125,6 +124,5 @@ These are steps you should complete yourself after your coordinator has provisio
 If you have any questions during onboarding, please reach out to the maintainer team via:
 
 - Discord: [discord.gg/PMYjFUsJyq](https://discord.gg/PMYjFUsJyq)
-- Matrix: [#flatcar:matrix.org](https://app.element.io/#/room/#flatcar:matrix.org)
 - Slack: [#flatcar](https://kubernetes.slack.com/archives/C03GQ8B5XNJ) in the Kubernetes Slack org
 - Private maintainer mailing list: `maintainers@flatcar-linux.org`

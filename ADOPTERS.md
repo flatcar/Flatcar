@@ -7,7 +7,7 @@ The following is a list of adopters who have publicly spoken about their use of 
 Adding yourself as a user
 -------------------------
 
-If you are using Flatcar, please consider adding yourself as a user with a quick description of your use case by opening a pull request to this file and adding a section describing your usage of Flatcar. If you are open to others contacting you about your use of Flatcar on Slack or Matrix, include your Slack/Matrix nickname or email as well.
+If you are using Flatcar, please consider adding yourself as a user with a quick description of your use case by opening a pull request to this file and adding a section describing your usage of Flatcar. If you are open to others contacting you about your use of Flatcar on Discord or Slack, include your Discord/Slack nickname or email as well.
     
     * N: Name of user (company or individual) 
       D: Description 
@@ -19,7 +19,7 @@ Example entry:
     * N: Flatcar Example User Inc.
       D: Using Flatcar for running Kubernetes in Azure via Cluster API
       L: https://www.exampleuser.com 
-      C: Slack: @slacknick and/or Matrix: @Matrixnick and/or Email: nick [at] exampleuser [dot] com
+      C: Discord: @discordnick and/or Slack: @slacknick and/or Email: nick [at] exampleuser [dot] com
     
 
 Requirements to be listed
