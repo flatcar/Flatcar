@@ -18,6 +18,7 @@ This goverance explains how the project is run.
   - [Code of Conduct](#code-of-conduct)
   - [Security Response Team](#security-response-team)
   - [Voting](#voting)
+  - [Roadmap Changes](#roadmap-changes)
   - [Modifying this Charter](#modifying-this-charter)
 
 ## Values
@@ -104,7 +105,7 @@ The nominating maintainer will create a PR to update the Maintainers List.
 It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
 Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
 
-Maintainers who are selected will be granted the necessary GitHub rights. The (CONTRIBUTING.md)[https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md] process should be used when onboarding a new maintainer.
+Maintainers who are selected will be granted the necessary GitHub rights. The [CONTRIBUTING.md](./CONTRIBUTING.md) process should be used when onboarding a new maintainer.
 
 
 ### Removing a Maintainer
@@ -140,6 +141,10 @@ Depending on your local timezone, the slot might be subject to summer time chang
 A calendar is available to ease planning. The calendar contains Developer syncs, project office hours, and one-off events like bug fixing or doc writing days.
 * Google calendar link: https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com
 * iCal link (for importing): https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics
+
+Members of the community are welcome to join these meetings and are strongly encouraged to do so.
+Developer Syncs are not limited to Maintainers; they are an important place for contributors and community members to follow project direction, participate in discussions, voice their opinions, and get involved in ongoing work.
+Community participation in these meetings is valuable and actively encouraged, especially when contributors want to raise concerns, share feedback, or help shape the direction of the project.
 
 Maintainers will also have closed meetings in order to discuss security reports
 or Code of Conduct violations.  Such meetings should be scheduled by any
@@ -185,6 +190,15 @@ demand a vote be taken.
 Most votes require a simple majority of all Maintainers to succeed, except where
 otherwise noted.  Two-thirds majority votes mean at least two-thirds of all 
 existing maintainers.
+
+## Roadmap Changes
+
+Changes to the project roadmap should be discussed openly and with enough context for contributors and Maintainers to understand the reasoning behind the proposed change.
+Roadmap changes may be proposed through a GitHub issue, by a vote, or during a meeting of the Maintainers.
+Using an issue is encouraged where practical, as it creates a clear public record of the proposal, the discussion around it, and the decision that follows.
+In practice, roadmap changes will usually be discussed during the Flatcar Developer Syncs.
+These meetings are listed on the public project calendar, and their recordings are publicly available through the meeting agendas.
+When a roadmap change is made during a meeting, at least two-thirds of the Maintainers must be present for that decision.
 
 ## Modifying this Charter
 
