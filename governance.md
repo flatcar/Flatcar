@@ -8,15 +8,17 @@ The project is governed by a flat hierarchy - a group of people sharing a common
 
 This goverance explains how the project is run.
 
-- [Values](#values)
-- [Maintainers](#maintainers)
-- [Becoming a Maintainer](#becoming-a-maintainer)
-- [Meetings](#meetings)
-- [CNCF Resources](#cncf-resources)
-- [Code of Conduct Enforcement](#code-of-conduct)
-- [Security Response Team](#security-response-team)
-- [Voting](#voting)
-- [Modifications](#modifying-this-charter)
+- [Flatcar Project Governance](#flatcar-project-governance)
+  - [Values](#values)
+  - [Maintainers](#maintainers)
+    - [Becoming a Maintainer](#becoming-a-maintainer)
+    - [Removing a Maintainer](#removing-a-maintainer)
+  - [Meetings](#meetings)
+  - [CNCF Resources](#cncf-resources)
+  - [Code of Conduct](#code-of-conduct)
+  - [Security Response Team](#security-response-team)
+  - [Voting](#voting)
+  - [Modifying this Charter](#modifying-this-charter)
 
 ## Values
 
@@ -69,31 +71,40 @@ The contributions are expected to be substantial, and must demonstrate a commitm
 Maintainership is not limited to engineering / development merits; all contributions - e.g. working with issues, providing guidance and feedback to users, reviewing PRs, contributing to docs, evangelising Flatcar - count.
 Becoming a maintainer is about building trust with the current maintainers of the project and being a person that they can depend on to make decisions in the best interest of the project in a consistent manner.
 
-Maintainer candidates should have demonstrated they:
-- Collaborate well.
-- Have a deep and comprehensive understanding of the Flatcar code base, technical goals, and directions.
-- Actively engage with major Flatcar feature proposals and implementations.
+People interested in becoming maintainers are encouraged to reach out to the existing maintainers well before they expect to be nominated.
+Likewise, existing maintainers may approach contributors who have shown that they are ready to grow into the role.
+Early conversations are encouraged so that we can help contributors understand the project, find impactful ways to contribute, and build toward maintainership deliberately.
 
-The Flatcar project welcomes both development as well as community-focuses contributions.
-To gain maintainership, the following is expected:
-  * commitment to the project's continued success:
-    * participate in discussions, contributions, code and documentation reviews for 6 months or more,
-    * actively evangelise Flatcar in at least 20 talks/presentations at 10 different conferences or meetups
-    * organise and chair at least 15 maintainer events, e.g. bug fixing or doc writing days, with at least 5 maintainers participating each event
-  * Contribute to the project's development
-    * perform reviews for 30 non-trivial pull requests,
-    * contribute 10 non-trivial pull requests and have them merged,
-  * ability to write quality code and/or documentation,
-  * ability to collaborate with the team,
-  * demonstrated understanding of how the team works (policies, processes for testing and code review, etc),
-  * understanding of the project's code base and coding and / or documentation style.
+There is no single checklist for becoming a maintainer.
+Instead, maintainer candidates are expected to demonstrate continuous engagement with both the project and the community over time.
+This includes contributing regularly in ways that help Flatcar succeed, collaborating well with others, and building trust with the existing maintainers.
 
+The Flatcar project welcomes both development- and community-focused contributions.
+Relevant contributions include, but are not limited to:
+
+- Code, bug fixes, builds, and CI/CD improvements.
+- Documentation such as guides, tutorials, and API docs.
+- Community work such as issue triage and answering questions on Discord, Slack, or GitHub.
+- Flatcar Apps and other reference implementations that help users learn and adopt Flatcar.
+- Outreach such as blog posts, talks, presentations, and workshops.
+- Coordination work such as release management and upstream project collaboration.
+- Events such as bug fixing days, doc writing days, devrooms, meetups, and conferences.
+- Design work such as improving the website and other project-facing materials.
+
+Maintainer candidates should have demonstrated that they:
+- Contribute continuously and in meaningful ways.
+- Do work that has clear impact on the project or community.
+- Collaborate well and treat others with respect, in line with the Code of Conduct.
+- Develop a solid understanding of the Flatcar code base, technical goals, processes, and direction.
+- Actively engage with important project discussions, reviews, and proposals.
+
+Maintainer nominations are based on the judgment of the existing maintainers.
 Periodically, the existing maintainers curate a list of contributors that have shown regular activity on the project over the prior months.
 The nominating maintainer will create a PR to update the Maintainers List.
 It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
 Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
 
-Maintainers who are selected will be granted the necessary GitHub rights.
+Maintainers who are selected will be granted the necessary GitHub rights. The (CONTRIBUTING.md)[https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md] process should be used when onboarding a new maintainer.
 
 
 ### Removing a Maintainer
