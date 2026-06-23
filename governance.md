@@ -18,6 +18,7 @@ This goverance explains how the project is run.
   - [Code of Conduct](#code-of-conduct)
   - [Security Response Team](#security-response-team)
   - [Voting](#voting)
+  - [Roadmap Changes](#roadmap-changes)
   - [Modifying this Charter](#modifying-this-charter)
 
 ## Values
@@ -46,7 +47,7 @@ The Flatcar project, its leadership, and its maintainers embrace the following v
 
 Flatcar Maintainers have full access to most of the repositories in the [Flatcar project](https://github.com/orgs/flatcar/), except for very few repositories that contain sensitive information, e.g. for with undisclosed security issues (see [SECURITY.md](./SECURITY.md) for more information).
 Maintainers can merge PRs, approve PR builds+tests, and create and publish releases.
-Maintainers collectively manage the project's resources, interact with contributors, elect new maintainers, and remove inactive ones.
+Maintainers collectively manage the project's resources, interact with Contributors, elect new maintainers, and remove inactive ones.
 The current list of maintainers can be found in [MAINTAINERS.md](./MAINTAINERS.md). Most maintainer access privileges are granted via membership of the Flatcar Github organisation's [Flatcar Maintainers team](https://github.com/orgs/flatcar/teams/flatcar-maintainers).
 
 This privilege is granted with some expectation of responsibility: maintainers
@@ -72,8 +73,8 @@ Maintainership is not limited to engineering / development merits; all contribut
 Becoming a maintainer is about building trust with the current maintainers of the project and being a person that they can depend on to make decisions in the best interest of the project in a consistent manner.
 
 People interested in becoming maintainers are encouraged to reach out to the existing maintainers well before they expect to be nominated.
-Likewise, existing maintainers may approach contributors who have shown that they are ready to grow into the role.
-Early conversations are encouraged so that we can help contributors understand the project, find impactful ways to contribute, and build toward maintainership deliberately.
+Likewise, existing maintainers may approach Contributors who have shown that they are ready to grow into the role.
+Early conversations are encouraged so that we can help Contributors understand the project, find impactful ways to contribute, and build toward maintainership deliberately.
 
 There is no single checklist for becoming a maintainer.
 Instead, maintainer candidates are expected to demonstrate continuous engagement with both the project and the community over time.
@@ -99,12 +100,12 @@ Maintainer candidates should have demonstrated that they:
 - Actively engage with important project discussions, reviews, and proposals.
 
 Maintainer nominations are based on the judgment of the existing maintainers.
-Periodically, the existing maintainers curate a list of contributors that have shown regular activity on the project over the prior months.
+Periodically, the existing maintainers curate a list of Contributors that have shown regular activity on the project over the prior months.
 The nominating maintainer will create a PR to update the Maintainers List.
 It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
 Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
 
-Maintainers who are selected will be granted the necessary GitHub rights. The (CONTRIBUTING.md)[https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md] process should be used when onboarding a new maintainer.
+Maintainers who are selected will be granted the necessary GitHub rights. The [CONTRIBUTING.md](./CONTRIBUTING.md) process should be used when onboarding a new maintainer.
 
 
 ### Removing a Maintainer
@@ -140,6 +141,10 @@ Depending on your local timezone, the slot might be subject to summer time chang
 A calendar is available to ease planning. The calendar contains Developer syncs, project office hours, and one-off events like bug fixing or doc writing days.
 * Google calendar link: https://calendar.google.com/calendar/u/0/embed?src=c_ii991mqrpta9en8o7ofd4v19g4@group.calendar.google.com
 * iCal link (for importing): https://calendar.google.com/calendar/ical/c_ii991mqrpta9en8o7ofd4v19g4%40group.calendar.google.com/public/basic.ics
+
+Members of the community are welcome to join these meetings and are strongly encouraged to do so.
+Developer Syncs are not limited to Maintainers; they are an important place for Contributors and community members to follow project direction, participate in discussions, voice their opinions, and get involved in ongoing work.
+Community participation in these meetings is valuable and actively encouraged, especially when Contributors want to raise concerns, share feedback, or help shape the direction of the project.
 
 Maintainers will also have closed meetings in order to discuss security reports
 or Code of Conduct violations.  Such meetings should be scheduled by any
@@ -185,6 +190,15 @@ demand a vote be taken.
 Most votes require a simple majority of all Maintainers to succeed, except where
 otherwise noted.  Two-thirds majority votes mean at least two-thirds of all 
 existing maintainers.
+
+## Roadmap Changes
+
+Changes to the project roadmap should be discussed openly and with enough context for Contributors and Maintainers to understand the reasoning behind the proposed change.
+Roadmap changes may be proposed through a GitHub issue, by a vote, or during a meeting of the Maintainers.
+Using an issue is encouraged where practical, as it creates a clear public record of the proposal, the discussion around it, and the decision that follows.
+In practice, roadmap changes will usually be discussed during the Flatcar Developer Syncs.
+These meetings are listed on the public project calendar, and their recordings are publicly available through the meeting agendas.
+When a roadmap change is made during a meeting, at least two-thirds of the Maintainers must be present for that decision.
 
 ## Modifying this Charter
 
