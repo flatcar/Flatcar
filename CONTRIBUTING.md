@@ -24,6 +24,9 @@ Welcome! We're so glad you're here and interested in contributing to Flatcar! �
   - [Development](#development)
     - [Development Environment Setup](#development-environment-setup)
     - [Pull Request Lifecycle](#pull-request-lifecycle)
+    - [Branch Protection and Merge Requirements](#branch-protection-and-merge-requirements)
+      - [Review and merge rules](#review-and-merge-rules)
+      - [Repository defaults](#repository-defaults)
     - [Authoring PRs](#authoring-prs)
       - [Commit Best Practices](#commit-best-practices)
       - [PR Description](#pr-description)
@@ -209,8 +212,11 @@ These guides will give you a solid foundation for working with the SDK and help 
 Pull requests can be issued from repository branches (maintainers only) or from forks. The project treats all PRs equally for review and merge, regardless of origin.
 
 **Requirements:**
-- Successful CI
-- At least one LGTM from a maintainer who is not the PR author
+- Successful CI (including any required status checks the repository defines — see [Branch Protection and Merge Requirements](#branch-protection-and-merge-requirements))
+- At least one approving review from someone other than the PR author
+- CODEOWNERS review is required when owned paths are touched
+- All review threads must be resolved before merge
+- The most recent push must be approved by someone other than the author of that push (no self-approval of your own latest change)
 - Approvers may be co-authors (allowing reviewers to suggest changes)
 
 **Stages:**
@@ -223,6 +229,34 @@ Pull requests can be issued from repository branches (maintainers only) or from 
 | **4. Merged or Closed** | PR is merged upon approval or closed without merge.                                                              |
 
 > 💡 **Tip:** PR feeling stuck? Don't be shy — reach out on [Discord](https://discord.gg/PMYjFUsJyq) or bring it up in a community meeting. We're here to help and we want to see your contribution succeed!
+
+### Branch Protection and Merge Requirements
+
+The rules below apply to every repository under the [`flatcar`](https://github.com/flatcar) organisation. Individual repositories may add further requirements (for example, extra required CI checks) on top of these.
+
+#### Review and merge rules
+
+Applied to each repository's default branch:
+
+| Rule | Behaviour |
+| ---- | --------- |
+| **Pull request required** | Direct pushes to the default branch are blocked; changes must land via PR. |
+| **Approving reviews** | At least **1** approving review is required. |
+| **CODEOWNERS review** | Required when changes touch a path owned in `CODEOWNERS`. |
+| **Stale review dismissal** | Approvals are **not** automatically dismissed when new commits are pushed, but the latest push must still be approved (see **Last-push approval**). |
+| **Last-push approval** | The most recent push must be approved by someone other than its author. |
+| **Review thread resolution** | All review conversations must be resolved before merge. |
+| **Branch deletion** | The default branch cannot be deleted. |
+
+GitHub Copilot code review is also enabled on PRs targeting the default branch, including draft PRs, and re-runs on each new push.
+
+#### Repository defaults
+
+- **Merge strategy:** merge commits **only** — squash and rebase merges are disabled.
+- **Auto-merge:** disabled.
+- **Update branch:** PR authors may update their branch from the base branch via the GitHub UI.
+- **Delete branch on merge:** enabled — head branches are removed automatically after merge.
+- **Commit signoff:** **required** — commits must include a sign-off (use `git commit -s`, including for commits made via the GitHub web UI).
 
 ### Authoring PRs
 
