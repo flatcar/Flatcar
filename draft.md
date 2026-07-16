@@ -205,15 +205,18 @@ The meaning and privileges of Emeritus status are X.
 
 ## Voting
 
-The Steering Committee should aim to work by consensus whenever possible.
+For the founding term, the Steering Committee works by full consensus: with only 5
+seats, all 5 members must agree for a decision or charter change to pass. If a member
+is absent or the seat is vacant, consensus is required among the remaining seated
+members.
 
-When a vote is needed:
+Once the founding Committee defines a different seat count or structure for
+subsequent terms (see [Founding mandate](#founding-mandate) above), it may also revisit
+whether consensus remains practical at that size, or whether a majority/supermajority
+threshold should replace it. Until then:
 
-- A normal decision passes with a 3/5 (60%) majority of the Committee.
-- A decision deemed especially important requires full consensus instead of a 3/5
-  majority. Which decisions meet that bar is judged case-by-case by the Committee; X
-  describes any further criteria for what counts as "especially important."
-- A charter change passes with X.
+- A normal decision passes with full consensus of the Committee.
+- A charter change passes with full consensus of the Committee.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
@@ -235,9 +238,18 @@ the frequency and expectations for those sessions are X.
 
 ## Changes to this charter
 
-Changes to this charter are approved by X.
+The initial charter is approved by the Maintainers as a whole, since they currently
+hold governance authority and are delegating some of it to the new Steering
+Committee. After that, ongoing charter amendments move to the Steering Committee
+itself, using the charter-change voting threshold (see [Voting](#voting) above)
+rather than requiring a full Maintainer vote each time.
 
-The exact process for proposing, discussing, voting on, and merging charter changes is X.
+The exact process for proposing, discussing, voting on, and merging charter changes is:
+a pull request against the governance document itself (so the exact change is
+visible, not just described), followed by a public discussion period before any vote.
+Once the Steering Committee holds this authority, the vote uses the charter-change
+threshold, followed by a short waiting period before the change takes effect so
+anyone who missed the discussion still sees the outcome before it goes live.
 
 ---
 
@@ -309,31 +321,50 @@ The chosen model is X.
 
 ## Election method
 
-The election method is X.
+The election method is Condorcet voting, matching both Kubernetes and Istio. It
+handles multi-seat elections more fairly than a plain most-votes-wins approach, since
+it accounts for full voter preference rather than just first choices, and there is
+real precedent for running it well within CNCF projects.
 
 Possible methods include Condorcet, approval voting, ranked choice, simple majority, or
 another system.
 
-The chosen method is X.
+The chosen method is Condorcet.
 
 ## Company representation
 
-If the project adopts limits on same-company representation, the exact rules are X.
+If the project adopts limits on same-company representation, the exact rules are: the
+lowest-ranked candidate(s) from an over-represented company are dropped one at a time
+until the cap is satisfied, with the freed seat(s) going to the next-highest-ranked
+candidate(s) from other companies (following Kubernetes' approach).
 
 If the project adopts separate seat categories, the rules for how same-company limits
 apply across those categories are X.
 
 ## Election operations
 
-The election is run by X.
+The election is run by 1–2 dedicated election officers: eligible voters who are not
+themselves candidates in that election. Given Flatcar's smaller size, this is expected
+to be enough, rather than having the sitting Committee run its own election or
+bringing in a fully external group.
 
-The nomination period is X.
+The nomination period is measured in weeks rather than months, to fit Flatcar's
+smaller scale (closer to Istio's timeline than Kubernetes'). The exact number of weeks
+is X.
 
-The voting period is X.
+The voting period is likewise measured in weeks rather than months. The exact number
+of weeks is X.
 
-The method for publishing results is X.
+The method for publishing results is to publish full ranked results and vote totals,
+not just the winners, consistent with the project's value of being as open as
+possible.
 
-Any recusal, campaigning, or election-officer rules are X.
+Recusal, campaigning, and election-officer rules: campaigning must stay brand-free —
+candidates and their employers should not use company branding to campaign or drum up
+votes. Sitting Steering Committee members and election officers must step back from
+publicly campaigning, nominating, or endorsing during an election; privately
+encouraging someone to run, or simply voting, is fine. There is no formal complaints
+process — the election officers (see above) handle any issues that arise directly.
 
 ## Vacancies and replacements
 
@@ -528,14 +559,19 @@ The meaning and privileges of Emeritus status are X.
 
 ## Decision-making
 
-The Technical Committee should aim to work by consensus whenever possible.
+For the founding term, the Technical Committee works by full consensus: with only 5
+seats, all 5 members must agree for a decision or charter change to pass. If a member
+is absent or the seat is vacant, consensus is required among the remaining seated
+members.
 
-When a vote is needed:
+Once the founding Committee defines a different seat count or structure for
+subsequent terms (see "Founding mandate" above), it may also revisit whether
+consensus remains practical at that size, or whether a majority/supermajority
+threshold should replace it. Until then:
 
-- A normal technical decision passes with a 3/5 (60%) majority of the Committee.
-- A major architectural or breaking decision, or any other decision deemed especially
-  important, requires full consensus instead of a 3/5 majority. Which decisions meet
-  that bar is judged case-by-case by the Committee; X describes any further criteria.
+- A normal technical decision passes with full consensus of the Committee.
+- A major architectural or breaking decision passes with full consensus of the
+  Committee.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
