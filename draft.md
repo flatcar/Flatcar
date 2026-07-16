@@ -152,7 +152,10 @@ The Steering Committee should aim to work by consensus whenever possible.
 
 When a vote is needed:
 
-- A normal decision passes with X.
+- A normal decision passes with a simple majority of the Committee.
+- A decision deemed especially important requires full consensus instead of a simple
+  majority. Which decisions meet that bar is judged case-by-case by the Committee; X
+  describes any further criteria for what counts as "especially important."
 - A charter change passes with X.
 - Other special thresholds are X.
 
@@ -411,8 +414,11 @@ The Technical Committee should aim to work by consensus whenever possible.
 
 When a vote is needed:
 
-- A normal technical decision passes with X.
-- A major architectural or breaking decision passes with X.
+- A normal technical decision passes with a simple majority of the Committee.
+- A major architectural or breaking decision, or any other decision deemed especially
+  important, requires full consensus instead of a simple majority. Which decisions
+  meet that bar is judged case-by-case by the Committee; X describes any further
+  criteria.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
