@@ -77,6 +77,26 @@ The Steering Committee is responsible for:
 - Defining what it means for a project group to be in good standing and enforcing those
   expectations.
 
+### Founding mandate
+
+In addition to the responsibilities above, the founding-term Steering Committee is
+specifically tasked with defining, before its term ends, the rules that will govern
+the Committee and its elections from the second term onward (these rules are not
+fixed forever and may themselves be revised later — see [Changes to this
+charter](#changes-to-this-charter)). This includes at least:
+
+- The number and type of seats.
+- Candidate and voter eligibility.
+- Term length, staggering, and term limits.
+- Company representation limits, if any.
+- The voting method and voting/election process, including thresholds for decisions
+  and charter changes.
+- Vacancy, removal, and Emeritus rules.
+
+These rules should be published as updates to this charter and to
+`steering-elections.md` before the founding term ends, and adopted by the Maintainers
+per the amendment process described in [Changes to this charter](#changes-to-this-charter).
+
 ## Working with the Technical Committee
 
 Technical direction, architecture, and cross-cutting engineering decisions are handled
@@ -88,29 +108,59 @@ expected to work together, each deciding the parts that fall under their own rem
 
 ## Membership
 
+### Founding term
+
+The first Steering Committee term (the "founding term") uses fixed starting parameters
+so the project can bootstrap the Committee before full election rules exist:
+
+- **Size:** 5 seats, with no distinction between seat types.
+- **Length:** 1 year.
+- **Candidate eligibility:** any Maintainer or recognized Contributor is automatically
+  eligible to stand. Known and active community members/users are also eligible, but
+  only after passing a vetting process run by the Maintainers (this vetting applies to
+  community members/users only, not to Maintainers or Contributors).
+- **Voter eligibility:** all Maintainers and Contributors are eligible to vote.
+  Active, recognized community members/users may also vote if they request voting
+  rights and are approved by the Maintainer Council.
+- **Voting method:** ranked-choice voting.
+
+One of the founding term Committee's primary responsibilities is to define the
+rules for seat count, seat types, eligibility, terms, staggering, company
+representation, and the voting method to be used from the second term onward (see
+"Founding mandate" below). Until the founding Committee publishes
+those rules, the sections below describe only the founding term; all values for
+subsequent terms are marked X pending that work.
+
 ### Size
 
-The Steering Committee has X seats.
+- **Founding term:** 5 seats (see "Founding term" above).
+- **Subsequent terms:** The Steering Committee has X seats.
 
 ### Seat types
 
-The Steering Committee may include one or more categories of seats, such as:
+- **Founding term:** No seat types; all 5 seats are the same.
+- **Subsequent terms:** The Steering Committee may include one or more categories of
+  seats, such as:
 
-- **Contributor seats:** held by people selected based on project contribution.
-- **Community seats:** held by people selected to represent the broader community.
-- **Other seat categories** as the project may choose to define.
+  - **Contributor seats:** held by people selected based on project contribution.
+  - **Community seats:** held by people selected to represent the broader community.
+  - **Other seat categories** as the project may choose to define.
 
-The exact number and type of seats is X.
+  The exact number and type of seats is X.
 
 ### Eligibility
 
-Eligibility to stand for the Steering Committee is X.
+- **Founding term:** see "Founding term" above.
+- **Subsequent terms:**
 
-Eligibility to vote in Steering Committee elections is X.
+  Eligibility to stand for the Steering Committee is X.
+
+  Eligibility to vote in Steering Committee elections is X.
 
 ### Terms
 
-Members serve X-year terms.
+- **Founding term:** 1 year.
+- **Subsequent terms:** 2 years.
 
 A member may serve for at most X consecutive terms / X consecutive years.
 
@@ -118,21 +168,28 @@ After reaching that limit, a member must step off the Committee for X before ser
 again.
 
 Terms may be staggered so that X seats are up each cycle, or all seats may be elected
-together. The exact approach is X.
+together. The exact approach is X *(term limits and staggering for terms after the
+founding term are part of the founding mandate — see "Founding mandate"
+above)*.
 
 ### Company representation
 
 The project may choose to limit the number of seats held by people from the same
 company.
 
-The exact company representation rule is X.
+The exact company representation rule is X *(founding-term seats are not subject to a
+same-company limit; a rule for subsequent terms is part of the founding mandate — see
+"Founding mandate" above)*.
 
 If the project adopts a same-company limit, the process for handling election results or
 mid-term employer changes that break that limit is X.
 
 ### Vacancies
 
-If a member leaves before the end of their term, the vacancy is filled by X.
+If a member leaves or is removed before the end of their term, the vacancy is filled by
+the next-highest-ranked, still-eligible candidate from that seat's original election —
+i.e. the runner-up who did not win a seat moves in to serve out the remainder of the
+term. If no such candidate is available, the vacancy-filling process is X.
 
 ### Removal
 
@@ -152,7 +209,10 @@ The Steering Committee should aim to work by consensus whenever possible.
 
 When a vote is needed:
 
-- A normal decision passes with X.
+- A normal decision passes with a 3/5 (60%) majority of the Committee.
+- A decision deemed especially important requires full consensus instead of a 3/5
+  majority. Which decisions meet that bar is judged case-by-case by the Committee; X
+  describes any further criteria for what counts as "especially important."
 - A charter change passes with X.
 - Other special thresholds are X.
 
@@ -161,7 +221,8 @@ X.
 
 ## Meetings
 
-The Steering Committee meets X.
+The Steering Committee meets on an as-needed basis, but must meet at least once every
+2 months to sync even if there is no pressing business.
 
 Meetings may be open, closed, or a mix of both. The expected meeting model is X.
 
@@ -199,6 +260,12 @@ Steering Committee charter.
 
 ## Open design questions
 
+> **Founding term note:** For the founding term only, seats (5, no seat types),
+> terms (1 year), candidate/voter eligibility, and voting method (ranked-choice) are
+> already fixed — see the "Founding term" section of `steering-committee.md`. The
+> founding Steering Committee's founding mandate is to answer the open questions below
+> for the second term onward.
+
 The project still needs to decide the following:
 
 - How many total seats there should be: X
@@ -206,7 +273,8 @@ The project still needs to decide the following:
 - If there are different seat types, how many seats of each type: X
 - Who can stand for election: X
 - Who can vote: X
-- How long terms should be: X
+- How long terms should be: X *(the founding term is fixed at 1 year; this question
+  applies to terms from the second term onward, expected to be 2 years)*
 - Whether terms should be staggered: X
 - Whether there should be term limits: X
 - Whether there should be company representation limits: X
@@ -316,6 +384,25 @@ The Technical Committee is responsible for:
   initiatives.
 - Advising the Steering Committee on technical implications of non-technical decisions.
 
+### Founding mandate
+
+In addition to the responsibilities above, the founding-term Technical Committee is
+specifically tasked with defining, before its term ends, the rules that will govern
+the Committee and its member selection from the second term onward (these rules are
+not fixed forever and may themselves be revised later — see "Changes to this
+charter" below). This includes at least:
+
+- The number of seats.
+- Candidate and voter eligibility.
+- The selection model (election, appointment, nomination plus vote, or otherwise).
+- Term length, staggering, and term limits.
+- Company representation limits, if any.
+- Vacancy, removal, and Emeritus rules.
+
+These rules should be published as an update to this charter before the founding term
+ends, and adopted by the Maintainers per the amendment process described in
+"Changes to this charter" below.
+
 ## What the Technical Committee does not do
 
 The Technical Committee sets technical direction. It should not sit in the path of
@@ -353,26 +440,54 @@ aspects, the two committees should work together.
 
 ## Membership
 
+### Founding term
+
+The first Technical Committee term (the "founding term") uses fixed starting
+parameters so the project can bootstrap the Committee before full selection rules
+exist:
+
+- **Size:** 5 seats.
+- **Length:** 1 year.
+- **Candidate eligibility:** any Maintainer or recognized Contributor is automatically
+  eligible to stand. Known and active community members/users are also eligible, but
+  only after passing a vetting process run by the Maintainers (this vetting applies to
+  community members/users only, not to Maintainers or Contributors).
+- **Voter eligibility:** all Maintainers and Contributors are eligible to vote.
+  Active, recognized community members/users may also vote if they request voting
+  rights and are approved by the Maintainer Council.
+- **Selection model:** ranked-choice voting.
+
+One of the founding term Committee's primary responsibilities is to define the
+selection rules for the Technical Committee from the second term onward (see
+"Founding mandate" above). Until it does, the sections below describe only the
+founding term; all values for subsequent terms are marked X pending that work.
+
 ### Size
 
-The Technical Committee has X seats.
+- **Founding term:** 5 seats (see "Founding term" above).
+- **Subsequent terms:** The Technical Committee has X seats.
 
 ### Eligibility
 
-Eligibility to stand for the Technical Committee is X.
+- **Founding term:** see "Founding term" above.
+- **Subsequent terms:**
 
-Eligibility to vote in Technical Committee elections or selections is X.
+  Eligibility to stand for the Technical Committee is X.
+
+  Eligibility to vote in Technical Committee elections or selections is X.
 
 ### Selection model
 
-Technical Committee members are chosen by X.
+- **Founding term:** ranked-choice voting (see "Founding term" above).
+- **Subsequent terms:** Technical Committee members are chosen by X.
 
-Possible models could include election, appointment, nomination plus vote, or some
-other mechanism. The chosen model is X.
+  Possible models could include election, appointment, nomination plus vote, or some
+  other mechanism. The chosen model is X.
 
 ### Terms
 
-Members serve X-year terms.
+- **Founding term:** 1 year.
+- **Subsequent terms:** 2 years.
 
 A member may serve for at most X consecutive terms / X consecutive years.
 
@@ -380,18 +495,24 @@ After reaching that limit, a member must step off the Committee for X before ser
 again.
 
 Terms may be staggered so that X seats are up each cycle, or all seats may be selected
-together. The exact approach is X.
+together. The exact approach is X *(term limits and staggering for terms after the
+founding term are part of the founding mandate — see "Founding mandate" above)*.
 
 ### Company representation
 
 The project may choose to limit the number of seats held by people from the same
 company.
 
-The exact company representation rule for the Technical Committee is X.
+The exact company representation rule for the Technical Committee is X *(founding-term
+seats are not subject to a same-company limit; a rule for subsequent terms is part of
+the founding mandate — see "Founding mandate" above)*.
 
 ### Vacancies
 
-If a member leaves before the end of their term, the vacancy is filled by X.
+If a member leaves or is removed before the end of their term, the vacancy is filled by
+the next-highest-ranked, still-eligible candidate from that seat's original election —
+i.e. the runner-up who did not win a seat moves in to serve out the remainder of the
+term. If no such candidate is available, the vacancy-filling process is X.
 
 ### Removal
 
@@ -411,8 +532,10 @@ The Technical Committee should aim to work by consensus whenever possible.
 
 When a vote is needed:
 
-- A normal technical decision passes with X.
-- A major architectural or breaking decision passes with X.
+- A normal technical decision passes with a 3/5 (60%) majority of the Committee.
+- A major architectural or breaking decision, or any other decision deemed especially
+  important, requires full consensus instead of a 3/5 majority. Which decisions meet
+  that bar is judged case-by-case by the Committee; X describes any further criteria.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
@@ -420,7 +543,8 @@ X.
 
 ## Meetings
 
-The Technical Committee meets X.
+The Technical Committee meets on an as-needed basis, but must meet at least once every
+2 months to sync even if there is no pressing business.
 
 Meetings may be open, closed, or a mix of both. The expected meeting model is X.
 
