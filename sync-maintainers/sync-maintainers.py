@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import re
 import requests
 import json
 import subprocess
@@ -6,27 +7,43 @@ import os
 import sys
 import argparse
 
+MEMBER_LINK = re.compile(r"\[@([^\]]+)\]\(https://github\.com/[^)]+\)")
+REPO_LINK = re.compile(r"\[[^\]]+\]\(https://github\.com/flatcar/([^)/\s]+)\)")
 
-def parse(m):
+
+def parse_subgroup_repos(lines):
+    repos = {}
+    in_subgroups = False
+    for line in lines:
+        if line.startswith("## Maintainer Subgroups"):
+            in_subgroups = True
+            continue
+        if in_subgroups and line.startswith("##"):
+            break
+        if not in_subgroups or not line.startswith("| **"):
+            continue
+        parts = line.split("|")
+        if len(parts) < 5:
+            continue
+        maintainers = [
+            f"* @{match.group(1)}" for match in MEMBER_LINK.finditer(parts[3])
+        ]
+        for match in REPO_LINK.finditer(parts[4]):
+            repo_name = match.group(1)
+            if repo_name == "Flatcar":
+                continue
+            repos[repo_name] = maintainers
+    return sorted(repos.items())
+
+
+def parse(lines):
     para = []
-    repos = []
-    while len(m):
-        line = m.pop(0)
-        if line == "# Maintainers":
-            line = m.pop(0)
-            while not line.startswith("#"):
-                para.append(line)
-                line = m.pop(0)
-        if line.startswith("###"):
-            repo = line.split("### ")[1].strip()
-            maint = []
-            m.pop(0)  # maintainers:
-            line = m.pop(0)
-            while line.startswith("* "):
-                maint.append(line)
-                line = m.pop(0) if len(m) else ""
-            if repo != "Flatcar":
-                repos.append((repo, maint))
+    if lines and lines[0] == "# Maintainers":
+        idx = 1
+        while idx < len(lines) and not lines[idx].startswith("#"):
+            para.append(lines[idx])
+            idx += 1
+    repos = parse_subgroup_repos(lines)
     return para, repos
 
 
@@ -163,7 +180,7 @@ def main_github(args):
         if resp.status_code != 201:
             print(resp.json())
         else:
-            print("{repo_name} ok")
+            print(f"{repo_name} ok")
 
 
 def main_list(args):
