@@ -10,23 +10,41 @@ import argparse
 def parse(m):
     para = []
     repos = []
-    while len(m):
-        line = m.pop(0)
+    i = 0
+
+    while i < len(m):
+        line = m[i]
+        i += 1
+
         if line == "# Maintainers":
-            line = m.pop(0)
-            while not line.startswith("#"):
+            while i < len(m):
+                line = m[i]
+                if line.startswith("#"):
+                    break
                 para.append(line)
-                line = m.pop(0)
+                i += 1
+            continue
+
         if line.startswith("###"):
-            repo = line.split("### ")[1].strip()
+            repo = line.split("### ", 1)[1].strip()
             maint = []
-            m.pop(0)  # maintainers:
-            line = m.pop(0)
-            while line.startswith("* "):
+
+            while i < len(m):
+                line = m[i]
+
+                if line == "maintainers:":
+                    i += 1
+                    continue
+
+                if not line.startswith("* "):
+                    break
+
                 maint.append(line)
-                line = m.pop(0) if len(m) else ""
+                i += 1
+
             if repo != "Flatcar":
                 repos.append((repo, maint))
+
     return para, repos
 
 
