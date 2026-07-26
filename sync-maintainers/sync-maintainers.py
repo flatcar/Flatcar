@@ -167,7 +167,7 @@ def main_github(args):
             if resp.status_code != 201:
                 print(resp.json())
             else:
-                print("{repo_name} ok")
+                print(f"{repo_name} ok")
         except requests.RequestException as e:
             print(f"Error syncing {repo_name}: {e}", file=sys.stderr)
 
