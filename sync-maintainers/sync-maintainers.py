@@ -95,12 +95,15 @@ def parse_maintainers(repo=None):
 def main_repo(args):
     repos, paragraph = parse_maintainers(args.repo)
     for (repo_name, maintainers) in repos:
-        repo_url = f"git@github.com:flatcar/{repo_name}"
-        subprocess.run(["git", "clone", "--depth=1", repo_url])
-        checkout_branch(repo_name)
-        write_maintainers_file(repo_name, paragraph, maintainers)
-        commit(repo_name)
-        push(repo_name)
+        try:
+            repo_url = f"git@github.com:flatcar/{repo_name}"
+            subprocess.run(["git", "clone", "--depth=1", repo_url])
+            checkout_branch(repo_name)
+            write_maintainers_file(repo_name, paragraph, maintainers)
+            commit(repo_name)
+            push(repo_name)
+        except (subprocess.CalledProcessError, OSError) as e:
+            print(f"Error syncing {repo_name}: {e}", file=sys.stderr)
 
 
 def prepare_req(repo, token, api):
@@ -152,18 +155,21 @@ def main_github(args):
         raise Exception("Missing GITHUB_TOKEN env variable")
     repos, _ = parse_maintainers(args.repo)
     for (repo_name, maintainers) in repos:
-        pr = get_pr(repo_name, token).json()
-        if not pr:
-            print(f"{repo_name} creating pr")
-            base = get_default_branch(repo_name, token)
-            pr = [create_pr(repo_name, token, base).json()]
-        prnum = pr[0]["number"]
-        assignees = get_assignees(maintainers)
-        resp = update_assignees(repo_name, token, prnum, assignees)
-        if resp.status_code != 201:
-            print(resp.json())
-        else:
-            print("{repo_name} ok")
+        try:
+            pr = get_pr(repo_name, token).json()
+            if not pr:
+                print(f"{repo_name} creating pr")
+                base = get_default_branch(repo_name, token)
+                pr = [create_pr(repo_name, token, base).json()]
+            prnum = pr[0]["number"]
+            assignees = get_assignees(maintainers)
+            resp = update_assignees(repo_name, token, prnum, assignees)
+            if resp.status_code != 201:
+                print(resp.json())
+            else:
+                print("{repo_name} ok")
+        except requests.RequestException as e:
+            print(f"Error syncing {repo_name}: {e}", file=sys.stderr)
 
 
 def main_list(args):
