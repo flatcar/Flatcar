@@ -32,7 +32,7 @@ jobs:
           set -euo pipefail
           if [[ -n "${{inputs.start_date}}" && -n "${{inputs.end_date}}" ]] ; then
             start_date="${{inputs.start_date}}"
-            end_date=${{inputs.end_date}}
+            end_date="${{inputs.end_date}}"
           else
             start_date=$(date -d "last month" +%Y-%m-%d)
             end_date=$(date -d "yesterday" +%Y-%m-%d)
