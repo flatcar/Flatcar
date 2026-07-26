@@ -97,7 +97,7 @@ def main_repo(args):
     for (repo_name, maintainers) in repos:
         try:
             repo_url = f"git@github.com:flatcar/{repo_name}"
-            subprocess.run(["git", "clone", "--depth=1", repo_url])
+            subprocess.run(["git", "clone", "--depth=1", repo_url], check=True)
             checkout_branch(repo_name)
             write_maintainers_file(repo_name, paragraph, maintainers)
             commit(repo_name)
