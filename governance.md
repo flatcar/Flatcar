@@ -6,7 +6,7 @@ We adopted the [CNCF code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be a
 
 The project is governed by a flat hierarchy - a group of people sharing a common vision of Flatcar in accordance to its mission statement.
 
-This goverance explains how the project is run.
+This governance explains how the project is run.
 
 - [Flatcar Project Governance](#flatcar-project-governance)
   - [Values](#values)
@@ -159,7 +159,7 @@ for that purpose.
 
 [Code of Conduct](./code-of-conduct.md)
 violations by community members will be discussed and resolved
-on the [private Maintainer mailing list](maintainers@flatcar-linux.org).  If a Maintainer is directly involved
+on the [private Maintainer mailing list](mailto:maintainers@flatcar-linux.org).  If a Maintainer is directly involved
 in the report, the Maintainers will instead designate two Maintainers to work
 with the CNCF Code of Conduct Committee in resolving it.
 
@@ -178,7 +178,7 @@ issues and breaches according to the [security policy](./SECURITY.md).
 While most business in Flatcar is conducted by "[lazy consensus](https://community.apache.org/committers/lazyConsensus.html)", 
 periodically the Maintainers may need to vote on specific actions or changes.
 A vote can be taken on 
-[the private Maintainer mailing list](maintainers@flatcar-linux.org) for security or conduct matters.  
+[the private Maintainer mailing list](mailto:maintainers@flatcar-linux.org) for security or conduct matters.  
 Votes may also be taken at [Flatcar Developer Syncs meetings](https://meet.flatcar.org/OfficeHours).  Any Maintainer may
 demand a vote be taken.
 
