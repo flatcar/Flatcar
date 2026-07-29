@@ -45,7 +45,7 @@ But then there are things that should be fixed in the benchmark, because they fa
 
 ## Reports
 
-Here the too reports, and the corresponding notes we have produced:
+Here are the two reports, and the corresponding notes we have produced:
 
 * [2020-12-08 level1 report](./inspec-report-level1-root-2020-12-08.txt) -- [remediation notes](./level1-remediation_notes-2020-12-08.md)
 * [2020-12-08 level2 report](./inspec-report-level2-root-2020-12-08.txt) -- _(no remediation notes yet)_
