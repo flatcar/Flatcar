@@ -163,7 +163,7 @@ def main_github(args):
         if resp.status_code != 201:
             print(resp.json())
         else:
-            print("{repo_name} ok")
+            print(f"{repo_name} ok")
 
 
 def main_list(args):
