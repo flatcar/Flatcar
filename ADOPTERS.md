@@ -93,7 +93,7 @@ Users
       D: Kinvolk was a valuable source of knowledge when troubleshooting installation issues with our platform vendor. They were able to join us and the vendor on a call and sort out the issues quickly.The use of the Flatcar Update Server gave us confidence about what software/OS versions were running in each of our environments. This allowed us to better test upgrades before promoting the change to production environments.
 
     * N: Mettle
-      L https://swade1987.medium.com/upgrading-to-flatcar-linux-746751e89ab4
+      L: https://swade1987.medium.com/upgrading-to-flatcar-linux-746751e89ab4
 
     * N: Norwegian Labor and Welfare Administration (NAV)
       D: The largest Norwegian government agency has been using Flatcar since 2021 to run all of their on-prem Kubernetes clusters enabling application teams to become more autonomous and to build better welfare services and deliver them with a higher velocity then before.
