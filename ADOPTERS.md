@@ -43,7 +43,7 @@ Users
       C: Mike Tougeron (Slack: @Mike Tougeron) and Tony Gosselin (Slack: @Tony Gosselin).
     
     * N: AloPeyk
-      D: We are an on-demand delivery business that every day serve millions of requests on a consistent bare metal infrastructure have this concern to choose a reliable and atomic operations system but none of the common OS couldn't satisfy us for such heavy workloads. Since we migrated our production Kubernetes cluster nothing can break this consistent and solid cluster which is powered by amazing Flatcoar OS.
+      D: We are an on-demand delivery business that every day serve millions of requests on a consistent bare metal infrastructure have this concern to choose a reliable and atomic operations system but none of the common OS couldn't satisfy us for such heavy workloads. Since we migrated our production Kubernetes cluster nothing can break this consistent and solid cluster which is powered by amazing Flatcar OS.
     
     * N: AT&T 
       L: https://medium.com/cloud-native-the-gathering/certified-kubernetes-administrator-join-our-team-its-a-good-thing-7e27ab34dc88
