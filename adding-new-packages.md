@@ -2,7 +2,7 @@
 
 Flatcar Container Linux is a modern Linux distribution for running container workloads.
 To stay modern, the packages included need to be kept up-to-date, and sometimes new packages introduced.
-This documents explains the process for the latter.
+This document explains the process for the latter.
 
 ## Project definition
 
