@@ -34,8 +34,8 @@ jobs:
             start_date="${{inputs.start_date}}"
             end_date="${{inputs.end_date}}"
           else
-            start_date=$(date -d "last month" +%Y-%m-%d)
-            end_date=$(date -d "yesterday" +%Y-%m-%d)
+            start_date=$(date -d "$(date +%Y-%m-01) -1 month" +%Y-%m-%d)
+            end_date=$(date -d "$(date +%Y-%m-01) -1 day" +%Y-%m-%d)
           fi
 
           echo "START_DATE=$start_date" >> "$GITHUB_ENV"
@@ -138,7 +138,7 @@ jobs:
         uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:issue is:open'
+            SEARCH_QUERY: 'org:flatcar is:issue is:open -is:fork -is:archived'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
             # This metric measures items that are still open
@@ -154,7 +154,7 @@ jobs:
         uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:issue created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            SEARCH_QUERY: 'org:flatcar is:issue created:${{ env.START_DATE }}..${{ env.END_DATE }} -is:fork -is:archived'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
             IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
@@ -168,7 +168,7 @@ jobs:
         uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:issue closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            SEARCH_QUERY: 'org:flatcar is:issue closed:${{ env.START_DATE }}..${{ env.END_DATE }} -is:fork -is:archived'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
             IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
@@ -230,7 +230,7 @@ jobs:
         uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:pr is:open -author:flatcar-infra'
+            SEARCH_QUERY: 'org:flatcar is:pr is:open -author:flatcar-infra -is:fork -is:archived'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
             # This metric measures items that are still open
@@ -246,7 +246,7 @@ jobs:
         uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra created:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra created:${{ env.START_DATE }}..${{ env.END_DATE }} -is:fork -is:archived'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
             IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
@@ -260,7 +260,7 @@ jobs:
         uses: github-community-projects/issue-metrics@v2
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
-            SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
+            SEARCH_QUERY: 'org:flatcar is:pr -author:flatcar-infra closed:${{ env.START_DATE }}..${{ env.END_DATE }} -is:fork -is:archived'
             # "time to answer" only supported for discussions
             HIDE_TIME_TO_ANSWER: true
             IGNORE_USERS: "flatcar-infra,github-actions[bot],dependabot[bot]"
@@ -410,7 +410,7 @@ jobs:
           #
 
           echo '# Pull request metrics' >> comment_report.md
-          echo "(See comment below for Pull Request Metrics)"  >> comment_report.md
+          echo "Summary of pull request metrics across Flatcar repositories for the reported period." >> comment_report.md
 
           echo "* [Pull Requests Metrics](#pr-metrics)" >> comment_report.md
           echo "  * [Summary of all open PRs](#pr-metrics-summary)" >> comment_report.md
@@ -435,6 +435,19 @@ jobs:
           echo -e "\nThese PRs were opened at any point in the past and were closed between ${{ env.START_DATE }} - ${{ env.END_DATE }}." \
               >> comment_report.md
           tail --lines=+2 prs_closed.md >> comment_report.md
+
+          # Ensure generated report markdown files do not exceed GitHub API limit of 65,536 characters
+          if [ $(wc -c < summary_report.md) -gt 60000 ]; then
+            head -c 59500 summary_report.md > summary_report.md.tmp
+            echo -e "\n\n*(Report truncated to fit GitHub issue body size limit)*" >> summary_report.md.tmp
+            mv summary_report.md.tmp summary_report.md
+          fi
+
+          if [ $(wc -c < comment_report.md) -gt 60000 ]; then
+            head -c 59500 comment_report.md > comment_report.md.tmp
+            echo -e "\n\n*(Report truncated to fit GitHub comment size limit)*" >> comment_report.md.tmp
+            mv comment_report.md.tmp comment_report.md
+          fi
   
       - name: Upload merged report
         uses: actions/upload-artifact@v4
