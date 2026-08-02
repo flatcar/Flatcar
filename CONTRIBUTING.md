@@ -137,9 +137,14 @@ Tools for bootstrapping and configuring nodes at first boot.
 
 Flatcar is minimal by design; system extensions let you layer software on top without modifying the read-only OS image.
 
-| Repository | Description |
-| ---------- | ----------- |
+For full technical specifications on extension metadata, SELinux context propagation, atomic unit reloads, and kernel driver modules, see the [System Extension Architecture & Lifecycle Guide](docs/sysext-architecture-guide.md).
+
+| Resource / Repository | Description |
+| --------------------- | ----------- |
 | [sysext-bakery](https://github.com/flatcar/sysext-bakery) | Recipes for building systemd-sysext images (Docker, containerd, Kubernetes, and more) |
+| [sysext-architecture-guide.md](docs/sysext-architecture-guide.md) | Architectural standards, SELinux contexts, and lifecycle state management for sysext/confext |
+| [validate-sysext.sh](scripts/validate-sysext.sh) | Validation script for checking system extension directory structures prior to packaging |
+
 
 ### Testing and Tooling
 
