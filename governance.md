@@ -47,7 +47,7 @@ The Flatcar project, its leadership, and its maintainers embrace the following v
 Flatcar Maintainers have full access to most of the repositories in the [Flatcar project](https://github.com/orgs/flatcar/), except for very few repositories that contain sensitive information, e.g. for with undisclosed security issues (see [SECURITY.md](./SECURITY.md) for more information).
 Maintainers can merge PRs, approve PR builds+tests, and create and publish releases.
 Maintainers collectively manage the project's resources, interact with contributors, elect new maintainers, and remove inactive ones.
-The current list of maintainers can be found in [MAINTAINERS.md](./MAINTAINERS.md). Most maintainer access privileges are granted via membership of the Flatcar Github organisation's [Flatcar Maintainers team](https://github.com/orgs/flatcar/teams/flatcar-maintainers).
+The current list of maintainers can be found in [MAINTAINERS.md](./MAINTAINERS.md). Most maintainer access privileges are granted via membership of the Flatcar GitHub organisation's [Flatcar Maintainers team](https://github.com/orgs/flatcar/teams/flatcar-maintainers).
 
 This privilege is granted with some expectation of responsibility: maintainers
 are people who care about the Flatcar project and want to help it grow and
@@ -167,7 +167,7 @@ with the CNCF Code of Conduct Committee in resolving it.
 
 The Maintainers will appoint a Security Response Team to handle security reports.
 This committee is a sub-set of the Maintainer Council with full access to undisclosed security issues tracked by the project.
-Members of the Security Response team as well as respective access permissions to sensitive data are administrated via membership in the [Flatcar Github organisation's Security team](https://github.com/orgs/flatcar/teams/flatcar-security-team).
+Members of the Security Response team as well as respective access permissions to sensitive data are administrated via membership in the [Flatcar GitHub organisation's Security team](https://github.com/orgs/flatcar/teams/flatcar-security-team).
 The Maintainers will review who is assigned to this at least once a year.
 
 The Security Response Team is responsible for handling all reports of security
