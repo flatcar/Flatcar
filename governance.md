@@ -12,7 +12,17 @@ This governance explains how the project is run.
   - [Values](#values)
   - [Maintainers](#maintainers)
     - [Becoming a Maintainer](#becoming-a-maintainer)
+      - [Eligibility](#eligibility)
+      - [What Is Not Required](#what-is-not-required)
+      - [Routes to Maintainership](#routes-to-maintainership)
+      - [Nomination and Evidence](#nomination-and-evidence)
+      - [Approval](#approval)
     - [Removing a Maintainer](#removing-a-maintainer)
+      - [Voluntary Step-Down](#voluntary-step-down)
+      - [Inactivity](#inactivity)
+      - [Removal for Cause](#removal-for-cause)
+    - [Emeritus Maintainers](#emeritus-maintainers)
+    - [Bookkeeping](#bookkeeping)
   - [Meetings](#meetings)
   - [CNCF Resources](#cncf-resources)
   - [Code of Conduct](#code-of-conduct)
@@ -68,65 +78,122 @@ Maintainers are active community members who are responsible for the overall qua
 
 Anyone with an established track record of contributions to the project can become a maintainer.
 The contributions are expected to be substantial, and must demonstrate a commitment to the long-term success of the project.
-Maintainership is not limited to engineering / development merits; all contributions - e.g. working with issues, providing guidance and feedback to users, reviewing PRs, contributing to docs, evangelising Flatcar - count.
+Maintainership is not limited to engineering or development merits; all contributions — working with issues, providing guidance and feedback to users, reviewing PRs, contributing to docs, evangelising Flatcar — count.
 Becoming a maintainer is about building trust with the current maintainers of the project and being a person that they can depend on to make decisions in the best interest of the project in a consistent manner.
 
 People interested in becoming maintainers are encouraged to reach out to the existing maintainers well before they expect to be nominated.
 Likewise, existing maintainers may approach contributors who have shown that they are ready to grow into the role.
 Early conversations are encouraged so that we can help contributors understand the project, find impactful ways to contribute, and build toward maintainership deliberately.
 
-There is no single checklist for becoming a maintainer.
-Instead, maintainer candidates are expected to demonstrate continuous engagement with both the project and the community over time.
-This includes contributing regularly in ways that help Flatcar succeed, collaborating well with others, and building trust with the existing maintainers.
+#### Eligibility
 
-The Flatcar project welcomes both development- and community-focused contributions.
+There is no single checklist for becoming a maintainer.
+Instead, a candidate must satisfy three tests, each assessed by the existing maintainers:
+
+1. **Sustained responsibility in an area of the project.** The candidate has taken meaningful, ongoing ownership of a recognisable part of the project — whether that is a subsystem, a workflow, documentation, community support, or any other area — over a period long enough to demonstrate commitment beyond a one-off contribution.
+
+2. **Command of the area and demonstrated judgement.** The candidate understands their area well enough to make sound decisions, knows when to seek input from others, and has shown good technical or organisational judgement across the work they have done.
+
+3. **Trust of the current maintainers.** The existing maintainers are confident that the candidate will act in the best interest of the project, collaborate respectfully, and uphold the [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+The Flatcar project welcomes both development-focused and community-focused contributions.
 Relevant contributions include, but are not limited to:
 
 - Code, bug fixes, builds, and CI/CD improvements.
 - Documentation such as guides, tutorials, and API docs.
 - Community work such as issue triage and answering questions on Discord, Slack, or GitHub.
 - Flatcar Apps and other reference implementations that help users learn and adopt Flatcar.
-- Outreach such as blog posts, talks, presentations, and workshops.
+- Outreach such as blog posts, presentations, and workshops.
 - Coordination work such as release management and upstream project collaboration.
-- Events such as bug fixing days, doc writing days, devrooms, meetups, and conferences.
 - Design work such as improving the website and other project-facing materials.
 
-Maintainer candidates should have demonstrated that they:
-- Contribute continuously and in meaningful ways.
-- Do work that has clear impact on the project or community.
-- Collaborate well and treat others with respect, in line with the Code of Conduct.
-- Develop a solid understanding of the Flatcar code base, technical goals, processes, and direction.
-- Actively engage with important project discussions, reviews, and proposals.
+#### What Is Not Required
 
-Maintainer nominations are based on the judgment of the existing maintainers.
-Periodically, the existing maintainers curate a list of contributors that have shown regular activity on the project over the prior months.
-The nominating maintainer will create a PR to update the Maintainers List.
-It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
-Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
+The following are explicitly **not** requirements for maintainership:
 
-Maintainers who are selected will be granted the necessary GitHub rights. The (CONTRIBUTING.md)[https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md] process should be used when onboarding a new maintainer.
+- A minimum number of talks, conference appearances, or event participations.
+- Employment or sponsorship by any particular company or organisation.
+- Residence in a specific timezone or geographic region.
+- Elevated access (e.g. CI admin, infrastructure credentials) prior to nomination.
+- Passing through every rung of a formal contributor ladder — a contributor who meets the three tests above may be nominated directly.
 
+#### Routes to Maintainership
+
+There are two routes into the role, both subject to the same three eligibility tests:
+
+- **Progression.** A contributor grows through increasing responsibility — for example moving from Contributor to Triager or Reviewer and then to Maintainer. This is the most common path and gives both the contributor and the existing maintainers time to build mutual confidence.
+
+- **Direct nomination.** In exceptional cases, a contributor who already meets the three tests — for example an experienced upstream developer or a long-standing community leader — may be nominated directly without having held an intermediate role.
+
+#### Nomination and Evidence
+
+Any existing maintainer may nominate a candidate by opening a pull request against [MAINTAINERS.md](./MAINTAINERS.md) that adds the candidate to the maintainer table (including the candidate's name, GitHub handle, and organisational affiliation at the time of nomination).
+
+The PR description must include a prose explanation of why the nominee meets the three eligibility tests, with links to relevant contributions, reviews, discussions, or other evidence.
+A simple tally of merged PRs or event appearances is not sufficient; the narrative should make the case that the candidate has demonstrated sustained responsibility, sound judgement, and the trust of the maintainer team.
+
+Self-nomination is permitted.
+A self-nomination PR must be co-signed (via a GitHub review approval) by at least one existing maintainer who can attest to the candidate's eligibility.
+
+#### Approval
+
+A nomination PR must remain open for a minimum of **two weeks** (14 calendar days) to give all maintainers adequate time to review, ask questions, and raise concerns.
+
+Approval is by [lazy consensus](https://community.apache.org/committers/lazyConsensus.html): the nomination is accepted if no unresolved objections remain at the end of the review period.
+Any maintainer may call for a formal vote under the [Voting](#voting) rules at any point during the review period.
+
+Objections that are person-related or otherwise sensitive must be raised on the [private maintainer mailing list](mailto:maintainers@flatcar-linux.org) rather than on the public PR.
+The outcome of the nomination — whether approved or declined — is always recorded publicly on the PR.
+
+Once approved, the new maintainer is onboarded following the [Onboarding checklist](./ONBOARDING.md) and granted the necessary access.
 
 ### Removing a Maintainer
 
+A maintainer may leave the active roster through any of the following paths.
+In every case, the [Offboarding checklist](./OFFBOARDING.md) must be completed and the [Bookkeeping](#bookkeeping) steps must be followed.
+
+#### Voluntary Step-Down
+
 Life priorities, interests, and passions can change.
-If you're a maintainer but feel you must remove yourself from the list, inform other maintainers that you intend to step down, and if possible, help find someone to pick up your work. 
+If you are a maintainer but feel you must step down, inform the other maintainers of your intent and, if possible, help find someone to pick up your work.
 At the very least, ensure your work can be continued where you left off.
-After you've informed other maintainers, create a pull request to remove yourself from the [MAINTAINERS](MAINTAINERS.md) file.
-If applicable, include a change to [EMERITUS_MAINTAINERS](EMERITUS_MAINTAINERS.md) to add yourself to the list of emeritus maintainers.
-This will ease your return to active maintainership in the future.
+After you have informed the other maintainers, create a pull request to move yourself from [MAINTAINERS.md](./MAINTAINERS.md) to [EMERITUS_MAINTAINERS.md](./EMERITUS_MAINTAINERS.md).
 
-Maintainers may also be removed after being inactive, failure to fulfill their 
-Maintainer responsibilities, violating the Code of Conduct, or other reasons.
-Inactivity is defined as a period of very low or no activity in the project 
-for a year or more, with no definite schedule to return to full Maintainer 
-activity.
+#### Inactivity
 
-A Maintainer may be removed at any time by a 2/3 vote of the remaining maintainers.
+Inactivity is defined as a period of very low or no activity in the project for **one year or more**, with no communicated plan to return to full maintainer activity.
 
-Depending on the reason for removal, a Maintainer may be converted to Emeritus
-status.  Emeritus Maintainers will still be consulted on some project matters,
-and can be rapidly returned to Maintainer status if their availability changes.
+"Activity" is measured against the same kinds of contributions described in the [Eligibility](#eligibility) section: code contributions, reviews, issue triage, documentation, community support, release work, event organisation, and similar efforts that help the project succeed.
+Simply holding the title without exercising the responsibilities it entails does not count as activity.
+
+The Maintainer Council reviews the activity of all maintainers **once per year**, at the same time as the annual review of the [Security Response Team](#security-response-team) membership.
+Before any status change is proposed, the maintainer in question must be contacted directly (via email and, if possible, a second channel) and given a reasonable opportunity to respond — at minimum **four weeks**.
+
+If a maintainer is confirmed to be inactive and does not wish to resume activity, they are moved to emeritus status.
+
+#### Removal for Cause
+
+Maintainers may also be removed for failure to fulfil their maintainer responsibilities, violating the [Code of Conduct](./CODE_OF_CONDUCT.md), or other serious reasons.
+A maintainer may be removed at any time by a 2/3 vote of the remaining maintainers under the [Voting](#voting) rules.
+
+### Emeritus Maintainers
+
+A maintainer who has stepped down or been moved to emeritus retains their name in [EMERITUS_MAINTAINERS.md](./EMERITUS_MAINTAINERS.md) as recognition of their past contributions. For removals under Removal for Cause, whether the maintainer's name is retained in EMERITUS_MAINTAINERS.md is at the discretion of the remaining maintainers involved in the removal vote.
+All active access — GitHub team memberships, mailing lists, infrastructure credentials, and any other privileges described in the [Onboarding checklist](./ONBOARDING.md) — is removed when a maintainer moves to emeritus status.
+The [Offboarding checklist](./OFFBOARDING.md) must be completed for every transition to emeritus.
+
+An emeritus maintainer who wishes to return to active status may do so by resuming meaningful, sustained contributions.
+They do not need to go through the full nomination process from scratch; instead, an existing maintainer opens a PR to move them back to [MAINTAINERS.md](./MAINTAINERS.md).
+This PR follows the same two-week lazy-consensus approval process described in [Approval](#approval).
+The returning maintainer is then re-onboarded following the [Onboarding checklist](./ONBOARDING.md).
+
+### Bookkeeping
+
+Every change in maintainer status — addition, move to emeritus, return from emeritus, or removal — must be reflected in all of the following:
+
+- [MAINTAINERS.md](./MAINTAINERS.md) (including the affiliation column).
+- [EMERITUS_MAINTAINERS.md](./EMERITUS_MAINTAINERS.md), where applicable.
+- The [CNCF project maintainers list](https://github.com/cncf/foundation/blob/main/project-maintainers.csv).
 
 
 ## Meetings
