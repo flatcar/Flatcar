@@ -108,7 +108,10 @@ def prepare_req(repo, token, api):
     url = f"https://api.github.com/repos/flatcar/{repo}{api}"
     headers = {
         "Accept": "application/vnd.github+json",
-        f"Authorization": "Bearer {token}",
+        # Value must be an f-string so the token is interpolated.
+        # Using f"Authorization" as the key left the value as the literal
+        # "Bearer {token}", which makes every GitHub API call return 401.
+        "Authorization": f"Bearer {token}",
     }
     return url, headers
 
