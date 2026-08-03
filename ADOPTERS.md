@@ -35,7 +35,7 @@ Users
 -----
  
     * N: 1&1 Mail & Media (GMX, WEB.DE, mail.com)
-      D: 1&1 Mail & Media is happily using FlatCar as the underlying OS in their large on-premise bare-metal Kubernetes installation, hosting the majority of services for their >40M users
+      D: 1&1 Mail & Media is happily using Flatcar as the underlying OS in their large on-premise bare-metal Kubernetes installation, hosting the majority of services for their >40M users
       C: stephan.fudeus [at] 1und1 [dot] de
 
     * N: Adobe
@@ -96,7 +96,7 @@ Users
       L: https://swade1987.medium.com/upgrading-to-flatcar-linux-746751e89ab4
 
     * N: Norwegian Labor and Welfare Administration (NAV)
-      D: The largest Norwegian government agency has been using Flatcar since 2021 to run all of their on-prem Kubernetes clusters enabling application teams to become more autonomous and to build better welfare services and deliver them with a higher velocity then before.
+      D: The largest Norwegian government agency has been using Flatcar since 2021 to run all of their on-prem Kubernetes clusters enabling application teams to become more autonomous and to build better welfare services and deliver them with a higher velocity than before.
       L: https://nais.io
       C: hans.kristian.flaatten@nav.no
 
