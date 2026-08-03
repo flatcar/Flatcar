@@ -5,28 +5,42 @@ import subprocess
 import os
 import sys
 import argparse
+import re
 
 
 def parse(m):
     para = []
     repos = []
+    in_subgroups = False
     while len(m):
         line = m.pop(0)
         if line == "# Maintainers":
-            line = m.pop(0)
-            while not line.startswith("#"):
-                para.append(line)
-                line = m.pop(0)
-        if line.startswith("###"):
-            repo = line.split("### ")[1].strip()
-            maint = []
-            m.pop(0)  # maintainers:
-            line = m.pop(0)
-            while line.startswith("* "):
-                maint.append(line)
-                line = m.pop(0) if len(m) else ""
-            if repo != "Flatcar":
-                repos.append((repo, maint))
+            while m and not m[0].startswith("#"):
+                para.append(m.pop(0))
+        elif line.startswith("## Maintainer Subgroups"):
+            in_subgroups = True
+        elif line.startswith("#"):
+            in_subgroups = False
+        elif in_subgroups and line.strip().startswith("|"):
+            cols = [c.strip() for c in line.strip().strip("|").split("|")]
+            if len(cols) >= 4 and cols[0] != "Subgroup" and not cols[0].startswith("---"):
+                members_col = cols[2]
+                repos_col = cols[3]
+                usernames = re.findall(r"@([a-zA-Z0-9_\-]+)", members_col)
+                maint = [f"* @{u}" for u in usernames]
+                for item in repos_col.split("<br>"):
+                    item = item.strip()
+                    match = re.search(r"github\.com/flatcar/([a-zA-Z0-9_\-\.]+)", item)
+                    if match:
+                        repo = match.group(1).rstrip(")>")
+                    else:
+                        match_bracket = re.search(r"\[([^\]]+)\]", item)
+                        if match_bracket:
+                            repo = match_bracket.group(1).strip()
+                        else:
+                            repo = item.strip()
+                    if repo and repo != "Flatcar":
+                        repos.append((repo, maint))
     return para, repos
 
 
@@ -82,7 +96,7 @@ def push(repo_name):
 
 
 def parse_maintainers(repo=None):
-    maint_file = "../MAINTAINERS.md"
+    maint_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../MAINTAINERS.md")
     with open(maint_file) as f:
         m = f.read().splitlines()
     para, repos = parse(m)
@@ -108,7 +122,7 @@ def prepare_req(repo, token, api):
     url = f"https://api.github.com/repos/flatcar/{repo}{api}"
     headers = {
         "Accept": "application/vnd.github+json",
-        f"Authorization": "Bearer {token}",
+        "Authorization": f"Bearer {token}",
     }
     return url, headers
 
@@ -163,7 +177,7 @@ def main_github(args):
         if resp.status_code != 201:
             print(resp.json())
         else:
-            print("{repo_name} ok")
+            print(f"{repo_name} ok")
 
 
 def main_list(args):

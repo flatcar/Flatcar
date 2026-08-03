@@ -6,11 +6,13 @@ on:
     paths:
       - '.github/scripts/**'
       - '.github/workflows/**'
+      - 'sync-maintainers/**'
   pull_request:
     branches: [ main ]
     paths:
       - '.github/scripts/**'
       - '.github/workflows/**'
+      - 'sync-maintainers/**'
 
 jobs:
   actionlint:
@@ -35,6 +37,12 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f sync-maintainers/requirements.txt ]; then pip install -r sync-maintainers/requirements.txt; fi
+
       - name: Run script unit tests
         run: |
           python -m unittest discover -s .github/scripts -v
+          python -m unittest discover -s sync-maintainers -v
