@@ -104,7 +104,11 @@ The nominating maintainer will create a PR to update the Maintainers List.
 It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
 Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
 
+<<<<<<< HEAD
 Maintainers who are selected will be granted the necessary GitHub rights. The [CONTRIBUTING.md](https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md) process should be used when onboarding a new maintainer.
+=======
+Maintainers who are selected will be granted the necessary GitHub rights. The [ONBOARDING.md](ONBOARDING.md) checklist should be used when onboarding a new maintainer.
+>>>>>>> 4c0946b (docs: point maintainer onboarding to ONBOARDING.md in governance)
 
 
 ### Removing a Maintainer
