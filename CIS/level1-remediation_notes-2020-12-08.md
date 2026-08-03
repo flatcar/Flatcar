@@ -162,7 +162,7 @@ password user1 password1
 * sysctl (currently there is a bug for persistence of these settings https://github.com/kinvolk/Flatcar/issues/297)
   * IP forwarding
 
-```sysclt
+```sysctl
 # /etc/sysctl.d/forward.conf
 net.ipv4.ip_forward=0
 ```

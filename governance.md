@@ -2,7 +2,7 @@
 
 
 Flatcar is a community based project, anyone who wants to participate is welcomed.
-We adopted the [CNCF code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be an opening and welcoming community for anyone who want to participate in it.
+We adopted the [CNCF Code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be an open and welcoming community for anyone who wants to participate in it.
 
 The project is governed by a flat hierarchy - a group of people sharing a common vision of Flatcar in accordance to its mission statement.
 
@@ -44,10 +44,10 @@ The Flatcar project, its leadership, and its maintainers embrace the following v
 
 ## Maintainers
 
-Flatcar Maintainers have full access to most of the repositories in the [Flatcar project](https://github.com/orgs/flatcar/), except for very few repositories that contain sensitive information, e.g. for with undisclosed security issues (see [SECURITY.md](./SECURITY.md) for more information).
+Flatcar Maintainers have full access to most of the repositories in the [Flatcar project](https://github.com/orgs/flatcar/), except for very few repositories that contain sensitive information, e.g. those with undisclosed security issues (see [SECURITY.md](./SECURITY.md) for more information).
 Maintainers can merge PRs, approve PR builds+tests, and create and publish releases.
 Maintainers collectively manage the project's resources, interact with contributors, elect new maintainers, and remove inactive ones.
-The current list of maintainers can be found in [MAINTAINERS.md](./MAINTAINERS.md). Most maintainer access privileges are granted via membership of the Flatcar Github organisation's [Flatcar Maintainers team](https://github.com/orgs/flatcar/teams/flatcar-maintainers).
+The current list of maintainers can be found in [MAINTAINERS.md](./MAINTAINERS.md). Most maintainer access privileges are granted via membership of the Flatcar GitHub organisation's [Flatcar Maintainers team](https://github.com/orgs/flatcar/teams/flatcar-maintainers).
 
 This privilege is granted with some expectation of responsibility: maintainers
 are people who care about the Flatcar project and want to help it grow and
@@ -104,7 +104,7 @@ The nominating maintainer will create a PR to update the Maintainers List.
 It is recommended to describe the reasons for the nomination and the contribution of the nominee in the PR.
 Upon consensus of incumbent maintainers, the PR will be approved and the new maintainer becomes active.
 
-Maintainers who are selected will be granted the necessary GitHub rights. The (CONTRIBUTING.md)[https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md] process should be used when onboarding a new maintainer.
+Maintainers who are selected will be granted the necessary GitHub rights. The [CONTRIBUTING.md](https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md) process should be used when onboarding a new maintainer.
 
 
 ### Removing a Maintainer
