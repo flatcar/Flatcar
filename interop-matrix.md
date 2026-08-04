@@ -51,9 +51,9 @@ Please propose ownership by filing a PR for this document.
 | CAPA        |              X                 |   X   |  X (upstream) | Upstream |                      | Covered by CAPA release tests |
 | CAPA EKS    |                                |       |             | [no owner] |                      |       |
 | CAPZ        |                                |   w/ caveat |       | @flatcar/flatcar-maintainers |  | WIP Prototype |
-| CAPV        |                                | [no owner] |        |                                   |       |
-| CAPM3       |                                | [no owner] |        |                                   |       |
-| CAPG        |                                | [no owner] |        |                                   |       |
+| CAPV        |                                |       |             | [no owner] |                      |       |
+| CAPM3       |                                |       |             | [no owner] |                      |       |
+| CAPG        |                                |       |             | [no owner] |                      |       |
 | CAPO        |                                |   X   |  X (upstream) | Upstream |                      |       |
 
 ## Kubernetes Distros
