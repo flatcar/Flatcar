@@ -63,7 +63,6 @@ Please propose ownership by filing a PR for this document.
 | AKS Engine  |                                |   X   |             | [no owner] |                      | https://kinvolk.io/blog/2020/12/aks-engine-on-flatcar |
 | Rancher (rke) |                              |   X   |             | [no owner] |                      |       |
 | Rancher (rke2) |                             |       |             | [no owner] |                      |       |
-| Lokomotive |                X                |   X   |      X      | @kinvolk/lokomotive-developers |  |       |
 | Tanzu KG |                                   |   X   |             | [no owner] |                      |       |
 | K3s |                                        |   X   |             | [no owner] |                      |       |
 | EKS-Distro |                                 |   X   |             | [no owner] |                      |       |
