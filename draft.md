@@ -54,10 +54,11 @@ non-technical, or explicitly escalated to it.
 
 ### Escalations
 
-Escalations are used to resolve misalignments and are always agreed on by involved
-parties. *All parties* must at a minimum agree on the fact that a blocking problem
-*exists* that cannot be resolved between parties directly, and mediation of the steering
-committee is required.
+Escalations are used to resolve misalignments. Any involved party may escalate a matter
+to the Steering Committee for mediation once they judge it is blocked and cannot be
+resolved between the parties directly. Escalation does not require every party to agree
+that a problem exists, so a party who is itself the source of the block cannot stop the
+matter being raised.
 
 ## Responsibilities
 
@@ -92,10 +93,14 @@ charter](#changes-to-this-charter)). This includes at least:
 - The voting method and voting/election process, including thresholds for decisions
   and charter changes.
 - Vacancy, removal, and Emeritus rules.
+- Meeting quorum and meeting model.
 
-These rules should be published as updates to this charter and to
-`steering-elections.md` before the founding term ends, and adopted by the Maintainers
-per the amendment process described in [Changes to this charter](#changes-to-this-charter).
+To avoid this work landing in a rush at the very end of the term, the founding Committee
+should publish a first full draft of these rules by roughly month 9 of the 12-month term
+and open a public comment period on it. The rules should then be published as updates to
+this charter and to `steering-elections.md`, and adopted by the Maintainers per the
+amendment process described in [Changes to this charter](#changes-to-this-charter),
+before the founding term ends.
 
 ## Working with the Technical Committee
 
@@ -115,14 +120,21 @@ so the project can bootstrap the Committee before full election rules exist:
 
 - **Size:** 5 seats, with no distinction between seat types.
 - **Length:** 1 year.
-- **Candidate eligibility:** any Maintainer or recognized Contributor is automatically
-  eligible to stand. Known and active community members/users are also eligible, but
-  only after passing a vetting process run by the Maintainers (this vetting applies to
-  community members/users only, not to Maintainers or Contributors).
+- **Candidate eligibility:** any Maintainer or recognised Contributor is automatically
+  eligible to stand. Known and active community members or users are also eligible, but
+  only after a vetting review run by the Maintainers (this applies to community members
+  and users only, not to Maintainers or Contributors). Vetting confirms the person has
+  made multiple meaningful contributions to Flatcar, technical or non-technical, in the
+  previous 12 months, following the model of Istio's project-member definition. The
+  review looks at the substance and recency of those contributions, not employer or
+  title.
 - **Voter eligibility:** all Maintainers and Contributors are eligible to vote.
-  Active, recognized community members/users may also vote if they request voting
-  rights and are approved by the Maintainer Council.
-- **Voting method:** ranked-choice voting.
+  Active, recognised community members or users may also vote if they request voting
+  rights. For the founding election these requests are approved by the Maintainer
+  Council, since the Steering Committee does not yet exist. From the second term onward,
+  approval moves to the Steering Committee itself, matching how Istio and Kubernetes
+  route voting exceptions through the elected body.
+- **Voting method:** Condorcet voting.
 
 One of the founding term Committee's primary responsibilities is to define the
 rules for seat count, seat types, eligibility, terms, staggering, company
@@ -134,7 +146,8 @@ subsequent terms are marked X pending that work.
 ### Size
 
 - **Founding term:** 5 seats (see "Founding term" above).
-- **Subsequent terms:** The Steering Committee has X seats.
+- **Subsequent terms:** The Steering Committee has X seats, to be determined by the
+  founding Steering Committee as part of the founding mandate.
 
 ### Seat types
 
@@ -177,12 +190,17 @@ above)*.
 The project may choose to limit the number of seats held by people from the same
 company.
 
-The exact company representation rule is X *(founding-term seats are not subject to a
-same-company limit; a rule for subsequent terms is part of the founding mandate — see
-"Founding mandate" above)*.
+No single company may hold more than 2 of the 5 seats on the founding Steering
+Committee. From the second term onward, no single company may hold more than 1 seat. The
+looser founding-term limit reflects the current maintainer mix; the tighter ongoing
+limit keeps the Committee genuinely multi-company once the contributor base can support
+it.
 
-If the project adopts a same-company limit, the process for handling election results or
-mid-term employer changes that break that limit is X.
+If an election result would put a company over its limit, the lowest-ranked candidate(s)
+from the over-represented company are dropped one at a time, and the freed seat(s) go to
+the next-highest-ranked eligible candidate(s) from other companies. If a member changes
+employer mid-term in a way that breaks the limit, they are treated as having resigned the
+seat, which is then filled through the Vacancies process below.
 
 ### Vacancies
 
@@ -193,9 +211,13 @@ term. If no such candidate is available, the vacancy-filling process is X.
 
 ### Removal
 
-A Steering Committee member may be removed by X.
+A Steering Committee member may be removed for sustained inactivity or for a serious
+breach of the Code of Conduct. Removal requires a 4 of 5 supermajority vote of the other
+seated members; the member in question does not vote on their own removal.
 
-The process for initiating and recording such a removal is X.
+Removal is initiated by any seated member raising it with the Committee, followed by that
+vote. The reason and outcome are recorded in the project's governance records, and the
+vacated seat is filled through the Vacancies process above.
 
 ### Emeritus
 
@@ -205,18 +227,19 @@ The meaning and privileges of Emeritus status are X.
 
 ## Voting
 
-For the founding term, the Steering Committee works by full consensus: with only 5
-seats, all 5 members must agree for a decision or charter change to pass. If a member
-is absent or the seat is vacant, consensus is required among the remaining seated
-members.
+For the founding term, the Steering Committee decides by vote rather than full
+consensus, so a single member cannot block progress on the founding mandate. A normal
+decision passes by simple majority of the seats (3 of 5). A charter change, and adoption
+of the second-term rules produced under the founding mandate, passes by supermajority
+(4 of 5). If a seat is vacant or a member abstains, the thresholds apply to the seats
+actually filled and voting.
 
 Once the founding Committee defines a different seat count or structure for
-subsequent terms (see [Founding mandate](#founding-mandate) above), it may also revisit
-whether consensus remains practical at that size, or whether a majority/supermajority
-threshold should replace it. Until then:
+subsequent terms (see [Founding mandate](#founding-mandate) above), it may revisit
+whether these thresholds remain practical at that size. Until then:
 
-- A normal decision passes with full consensus of the Committee.
-- A charter change passes with full consensus of the Committee.
+- A normal decision passes by simple majority of the Committee.
+- A charter change or founding-mandate adoption passes by a 4 of 5 supermajority.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
@@ -227,11 +250,10 @@ X.
 The Steering Committee meets on an as-needed basis, but must meet at least once every
 2 months to sync even if there is no pressing business.
 
-Meetings may be open, closed, or a mix of both. The expected meeting model is X.
-
-The quorum for holding a meeting is X.
-
-The quorum or threshold for taking a vote during a meeting is X.
+The meeting model (open, closed, or a mix) and the quorum for holding a meeting and for
+taking a vote are part of the founding mandate and will be set by the founding Committee.
+Until those are defined, the Committee meets and decides using the thresholds in the
+Voting section above.
 
 The Steering Committee and Technical Committee may hold regular joint sessions. If so,
 the frequency and expectations for those sessions are X.
@@ -273,7 +295,7 @@ Steering Committee charter.
 ## Open design questions
 
 > **Founding term note:** For the founding term only, seats (5, no seat types),
-> terms (1 year), candidate/voter eligibility, and voting method (ranked-choice) are
+> terms (1 year), candidate/voter eligibility, and voting method (Condorcet) are
 > already fixed — see the "Founding term" section of `steering-committee.md`. The
 > founding Steering Committee's founding mandate is to answer the open questions below
 > for the second term onward.
@@ -338,8 +360,9 @@ lowest-ranked candidate(s) from an over-represented company are dropped one at a
 until the cap is satisfied, with the freed seat(s) going to the next-highest-ranked
 candidate(s) from other companies (following Kubernetes' approach).
 
-If the project adopts separate seat categories, the rules for how same-company limits
-apply across those categories are X.
+Where seat categories exist, the same-company limit applies to a company's total across
+all categories: a company's combined seats may not exceed the cap set in the Company
+representation section, regardless of how those seats are split between categories.
 
 ## Election operations
 
@@ -349,11 +372,13 @@ to be enough, rather than having the sitting Committee run its own election or
 bringing in a fully external group.
 
 The nomination period is measured in weeks rather than months, to fit Flatcar's
-smaller scale (closer to Istio's timeline than Kubernetes'). The exact number of weeks
-is X.
+smaller scale (closer to Istio's timeline than Kubernetes'). It runs for three weeks, set
+longer than a typical long holiday so nobody who wants to stand is shut out by being
+away.
 
-The voting period is likewise measured in weeks rather than months. The exact number
-of weeks is X.
+The voting period is likewise measured in weeks rather than months. It runs for four
+weeks after nominations close, which also gives candidates time to publish a short
+statement of their priorities and goals before people vote.
 
 The method for publishing results is to publish full ranked results and vote totals,
 not just the winners, consistent with the project's value of being as open as
@@ -429,10 +454,13 @@ charter" below). This includes at least:
 - Term length, staggering, and term limits.
 - Company representation limits, if any.
 - Vacancy, removal, and Emeritus rules.
+- Meeting quorum and meeting model.
 
-These rules should be published as an update to this charter before the founding term
-ends, and adopted by the Maintainers per the amendment process described in
-"Changes to this charter" below.
+To avoid this work landing in a rush at the very end of the term, the founding Committee
+should publish a first full draft of these rules by roughly month 9 of the 12-month term
+and open a public comment period on it. The rules should then be published as an update
+to this charter, and adopted by the Maintainers per the amendment process described in
+"Changes to this charter" below, before the founding term ends.
 
 ## What the Technical Committee does not do
 
@@ -479,14 +507,21 @@ exist:
 
 - **Size:** 5 seats.
 - **Length:** 1 year.
-- **Candidate eligibility:** any Maintainer or recognized Contributor is automatically
-  eligible to stand. Known and active community members/users are also eligible, but
-  only after passing a vetting process run by the Maintainers (this vetting applies to
-  community members/users only, not to Maintainers or Contributors).
+- **Candidate eligibility:** any Maintainer or recognised Contributor is automatically
+  eligible to stand. Known and active community members or users are also eligible, but
+  only after a vetting review run by the Maintainers (this applies to community members
+  and users only, not to Maintainers or Contributors). Vetting confirms the person has
+  made multiple meaningful contributions to Flatcar, technical or non-technical, in the
+  previous 12 months, following the model of Istio's project-member definition. The
+  review looks at the substance and recency of those contributions, not employer or
+  title.
 - **Voter eligibility:** all Maintainers and Contributors are eligible to vote.
-  Active, recognized community members/users may also vote if they request voting
-  rights and are approved by the Maintainer Council.
-- **Selection model:** ranked-choice voting.
+  Active, recognised community members or users may also vote if they request voting
+  rights. For the founding election these requests are approved by the Maintainer
+  Council, since the Steering Committee does not yet exist. From the second term onward,
+  approval moves to the Steering Committee itself, matching how Istio and Kubernetes
+  route voting exceptions through the elected body.
+- **Selection model:** Condorcet voting.
 
 One of the founding term Committee's primary responsibilities is to define the
 selection rules for the Technical Committee from the second term onward (see
@@ -496,7 +531,8 @@ founding term; all values for subsequent terms are marked X pending that work.
 ### Size
 
 - **Founding term:** 5 seats (see "Founding term" above).
-- **Subsequent terms:** The Technical Committee has X seats.
+- **Subsequent terms:** The Technical Committee has X seats, to be determined by the
+  founding Technical Committee as part of the founding mandate.
 
 ### Eligibility
 
@@ -509,7 +545,7 @@ founding term; all values for subsequent terms are marked X pending that work.
 
 ### Selection model
 
-- **Founding term:** ranked-choice voting (see "Founding term" above).
+- **Founding term:** Condorcet voting (see "Founding term" above).
 - **Subsequent terms:** Technical Committee members are chosen by X.
 
   Possible models could include election, appointment, nomination plus vote, or some
@@ -534,9 +570,10 @@ founding term are part of the founding mandate — see "Founding mandate" above)
 The project may choose to limit the number of seats held by people from the same
 company.
 
-The exact company representation rule for the Technical Committee is X *(founding-term
-seats are not subject to a same-company limit; a rule for subsequent terms is part of
-the founding mandate — see "Founding mandate" above)*.
+The Technical Committee uses a deliberately loose limit: no single company may hold more
+than 4 of the 5 seats. This keeps at least one independent voice on technical governance
+without forcing an unrealistic spread while the contributor base is still concentrated. A
+tighter limit for later terms is part of the founding mandate.
 
 ### Vacancies
 
@@ -547,9 +584,13 @@ term. If no such candidate is available, the vacancy-filling process is X.
 
 ### Removal
 
-A Technical Committee member may be removed by X.
+A Technical Committee member may be removed for sustained inactivity or for a serious
+breach of the Code of Conduct. Removal requires a 4 of 5 supermajority vote of the other
+seated members; the member in question does not vote on their own removal.
 
-The process for initiating and recording such a removal is X.
+Removal is initiated by any seated member raising it with the Committee, followed by that
+vote. The reason and outcome are recorded in the project's governance records, and the
+vacated seat is filled through the Vacancies process above.
 
 ### Emeritus
 
@@ -559,19 +600,19 @@ The meaning and privileges of Emeritus status are X.
 
 ## Decision-making
 
-For the founding term, the Technical Committee works by full consensus: with only 5
-seats, all 5 members must agree for a decision or charter change to pass. If a member
-is absent or the seat is vacant, consensus is required among the remaining seated
-members.
+For the founding term, the Technical Committee decides by vote rather than full
+consensus, so a single member cannot block progress on the founding mandate. A normal
+technical decision passes by simple majority of the seats (3 of 5). A major architectural
+or breaking decision, and any charter change, passes by supermajority (4 of 5). If a seat
+is vacant or a member abstains, the thresholds apply to the seats actually filled and
+voting.
 
 Once the founding Committee defines a different seat count or structure for
-subsequent terms (see "Founding mandate" above), it may also revisit whether
-consensus remains practical at that size, or whether a majority/supermajority
-threshold should replace it. Until then:
+subsequent terms (see "Founding mandate" above), it may revisit whether these
+thresholds remain practical at that size. Until then:
 
-- A normal technical decision passes with full consensus of the Committee.
-- A major architectural or breaking decision passes with full consensus of the
-  Committee.
+- A normal technical decision passes by simple majority of the Committee.
+- A major architectural or breaking decision passes by a 4 of 5 supermajority.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
@@ -582,17 +623,25 @@ X.
 The Technical Committee meets on an as-needed basis, but must meet at least once every
 2 months to sync even if there is no pressing business.
 
-Meetings may be open, closed, or a mix of both. The expected meeting model is X.
-
-The quorum for holding a meeting is X.
-
-The quorum or threshold for taking a vote during a meeting is X.
+The meeting model (open, closed, or a mix) and the quorum for holding a meeting and for
+taking a vote are part of the founding mandate and will be set by the founding Committee.
+Until those are defined, the Committee meets and decides using the thresholds in the
+Decision-making section above.
 
 The Steering Committee and Technical Committee may hold regular joint sessions. If so,
 the frequency and expectations for those sessions are X.
 
 ## Changes to this charter
 
-Changes to this charter are approved by X.
+The initial charter is approved by the Maintainers as a whole, since they currently hold
+governance authority and are delegating some of it to the new Technical Committee. After
+that, ongoing charter amendments move to the Technical Committee itself, using the
+charter-change voting threshold (see the Decision-making section above) rather than
+requiring a full Maintainer vote each time.
 
-The exact process for proposing, discussing, voting on, and merging charter changes is X.
+The exact process for proposing, discussing, voting on, and merging charter changes is:
+a pull request against the governance document itself (so the exact change is visible,
+not just described), followed by a public discussion period before any vote. Once the
+Technical Committee holds this authority, the vote uses the charter-change threshold,
+followed by a short waiting period before the change takes effect so anyone who missed
+the discussion still sees the outcome before it goes live.
