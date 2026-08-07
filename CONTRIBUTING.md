@@ -103,7 +103,7 @@ time on it.
 The approach you describe should be your own. Comments that read as
 AI-generated summaries of the issue, with no evidence of having actually
 looked at the code or reproduced the problem, will be treated the same
-as no comment at all. Maintainers may delete such comments and mark them as `spam`.
+as no comment at all. Maintainers may delete such comments.
 
 If you're new and not sure where to start, the
 [Discord](https://discord.gg/PMYjFUsJyq) `#new-contributors-help` channel
@@ -335,7 +335,8 @@ account being blocked from the org.
 Please don't @-mention multiple maintainers in a PR or issue comment to
 request review or ask to be assigned. This creates notification noise and
 doesn't speed things up. If a PR has been open for a while without
-movement, a single comment on the PR itself (not a round of pings) or a
+movement (say 2-3 weeks, but contributors are advised to use their own
+judgment), a single comment on the PR itself (not a round of pings) or a
 note in [Discord](https://discord.gg/PMYjFUsJyq) or a community meeting
 is the right way to nudge it forward.
 
@@ -390,9 +391,7 @@ Bug reports should use the issue template and include:
 
 Issues missing this information will be labeled `needs-info` by the maintainers. If there's
 no response within 14 days, they will be closed. This isn't a judgment on
-the reporter; it keeps the backlog honest and makes coordinated or
-bulk-filed spam easier to spot, since that kind of filing tends to skip
-these fields entirely.
+the reporter; it keeps the backlog honest and makes the issue tracker more coordinated.
 
 ### Coordinated or Bulk-Filed Issues and PRs
 
@@ -403,13 +402,13 @@ close, or lock them as a group rather than reviewing each individually.
 If your issue is closed this way in error, reopening with the requested
 detail is welcome.
 
-### Reporting Spam or Abuse
+### Low-Quality Activity Is Discouraged
 
-If you notice a pattern (bulk account creation, near-identical low-effort
-issues or PRs, scripted comment pinging), flag it to maintainers on
-[Discord](https://discord.gg/PMYjFUsJyq) rather than replying in the
-thread. For coordinated campaigns, maintainers may also report the
-accounts to GitHub directly.
+Low-effort, AI-generated contributions have become common - bulk account
+creation, near-identical low-effort issues or PRs, and scripted comment
+pinging are patterns we see regularly, and this project strongly discourages
+them. If you notice one, flag it to maintainers on Discord rather than
+replying in the thread.
 
 ### Reporting Security Vulnerabilities
 
