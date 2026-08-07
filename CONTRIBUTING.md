@@ -103,7 +103,7 @@ time on it.
 The approach you describe should be your own. Comments that read as
 AI-generated summaries of the issue, with no evidence of having actually
 looked at the code or reproduced the problem, will be treated the same
-as no comment at all.
+as no comment at all. Maintainers may delete such comments and mark them as `spam`.
 
 If you're new and not sure where to start, the
 [Discord](https://discord.gg/PMYjFUsJyq) `#new-contributors-help` channel
