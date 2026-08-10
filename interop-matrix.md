@@ -67,7 +67,7 @@ Please propose ownership by filing a PR for this document.
 | K3s |                                        |   X   |             | [no owner] |                      |       |
 | EKS-Distro |                                 |   X   |             | [no owner] |                      |       |
 | KOPS |                                       |   X   |             | upstream |                        |       |
-| Kubematic |                                  |   X   |             | [no owner] |                      |       |
+| Kubermatic |                                  |   X   |             | [no owner] |                      |       |
 | Gardener |                                   |   X   |             | [no owner] |                      |       |
 
 ## Other
