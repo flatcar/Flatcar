@@ -287,7 +287,7 @@ ENTRYPOINT [ "rsyslogd", "-n" ]
 # rsyslog.conf
 #
 # if you experience problems, check:
-# http://www.rsyslog.com/troubleshoot
+# https://www.rsyslog.com/doc/
 
 $FileCreateMode 0640
 
