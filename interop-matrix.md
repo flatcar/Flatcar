@@ -41,7 +41,7 @@ Please propose ownership by filing a PR for this document.
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
 | EKS         |                                |   X   |             | [no owner] |                      |       |
-| GiantSwarm  |                                |   X   |             | Provider |                        |       |
+| Giant Swarm |                                |   X   |             | Provider |                        |       |
 
 ## Cluster API
 
