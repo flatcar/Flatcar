@@ -66,7 +66,7 @@ Please propose ownership by filing a PR for this document.
 | Tanzu Kubernetes Grid (TKG) |                 |   X   |             | [no owner] |                      |       |
 | K3s |                                        |   X   |             | [no owner] |                      |       |
 | Amazon EKS Distro |                          |   X   |             | [no owner] |                      |       |
-| kOps |                                       |   X   |             | upstream |                        |       |
+| kOps |                                       |   X   |             | Upstream |                        |       |
 | Kubermatic |                                  |   X   |             | [no owner] |                      |       |
 | Gardener |                                   |   X   |             | [no owner] |                      |       |
 
