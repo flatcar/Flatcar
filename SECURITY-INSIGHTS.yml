@@ -1,0 +1,14 @@
+header:
+  schema-version: 2.2.0
+  expiration-date: 2027-01-01
+project-lifecycle:
+  status: active
+security-contacts:
+  - type: email
+    value: security@flatcar-linux.org
+vulnerability-reporting:
+  accepts-vulnerability-reports: true
+  email-contact: security@flatcar-linux.org
+dependencies:
+  env-dependencies-policy:
+    policy-url: https://github.com/flatcar/Flatcar/blob/main/adding-new-packages.md
