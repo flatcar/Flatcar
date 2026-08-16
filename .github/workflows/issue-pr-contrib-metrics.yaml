@@ -82,7 +82,7 @@ jobs:
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:unanswered'
             # This metric measures items that are still open
             HIDE_TIME_TO_CLOSE: true
-      - name: rename open discussion metrics file
+      - name: rename open Q&A discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
@@ -93,7 +93,7 @@ jobs:
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A is:answered'
-      - name: rename open discussion metrics file
+      - name: rename closed Q&A discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
@@ -104,7 +104,7 @@ jobs:
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions category:Q&A created:${{ env.START_DATE }}..${{ env.END_DATE }}'
-      - name: rename open discussion metrics file
+      - name: rename new Q&A discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
@@ -131,7 +131,7 @@ jobs:
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A created:${{ env.START_DATE }}..${{ env.END_DATE }}'
-      - name: rename open discussion metrics file
+      - name: rename new discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
@@ -142,7 +142,7 @@ jobs:
         env:
             GH_TOKEN: ${{ secrets.GH_ACTION_METRICS_ORG_READ }}
             SEARCH_QUERY: 'repo:flatcar/Flatcar type:discussions -category:Q&A closed:${{ env.START_DATE }}..${{ env.END_DATE }}'
-      - name: rename open discussion metrics file
+      - name: rename closed discussion metrics file
         shell: bash
         run: |
           set -euo pipefail
