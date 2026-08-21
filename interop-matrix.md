@@ -55,16 +55,20 @@ Please propose ownership by filing a PR for this document.
 | CAPM3       |                                |       |             | [no owner] |                      |       |
 | CAPG        |                                |       |             | [no owner] |                      |       |
 | CAPO        |                                |   X   |  X (upstream) | Upstream |                      |       |
+| CAPH        |                                |   X   |  X (upstream) | Upstream |                      | Covered by CAPH release tests |
+| CAPK        |                                |   X   |  X (upstream) | Upstream |                      | Covered by CAPK release tests |
 
 ## Kubernetes Distros
 
 | Environment | Full-Feature (release blocker) | Works | Tested (CI) | Owner | Reference (e.g. GH issue) | Notes |
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
-| AKS Engine  |                                |   X   |             | [no owner] |                      | https://kinvolk.io/blog/2020/12/aks-engine-on-flatcar |
+| AKS Engine  |                                | Deprecated |         | [no owner] |                      | Deprecated upstream in favor of CAPZ / AKS |
 | Rancher (rke) |                              |   X   |             | [no owner] |                      |       |
-| Rancher (rke2) |                             |       |             | [no owner] |                      |       |
+| Rancher (rke2) |                             |   X   |             | [no owner] |                      | Supported via RKE2 sysext or install scripts |
 | Tanzu KG |                                   |   X   |             | [no owner] |                      |       |
 | K3s |                                        |   X   |             | [no owner] |                      |       |
+| k0s |                                        |   X   |             | [no owner] |                      | Supported via k0s sysext or manual binary |
+| microk8s |                                   |   X   |             | [no owner] |                      |       |
 | EKS-Distro |                                 |   X   |             | [no owner] |                      |       |
 | KOPS |                                       |   X   |             | upstream |                        |       |
 | Kubermatic |                                  |   X   |             | [no owner] |                      |       |
