@@ -30,6 +30,13 @@ Welcome! We're so glad you're here and interested in contributing to Flatcar! �
     - [Authoring PRs](#authoring-prs)
       - [Commit Best Practices](#commit-best-practices)
       - [PR Description](#pr-description)
+    - [AI-Assisted Contributions](#ai-assisted-contributions)
+    - [Pull Request Etiquette](#pull-request-etiquette)
+    - [Issue Assignment](#issue-assignment)
+    - [Issue Quality Bar](#issue-quality-bar)
+    - [Coordinated or Bulk-Filed Issues and PRs](#coordinated-or-bulk-filed-issues-and-prs)
+    - [Reporting Spam or Abuse](#reporting-spam-or-abuse)
+    - [Reporting Security Vulnerabilities](#reporting-security-vulnerabilities)
     - [Commit Guidelines](#commit-guidelines)
       - [The Rules](#the-rules)
       - [Examples](#examples)
@@ -54,7 +61,7 @@ There are so many ways to get involved! We welcome all kinds of contributions:
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Code**          | New features, bug fixes, builds, CI/CD                                                                                                                                                                              |
 | **Documentation** | Guides, tutorials, API docs                                                                                                                                                                                         |
-| **Community**     | Issue triage, answering questions on Discord/Slack                                                                                                                                                           |
+| **Community**     | Issue triage, answering questions on Discord/Slack                                                                                                                                                                  |
 | **Flatcar Apps**  | Create reference implementations for running services on Flatcar (e.g., [Minecraft](https://github.com/flatcar/flatcar-app-minecraft), [Jitsi](https://github.com/flatcar/flatcar-app-jitsi)) — great for learning! |
 | **Outreach**      | Blog posts, talks, presentations, workshops                                                                                                                                                                         |
 | **Coordination**  | Release management, upstream project coordination (e.g., Flatcar CAPI, sysext initiative)                                                                                                                           |
@@ -84,7 +91,25 @@ Not sure where to start? No worries — we've got you covered!
 
 > 🌟 **Great for newcomers:** Consider contributing a [Flatcar App](https://github.com/flatcar/Flatcar/issues/2029)! A Flatcar App is a reference implementation showing how to run a specific service on Flatcar (e.g., [Minecraft Server](https://github.com/flatcar/flatcar-app-minecraft), [Jitsi](https://github.com/flatcar/flatcar-app-jitsi)). It's a fantastic way to learn Flatcar hands-on while creating something awesome that helps other newcomers learn too!
 
-Found something you'd like to work on? Excellent! Just leave a comment like "I'd like to work on this" — that's all it takes to claim it.
+Found something you'd like to work on? Excellent! Just leave a comment like
+"I'd like to work on this" — that's all it takes to claim it.
+
+When you do, tell us a bit about your findings and your plan: what you
+think is causing the issue, how you're thinking of approaching it, and
+anything you've already looked at. A short note goes a long way toward
+making sure you're heading in the right direction before you've spent
+time on it.
+
+The approach you describe should be your own. Comments that read as
+AI-generated summaries of the issue, with no evidence of having actually
+looked at the code or reproduced the problem, will be treated the same
+as no comment at all. Maintainers may delete such comments.
+
+If you're new and not sure where to start, the
+[Discord](https://discord.gg/PMYjFUsJyq) `#new-contributors-help` channel
+is a better place to talk it through than reading CONTRIBUTING.md twice.
+Maintainers and other contributors there can help you figure out whether
+an issue is a good fit and point you in the right direction.
 
 ### Proposing New Features
 
@@ -281,6 +306,118 @@ Think of your PR description as a cover letter. Help reviewers understand:
 - Provide an overview of the changes
 - List any unresolved questions or TODO items
 - Give reviewers the context they need
+
+### AI-Assisted Contributions
+
+We don't ban AI tools. Plenty of maintainers use them too. What we don't
+accept is a contribution where the person submitting it can't explain or
+defend it. Reviewer time is our scarcest resource, and an "extractive"
+contribution, one where the burden of understanding shifts onto the
+reviewer instead of the author, will be closed without extended review.
+
+If you used AI assistance on a PR or issue:
+
+- You must have personally read, understood, and tested every change.
+- You must be able to explain any part of it on request, without
+  re-consulting the tool.
+- Briefly note the scope of AI use in the PR description (for example,
+  "used for boilerplate test structure" or "helped debug a build error").
+  This isn't a confession; it just calibrates review.
+
+Submissions that read as wholesale AI output (generic problem framing, no
+evidence of running or reproducing the issue locally, verification logs
+pasted without independent confirmation) will be closed. Repeated
+low-effort or bulk-filed submissions from an account may result in that
+account being blocked from the org.
+
+### Pull Request Etiquette
+
+Please don't @-mention multiple maintainers in a PR or issue comment to
+request review or ask to be assigned. This creates notification noise and
+doesn't speed things up. If a PR has been open for a while without
+movement (say 2-3 weeks, but contributors are advised to use their own
+judgment), a single comment on the PR itself (not a round of pings) or a
+note in [Discord](https://discord.gg/PMYjFUsJyq) or a community meeting
+is the right way to nudge it forward.
+
+### Issue Assignment
+
+**Who is this guidance for?**
+
+This is for maintainers triaging issues. External contributors may find
+it useful to know what to expect when picking something up.
+
+**For maintainers**
+
+Assign an issue to yourself via GitHub's Assignees field once you intend
+to work on it, and unassign it if that stops being true. Check your
+assigned issues periodically rather than letting them sit.
+
+For new features or larger work, assign the issue to the developer if
+known, or add a `kind/release`, `kind/packages`, `kind/security` or other label
+once the owning group is absolutely clear, and link it to the relevant milestone.
+This signals to external contributors that the issue already has
+an owner, even before a name is attached.
+
+**For external contributors**
+
+If you're already working on something and have code in progress, a
+short comment saying so is enough.
+
+If you're planning to work on something but haven't started yet, comment
+with your intended approach, not just an expression of interest. Describing
+your approach, even briefly, does two things: it shows you've actually
+looked at the problem, and it gives maintainers a chance to flag if you're
+heading in the wrong direction before you've written any code.
+
+We won't formally assign the issue to you until there's a draft PR that
+looks promising. Until then, it stays open for anyone else with a
+concrete approach to comment as well.
+
+Any maintainer can choose to assist an external contributor directly at
+their own discretion.
+
+For contributors with prior merged work in the project, any maintainer
+may assign the issue to them directly, without waiting for a draft PR.
+
+### Issue Quality Bar
+
+Bug reports should use the issue template and include:
+
+- Flatcar version and channel (Stable, Beta, Alpha)
+- Steps to reproduce
+- Expected vs. actual behaviour
+- Relevant logs (journalctl, ignition, or update_engine output as applicable)
+
+Issues missing this information will be labeled `needs-info` by the maintainers. If there's
+no response within 14 days, they will be closed. This isn't a judgment on
+the reporter; it keeps the backlog honest and makes the issue tracker more coordinated.
+
+### Coordinated or Bulk-Filed Issues and PRs
+
+If several new accounts open near-identical issues or PRs within a short
+window, or a single account opens multiple issues in rapid succession
+with no prior activity in the repository, maintainers may consolidate,
+close, or lock them as a group rather than reviewing each individually.
+If your issue is closed this way in error, reopening with the requested
+detail is welcome.
+
+### Low-Quality Activity Is Discouraged
+
+Low-effort, AI-generated contributions have become common - bulk account
+creation, near-identical low-effort issues or PRs, and scripted comment
+pinging are patterns we see regularly, and this project strongly discourages
+them. If you notice one, flag it to maintainers on Discord rather than
+replying in the thread.
+
+### Reporting Security Vulnerabilities
+
+Please do not report security vulnerabilities through public GitHub
+issues. Use GitHub's private vulnerability reporting on the affected
+repository, or email the security contact listed in `SECURITY.md`. Include
+affected versions, reproduction steps, and impact if known. Public issues
+describing an exploitable vulnerability will be redacted and the reporter
+redirected to the private channel.
 
 ### Commit Guidelines
 
