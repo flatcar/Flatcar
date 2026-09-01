@@ -1,0 +1,174 @@
+## OpenSSF Security Insights manifest for the Flatcar project.
+## Specification: https://github.com/ossf/security-insights-spec
+header:
+  schema-version: 2.2.0
+  last-updated: '2026-08-11'
+  last-reviewed: '2026-08-11'
+  url: https://raw.githubusercontent.com/flatcar/Flatcar/main/SECURITY-INSIGHTS.yml
+  comment: |
+    This repository is the central issue tracker and the home of the project
+    documentation for the whole flatcar GitHub organisation. It carries no source
+    code; the OS itself is built in flatcar/scripts.
+
+    MAINTAINERS.md is the authoritative list of maintainers and of the security
+    team. The contacts below are a snapshot of it and are refreshed whenever this
+    file is reviewed.
+
+project:
+  name: Flatcar Container Linux
+  homepage: https://www.flatcar.org/
+  roadmap: https://github.com/orgs/flatcar/projects/7/views/9
+  steward:
+    uri: https://www.cncf.io/
+    comment: |
+      Flatcar Container Linux was accepted into the CNCF at the incubating
+      maturity level in August 2024.
+  administrators:
+    - name: Thilo Fromm
+      affiliation: Microsoft
+      social: https://github.com/t-lo
+      primary: true
+  documentation:
+    quickstart-guide: https://www.flatcar.org/docs/latest/installing/
+    detailed-guide: https://www.flatcar.org/docs/latest/
+    code-of-conduct: https://github.com/flatcar/Flatcar/blob/main/CODE_OF_CONDUCT.md
+    release-process: https://www.flatcar.org/docs/latest/reference/developer-guides/release-guide/
+    support-policy: https://github.com/flatcar/Flatcar/blob/main/RELEASES.md
+  repositories:
+    - name: Flatcar
+      url: https://github.com/flatcar/Flatcar
+      comment: |
+        This repository. Central issue tracker for the organisation, plus project
+        documentation, governance and release planning.
+    - name: scripts
+      url: https://github.com/flatcar/scripts
+      comment: |
+        The image build system, the SDK and the package definitions. Most
+        OS-level changes land here, and the release images are built from it.
+    - name: mantle
+      url: https://github.com/flatcar/mantle
+      comment: |
+        The kola test framework, the image upload tooling and assorted build glue.
+    - name: update_engine
+      url: https://github.com/flatcar/update_engine
+      comment: |
+        The Omaha update client that runs on every node and drives the atomic
+        A/B partition updates.
+    - name: nebraska
+      url: https://github.com/flatcar/nebraska
+      comment: |
+        The Omaha update server used to manage and roll out updates to fleets.
+    - name: ignition
+      url: https://github.com/flatcar/ignition
+      comment: |
+        Flatcar's fork of Ignition, the first-boot provisioning tool.
+    - name: bootengine
+      url: https://github.com/flatcar/bootengine
+      comment: |
+        The dracut-based initramfs that prepares the root filesystem at boot.
+    - name: sysext-bakery
+      url: https://github.com/flatcar/sysext-bakery
+      comment: |
+        Recipes for building systemd-sysext images that layer software onto the
+        read-only OS.
+    - name: flatcar-website
+      url: https://github.com/flatcar/flatcar-website
+      comment: |
+        Source for flatcar.org, including the user and developer documentation.
+  vulnerability-reporting:
+    reports-accepted: true
+    bug-bounty-available: false
+    contact:
+      name: Flatcar security team
+      email: security@flatcar-linux.org
+      primary: true
+    policy: https://github.com/flatcar/Flatcar/blob/main/SECURITY.md
+    comment: |
+      Undisclosed issues are tracked in a private repository that only the
+      security team can read. Issues that are already public are tracked in this
+      repository under the security and advisory labels. Fixes ship as an updated
+      OS image, and every release carries a report on the issues it addresses.
+
+repository:
+  url: https://github.com/flatcar/Flatcar
+  status: active
+  accepts-change-request: true
+  accepts-automated-change-request: true
+  core-team:
+    - name: Thilo Fromm
+      primary: true
+    - name: James Le Cuirot
+      primary: false
+    - name: Krzesimir Nowak
+      primary: false
+    - name: Sayan Chowdhury
+      primary: false
+    - name: Gabriel Samfira
+      primary: false
+    - name: Kai Lüke
+      primary: false
+    - name: Adrian Vladu
+      primary: false
+    - name: Daniel Zatovic
+      primary: false
+    - name: Jeremi Piotrowski
+      primary: false
+    - name: Dongsu Park
+      primary: false
+    - name: Danielle Tal
+      primary: false
+    - name: Mathieu Tortuyaux
+      primary: false
+    - name: Ervin Racz
+      primary: false
+    - name: Jan Bronicki
+      primary: false
+    - name: Lexi Nadolski
+      primary: false
+    - name: Robin Schneider
+      primary: false
+  license:
+    url: https://github.com/flatcar/Flatcar/blob/main/LICENSE
+    expression: Apache-2.0
+  documentation:
+    contributing-guide: https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md
+    governance: https://github.com/flatcar/Flatcar/blob/main/governance.md
+    review-policy: https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md#pull-request-lifecycle
+    security-policy: https://github.com/flatcar/Flatcar/blob/main/SECURITY.md
+    dependency-management-policy: https://github.com/flatcar/Flatcar/blob/main/adding-new-packages.md
+  security:
+    assessments:
+      self:
+        comment: |
+          The security self assessment required for CNCF graduation is still in
+          progress and is tracked in
+          https://github.com/flatcar/Flatcar/issues/1820. This entry will be
+          updated with a link to the published assessment once it is finished.
+    tools:
+      - name: Dependabot
+        type: SCA
+        rulesets:
+          - default
+        integration:
+          adhoc: true
+          ci: false
+          release: false
+        results: {}
+        comment: |
+          Runs weekly against the GitHub Actions used by the workflows in this
+          repository and opens a pull request per update. See
+          https://github.com/flatcar/Flatcar/blob/main/.github/dependabot.yml.
+      - name: OpenSSF Scorecard
+        type: other
+        rulesets:
+          - default
+        integration:
+          adhoc: true
+          ci: false
+          release: false
+        results: {}
+        comment: |
+          Runs daily and on every push to the default branch. Results are
+          published to the Scorecard API and uploaded to the repository code
+          scanning dashboard. See
+          https://github.com/flatcar/Flatcar/blob/main/.github/workflows/scorecard.yml.
