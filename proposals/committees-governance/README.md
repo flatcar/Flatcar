@@ -28,6 +28,9 @@ responsibilities of the existing Maintainer Council and subgroups.
   balanced governance, Steering Committee company representation is capped at a
   maximum of 2/5 seats in the founding term (1 seat ongoing), while Technical
   Committee representation is capped at a maximum of 4/5 seats in the founding term.
+- **Concurrent Membership:** a person cannot serve on the Steering Committee and the
+  Technical Committee at the same time. Serving on one committee and later standing
+  for the other, at a different time, is allowed.
 
 ## Documents in this proposal
 

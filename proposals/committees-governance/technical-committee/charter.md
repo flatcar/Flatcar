@@ -114,6 +114,9 @@ exist:
   previous 12 months, following the model of Istio's project-member definition. The
   review looks at the substance and recency of those contributions, not employer or
   title.
+- **Concurrent membership:** a person cannot serve on the Technical Committee and the
+  Steering Committee at the same time. Serving on one committee and later standing
+  for, or serving on, the other (at a different time) is allowed.
 - **Voter eligibility:** all Maintainers and Contributors are eligible to vote.
   Active, recognised community members or users may also vote if they request voting
   rights. For the founding election these requests are approved by the Maintainer
@@ -141,6 +144,10 @@ founding term; all values for subsequent terms are marked X pending that work.
   Eligibility to stand for the Technical Committee is X.
 
   Eligibility to vote in Technical Committee elections or selections is X.
+
+  Concurrent membership: as in the founding term, a person cannot serve on the
+  Technical Committee and the Steering Committee at the same time. This rule is
+  fixed and is not part of the founding mandate.
 
 ### Selection model
 
