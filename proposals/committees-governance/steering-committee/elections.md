@@ -17,7 +17,7 @@ Steering Committee charter.
 
 > **Founding term note:** For the founding term only, seats (5, no seat types),
 > terms (1 year), candidate/voter eligibility, and voting method (Condorcet) are
-> already fixed; see the "Founding term" section of `steering-committee.md`. The
+> already fixed; see the "Founding term" section of `charter.md`. The
 > founding Steering Committee's founding mandate is to answer the open questions below
 > for the second term onward.
 
@@ -85,12 +85,30 @@ Where seat categories exist, the same-company limit applies to a company's total
 all categories: a company's combined seats may not exceed the cap set in the Company
 representation section, regardless of how those seats are split between categories.
 
+## Elections Organizing Group
+
+Elections are run by an Elections Organizing Group (EOG) rather than by the sitting
+Committee itself or a fully external group, matching Flatcar's smaller scale. The EOG
+organizes elections for both the Steering Committee and the Technical Committee; see
+the Technical Committee charter's "Selection model" section for how it applies there.
+
+- **Founding election:** the founding EOG is formed from Maintainers who volunteer to
+  serve on it. Once a Maintainer volunteers, any other Maintainer may veto their
+  inclusion within one week of the volunteer being proposed. If no veto is raised
+  within that week, the volunteer joins the group. There is no minimum or maximum
+  group size beyond needing enough volunteers to run the election.
+- **Subsequent elections:** before its term ends, each sitting Committee (Steering and
+  Technical) selects the people who will organize its own next election. The two
+  Committees may select the same people, forming a single shared EOG, or select
+  different people for each; either is acceptable.
+- In all cases, EOG members must be eligible voters who are not themselves candidates
+  in the election they are organizing.
+
 ## Election operations
 
-The election is run by 1–2 dedicated election officers: eligible voters who are not
-themselves candidates in that election. Given Flatcar's smaller size, this is expected
-to be enough, rather than having the sitting Committee run its own election or
-bringing in a fully external group.
+The election is run by the Elections Organizing Group (see "Elections Organizing
+Group" above). Given Flatcar's smaller size, this is expected to be enough, rather
+than bringing in a fully external group.
 
 The nomination period is measured in weeks rather than months, to fit Flatcar's
 smaller scale (closer to Istio's timeline than Kubernetes'). It runs for three weeks, set
@@ -105,12 +123,13 @@ The method for publishing results is to publish full ranked results and vote tot
 not just the winners, consistent with the project's value of being as open as
 possible.
 
-Recusal, campaigning, and election-officer rules: campaigning must stay brand-free:
+Recusal, campaigning, and EOG-member rules: campaigning must stay brand-free:
 candidates and their employers should not use company branding to campaign or drum up
-votes. Sitting Steering Committee members and election officers must step back from
+votes. Sitting Steering Committee members and EOG members must step back from
 publicly campaigning, nominating, or endorsing during an election; privately
 encouraging someone to run, or simply voting, is fine. There is no formal complaints
-process; the election officers (see above) handle any issues that arise directly.
+process; the EOG (see "Elections Organizing Group" above) handles any issues that
+arise directly.
 
 ## Vacancies and replacements
 

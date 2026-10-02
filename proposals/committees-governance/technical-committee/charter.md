@@ -25,6 +25,14 @@ single subgroup should own alone.
 The Technical Committee handles technical matters that affect the project as a whole
 rather than a single repository or subgroup.
 
+## Escalations
+
+Escalations are used to resolve technical misalignments. Any involved party may
+escalate a technical matter to the Technical Committee for mediation once they judge
+it is blocked and cannot be resolved between the parties or within a single subgroup
+directly. Escalation does not require every party to agree that a problem exists, so a
+party who is itself the source of the block cannot stop the matter being raised.
+
 ## Responsibilities
 
 The Technical Committee is responsible for:
@@ -156,6 +164,15 @@ founding term; all values for subsequent terms are marked X pending that work.
 
   Possible models could include election, appointment, nomination plus vote, or some
   other mechanism. The chosen model is X.
+
+Whenever the Technical Committee is selected by election, that election is run by an
+Elections Organizing Group (EOG), following the same rules as for Steering Committee
+elections: see the "Elections Organizing Group" section of
+`steering-committee/elections.md`. The founding EOG (Maintainer volunteers, subject to
+a one-week veto window) organizes the founding Technical Committee election; before its
+term ends, the sitting Technical Committee selects the people who will organize its own
+next election, which may or may not be the same people the Steering Committee selects
+for its election.
 
 ### Terms
 

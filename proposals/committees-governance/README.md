@@ -22,7 +22,8 @@ responsibilities of the existing Maintainer Council and subgroups.
   initiatives, technical standards, and technical escalations.
 - **Founding Terms:** Both committees will start with 5 seats serving a 1-year founding
   term to establish ongoing governance, election, and operational rules.
-- **Voting Method:** Condorcet voting for multi-seat elections and decisions.
+- **Voting Method:** Condorcet voting for founding-term selection/elections; ongoing
+  committee decisions use the voting thresholds defined in each charter.
 - **Candidate Eligibility & Company Limits:** Seats on both committees are open to
   Maintainers, Contributors, and vetted active community members or users. To ensure
   balanced governance, Steering Committee company representation is capped at a
