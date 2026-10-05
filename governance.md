@@ -131,7 +131,7 @@ and can be rapidly returned to Maintainer status if their availability changes.
 
 ## Meetings
 
-Time zones permitting, Maintainers are expected to participate in the Flatcar Developer Syncs meeting every 4th Wednesday of a month.
+Time zones permitting, Maintainers are expected to participate in the Flatcar Developer Syncs meeting every 4th Thursday of a month.
 The meeting time observes the Universal Coordinated time. It occurs at 2:30pm UTC.
 Depending on your local timezone, the slot might be subject to summer time changes.
 * During daylight saving time, the meeting occurs at 8pm IST (IST does not observe daylight saving time) / 4:30pm CEST / 10:30am EDT / 7:30am PDT.
