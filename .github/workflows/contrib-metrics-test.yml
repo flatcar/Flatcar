@@ -1,0 +1,40 @@
+name: CI Workflow Tests & Linting
+
+on:
+  push:
+    branches: [ main, feat/dynamic-repo-matrix ]
+    paths:
+      - '.github/scripts/**'
+      - '.github/workflows/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '.github/scripts/**'
+      - '.github/workflows/**'
+
+jobs:
+  actionlint:
+    name: Actionlint Workflow Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run actionlint
+        uses: rhysd/actionlint-action@v1
+
+  unit-tests:
+    name: Run Python Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run script unit tests
+        run: |
+          python -m unittest discover -s .github/scripts -v
