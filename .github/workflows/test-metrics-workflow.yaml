@@ -1,0 +1,38 @@
+name: Test metrics workflow
+
+# The monthly contributor report is only ever run on a schedule or by hand, so
+# regressions in it would otherwise stay unnoticed until the next report is due.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/issue-pr-contrib-metrics.yaml'
+      - '.github/workflows/test-metrics-workflow.yaml'
+      - '.github/scripts/**'
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/issue-pr-contrib-metrics.yaml'
+      - '.github/workflows/test-metrics-workflow.yaml'
+      - '.github/scripts/**'
+
+permissions:
+  contents: read
+
+jobs:
+  date-inputs:
+    name: date input handling
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.3.0
+        with:
+          persist-credentials: false
+
+      - name: Run the date input tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet --disable-pip-version-check pyyaml
+          python3 .github/scripts/test_metrics_date_inputs.py
