@@ -1,0 +1,19 @@
+## Reference: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+version: 2
+updates:
+  # This repository holds no source code, so the workflow actions are the only
+  # dependencies it has. They are pinned by commit SHA, which means nothing
+  # updates them unless something asks it to.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    groups:
+      github-actions-dependencies:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: ".github"
+    labels:
+      - "area/github-actions"
