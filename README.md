@@ -102,7 +102,7 @@ Come say hi! Check our [Google Calendar](https://calendar.google.com/calendar/u/
 
 |            |                                                                                                                                      |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **When**   | 2nd Wednesday of every month at 2:30pm UTC (double check calendar)                                                                   |
+| **When**   | 2nd Thursday of every month at 2:30pm UTC (if there are five Thursdays in the month, the meeting will take place on the 3rd Thursday, double check calendar)                                                                   |
 | **Where**  | [meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours) (all you need is a browser, no installations/accounts required) |
 | **Agenda** | [Office Hours Discussions](https://github.com/flatcar/Flatcar/discussions/categories/flatcar-office-hours)                           |
 
@@ -112,7 +112,7 @@ Engage with the Flatcar community, learn about project directions, discuss contr
 
 |            |                                                                                                                                      |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **When**   | 4th Wednesday of every month at 2:30pm UTC (check calendar)                                                                          |
+| **When**   | 4th Thursday of every month at 2:30pm UTC (double check calendar)                                                                          |
 | **Where**  | [meet.flatcar.org/OfficeHours](https://meet.flatcar.org/OfficeHours) (all you need is a browser, no installations/accounts required) |
 | **Agenda** | [Developer Sync Discussions](https://github.com/flatcar/Flatcar/discussions/categories/flatcar-developer-sync)                       |
 
