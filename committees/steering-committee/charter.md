@@ -1,9 +1,6 @@
-> **📋 PROPOSAL: this document is a governance proposal and has not been adopted.**
-
 # Flatcar Steering Committee Charter
 
-**Status:** DRAFT / PROPOSAL. This document is not yet adopted. Adopting it requires a
-vote of the Maintainers as described in `governance.md`.
+**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
 
 This document describes what the Flatcar Steering Committee is for, what it does, and
 how it is run.
@@ -73,7 +70,7 @@ The Steering Committee is responsible for:
 In addition to the responsibilities above, the founding-term Steering Committee is
 specifically tasked with defining, before its term ends, the rules that will govern
 the Committee and its elections from the second term onward (these rules are not
-fixed forever and may themselves be revised later (see [Changes to this
+fixed forever and may themselves be revised later; see [Changes to this
 charter](#changes-to-this-charter)). This includes at least:
 
 - The number and type of seats.
@@ -88,7 +85,7 @@ charter](#changes-to-this-charter)). This includes at least:
 To avoid this work landing in a rush at the very end of the term, the founding Committee
 should publish a first full draft of these rules by roughly month 9 of the 12-month term
 and open a public comment period on it. The rules should then be published as updates to
-this charter and to `elections.md`, and adopted by the Maintainers per the
+this charter and to [`elections.md`](../elections.md), and adopted by the Maintainers per the
 amendment process described in [Changes to this charter](#changes-to-this-charter),
 before the founding term ends.
 

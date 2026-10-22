@@ -1,9 +1,6 @@
-> **📋 PROPOSAL: this document is a governance proposal and has not been adopted.**
-
 # Flatcar Technical Committee Charter
 
-**Status:** DRAFT / PROPOSAL. This document is not yet adopted. Adopting it requires a
-vote of the Maintainers as described in `governance.md`.
+**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
 
 This document describes what the Flatcar Technical Committee is for, what it does, and
 how it is run.
@@ -52,8 +49,8 @@ The Technical Committee is responsible for:
 In addition to the responsibilities above, the founding-term Technical Committee is
 specifically tasked with defining, before its term ends, the rules that will govern
 the Committee and its member selection from the second term onward (these rules are
-not fixed forever and may themselves be revised later (see "Changes to this
-charter" below). This includes at least:
+not fixed forever and may themselves be revised later; see [Changes to this
+charter](#changes-to-this-charter)). This includes at least:
 
 - The number of seats.
 - Candidate and voter eligibility.
@@ -168,8 +165,8 @@ founding term; all values for subsequent terms are marked X pending that work.
 Whenever the Technical Committee is selected by election, that election is run by an
 Elections Organizing Group (EOG), following the same rules as for Steering Committee
 elections: see the "Elections Organizing Group" section of
-`steering-committee/elections.md`. The founding EOG (Maintainer volunteers, subject to
-a one-week veto window) organizes the founding Technical Committee election; before its
+[`elections.md`](../elections.md#elections-organizing-group). The founding EOG
+(Maintainer volunteers, subject to a one-week veto window) organizes the founding Technical Committee election; before its
 term ends, the sitting Technical Committee selects the people who will organize its own
 next election, which may or may not be the same people the Steering Committee selects
 for its election.

@@ -13,6 +13,7 @@ This governance explains how the project is run.
   - [Maintainers](#maintainers)
     - [Becoming a Maintainer](#becoming-a-maintainer)
     - [Removing a Maintainer](#removing-a-maintainer)
+  - [Steering and Technical Committees](#steering-and-technical-committees)
   - [Meetings](#meetings)
   - [CNCF Resources](#cncf-resources)
   - [Code of Conduct](#code-of-conduct)
@@ -128,6 +129,24 @@ Depending on the reason for removal, a Maintainer may be converted to Emeritus
 status.  Emeritus Maintainers will still be consulted on some project matters,
 and can be rapidly returned to Maintainer status if their availability changes.
 
+
+## Steering and Technical Committees
+
+Alongside the Maintainer Council, Flatcar has two committees, adopted by a vote of the
+Maintainers on October 16, 2026:
+
+* The [Steering Committee](committees/steering-committee/charter.md) looks after the
+  non-technical side of the project: governance, community structure, project assets,
+  and Flatcar's relationship with the CNCF.
+* The [Technical Committee](committees/technical-committee/charter.md) looks after the
+  technical health and direction of the project: architecture, project-wide technical
+  standards, and technical escalations.
+
+The Maintainer Council remains the main governing body of the project, and day-to-day
+work stays with the Maintainers and their subgroups. See the
+[committees overview](committees/README.md) for a summary and
+[committee elections](committees/elections.md) for how members are chosen. Changes to
+the committee charters follow the "Changes to this charter" section of each charter.
 
 ## Meetings
 
