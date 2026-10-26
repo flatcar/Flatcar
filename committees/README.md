@@ -1,20 +1,19 @@
-> **📋 PROPOSAL: this document is a governance proposal and has not been adopted.**
+# Flatcar Steering and Technical Committees
 
-# Flatcar Container Linux Governance
+**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
 
-**Status:** PROPOSAL
-
-This proposal outlines the updated governance framework for Flatcar Container Linux.
-It introduces two complementary governing bodies: the Steering Committee and the
-Technical Committee, providing structured leadership while maintaining the core
-responsibilities of the existing Maintainer Council and subgroups.
+   This document gives an overview of the committees in
+   [Flatcar's governance](../governance.md).
+   It introduces two complementary governing bodies: the Steering Committee and the
+   Technical Committee, providing structured leadership while maintaining the core
+   responsibilities of the existing Maintainer Council and subgroups.
 
 | Body | Primary Focus | Founding Size & Term | Ongoing Term | Voting Method |
 | --- | --- | --- | --- | --- |
 | [Steering Committee](steering-committee/charter.md) | Non-technical governance, project assets, community structure, CNCF relations | 5 seats (1 year) | 2 years | Condorcet |
 | [Technical Committee](technical-committee/charter.md) | Architecture, technical standards, cross-cutting engineering, technical escalations | 5 seats (1 year) | 2 years | Condorcet |
 
-## Key Proposal Details
+## Key Details
 
 - **Steering Committee Focus:** Non-technical governance, project vision, community
   structure, asset management, and CNCF/external relations.
@@ -33,11 +32,10 @@ responsibilities of the existing Maintainer Council and subgroups.
   Technical Committee at the same time. Serving on one committee and later standing
   for the other, at a different time, is allowed.
 
-## Documents in this proposal
+## Documents
 
 - [`steering-committee/charter.md`](steering-committee/charter.md): what the Steering
   Committee is for, what it does, and how it is run.
-- [`steering-committee/elections.md`](steering-committee/elections.md): how Steering
-  Committee elections work.
+- [`elections.md`](elections.md): how elections for both committees work.
 - [`technical-committee/charter.md`](technical-committee/charter.md): what the
   Technical Committee is for, what it does, and how it is run.
