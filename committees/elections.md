@@ -13,7 +13,10 @@ described in their respective charters.
 
 ## What is already decided
 
-For an overview of both committees, see [README.md](README.md). The founding-term rules are set out in the [Steering Committee charter](steering-committee/charter.md) and the [Technical Committee charter](technical-committee/charter.md). Where this document and a charter differ, the charter applies.
+   For an overview of both committees, see [README.md](README.md). The founding-term
+   rules are set out in the [Steering Committee charter](steering-committee/charter.md)
+   and the [Technical Committee charter](technical-committee/charter.md). Where this
+   document and a charter differ, the charter applies.
 
 ## Open design questions
 

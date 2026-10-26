@@ -2,7 +2,11 @@
 
 **Status:** Adopted October 16, 2026 by a vote of the Maintainers.
 
-This document gives an overview of the committees in [Flatcar's governance](../governance.md). It introduces two complementary governing bodies: the Steering Committee and the Technical Committee, providing structured leadership while maintaining the core responsibilities of the existing Maintainer Council and subgroups.
+   This document gives an overview of the committees in
+   [Flatcar's governance](../governance.md).
+   It introduces two complementary governing bodies: the Steering Committee and the
+   Technical Committee, providing structured leadership while maintaining the core
+   responsibilities of the existing Maintainer Council and subgroups.
 
 | Body | Primary Focus | Founding Size & Term | Ongoing Term | Voting Method |
 | --- | --- | --- | --- | --- |
