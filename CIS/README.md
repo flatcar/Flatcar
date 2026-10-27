@@ -6,16 +6,36 @@ Flatcar Container Linux being a narrow use-case distribution causes many results
 
 ## Report Generation
 
-After some annoyance dealing with [ruby](https://www.ruby-lang.org/) and [inspec](https://www.inspec.io/downloads/), I was able to run the report. Documenting here what I did and what I got.
+Running the CIS benchmark suite can be done either using Docker/Podman (recommended, no local Ruby installation required) or via a local Ruby/InSpec setup.
 
-1. Installed inspec via gem: `gem install inspec-bin --user-install`
-2. Cloned the benchmark repo: `git clone https://github.com/dev-sec/cis-dil-benchmark.git`
-3. Started a [Flatcar QEMU image](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/), copied the authorized keys to root.
-4. Ran the test suite in the image, for level 1 and 2 (the default):
+### Option A: Containerized Execution (Recommended)
+
+1. Clone the benchmark repository:
+   ```shell
+   git clone https://github.com/dev-sec/cis-dil-benchmark.git
+   ```
+2. Start a [Flatcar QEMU image](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/) and copy authorized SSH keys to root.
+3. Run InSpec using Docker/Podman (connecting to the host QEMU SSH port `2222`):
+   ```shell
+   # Level 1 Benchmark Scan
+   docker run -it --rm -v $(pwd):/share chef/inspec exec /share/cis-dil-benchmark \
+     -t ssh://root@host.docker.internal:2222 --input=cis_level=1 > inspec-report-level1.txt
+
+   # Level 2 Benchmark Scan
+   docker run -it --rm -v $(pwd):/share chef/inspec exec /share/cis-dil-benchmark \
+     -t ssh://root@host.docker.internal:2222 > inspec-report-level2.txt
+   ```
+
+### Option B: Local Ruby/InSpec Execution
+
+1. Install InSpec via gem: `gem install inspec-bin --user-install`
+2. Clone the benchmark repo: `git clone https://github.com/dev-sec/cis-dil-benchmark.git`
+3. Start a [Flatcar QEMU image](https://www.flatcar.org/docs/latest/reference/developer-guides/sdk-modifying-flatcar/) and copy authorized SSH keys to root.
+4. Run the test suite against QEMU:
 
 ```shell
- ~/.gem/ruby/2.7.0/bin/inspec exec --no-color ./cis-dil-benchmark/ -t ssh://root@localhost:2222 --input=cis_level=1 > ../debug/inspec-report-level1.txt
- ~/.gem/ruby/2.7.0/bin/inspec exec --no-color ./cis-dil-benchmark/ -t ssh://root@localhost:2222 >  ../debug/inspec-report.txt
+ inspec exec --no-color ./cis-dil-benchmark/ -t ssh://root@localhost:2222 --input=cis_level=1 > inspec-report-level1.txt
+ inspec exec --no-color ./cis-dil-benchmark/ -t ssh://root@localhost:2222 > inspec-report-level2.txt
 ```
 
 Results:
