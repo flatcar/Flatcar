@@ -23,6 +23,7 @@ Please propose ownership by filing a PR for this document.
 | Alibaba Cloud |                              |       |             | [no owner] |                      |       |
 | Yandex |                                     |       |             | [no owner] |                      |       |
 | Brightbox |                 X                |   X   |      X      | @flatcar/flatcar-maintainers |    |       |
+| STACKIT | X | X | X | @flatcar/flatcar-maintainers |  | Available for STACKIT Kubernetes Engine. Bring-your-own-image on STACKIT VMs, uploaded via API, CLI or SDK. |
 
 ## Private Cloud (machines)
 
@@ -42,6 +43,7 @@ Please propose ownership by filing a PR for this document.
 |-------------|--------------------------------|-------|-------------|-------|---------------------------|-------|
 | EKS         |                                |   X   |             | [no owner] |                      |       |
 | Giant Swarm |                                |   X   |             | Provider |                        |       |
+| STACKIT |  | X | | Provider |  |  |
 
 ## Cluster API
 
