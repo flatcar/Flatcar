@@ -41,9 +41,9 @@ work.
   [AI-Assisted Contributions](CONTRIBUTING.md#ai-assisted-contributions): the person
   understands, can explain and stands behind everything they submit. Low-effort, bulk
   or wholesale AI-generated contributions don't count.
-- Sponsorship from two Maintainers who have worked with them directly, at least one of
-  whom works for a different company from the person joining. Sponsors confirm on the
-  PR that they know the person's work and that it meets these requirements.
+- Sponsorship from two Maintainers who know their work, at least one of whom works for a
+  different company from the person joining. Sponsors confirm on the PR that they've
+  looked at the person's contributions and that they meet these requirements.
 - Two-factor authentication turned on for their GitHub account.
 
 **Privileges**
