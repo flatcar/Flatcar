@@ -4,6 +4,19 @@ Who is using Flatcar?
 The following is a list of adopters who have publicly spoken about their use of Flatcar, or who have added themselves to this list.
 
 
+What counts as an adopter
+-------------------------
+
+We follow the [CNCF TOC's definition of an adopter](https://github.com/cncf/toc/blob/main/FAQ.md#what-is-the-definition-of-an-adopter): an organisation that currently and actively uses Flatcar as it is intended, or repackages it as a core part of a service it offers. Individuals running Flatcar, for example in a home lab, are welcome too.
+
+The CNCF distinguishes two kinds of adopter, and this list includes only the first:
+
+* **Direct adopters** deploy, configure, package or develop Flatcar themselves. For example, a company running its own Kubernetes clusters on Flatcar, or a provider whose managed Kubernetes service is built on Flatcar.
+* **Transitive adopters** benefit from Flatcar without handling it themselves, such as the customers of that managed Kubernetes service. They are not listed here; the provider is listed instead. If a service lets its customers deploy or configure Flatcar themselves, those customers are direct adopters too and are welcome to add themselves.
+
+You can also say what type of adopter you are, using the CNCF's categories: end user, CNCF End-User member, Service Provider, Consultancy, or open source project. This is optional.
+
+
 Adding yourself as a user
 -------------------------
 
@@ -13,6 +26,7 @@ If you are using Flatcar, please consider adding yourself as a user with a quick
       D: Description 
       L: Link with further information (optional) 
       C: Contacts available for questions (optional)
+      T: Type of adopter (optional): end user, CNCF End-User member, Service Provider, Consultancy or open source project
 
 Example entry:
 
@@ -20,6 +34,7 @@ Example entry:
       D: Using Flatcar for running Kubernetes in Azure via Cluster API
       L: https://www.exampleuser.com 
       C: Discord: @discordnick and/or Slack: @slacknick and/or Email: nick [at] exampleuser [dot] com
+      T: end user
     
 
 Requirements to be listed
@@ -27,6 +42,7 @@ Requirements to be listed
 
 * You must represent the user listed. Do not add entries on behalf of
    other users, unless adding a link to a public announcement / blog post.
+* You must be a direct adopter, as described in "What counts as an adopter" above.
 * Commercial or production use is not required. A user can be an end user, cloud service provider or consultant as long as it is a permanent deployment and not a trial deployment. A well-done home lab setup can be equally
    interesting as a large-scale commercial deployment.
 
