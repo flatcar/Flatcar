@@ -73,9 +73,11 @@ Members can step down at any time by opening a PR to remove themselves from
 [MEMBERS.md](MEMBERS.md).
 
 A Member with no meaningful contributions in the previous 12 months may be removed by a
-Maintainer through a PR, after a friendly check-in. Former Members can rejoin the same
-way they first joined.
+Maintainer through a PR, after a friendly check-in. Members who stepped down or were
+removed for inactivity can come back just by asking: they open a PR adding themselves
+back to MEMBERS.md, and any Maintainer can merge it, with no new nomination.
 
 The Maintainers may also remove a Member for a breach of the Code of Conduct or for
 contributions made in bad faith, such as passing off someone else's or automated work
-as their own, by a simple majority vote.
+as their own, by a simple majority vote. Someone removed this way goes through the full
+process again if they want to return.
