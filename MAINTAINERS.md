@@ -7,24 +7,30 @@ See [Governance](https://github.com/flatcar/Flatcar/blob/main/governance.md) for
 
 Official Flatcar project maintainers. All maintainers listed here should also be present in the [CNCF project maintainers list](https://github.com/cncf/foundation/blob/main/project-maintainers.csv).
 
-| Name              | GitHub                                                 |
-| ----------------- | ------------------------------------------------------ |
-| James Le Cuirot   | [@chewi](https://github.com/chewi)                     |
-| Thilo Fromm       | [@t-lo](https://github.com/t-lo)                       |
-| Krzesimir Nowak   | [@krnowak](https://github.com/krnowak)                 |
-| Sayan Chowdhury   | [@sayanchowdhury](https://github.com/sayanchowdhury)   |
-| Gabriel Samfira   | [@gabriel-samfira](https://github.com/gabriel-samfira) |
-| Kai Lüke          | [@pothos](https://github.com/pothos)                   |
-| Adrian Vladu      | [@ader1990](https://github.com/ader1990)               |
-| Daniel Zatovic    | [@danzatt](https://github.com/danzatt)                 |
-| Jeremi Piotrowski | [@jepio](https://github.com/jepio)                     |
-| Dongsu Park       | [@dongsupark](https://github.com/dongsupark)           |
-| Danielle Tal      | [@miao0miao](https://github.com/miao0miao)             |
-| Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)               |
-| Ervin Racz        | [@ervcz](https://github.com/ervcz)                     |
-| Jan Bronicki      | [@John15321](https://github.com/John15321)             |
-| Lexi Nadolski     | [@lexinadolski](https://github.com/lexinadolski)       |
-| Robin Schneider   | [@robinschneider](https://github.com/robinschneider)   |
+You can reach any maintainer through their GitHub handle, or all maintainers privately at [maintainers@flatcar-linux.org](mailto:maintainers@flatcar-linux.org).
+
+**Company** is each maintainer's current employer, or Individual. Please keep yours up to date here and in your [LFX profile](https://openprofile.dev), which feeds the CNCF list.
+
+**Subgroups** shows each maintainer's areas of responsibility, from the [Maintainer Subgroups](#maintainer-subgroups) table below. All maintainers also share responsibility for the project as a whole.
+
+| Name              | GitHub                                                 | Company                  | Subgroups                                        |
+| ----------------- | ------------------------------------------------------ | ------------------------ | ------------------------------------------------ |
+| James Le Cuirot   | [@chewi](https://github.com/chewi)                     | Microsoft                | CI                                               |
+| Thilo Fromm       | [@t-lo](https://github.com/t-lo)                       | Microsoft                | Nebraska, Integrations                           |
+| Krzesimir Nowak   | [@krnowak](https://github.com/krnowak)                 | Microsoft                |                                                  |
+| Sayan Chowdhury   | [@sayanchowdhury](https://github.com/sayanchowdhury)   | Microsoft                | Communication, CI, Infra                         |
+| Gabriel Samfira   | [@gabriel-samfira](https://github.com/gabriel-samfira) | Cloudbase Solutions      |                                                  |
+| Kai Lüke          | [@pothos](https://github.com/pothos)                   | amutable                 | Nebraska, Integrations, Communication, CI, Infra |
+| Adrian Vladu      | [@ader1990](https://github.com/ader1990)               | Cloudbase Solutions      |                                                  |
+| Daniel Zatovic    | [@danzatt](https://github.com/danzatt)                 | Microsoft                | Integrations                                     |
+| Jeremi Piotrowski | [@jepio](https://github.com/jepio)                     | NVIDIA                   | Nebraska, CI, Infra                              |
+| Dongsu Park       | [@dongsupark](https://github.com/dongsupark)           | Microsoft                | CI, Infra                                        |
+| Danielle Tal      | [@miao0miao](https://github.com/miao0miao)             | Independent              | Nebraska                                         |
+| Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)               | Microsoft                | Nebraska, Integrations, Communication, CI, Infra |
+| Ervin Racz        | [@ervcz](https://github.com/ervcz)                     | Microsoft                | Nebraska, Communication                          |
+| Jan Bronicki      | [@John15321](https://github.com/John15321)             | Microsoft                | Integrations, Communication, CI, Infra           |
+| Lexi Nadolski     | [@lexinadolski](https://github.com/lexinadolski)       | Microsoft                | Communication                                    |
+| Robin Schneider   | [@robinschneider](https://github.com/robinschneider)   | STACKIT                  |                                                  |
 
 ## Flatcar Security Team
 
