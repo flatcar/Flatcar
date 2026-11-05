@@ -243,6 +243,10 @@ the second-term rules produced under the founding mandate, passes by a two-third
 supermajority of seated members. If a member abstains, the thresholds apply to the
 members actually voting.
 
+Every decision also needs yes votes from members of at least two different companies,
+so no single company can decide on its own, whatever the Committee's size or who
+attends.
+
 Once the founding Committee defines a different seat count or structure for
 subsequent terms (see [Founding mandate](#founding-mandate) above), it may revisit
 whether these thresholds remain practical at that size. Until then:

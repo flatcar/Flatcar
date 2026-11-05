@@ -199,9 +199,11 @@ The project may choose to limit the number of seats held by people from the same
 company. For these limits, a company includes its subsidiaries and affiliates.
 
 The Technical Committee uses a deliberately loose limit: no single company may have more
-than 4 members on the Bootstrap Technical Committee. This stops any one company filling
-the Committee without forcing an unrealistic spread while the contributor base is still
-concentrated. A tighter limit for later terms is part of the founding mandate.
+than 4 members on the Bootstrap Technical Committee. Together with the rule that every
+decision needs yes votes from at least two companies (see Decision-making below), this
+stops any one company controlling the Committee, without forcing an unrealistic spread
+while the contributor base is still concentrated. A tighter limit for later terms is part
+of the founding mandate.
 
 If more people from one company volunteer than the limit allows, that company decides
 which of them join.
@@ -241,6 +243,10 @@ consensus, so a single member cannot block progress on the founding mandate. A n
 technical decision passes by simple majority of seated members. A major architectural or
 breaking decision, and any charter change, passes by a two-thirds supermajority of seated
 members. If a member abstains, the thresholds apply to the members actually voting.
+
+Every decision also needs yes votes from members of at least two different companies,
+so no single company can decide on its own, whatever the Committee's size or who
+attends.
 
 Once the founding Committee defines a different seat count or structure for
 subsequent terms (see "Founding mandate" above), it may revisit whether these
