@@ -28,11 +28,28 @@ jobs:
     steps:
       - name: Set the start and end dates
         shell: bash
+        # The dispatch inputs are passed through the environment instead of
+        # being expanded into the script below: an expanded expression becomes
+        # part of the script itself and would therefore be run as shell code.
+        env:
+          INPUT_START_DATE: ${{ inputs.start_date }}
+          INPUT_END_DATE: ${{ inputs.end_date }}
         run: |
           set -euo pipefail
-          if [[ -n "${{inputs.start_date}}" && -n "${{inputs.end_date}}" ]] ; then
-            start_date="${{inputs.start_date}}"
-            end_date="${{inputs.end_date}}"
+
+          input_start_date="${INPUT_START_DATE:-}"
+          input_end_date="${INPUT_END_DATE:-}"
+
+          if [[ -n "$input_start_date" || -n "$input_end_date" ]] ; then
+            # Both dates end up in $GITHUB_ENV and in the search queries of
+            # every following step, so accept plain YYYY-MM-DD only.
+            date_re='^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
+            if [[ ! "$input_start_date" =~ $date_re || ! "$input_end_date" =~ $date_re ]] ; then
+              echo "::error::start_date and end_date must both be given in YYYY-MM-DD format"
+              exit 1
+            fi
+            start_date="$input_start_date"
+            end_date="$input_end_date"
           else
             start_date=$(date -d "last month" +%Y-%m-%d)
             end_date=$(date -d "yesterday" +%Y-%m-%d)
