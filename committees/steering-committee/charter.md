@@ -1,6 +1,7 @@
 # Flatcar Steering Committee Charter
 
-**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
+**Status:** Adopted October 16, 2026 and amended in November 2026 by votes of the
+Maintainers.
 
 This document describes what the Flatcar Steering Committee is for, what it does, and
 how it is run.
@@ -10,8 +11,9 @@ how it is run.
 The Steering Committee is responsible for the non-technical side of the Flatcar project.
 It handles governance, community structure, project resources, and long-term direction.
 
-The Steering Committee exists to serve the project and the community. It does not
-replace the Maintainer Council, which remains the main governing body of the project.
+The Steering Committee exists to serve the project and the community. It sets the
+project's non-technical direction, while the Maintainer Council runs the project day to
+day.
 
 ## How it works
 
@@ -103,28 +105,35 @@ expected to work together, each deciding the parts that fall under their own rem
 ### Founding term
 
 The first Steering Committee term (the "founding term") uses fixed starting parameters
-so the project can bootstrap the Committee before full election rules exist:
+so the project can bootstrap the Committee before full election rules exist. During the
+founding term, the Committee is called the Bootstrap Steering Committee.
 
-- **Size:** 5 seats, with no distinction between seat types.
+- **Size:** open, with no distinction between seat types. Every eligible person who
+  volunteers and is not vetoed joins, within the company representation limit below.
 - **Length:** 1 year.
 - **Candidate eligibility:** any Maintainer or recognised Contributor is automatically
-  eligible to stand. Known and active community members or users are also eligible, but
-  only after a vetting review run by the Maintainers (this applies to community members
-  and users only, not to Maintainers or Contributors). Vetting confirms the person has
+  eligible. Known and active community members or users are also eligible if they have
   made multiple meaningful contributions to Flatcar, technical or non-technical, in the
   previous 12 months, following the model of Istio's project-member definition. The
-  review looks at the substance and recency of those contributions, not employer or
-  title.
+  Maintainers check this during the veto period below, looking at the substance and
+  recency of those contributions, not employer or title. Anyone who works for, or
+  represents, an organisation listed in [ADOPTERS.md](../../ADOPTERS.md) is also
+  eligible without the contributions check, so that users have a voice in the
+  project. The Maintainers confirm the listing during the veto period.
 - **Concurrent membership:** a person cannot serve on the Steering Committee and the
   Technical Committee at the same time. Serving on one committee and later standing
   for, or serving on, the other (at a different time) is allowed.
-- **Voter eligibility:** all Maintainers and Contributors are eligible to vote.
-  Active, recognised community members or users may also vote if they request voting
-  rights. For the founding election these requests are approved by the Maintainer
-  Council, since the Steering Committee does not yet exist. From the second term onward,
-  approval moves to the Steering Committee itself, matching how Istio and Kubernetes
-  route voting exceptions through the elected body.
-- **Voting method:** Condorcet voting.
+- **Selection:** there is no election in the founding term. Eligible people volunteer
+  during a two-week period by commenting on a public issue in the flatcar/Flatcar
+  repository; anyone who is not a Maintainer or recognised Contributor links examples of
+  their contributions, or names the listed adopter they work for or represent. The list
+  of volunteers is then posted, and any Maintainer may veto a volunteer within one week,
+  sharing the reason with the other Maintainers. Volunteers who are not vetoed join the
+  Committee when that week ends.
+- **Voter eligibility:** there is no vote in the founding term. From the second term
+  onward, requests for voting rights from active, recognised community members or users
+  are approved by the Steering Committee itself, matching how Istio and Kubernetes route
+  voting exceptions through the elected body.
 
 One of the founding term Committee's primary responsibilities is to define the
 rules for seat count, seat types, eligibility, terms, staggering, company
@@ -135,13 +144,13 @@ subsequent terms are marked X pending that work.
 
 ### Size
 
-- **Founding term:** 5 seats (see "Founding term" above).
+- **Founding term:** open (see "Founding term" above).
 - **Subsequent terms:** The Steering Committee has X seats, to be determined by the
   founding Steering Committee as part of the founding mandate.
 
 ### Seat types
 
-- **Founding term:** No seat types; all 5 seats are the same.
+- **Founding term:** No seat types; all seats are the same.
 - **Subsequent terms:** The Steering Committee may include one or more categories of
   seats, such as:
 
@@ -182,15 +191,16 @@ above)*.
 ### Company representation
 
 The project may choose to limit the number of seats held by people from the same
-company.
+company. For these limits, a company includes its subsidiaries and affiliates.
 
-No single company may hold more than 2 of the 5 seats on the founding Steering
-Committee. From the second term onward, no single company may hold more than 1 seat. The
-looser founding-term limit reflects the current maintainer mix; the tighter ongoing
-limit keeps the Committee genuinely multi-company once the contributor base can support
-it.
+No single company may have more than 2 members on the Bootstrap Steering Committee.
+From the second term onward, no single company may hold more than 1 seat. The looser
+founding-term limit reflects the current maintainer mix; the tighter ongoing limit keeps
+the Committee genuinely multi-company once the contributor base can support it.
 
-If an election result would put a company over its limit, the lowest-ranked candidate(s)
+In the founding term, if more people from one company volunteer than the limit allows,
+that company decides which of them join. From the second term onward, if an election
+result would put a company over its limit, the lowest-ranked candidate(s)
 from the over-represented company are dropped one at a time, and the freed seat(s) go to
 the next-highest-ranked eligible candidate(s) from other companies. If a member changes
 employer mid-term in a way that breaks the limit, they are treated as having resigned the
@@ -198,16 +208,21 @@ seat, which is then filled through the Vacancies process below.
 
 ### Vacancies
 
-If a member leaves or is removed before the end of their term, the vacancy is filled by
-the next-highest-ranked, still-eligible candidate from that seat's original election,
+In the founding term there is no election ranking, so if a member leaves or is removed,
+the seat may simply close, or the Committee may invite an eligible person to join,
+subject to the same one-week Maintainer veto.
+
+From the second term onward, if a member leaves or is removed before the end of their
+term, the vacancy is filled by the next-highest-ranked, still-eligible candidate from
+that seat's original election,
 i.e. the runner-up who did not win a seat moves in to serve out the remainder of the
 term. If no such candidate is available, the vacancy-filling process is X.
 
 ### Removal
 
 A Steering Committee member may be removed for sustained inactivity or for a serious
-breach of the Code of Conduct. Removal requires a 4 of 5 supermajority vote of the other
-seated members; the member in question does not vote on their own removal.
+breach of the Code of Conduct. Removal requires a two-thirds supermajority vote of the
+other seated members; the member in question does not vote on their own removal.
 
 Removal is initiated by any seated member raising it with the Committee, followed by that
 vote. The reason and outcome are recorded in the project's governance records, and the
@@ -223,17 +238,21 @@ The meaning and privileges of Emeritus status are X.
 
 For the founding term, the Steering Committee decides by vote rather than full
 consensus, so a single member cannot block progress on the founding mandate. A normal
-decision passes by simple majority of the seats (3 of 5). A charter change, and adoption
-of the second-term rules produced under the founding mandate, passes by supermajority
-(4 of 5). If a seat is vacant or a member abstains, the thresholds apply to the seats
-actually filled and voting.
+decision passes by simple majority of seated members. A charter change, and adoption of
+the second-term rules produced under the founding mandate, passes by a two-thirds
+supermajority of seated members. If a member abstains, the thresholds apply to the
+members actually voting.
+
+Every decision also needs yes votes from members of at least two different companies,
+so no single company can decide on its own, whatever the Committee's size or who
+attends.
 
 Once the founding Committee defines a different seat count or structure for
 subsequent terms (see [Founding mandate](#founding-mandate) above), it may revisit
 whether these thresholds remain practical at that size. Until then:
 
 - A normal decision passes by simple majority of the Committee.
-- A charter change or founding-mandate adoption passes by a 4 of 5 supermajority.
+- A charter change or founding-mandate adoption passes by a two-thirds supermajority.
 - Other special thresholds are X.
 
 The exact voting process, including where votes happen and how long they stay open, is
