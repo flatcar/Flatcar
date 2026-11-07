@@ -12,8 +12,8 @@ on:
         description: |
           Custom end date for metrics generation in YYYY-MM-DD format.
         required: true
-  # Run on every 22th of the month. This guarantees that this action runs
-  # before the Dev Sync (every 4th Tuesday of the month in the afternoon).
+  # Run on every 22nd of the month. This guarantees that this action runs
+  # before the Dev Sync (every 4th Thursday of the month in the afternoon).
   schedule:
     - cron: '0 0 22 * *'
 
