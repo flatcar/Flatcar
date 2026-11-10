@@ -1,7 +1,8 @@
 # Flatcar Steering and Technical Committees
 
-**Status:** Adopted October 16, 2026 and amended in November 2026 by votes of the
-Maintainers.
+**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
+
+* Last updated: November 2026 (https://github.com/flatcar/Flatcar/pull/2483)
 
 This document gives an overview of the committees in
 [Flatcar's governance](../governance.md).
