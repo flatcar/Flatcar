@@ -1,7 +1,8 @@
 # Flatcar Steering Committee Charter
 
-**Status:** Adopted October 16, 2026 and amended in November 2026 by votes of the
-Maintainers.
+**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
+
+* Last updated: November 2026 (https://github.com/flatcar/Flatcar/pull/2483)
 
 This document describes what the Flatcar Steering Committee is for, what it does, and
 how it is run.
