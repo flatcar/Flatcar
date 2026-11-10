@@ -1,41 +1,41 @@
 # Maintainers
-
+ 
 See [Governance](https://github.com/flatcar/Flatcar/blob/main/governance.md) for governance, access, and voting guidelines as well as maintainer responsibilities. Everybody listed in this file is a maintainer as per governance definition. See also [Onboarding](https://github.com/flatcar/Flatcar/blob/main/ONBOARDING.md) for the new maintainer onboarding checklist, [Contributing](https://github.com/flatcar/Flatcar/blob/main/CONTRIBUTING.md) for contribution guidelines, [README](https://github.com/flatcar/Flatcar/blob/main/README.md) for general project information, and [Security](https://github.com/flatcar/Flatcar/blob/main/SECURITY.md) for security policies and reporting.
-
-
+ 
+ 
 ## Flatcar Maintainers
-
+ 
 Official Flatcar project maintainers. All maintainers listed here should also be present in the [CNCF project maintainers list](https://github.com/cncf/foundation/blob/main/project-maintainers.csv).
-
+ 
 You can reach any maintainer through their GitHub handle, or all maintainers privately at [maintainers@flatcar-linux.org](mailto:maintainers@flatcar-linux.org).
-
-**Company** is each maintainer's current employer, or Individual. Please keep yours up to date here and in your [LFX profile](https://openprofile.dev), which feeds the CNCF list.
-
-**Subgroups** shows each maintainer's areas of responsibility, from the [Maintainer Subgroups](#maintainer-subgroups) table below. All maintainers also share responsibility for the project as a whole.
-
-| Name              | GitHub                                                 | Company                  | Subgroups                                        |
-| ----------------- | ------------------------------------------------------ | ------------------------ | ------------------------------------------------ |
-| James Le Cuirot   | [@chewi](https://github.com/chewi)                     | Microsoft                | CI                                               |
-| Thilo Fromm       | [@t-lo](https://github.com/t-lo)                       | Microsoft                | Nebraska, Integrations                           |
-| Krzesimir Nowak   | [@krnowak](https://github.com/krnowak)                 | Microsoft                |                                                  |
-| Sayan Chowdhury   | [@sayanchowdhury](https://github.com/sayanchowdhury)   | Microsoft                | Communication, CI, Infra                         |
-| Gabriel Samfira   | [@gabriel-samfira](https://github.com/gabriel-samfira) | Cloudbase Solutions      |                                                  |
-| Kai Lüke          | [@pothos](https://github.com/pothos)                   | amutable                 | Nebraska, Integrations, Communication, CI, Infra |
-| Adrian Vladu      | [@ader1990](https://github.com/ader1990)               | Cloudbase Solutions      |                                                  |
-| Daniel Zatovic    | [@danzatt](https://github.com/danzatt)                 | Microsoft                | Integrations                                     |
-| Jeremi Piotrowski | [@jepio](https://github.com/jepio)                     | NVIDIA                   | Nebraska, CI, Infra                              |
-| Dongsu Park       | [@dongsupark](https://github.com/dongsupark)           | Microsoft                | CI, Infra                                        |
-| Danielle Tal      | [@miao0miao](https://github.com/miao0miao)             | Independent              | Nebraska                                         |
-| Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)               | Microsoft                | Nebraska, Integrations, Communication, CI, Infra |
-| Ervin Racz        | [@ervcz](https://github.com/ervcz)                     | Microsoft                | Nebraska, Communication                          |
-| Jan Bronicki      | [@John15321](https://github.com/John15321)             | Microsoft                | Integrations, Communication, CI, Infra           |
-| Lexi Nadolski     | [@lexinadolski](https://github.com/lexinadolski)       | Microsoft                | Communication                                    |
-| Robin Schneider   | [@robinschneider](https://github.com/robinschneider)   | Schwarz Digits Cloud GmbH & Co. KG | Infra                                            |
-
+ 
+**Company** is each maintainer's current employer, or Independent. Please keep yours up to date here and in your [LFX profile](https://openprofile.dev), which feeds the CNCF list.
+ 
+Each maintainer's areas of responsibility are listed in [Maintainer Subgroups](#maintainer-subgroups) below. All maintainers also share responsibility for the project as a whole.
+ 
+| Name              | GitHub                                                 | Company                            |
+| ----------------- | ------------------------------------------------------ | ---------------------------------- |
+| James Le Cuirot   | [@chewi](https://github.com/chewi)                     | Microsoft                          |
+| Thilo Fromm       | [@t-lo](https://github.com/t-lo)                       | Microsoft                          |
+| Krzesimir Nowak   | [@krnowak](https://github.com/krnowak)                 | Microsoft                          |
+| Sayan Chowdhury   | [@sayanchowdhury](https://github.com/sayanchowdhury)   | Microsoft                          |
+| Gabriel Samfira   | [@gabriel-samfira](https://github.com/gabriel-samfira) | Cloudbase Solutions                |
+| Kai Lüke          | [@pothos](https://github.com/pothos)                   | amutable                           |
+| Adrian Vladu      | [@ader1990](https://github.com/ader1990)               | Cloudbase Solutions                |
+| Daniel Zatovic    | [@danzatt](https://github.com/danzatt)                 | Microsoft                          |
+| Jeremi Piotrowski | [@jepio](https://github.com/jepio)                     | Independent                             |
+| Dongsu Park       | [@dongsupark](https://github.com/dongsupark)           | Microsoft                          |
+| Danielle Tal      | [@miao0miao](https://github.com/miao0miao)             | Independent                        |
+| Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)               | Microsoft                          |
+| Ervin Racz        | [@ervcz](https://github.com/ervcz)                     | Microsoft                          |
+| Jan Bronicki      | [@John15321](https://github.com/John15321)             | Microsoft                          |
+| Lexi Nadolski     | [@lexinadolski](https://github.com/lexinadolski)       | Microsoft                          |
+| Robin Schneider   | [@robinschneider](https://github.com/robinschneider)   | Schwarz Digits Cloud GmbH & Co. KG |
+ 
 ## Flatcar Security Team
-
+ 
 The Flatcar Security Task Force.
-
+ 
 | Name              | GitHub                                               |
 | ----------------- | ---------------------------------------------------- |
 | Vincent Batts     | [@vbatts](https://github.com/vbatts)                 |
@@ -45,11 +45,11 @@ The Flatcar Security Task Force.
 | Kai Lüke          | [@pothos](https://github.com/pothos)                 |
 | Dongsu Park       | [@dongsupark](https://github.com/dongsupark)         |
 | Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)             |
-
+ 
 ## Maintainer Subgroups
-
+ 
 Subgroups are teams of maintainers responsible for specific sets of repositories. They serve as primary reviewers and first responders for changes in their area. These subgroups are enforced via [GitHub teams](https://github.com/orgs/flatcar/teams) and `CODEOWNERS` files in each repository. All groups and subgroups listed in this document are sourced from the [Flatcar GitHub teams page](https://github.com/orgs/flatcar/teams). Repositories not listed below have `@flatcar/flatcar-maintainers` assigned in their `CODEOWNERS`, meaning all maintainers will be requested for review.
-
+ 
 | Subgroup                  | Description                                                     | Members                                                                                                                                                                                                                                                                                                            | Repositories                                                                                                                                                                                                                                                           |
 | ------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **nebraska-maintainers**  | Reviews Nebraska-related update and Omaha projects for Flatcar. | [@t-lo](https://github.com/t-lo)<br>[@pothos](https://github.com/pothos)<br>[@jepio](https://github.com/jepio)<br>[@miao0miao](https://github.com/miao0miao)<br>[@tormath1](https://github.com/tormath1)<br>[@ervcz](https://github.com/ervcz)                                                                     | [flatcar-maintainer-private](https://github.com/flatcar/flatcar-maintainer-private)<br>[go-omaha](https://github.com/flatcar/go-omaha)<br>[nebraska](https://github.com/flatcar/nebraska)<br>[nebraska-update-agent](https://github.com/flatcar/nebraska-update-agent) |
@@ -57,3 +57,4 @@ Subgroups are teams of maintainers responsible for specific sets of repositories
 | **flatcar-communication** | Reviews website, social, and communication content for Flatcar. | [@sayanchowdhury](https://github.com/sayanchowdhury)<br>[@pothos](https://github.com/pothos)<br>[@LexiNadolski](https://github.com/LexiNadolski)<br>[@tormath1](https://github.com/tormath1)<br>[@ervcz](https://github.com/ervcz)<br>[@John15321](https://github.com/John15321)                                   | [flatcar-website](https://github.com/flatcar/flatcar-website)<br>[socials](https://github.com/flatcar/socials)                                                                                                                                         |
 | **flatcar-ci**            | Reviews CI/CD and build automation for Flatcar.                 | [@tormath1](https://github.com/tormath1)<br>[@jepio](https://github.com/jepio)<br>[@sayanchowdhury](https://github.com/sayanchowdhury)<br>[@chewi](https://github.com/chewi)<br>[@pothos](https://github.com/pothos)<br>[@dongsupark](https://github.com/dongsupark)<br>[@John15321](https://github.com/John15321) | [mantle](https://github.com/flatcar/mantle)<br>[jenkins-os](https://github.com/flatcar/jenkins-os)<br>[jenkins-secret](https://github.com/flatcar/jenkins-secret)                                                                                                      |
 | **flatcar-infra**         | Reviews infrastructure and secrets management for Flatcar.      | [@tormath1](https://github.com/tormath1)<br>[@John15321](https://github.com/John15321)<br>[@sayanchowdhury](https://github.com/sayanchowdhury)<br>[@jepio](https://github.com/jepio)<br>[@pothos](https://github.com/pothos)<br>[@dongsupark](https://github.com/dongsupark)<br>[@robinschneider](https://github.com/robinschneider)                                       | [flatcar-linux-build-secrets](https://github.com/flatcar/flatcar-linux-build-secrets)<br>[flatcar-linux-infra-secrets](https://github.com/flatcar/flatcar-linux-infra-secrets)<br>[flatcar-linux-infra](https://github.com/flatcar/flatcar-linux-infra)                |
+ 
