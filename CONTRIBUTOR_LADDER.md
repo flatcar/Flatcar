@@ -45,6 +45,7 @@ work.
   different company from the person joining. Sponsors confirm on the PR that they've
   looked at the person's contributions and that they meet these requirements.
 - Two-factor authentication turned on for their GitHub account.
+
 **What being a Member means**
  
 - **Recognition.** Members are listed publicly in [MEMBERS.md](MEMBERS.md) as people
@@ -56,6 +57,7 @@ work.
   the Maintainers know if they need to step back.
 - **A path forward.** Being a Member is the usual step towards becoming a Maintainer,
   and a Member's sponsors can help them build towards it.
+
 **Permissions and voting**
  
 For now, being a Member doesn't come with extra GitHub permissions or a vote.
@@ -68,6 +70,7 @@ For now, being a Member doesn't come with extra GitHub permissions or a vote.
   can, is part of each committee's founding mandate: the Steering Committee decides for
   its own elections and the
   [Technical Committee](committees/technical-committee/charter.md) for its own.
+  
 If either committee adds anything, this ladder will be updated to match, and the
 Maintainers will set up any access in the usual way.
  
