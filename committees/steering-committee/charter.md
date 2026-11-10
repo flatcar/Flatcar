@@ -195,7 +195,7 @@ The project may choose to limit the number of seats held by people from the same
 company. For these limits, a company includes its subsidiaries and affiliates.
 
 No single company may have more than 2 members on the Bootstrap Steering Committee.
-From the second term onward, no single company may hold more than 1 seat. The looser
+From the second term onward, no single company may hold more than 1 seat. The more relaxed
 founding-term limit reflects the current maintainer mix; the tighter ongoing limit keeps
 the Committee genuinely multi-company once the contributor base can support it.
 
