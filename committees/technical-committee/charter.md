@@ -197,7 +197,8 @@ founding term are part of the founding mandate; see "Founding mandate" above)*.
 ### Company representation
 
 The project may choose to limit the number of seats held by people from the same
-company. For these limits, a company includes its subsidiaries and affiliates.
+company. For these limits and all voting requirements in this charter, a company
+includes its subsidiaries and affiliates.
 
 The Technical Committee uses a deliberately loose limit: no single company may have more
 than 4 members on the Bootstrap Technical Committee. Together with the rule that every
