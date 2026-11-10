@@ -192,7 +192,8 @@ above)*.
 ### Company representation
 
 The project may choose to limit the number of seats held by people from the same
-company. For these limits, a company includes its subsidiaries and affiliates.
+company. For these limits and all voting requirements in this charter, a company
+includes its subsidiaries and affiliates.
 
 No single company may have more than 2 members on the Bootstrap Steering Committee.
 From the second term onward, no single company may hold more than 1 seat. The more relaxed
