@@ -9,7 +9,7 @@ Official Flatcar project maintainers. All maintainers listed here should also be
  
 You can reach any maintainer through their GitHub handle, or all maintainers privately at [maintainers@flatcar-linux.org](mailto:maintainers@flatcar-linux.org).
  
-**Company** is each maintainer's current employer, or Independent. Please keep yours up to date here and in your [LFX profile](https://openprofile.dev), which feeds the CNCF list.
+**Company** is each maintainer's current employer, or Individual if they contribute independently. Please keep yours up to date here and in your [LFX profile](https://openprofile.dev), which feeds the CNCF list.
  
 Each maintainer's areas of responsibility are listed in [Maintainer Subgroups](#maintainer-subgroups) below. All maintainers also share responsibility for the project as a whole.
  
@@ -23,9 +23,9 @@ Each maintainer's areas of responsibility are listed in [Maintainer Subgroups](#
 | Kai Lüke          | [@pothos](https://github.com/pothos)                   | amutable                           |
 | Adrian Vladu      | [@ader1990](https://github.com/ader1990)               | Cloudbase Solutions                |
 | Daniel Zatovic    | [@danzatt](https://github.com/danzatt)                 | Microsoft                          |
-| Jeremi Piotrowski | [@jepio](https://github.com/jepio)                     | Independent                             |
+| Jeremi Piotrowski | [@jepio](https://github.com/jepio)                     | Individual                         |
 | Dongsu Park       | [@dongsupark](https://github.com/dongsupark)           | Microsoft                          |
-| Danielle Tal      | [@miao0miao](https://github.com/miao0miao)             | Independent                        |
+| Danielle Tal      | [@miao0miao](https://github.com/miao0miao)             | Individual                         |
 | Mathieu Tortuyaux | [@tormath1](https://github.com/tormath1)               | Microsoft                          |
 | Ervin Racz        | [@ervcz](https://github.com/ervcz)                     | Microsoft                          |
 | Jan Bronicki      | [@John15321](https://github.com/John15321)             | Microsoft                          |
