@@ -1,7 +1,8 @@
 # Flatcar Committee Elections
 
-**Status:** Adopted October 16, 2026 and amended in November 2026 by votes of the
-Maintainers.
+**Status:** Adopted October 16, 2026 by a vote of the Maintainers.
+
+* Last updated: November 2026 (https://github.com/flatcar/Flatcar/pull/2483)
 
 This document describes how elections for the Flatcar Steering Committee and Technical
 Committee work.
