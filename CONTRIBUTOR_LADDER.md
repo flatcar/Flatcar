@@ -58,13 +58,18 @@ work.
   and a Member's sponsors can help them build towards it.
 **Permissions and voting**
  
-For now, being a Member doesn't come with extra GitHub permissions or a vote. Whether
-Members should have them, such as triage rights on GitHub or a vote in future committee
-elections, will be decided by the founding
-[Steering Committee](committees/steering-committee/charter.md), which looks after
-community structure and voter eligibility as part of its founding mandate. If it adds
-anything, this ladder will be updated to match, and the Maintainers will set up any
-access in the usual way.
+For now, being a Member doesn't come with extra GitHub permissions or a vote.
+ 
+- **Permissions.** Whether Members should get extra GitHub permissions, such as triage
+  rights, will be decided by the founding
+  [Steering Committee](committees/steering-committee/charter.md), which looks after
+  community structure.
+- **Voting.** Who can vote in future committee elections, including whether Members
+  can, is part of each committee's founding mandate: the Steering Committee decides for
+  its own elections and the
+  [Technical Committee](committees/technical-committee/charter.md) for its own.
+If either committee adds anything, this ladder will be updated to match, and the
+Maintainers will set up any access in the usual way.
  
 **How to become a Member**
  
@@ -103,3 +108,4 @@ Maintainers who step down, or who have been inactive for a year or more, can mov
 emeritus status and are listed in [EMERITUS_MAINTAINERS.md](EMERITUS_MAINTAINERS.md).
 Emeritus Maintainers can return quickly if their availability changes, as described in
 [Removing a Maintainer](governance.md#removing-a-maintainer).
+ 
