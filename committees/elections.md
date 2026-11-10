@@ -66,15 +66,11 @@ founding mandates:
 **Founding term (both committees):**
 
 - Any Maintainer or recognised Contributor is automatically eligible.
-- Known and active community members or users are also eligible if they have made
-  multiple meaningful contributions to Flatcar, technical or non-technical, in the
-  previous 12 months, following the model of Istio's project-member definition.
-- The Maintainers check this during the one-week veto period, looking at the substance
-  and recency of those contributions, not employer or title.
 - Anyone who works for, or represents, an organisation listed in
-  [ADOPTERS.md](../ADOPTERS.md) is also eligible without the contributions check, so
-  that users have a voice in the project. The Maintainers confirm the listing during
-  the veto period.
+  [ADOPTERS.md](../ADOPTERS.md) is also eligible, so that users have a voice in the
+  project. The Maintainers confirm the listing during the veto period.
+- Other community members who contribute regularly can become eligible by first
+  becoming a recognised Contributor.
 - A person cannot serve on the Steering Committee and the Technical Committee at the
   same time. Serving on one committee and later standing for, or serving on, the other
   (at a different time) is allowed.

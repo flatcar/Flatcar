@@ -31,10 +31,9 @@ Technical Committee.
   over two weeks, the list is posted, and any Maintainer may veto a volunteer within one
   week. How members are chosen from the second term onward is part of each committee's
   founding mandate; committee decisions use the voting thresholds defined in each charter.
-- **Candidate Eligibility & Company Limits:** Both committees are open to Maintainers,
-  Contributors, active community members or users with multiple meaningful
-  contributions in the previous 12 months, and anyone who works for, or represents, an
-  organisation listed in [ADOPTERS.md](../ADOPTERS.md). To ensure balanced governance,
+- **Candidate Eligibility & Company Limits:** In the founding term, both committees are
+  open to Maintainers, recognised Contributors, and anyone who works for, or represents,
+  an organisation listed in [ADOPTERS.md](../ADOPTERS.md). To ensure balanced governance,
   no single company may have more than 2 members on the Steering Committee in the
   founding term (1 seat ongoing), or more than 4 members on the Technical Committee in
   the founding term. If more people from one company volunteer, that company decides

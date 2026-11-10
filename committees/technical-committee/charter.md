@@ -116,21 +116,18 @@ Committee.
   the company representation limit below.
 - **Length:** 1 year.
 - **Candidate eligibility:** any Maintainer or recognised Contributor is automatically
-  eligible. Known and active community members or users are also eligible if they have
-  made multiple meaningful contributions to Flatcar, technical or non-technical, in the
-  previous 12 months, following the model of Istio's project-member definition. The
-  Maintainers check this during the veto period below, looking at the substance and
-  recency of those contributions, not employer or title. Anyone who works for, or
-  represents, an organisation listed in [ADOPTERS.md](../../ADOPTERS.md) is also
-  eligible without the contributions check, so that users have a voice in the
-  project. The Maintainers confirm the listing during the veto period.
+  eligible. Anyone who works for, or represents, an organisation listed in
+  [ADOPTERS.md](../../ADOPTERS.md) is also eligible, so that users have a voice in the
+  project. The Maintainers confirm the listing during the veto period. Other community
+  members who contribute regularly can become eligible by first becoming a recognised
+  Contributor.
 - **Concurrent membership:** a person cannot serve on the Technical Committee and the
   Steering Committee at the same time. Serving on one committee and later standing
   for, or serving on, the other (at a different time) is allowed.
 - **Selection:** there is no election in the founding term. Eligible people volunteer
   during a two-week period by commenting on a public issue in the flatcar/Flatcar
-  repository; anyone who is not a Maintainer or recognised Contributor links examples of
-  their contributions, or names the listed adopter they work for or represent. The list
+  repository; anyone who is not a Maintainer or recognised Contributor names the listed
+  adopter they work for or represent. The list
   of volunteers is then posted, and any Maintainer may veto a volunteer within one week,
   sharing the reason with the other Maintainers. Volunteers who are not vetoed join the
   Committee when that week ends.
