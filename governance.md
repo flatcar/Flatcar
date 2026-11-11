@@ -210,8 +210,11 @@ existing maintainers.
 ## Modifying this Charter
 
 Changes to this Governance and its supporting documents need a 2/3 vote of the
-Maintainers. Once the Steering Committee is seated, they also need the Steering
-Committee's approval, using the charter-change threshold in its
-[charter](committees/steering-committee/charter.md#voting). Because the Steering
-Committee has company limits, no single company can change Flatcar's governance on its
-own. The committee charters themselves are changed as each charter describes.
+Maintainers until the Steering Committee is seated. After that, the Steering Committee
+approves them, using the charter-change threshold in its
+[charter](committees/steering-committee/charter.md#voting), so Maintainers don't need
+to vote on every governance change. Changes are still proposed in public as pull
+requests with a discussion period. Because the Steering Committee has company limits
+and every decision needs yes votes from at least two companies, no single company can
+change Flatcar's governance on its own. The committee charters themselves are changed
+as each charter describes.

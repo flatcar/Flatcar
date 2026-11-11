@@ -65,7 +65,7 @@ charter](#changes-to-this-charter)). This includes at least:
 To avoid this work landing in a rush at the very end of the term, the founding Committee
 should publish a first full draft of these rules by roughly month 9 of the 12-month term
 and open a public comment period on it. The rules should then be published as an update
-to this charter, and adopted by the Maintainers per the amendment process described in
+to this charter, and adopted by the Committee per the amendment process described in
 "Changes to this charter" below, before the founding term ends.
 
 ## What the Technical Committee does not do
