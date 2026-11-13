@@ -192,13 +192,14 @@ The project may choose to limit the number of seats held by people from the same
 company. For these limits and all voting requirements in this charter, a company
 includes its subsidiaries and affiliates.
 
-No single company may have more than 2 members on the Bootstrap Steering Committee.
-From the second term onward, no single company may hold more than 1 seat. The more relaxed
-founding-term limit reflects the current maintainer mix; the tighter ongoing limit keeps
-the Committee genuinely multi-company once the contributor base can support it.
+No single company may hold more than 40% of the seats on the Bootstrap Steering
+Committee, rounded down, with a minimum of 1 seat. For example, a company may hold 2 seats
+on a committee of 5 to 7 members, and 3 seats on a committee of 8 or 9. The limit for
+later terms is part of the founding mandate.
 
 In the founding term, if more people from one company volunteer than the limit allows,
-that company decides which of them join. From the second term onward, if an election
+that company decides which of them join, and the limit is checked against the Committee
+as it will be seated. From the second term onward, if an election
 result would put a company over its limit, the lowest-ranked candidate(s)
 from the over-represented company are dropped one at a time, and the freed seat(s) go to
 the next-highest-ranked eligible candidate(s) from other companies. If a member changes

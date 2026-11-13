@@ -201,8 +201,8 @@ The Technical Committee uses a deliberately loose limit: no single company may h
 than 4 members on the Bootstrap Technical Committee. Together with the rule that every
 decision needs yes votes from at least two companies (see Decision-making below), this
 stops any one company controlling the Committee, without forcing an unrealistic spread
-while the contributor base is still concentrated. A tighter limit for later terms is part
-of the founding mandate.
+while the contributor base is still concentrated. The limit for later terms is part of
+the founding mandate.
 
 If more people from one company volunteer than the limit allows, that company decides
 which of them join.

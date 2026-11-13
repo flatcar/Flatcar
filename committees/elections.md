@@ -38,6 +38,7 @@ onward:
 - Who can vote: X
 - Whether terms should be staggered: X
 - Whether there should be term limits: X
+- The company representation limit: X
 - How vacancies should be filled when no runner-up is available: X
 
 The following questions apply only to the Steering Committee:
@@ -50,14 +51,12 @@ The following questions apply only to the Technical Committee:
 
 - The selection model (election, appointment, nomination plus vote, or another
   mechanism): X
-- The company representation limit: X
 
 The charters already set the following for the second term onward. Apart from
 concurrent membership, the founding committees may revisit these as part of their
 founding mandates:
 
 - Term length is 2 years for both committees.
-- The Steering Committee company limit is no more than 1 seat per company.
 - Concurrent membership on both committees is not allowed. This rule is fixed and is
   not part of the founding mandate.
 
@@ -126,10 +125,11 @@ The chosen method for subsequent terms is X.
 Company representation limits are applied separately to each committee. For these
 limits, a company includes its subsidiaries and affiliates.
 
-- **Steering Committee:** no single company may have more than 2 members in the
-  founding term, and no more than 1 seat from the second term onward.
+- **Steering Committee:** no single company may hold more than 40% of the seats in the
+  founding term, rounded down, with a minimum of 1 seat. The limit for later terms is
+  part of the Steering Committee's founding mandate and is X.
 - **Technical Committee:** no single company may have more than 4 members in the
-  founding term. A tighter limit for later terms is part of the Technical Committee's
+  founding term. The limit for later terms is part of the Technical Committee's
   founding mandate and is X.
 
 In the founding term, if more people from one company volunteer than its limit allows,

@@ -34,10 +34,11 @@ Technical Committee.
 - **Candidate Eligibility & Company Limits:** In the founding term, both committees are
   open to Maintainers, recognised Contributors, and anyone who works for, or represents,
   an organisation listed in [ADOPTERS.md](../ADOPTERS.md). To ensure balanced governance,
-  no single company may have more than 2 members on the Steering Committee in the
-  founding term (1 seat ongoing), or more than 4 members on the Technical Committee in
-  the founding term. If more people from one company volunteer, that company decides
-  which of them join.
+  no single company may hold more than 40% of the seats on the Steering Committee in
+  the founding term, rounded down, or more than 4 members on the Technical Committee in
+  the founding term. Limits for later terms are part of each committee's founding
+  mandate. If more people from one company volunteer, that company decides which of
+  them join.
 - **Concurrent Membership:** a person cannot serve on the Steering Committee and the
   Technical Committee at the same time. Serving on one committee and later standing
   for the other, at a different time, is allowed.
