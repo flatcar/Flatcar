@@ -199,7 +199,9 @@ later terms is part of the founding mandate.
 
 In the founding term, if more people from one company volunteer than the limit allows,
 that company decides which of them join, and the limit is checked against the Committee
-as it will be seated. From the second term onward, if an election
+as it will be seated. The limit is then fixed for the rest of the founding term: if a
+member leaves, nobody else has to step down, and anyone who joins later must fit within
+the same limit. From the second term onward, if an election
 result would put a company over its limit, the lowest-ranked candidate(s)
 from the over-represented company are dropped one at a time, and the freed seat(s) go to
 the next-highest-ranked eligible candidate(s) from other companies. If a member changes

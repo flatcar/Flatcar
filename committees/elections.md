@@ -133,7 +133,10 @@ limits, a company includes its subsidiaries and affiliates.
   founding mandate and is X.
 
 In the founding term, if more people from one company volunteer than its limit allows,
-that company decides which of them join.
+that company decides which of them join. The Steering Committee's limit is worked out
+from its size when it is seated and then stays fixed for the rest of the founding term:
+if a member leaves, nobody else has to step down, and anyone who joins later must fit
+within the same limit.
 
 From the second term onward, if an election result would put a company over its limit, the lowest-ranked
 candidate(s) from the over-represented company are dropped one at a time until the cap
