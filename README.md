@@ -7,6 +7,7 @@
 [![Mastodon Follow](https://img.shields.io/badge/Mastodon-Follow-6364FF?logo=mastodon)](https://hachyderm.io/@flatcar)
 [![Bluesky](https://img.shields.io/badge/Bluesky-Follow-0285FF?logo=bluesky)](https://bsky.app/profile/flatcar.org)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10926/badge)](https://www.bestpractices.dev/projects/10926)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/flatcar/Flatcar/badge)](https://securityscorecards.dev/viewer/?uri=github.com/flatcar/Flatcar)
 
 
 > **Note:** To file an issue for any Flatcar repository, please use the [central Flatcar issue tracker](https://github.com/flatcar/Flatcar/issues).
