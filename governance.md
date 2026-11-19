@@ -40,7 +40,7 @@ The Flatcar project, its leadership, and its maintainers embrace the following v
   can only be accomplished in a welcoming and respectful environment.
 
 * Participation: Responsibilities within the project are earned through
-  participation, and there is a clear path up the contributor ladder into leadership
+  participation, and there is a clear path up the [contributor ladder](CONTRIBUTOR_LADDER.md) into leadership
   positions.
 
 ## Maintainers
