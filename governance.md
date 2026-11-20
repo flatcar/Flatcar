@@ -4,7 +4,7 @@
 Flatcar is a community based project, anyone who wants to participate is welcomed.
 We adopted the [CNCF Code of Conduct](./CODE_OF_CONDUCT.md) as we pledge to be an open and welcoming community for anyone who wants to participate in it.
 
-The project is governed by a flat hierarchy - a group of people sharing a common vision of Flatcar in accordance to its mission statement.
+Flatcar's direction is set by the Steering Committee and the Technical Committee, and the project is run day to day by its Maintainers: a group of people sharing a common vision of Flatcar in accordance with its mission statement.
 
 This governance explains how the project is run.
 
@@ -60,8 +60,8 @@ follow through to fix issues (in code or tests).
 A maintainer is a contributor to the project's success and a citizen helping
 the project succeed.
 
-The collective team of all Maintainers is known as the Maintainer Council, which
-is the governing body for the project.
+The collective team of all Maintainers is known as the Maintainer Council. It runs
+the project day to day, while the Steering and Technical Committees set its direction.
 
 ### Becoming a Maintainer
 
@@ -142,7 +142,7 @@ Maintainers on October 16, 2026:
   technical health and direction of the project: architecture, project-wide technical
   standards, and technical escalations.
 
-The Maintainer Council remains the main governing body of the project, and day-to-day
+The two committees set the project's direction, each in its own area, and day-to-day
 work stays with the Maintainers and their subgroups. See the
 [committees overview](committees/README.md) for a summary and
 [committee elections](committees/elections.md) for how members are chosen. Changes to
@@ -196,10 +196,12 @@ issues and breaches according to the [security policy](./SECURITY.md).
 
 While most business in Flatcar is conducted by "[lazy consensus](https://community.apache.org/committers/lazyConsensus.html)", 
 periodically the Maintainers may need to vote on specific actions or changes.
-A vote can be taken on 
-[the private Maintainer mailing list](mailto:maintainers@flatcar-linux.org) for security or conduct matters.  
-Votes may also be taken at [Flatcar Developer Syncs meetings](https://meet.flatcar.org/OfficeHours).  Any Maintainer may
-demand a vote be taken.
+Votes may be taken at [Flatcar Developer Syncs](https://meet.flatcar.org/OfficeHours) or
+Office Hours meetings, on [the private Maintainer mailing list](mailto:maintainers@flatcar-linux.org),
+or on the pull request or issue for the change. Votes on security or conduct matters are
+taken on the private Maintainer mailing list. For all other votes, the result, and how
+each Maintainer voted, are recorded on the pull request or issue, so the decision is
+public and can be found later. Any Maintainer may demand a vote be taken.
 
 Most votes require a simple majority of all Maintainers to succeed, except where
 otherwise noted.  Two-thirds majority votes mean at least two-thirds of all 
@@ -207,5 +209,12 @@ existing maintainers.
 
 ## Modifying this Charter
 
-Changes to this Governance and its supporting documents may be approved by 
-a 2/3 vote of the Maintainers.
+Changes to this Governance and its supporting documents need a 2/3 vote of the
+Maintainers until the Steering Committee is seated. After that, the Steering Committee
+approves them, using the charter-change threshold in its
+[charter](committees/steering-committee/charter.md#voting), so Maintainers don't need
+to vote on every governance change. Changes are still proposed in public as pull
+requests with a discussion period. Because the Steering Committee has company limits
+and every decision needs yes votes from at least two companies, no single company can
+change Flatcar's governance on its own. The committee charters themselves are changed
+as each charter describes.

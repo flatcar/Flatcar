@@ -2,16 +2,20 @@
 
 **Status:** Adopted October 16, 2026 by a vote of the Maintainers.
 
-   This document gives an overview of the committees in
-   [Flatcar's governance](../governance.md).
-   It introduces two complementary governing bodies: the Steering Committee and the
-   Technical Committee, providing structured leadership while maintaining the core
-   responsibilities of the existing Maintainer Council and subgroups.
+* Last updated: November 2026 (https://github.com/flatcar/Flatcar/pull/2483)
 
-| Body | Primary Focus | Founding Size & Term | Ongoing Term | Voting Method |
+This document gives an overview of the committees in
+[Flatcar's governance](../governance.md).
+It introduces two complementary governing bodies: the Steering Committee and the
+Technical Committee, providing structured leadership while maintaining the core
+responsibilities of the existing Maintainer Council and subgroups. During their 1-year
+founding term, they are called the Bootstrap Steering Committee and the Bootstrap
+Technical Committee.
+
+| Body | Primary Focus | Founding Size & Term | Ongoing Term | Selection |
 | --- | --- | --- | --- | --- |
-| [Steering Committee](steering-committee/charter.md) | Non-technical governance, project assets, community structure, CNCF relations | 5 seats (1 year) | 2 years | Condorcet |
-| [Technical Committee](technical-committee/charter.md) | Architecture, technical standards, cross-cutting engineering, technical escalations | 5 seats (1 year) | 2 years | Condorcet |
+| [Steering Committee](steering-committee/charter.md) | Non-technical governance, project assets, community structure, CNCF relations | Open, bootstrap (1 year) | 2 years | Founding term: volunteers and a one-week Maintainer veto. Later terms: set by the founding mandate |
+| [Technical Committee](technical-committee/charter.md) | Architecture, technical standards, cross-cutting engineering, technical escalations | Open, bootstrap (1 year) | 2 years | Founding term: volunteers and a one-week Maintainer veto. Later terms: set by the founding mandate |
 
 ## Key Details
 
@@ -19,15 +23,22 @@
   structure, asset management, and CNCF/external relations.
 - **Technical Committee Focus:** Technical architecture, cross-cutting engineering
   initiatives, technical standards, and technical escalations.
-- **Founding Terms:** Both committees will start with 5 seats serving a 1-year founding
-  term to establish ongoing governance, election, and operational rules.
-- **Voting Method:** Condorcet voting for founding-term selection/elections; ongoing
-  committee decisions use the voting thresholds defined in each charter.
-- **Candidate Eligibility & Company Limits:** Seats on both committees are open to
-  Maintainers, Contributors, and vetted active community members or users. To ensure
-  balanced governance, Steering Committee company representation is capped at a
-  maximum of 2/5 seats in the founding term (1 seat ongoing), while Technical
-  Committee representation is capped at a maximum of 4/5 seats in the founding term.
+- **Founding Terms:** Both committees start as bootstrap committees serving a 1-year
+  founding term to establish ongoing governance, election, and operational rules. There
+  is no fixed number of seats in the founding term: every eligible person who volunteers
+  and is not vetoed by a Maintainer joins.
+- **Selection:** There is no election in the founding term. Eligible people volunteer
+  over two weeks, the list is posted, and any Maintainer may veto a volunteer within one
+  week. How members are chosen from the second term onward is part of each committee's
+  founding mandate; committee decisions use the voting thresholds defined in each charter.
+- **Candidate Eligibility & Company Limits:** In the founding term, both committees are
+  open to Maintainers, recognised Contributors, and anyone who works for, or represents,
+  an organisation listed in [ADOPTERS.md](../ADOPTERS.md). To ensure balanced governance,
+  no single company may hold more than 40% of the seats on the Steering Committee in
+  the founding term, rounded down, or more than 4 members on the Technical Committee in
+  the founding term. Limits for later terms are part of each committee's founding
+  mandate. If more people from one company volunteer, that company decides which of
+  them join.
 - **Concurrent Membership:** a person cannot serve on the Steering Committee and the
   Technical Committee at the same time. Serving on one committee and later standing
   for the other, at a different time, is allowed.
