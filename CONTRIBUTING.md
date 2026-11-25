@@ -328,7 +328,8 @@ Submissions that read as wholesale AI output (generic problem framing, no
 evidence of running or reproducing the issue locally, verification logs
 pasted without independent confirmation) will be closed. Repeated
 low-effort or bulk-filed submissions from an account may result in that
-account being blocked from the org.
+account being blocked from the org. We always warn first, and a block
+only follows if the behaviour continues.
 
 ### Pull Request Etiquette
 
