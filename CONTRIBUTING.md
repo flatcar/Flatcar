@@ -35,7 +35,7 @@ Welcome! We're so glad you're here and interested in contributing to Flatcar! ðŸ
     - [Issue Assignment](#issue-assignment)
     - [Issue Quality Bar](#issue-quality-bar)
     - [Coordinated or Bulk-Filed Issues and PRs](#coordinated-or-bulk-filed-issues-and-prs)
-    - [Reporting Spam or Abuse](#reporting-spam-or-abuse)
+    - [Low-Quality Activity Is Discouraged](#low-quality-activity-is-discouraged)
     - [Reporting Security Vulnerabilities](#reporting-security-vulnerabilities)
     - [Commit Guidelines](#commit-guidelines)
       - [The Rules](#the-rules)
