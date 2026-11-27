@@ -35,7 +35,7 @@ Welcome! We're so glad you're here and interested in contributing to Flatcar! ðŸ
     - [Issue Assignment](#issue-assignment)
     - [Issue Quality Bar](#issue-quality-bar)
     - [Coordinated or Bulk-Filed Issues and PRs](#coordinated-or-bulk-filed-issues-and-prs)
-    - [Reporting Spam or Abuse](#reporting-spam-or-abuse)
+    - [Low-Quality Activity Is Discouraged](#low-quality-activity-is-discouraged)
     - [Reporting Security Vulnerabilities](#reporting-security-vulnerabilities)
     - [Commit Guidelines](#commit-guidelines)
       - [The Rules](#the-rules)
@@ -328,7 +328,8 @@ Submissions that read as wholesale AI output (generic problem framing, no
 evidence of running or reproducing the issue locally, verification logs
 pasted without independent confirmation) will be closed. Repeated
 low-effort or bulk-filed submissions from an account may result in that
-account being blocked from the org.
+account being blocked from the org. We always warn first, and a block
+only follows if the behaviour continues.
 
 ### Pull Request Etiquette
 
